@@ -1,0 +1,27 @@
+# OS/files
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+
+# Editors/IDE
+.vscode/
+.idea/
+
+# Large data and vendor repos
+data/
+data_ply/
+.cc_repo/
+*.zip
+*.7z
+*.rar
+*.tar
+*.gz
+
+# Logs
+*.log
+
