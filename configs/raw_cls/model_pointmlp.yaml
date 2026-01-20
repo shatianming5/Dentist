@@ -1,0 +1,7 @@
+model:
+  name: pointmlp
+  pmlp_dim: 128
+  pmlp_depth: 6
+  pmlp_k: 16
+  pmlp_ffn_mult: 2.0
+

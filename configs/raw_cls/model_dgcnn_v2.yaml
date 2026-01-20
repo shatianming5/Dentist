@@ -1,0 +1,4 @@
+model:
+  name: dgcnn_v2
+  dgcnn_k: 20
+

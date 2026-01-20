@@ -1,0 +1,11 @@
+defaults:
+  - ../data_v1_raw.yaml
+  - ../train_reg_base.yaml
+  - ../model_p2t.yaml
+  - ../../common/runtime.yaml
+  - ../../common/optim_adamw.yaml
+
+exp:
+  name: baseline
+  out_root: runs/prep2target
+

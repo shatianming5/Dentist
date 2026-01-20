@@ -1,0 +1,64 @@
+[INFO] start: 2026-01-16T09:12:42+00:00 ts=20260116_091242
+python 3.13.11 | packaged by Anaconda, Inc. | (main, Dec 10 2025, 21:28:48) [GCC 14.3.0]
+numpy 2.2.6
+torch 2.6.0+cu124 cuda True
+[STEP] phase0_freeze
+[OK] Wrote: /home/ubuntu/tiasha/dentist/metadata/data_inventory.json
+[OK] Wrote: /home/ubuntu/tiasha/dentist/metadata/splits_raw_case.json
+[OK] Wrote: /home/ubuntu/tiasha/dentist/metadata/splits_teeth3ds.json
+[STEP] phase1_build_raw_cls (v6_smoke)
+[OK] Wrote: /home/ubuntu/tiasha/dentist/processed/raw_cls/v6_smoke/index.jsonl
+[OK] Wrote: /home/ubuntu/tiasha/dentist/processed/raw_cls/v6_smoke/label_map.json
+[OK] Wrote: /home/ubuntu/tiasha/dentist/processed/raw_cls/v6_smoke/report.md
+[OK] Samples: /home/ubuntu/tiasha/dentist/processed/raw_cls/v6_smoke/samples
+[STEP] phase3_train_raw_cls_baseline (smoke) exp=smoke_pointnet_rawcls_20260116_091242
+[epoch 001] train_loss=1.9834 train_acc=0.216 val_macro_f1_present=0.000 *
+[epoch 002] train_loss=1.8093 train_acc=0.256 val_macro_f1_present=0.107 *
+[OK] run_dir: /home/ubuntu/tiasha/dentist/runs/raw_cls_baseline/smoke_pointnet_rawcls_20260116_091242
+[OK] wrote: /home/ubuntu/tiasha/dentist/runs/raw_cls_baseline/smoke_pointnet_rawcls_20260116_091242/metrics.json
+[STEP] phase2_train_teeth3ds_ae (smoke) exp=smoke_ae_20260116_091242 data=processed/teeth3ds_teeth/v1
+[epoch 001] train=0.138581 val=0.234119 best=0.234119 (epoch 1)
+[epoch 002] train=0.091124 val=0.224926 best=0.224926 (epoch 2)
+[OK] out_dir: /home/ubuntu/tiasha/dentist/runs/teeth3ds_ae/smoke_ae_20260116_091242
+[OK] test_loss: 0.215312
+[STEP] phase3_train_teeth3ds_prep2target (smoke) exp=smoke_p2t_20260116_091242 data=processed/teeth3ds_teeth/v1
+[epoch 001] train=0.141672 val=0.240163 best=0.240163 (epoch 1)
+[epoch 002] train=0.103354 val=0.229497 best=0.229497 (epoch 2)
+[OK] out_dir: /home/ubuntu/tiasha/dentist/runs/teeth3ds_prep2target/smoke_p2t_20260116_091242
+[OK] test_loss: 0.220775
+[STEP] phase4_train_teeth3ds_prep2target_constraints (smoke) exp=smoke_p2t_constraints_20260116_091242 data=processed/teeth3ds_teeth/v1
+[epoch 001] train_total=0.144451 val_total=0.258005 best=0.258005 (epoch 1)
+[epoch 002] train_total=0.109093 val_total=0.246440 best=0.246440 (epoch 2)
+[OK] out_dir: /home/ubuntu/tiasha/dentist/runs/teeth3ds_prep2target_constraints/smoke_p2t_constraints_20260116_091242
+[OK] test_total: 0.237075
+[STEP] phase4_eval_teeth3ds_constraints_run (val) run=runs/teeth3ds_prep2target_constraints/smoke_p2t_constraints_20260116_091242
+[OK] wrote: /home/ubuntu/tiasha/dentist/runs/teeth3ds_prep2target_constraints/smoke_p2t_constraints_20260116_091242/eval_val.json
+{
+  "count": 32,
+  "chamfer": 0.22926436364650726,
+  "margin": 0.16397958993911743,
+  "occlusion_count": 32,
+  "occlusion_pen_mean": 0.0074568274430930614,
+  "occlusion_pen_max": 0.5,
+  "occlusion_pen_p95": 0.024450190365314484,
+  "occlusion_contact_ratio": 0.0572509765625
+}
+[STEP] phase4_build_raw_prep2target (smoke)
+[OK] wrote: /home/ubuntu/tiasha/dentist/processed/raw_prep2target/smoke/index.jsonl
+[OK] cases_written: 20
+[STEP] phase4_train_raw_prep2target_finetune (smoke) exp=smoke_raw_p2t_finetune_20260116_091242
+[epoch 001] train_total=0.000000 val_total=0.269168 best=0.269168 (epoch 1)
+[epoch 002] train_total=0.000000 val_total=0.269168 best=0.269168 (epoch 1)
+[early-stop] no improvement for 1 epochs
+[OK] out_dir: /home/ubuntu/tiasha/dentist/runs/raw_prep2target_finetune/smoke_raw_p2t_finetune_20260116_091242
+{
+  "best_epoch": 1,
+  "best_val_total": 0.2691681981086731,
+  "test": {
+    "total": 0.20450450479984283,
+    "chamfer": 0.18696503341197968,
+    "margin": 0.17539474368095398,
+    "occlusion": 0.0
+  }
+}
+[DONE] 2026-01-16T09:13:04+00:00

@@ -1,0 +1,8 @@
+data:
+  task: raw_cls
+  version: v20_main4_seg_all_cloudid_eq_pool16384
+  root: processed/raw_cls/v20_main4_seg_all_cloudid_eq_pool16384
+  kfold: metadata/splits_raw_case_kfold.json
+  # NOTE: samples store a larger point pool (16384) and are subsampled per step to n_points.
+  n_points: 4096
+

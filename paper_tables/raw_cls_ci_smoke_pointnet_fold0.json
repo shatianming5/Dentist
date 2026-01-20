@@ -1,0 +1,34 @@
+{
+  "run_dir": "/home/ubuntu/tiasha/dentist/runs/raw_cls_baseline/smoke_rawcls_v13_main4_pointnet_n512_k5_fold0_seed1337",
+  "split": "test",
+  "n": 52,
+  "num_classes": 4,
+  "point_estimate": {
+    "accuracy": 0.2692307692307692,
+    "macro_f1_all": 0.10606060606060606,
+    "macro_f1_present": 0.10606060606060606,
+    "balanced_accuracy_present": 0.25
+  },
+  "ci95": {
+    "accuracy": {
+      "mean": 0.26961538461538465,
+      "lo": 0.15384615384615385,
+      "hi": 0.385096153846154
+    },
+    "macro_f1_all": {
+      "mean": 0.10524124409923241,
+      "lo": 0.06666666666666668,
+      "hi": 0.1390125570776256
+    },
+    "macro_f1_present": {
+      "mean": 0.10524124409923241,
+      "lo": 0.06666666666666668,
+      "hi": 0.1390125570776256
+    },
+    "balanced_accuracy_present": {
+      "mean": 0.25,
+      "lo": 0.25,
+      "hi": 0.25
+    }
+  }
+}

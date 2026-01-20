@@ -1,0 +1,61 @@
+{
+  "runs_root": "/home/ubuntu/tiasha/dentist/runs/raw_cls/v18_main4_seg_all_cloudid_eq",
+  "members": [
+    {
+      "exp": "teeth3ds_fdi_pretrain_supcon_rotz_tta8_posfeat_ls0_dropout0p1_seg_all_cloudid_eq_xyzonly",
+      "model": "pointnet"
+    },
+    {
+      "exp": "teeth3ds_fdi_pretrain_supcon_rotz_tta8_posfeat_ls0_dropout0p1_seg_all_cloudid_eq_xyz_curvrad",
+      "model": "pointnet"
+    },
+    {
+      "exp": "teeth3ds_fdi_pretrain_supcon_rotz_tta8_posfeat_ls0_dropout0p1_seg_all_cloudid_eq_xyzonly_pointnet2_n1024",
+      "model": "pointnet2"
+    }
+  ],
+  "seeds": [
+    1337,
+    2020,
+    2021
+  ],
+  "folds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "expected_members": 9,
+  "per_fold": [
+    {
+      "fold": 0,
+      "n": 52,
+      "accuracy": 0.5769230769230769
+    },
+    {
+      "fold": 1,
+      "n": 50,
+      "accuracy": 0.6
+    },
+    {
+      "fold": 2,
+      "n": 50,
+      "accuracy": 0.64
+    },
+    {
+      "fold": 3,
+      "n": 48,
+      "accuracy": 0.6875
+    },
+    {
+      "fold": 4,
+      "n": 48,
+      "accuracy": 0.6875
+    }
+  ],
+  "mean_acc_over_folds": 0.6383846153846153,
+  "std_acc_over_folds": 0.04489577015170577,
+  "overall_acc": 0.6370967741935484,
+  "overall_n": 248
+}

@@ -1,0 +1,30 @@
+# Aggregate runs (raw_cls)
+
+- generated_at: 2026-01-18T08:25:26Z
+- root: `/home/ubuntu/tiasha/dentist/runs/raw_cls/v18_main4_seg_all_cloudid_eq`
+- runs: 52
+- seed_filter: [1337, 2020, 2021]
+- fold_filter: [0]
+
+- groups: 18
+
+| test_macro_f1 (mean±std) | test_acc (mean±std) | test_bal_acc (mean±std) | test_ece (mean±std) | n | dataset | domain | exp | model | point_features | extra_features | sampler | label_smoothing | tta |
+|---:|---:|---:|---:|---:|---|---|---|---|---|---|---|---|---:|
+| 0.5367±0.0374 | 0.5833±0.0400 | 0.5377±0.0343 | 0.2711±0.0246 | 3 | v18_main4_seg_all_cloudid_eq | - | teeth3ds_fdi_pretrain_ce_norot_tta0_posfeat_ls0_dropout0p1_seg_all_cloudid_eq | pointnet | xyz,cloud_id | tooth_position_premolar,tooth_position_molar,tooth_position_missing | bal | ls=0 | 0 |
+| 0.4811±0.0180 | 0.5256±0.0111 | 0.5000±0.0347 | 0.2795±0.0718 | 3 | v18_main4_seg_all_cloudid_eq | - | teeth3ds_fdi_pretrain_supcon_rotz_tta8_posfeat_ls0_dropout0p1_seg_all_cloudid_eq_xyzonly_unbalanced_ce_none | pointnet | xyz | tooth_position_premolar,tooth_position_molar,tooth_position_missing | unbal | ls=0 | 8 |
+| 0.4491±0.0248 | 0.5000±0.0192 | 0.4575±0.0214 | 0.3389±0.0277 | 3 | v18_main4_seg_all_cloudid_eq | - | teeth3ds_fdi_pretrain_supcon_norot_tta0_posfeat_ls0_dropout0p1_seg_all_cloudid_eq_curvrad | pointnet | xyz,cloud_id,curvature,radius | tooth_position_premolar,tooth_position_molar,tooth_position_missing | bal | ls=0 | 0 |
+| 0.4372±0.0714 | 0.5128±0.0444 | 0.4460±0.0636 | 0.2851±0.0876 | 3 | v18_main4_seg_all_cloudid_eq | - | teeth3ds_fdi_pretrain_supcon_norot_tta0_posfeat_ls0_dropout0p1_seg_all_cloudid_eq_meta | pointnet | xyz,cloud_id | tooth_position_premolar,tooth_position_molar,tooth_position_missing,scale,log_points,objects_used | bal | ls=0 | 0 |
+| 0.4356±0.0150 | 0.5064±0.0294 | 0.4462±0.0188 | 0.3405±0.0303 | 3 | v18_main4_seg_all_cloudid_eq | - | teeth3ds_fdi_pretrain_supcon_norot_tta0_posfeat_ls0_dropout0p1_tpdrop0p5_seg_all_cloudid_eq | pointnet | xyz,cloud_id | tooth_position_premolar,tooth_position_molar,tooth_position_missing | bal | ls=0 | 0 |
+| 0.4348±0.0162 | 0.4872±0.0111 | 0.4415±0.0146 | 0.1925±0.0743 | 3 | v18_main4_seg_all_cloudid_eq | - | teeth3ds_fdi_pretrain_supcon_rotz_tta8_posfeat_ls0_dropout0p1_seg_all_cloudid_eq_cloudset | pointnet_cloudset | xyz,cloud_id | tooth_position_premolar,tooth_position_molar,tooth_position_missing | bal | ls=0 | 8 |
+| 0.4297±0.0326 | 0.5192±0.0192 | 0.4442±0.0199 | 0.2319±0.0907 | 3 | v18_main4_seg_all_cloudid_eq | - | teeth3ds_fdi_pretrain_supcon_rotz_tta8_posfeat_ls0_dropout0p3_seg_all_cloudid_eq_xyzonly | pointnet | xyz | tooth_position_premolar,tooth_position_molar,tooth_position_missing | bal | ls=0 | 8 |
+| 0.4266±0.0907 | 0.5192±0.0509 | 0.4486±0.0718 | 0.2464±0.0838 | 3 | v18_main4_seg_all_cloudid_eq | - | teeth3ds_fdi_pretrain_supcon_norot_tta0_posfeat_ls0_dropout0p1_bestacc_seg_all_cloudid_eq | pointnet | xyz,cloud_id | tooth_position_premolar,tooth_position_molar,tooth_position_missing | bal | ls=0 | 0 |
+| 0.4212±0.0551 | 0.5256±0.0588 | 0.4593±0.0445 | 0.2806±0.0138 | 3 | v18_main4_seg_all_cloudid_eq | - | teeth3ds_fdi_pretrain_supcon_rotz_tta8_posfeat_ls0_dropout0p1_seg_all_cloudid_eq | pointnet | xyz,cloud_id | tooth_position_premolar,tooth_position_molar,tooth_position_missing | bal | ls=0 | 8 |
+| 0.4194±0.0299 | 0.5000±0.0385 | 0.4270±0.0373 | 0.3275±0.0829 | 3 | v18_main4_seg_all_cloudid_eq | - | teeth3ds_fdi_pretrain_supcon_norot_tta0_posfeat_ls0_dropout0p1_seg_all_cloudid_eq | pointnet | xyz,cloud_id | tooth_position_premolar,tooth_position_molar,tooth_position_missing | bal | ls=0 | 0 |
+| 0.4143±0.0329 | 0.5064±0.0400 | 0.4175±0.0306 | 0.3449±0.0312 | 3 | v18_main4_seg_all_cloudid_eq | - | teeth3ds_ae_pretrain_supcon_norot_tta0_posfeat_ls0_dropout0p1_seg_all_cloudid_eq | pointnet | xyz,cloud_id | tooth_position_premolar,tooth_position_molar,tooth_position_missing | bal | ls=0 | 0 |
+| 0.4131±0.0065 | 0.4551±0.0222 | 0.4597±0.0394 | 0.2600±0.0736 | 3 | v18_main4_seg_all_cloudid_eq | - | teeth3ds_fdi_pretrain_supcon_rotz_tta8_posfeat_ls0_dropout0p1_seg_all_cloudid_eq_xyzonly | pointnet | xyz | tooth_position_premolar,tooth_position_molar,tooth_position_missing | bal | ls=0 | 8 |
+| 0.4029±0.0494 | 0.4936±0.0400 | 0.4181±0.0439 | 0.2484±0.0276 | 3 | v18_main4_seg_all_cloudid_eq | - | teeth3ds_fdi_pretrain_supcon_rotz_tta8_posfeat_ls0_dropout0p1_seg_all_cloudid_eq_dsbn | pointnet_dsbn | xyz,cloud_id | tooth_position_premolar,tooth_position_molar,tooth_position_missing | bal | ls=0 | 8 |
+| 0.3953±0.0196 | 0.4679±0.0555 | 0.4181±0.0224 | 0.3046±0.0504 | 3 | v18_main4_seg_all_cloudid_eq | - | teeth3ds_fdi_pretrain_supcon_rotz_tta8_posfeat_ls0_dropout0p1_seg_all_cloudid_eq_dropfix | pointnet | xyz,cloud_id | tooth_position_premolar,tooth_position_molar,tooth_position_missing | bal | ls=0 | 8 |
+| 0.3921±0.0374 | 0.4487±0.0400 | 0.3933±0.0389 | 0.2376±0.0612 | 3 | v18_main4_seg_all_cloudid_eq | - | teeth3ds_fdi_pretrain_supcon_norot_tta0_posfeat_ls0_dropout0p1_cloud_geom_mlp_seg_all_cloudid_eq | cloud_geom_mlp | xyz,cloud_id | tooth_position_premolar,tooth_position_molar,tooth_position_missing | bal | ls=0 | 0 |
+| 0.3914±0.0303 | 0.4679±0.0444 | 0.4159±0.0442 | 0.2656±0.0499 | 3 | v18_main4_seg_all_cloudid_eq | - | teeth3ds_fdi_pretrain_supcon_rotz_tta8_posfeat_ls0_dropout0p1_seg_all_cloudid_eq_xyzonly_bestacc | pointnet | xyz | tooth_position_premolar,tooth_position_molar,tooth_position_missing | bal | ls=0 | 8 |
+| 0.3838±0.0437 | 0.4889±0.0509 | 0.4165±0.0468 | 0.3276±0.0201 | 3 | v18_main4_seg_all_cloudid_eq | - | teeth3ds_fdi_pretrain_supcon_rotz_tta8_posfeat_ls0_dropout0p1_seg_all_cloudid_eq_xyzonly_fixedsplit | pointnet | xyz | tooth_position_premolar,tooth_position_molar,tooth_position_missing | bal | ls=0 | 8 |
+| 0.3455±0.0000 | 0.4038±0.0000 | 0.3589±0.0000 | 0.3833±0.0000 | 1 | v18_main4_seg_all_cloudid_eq | - | teeth3ds_fdi_pretrain_supcon_norot_tta0_posfeat_ls0_dropout0p1_seg_all_cloudid_eq_dgcnn | dgcnn | xyz,cloud_id | tooth_position_premolar,tooth_position_molar,tooth_position_missing | bal | ls=0 | 0 |

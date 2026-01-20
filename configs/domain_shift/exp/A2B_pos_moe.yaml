@@ -1,0 +1,20 @@
+defaults:
+  - A2B_baseline.yaml
+
+exp:
+  name: pos_moe
+
+model:
+  name: pointnet_pos_moe
+
+features:
+  extra_features:
+    - tooth_position_premolar
+    - tooth_position_molar
+    - tooth_position_missing
+
+domain:
+  method: pos_moe
+  group_key: tooth_position
+  tooth_position_dropout: 0.5
+

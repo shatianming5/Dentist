@@ -1,0 +1,14 @@
+train:
+  epochs: 120
+  patience: 25
+  batch_size: 32
+  dropout: 0.3
+
+loss:
+  label_smoothing: 0.1
+
+sampler:
+  balanced: true
+
+eval:
+  tta: 8

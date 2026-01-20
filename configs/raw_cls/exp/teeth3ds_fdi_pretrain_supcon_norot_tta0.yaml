@@ -1,0 +1,12 @@
+defaults:
+  - teeth3ds_fdi_pretrain_supcon.yaml
+
+exp:
+  name: teeth3ds_fdi_pretrain_supcon_norot_tta0
+
+augment:
+  rotate_z: false
+
+eval:
+  tta: 0
+

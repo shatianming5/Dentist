@@ -1,0 +1,9 @@
+defaults:
+  - baseline.yaml
+
+exp:
+  name: scale_token
+
+features:
+  use_global_scale_token: true
+  global_scale_fields: [scale]

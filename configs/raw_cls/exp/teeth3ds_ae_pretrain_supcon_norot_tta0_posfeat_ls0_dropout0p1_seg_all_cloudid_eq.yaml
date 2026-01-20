@@ -1,0 +1,11 @@
+defaults:
+  - teeth3ds_fdi_pretrain_supcon_norot_tta0_posfeat_ls0_dropout0p1_seg_all_cloudid_eq.yaml
+
+exp:
+  name: teeth3ds_ae_pretrain_supcon_norot_tta0_posfeat_ls0_dropout0p1_seg_all_cloudid_eq
+
+train:
+  # Swap supervised FDI init to an AE feature pretrain on Teeth3DS.
+  init_feat: runs/pretrain/teeth3ds_pointnet_ae_n1024_seed1337/ckpt_best.pt
+  freeze_feat_epochs: 0
+

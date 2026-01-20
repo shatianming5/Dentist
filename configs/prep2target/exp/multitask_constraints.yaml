@@ -1,0 +1,14 @@
+defaults:
+  - baseline.yaml
+
+exp:
+  name: multitask_constraints
+
+constraints:
+  lambda_margin: 0.1
+  lambda_occlusion: 0.1
+
+aux:
+  weight_margin: 0.1
+  weight_occlusion: 0.1
+  hidden_dim: 128

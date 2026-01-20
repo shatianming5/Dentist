@@ -1,0 +1,9 @@
+defaults:
+  - dgcnn_supcon_norot_tta0_posfeat_ls0_dropout0p1.yaml
+
+exp:
+  name: dgcnn_supcon_norot_tta0_posfeat_n1024_ls0_dropout0p1
+
+data:
+  n_points: 1024
+

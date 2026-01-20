@@ -1,0 +1,7 @@
+model:
+  name: point_transformer
+  pt_dim: 96
+  pt_depth: 4
+  pt_k: 16
+  pt_ffn_mult: 2.0
+

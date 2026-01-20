@@ -1,0 +1,39 @@
+defaults:
+  - baseline.yaml
+  - ../model_pointnet.yaml
+
+exp:
+  name: readme_template_compat_smoke
+  out_root: runs/_smoke
+
+# Intentionally uses README-template legacy keys to verify `scripts/train.py`
+# compatibility mapping (scale_min/max, rotate_z_deg, root-level precompute,
+# features.use_*, loss.temperature/proj_dim, and SupCon view1/view2).
+features:
+  use_normals: true
+  use_curvature: true
+  use_radius: true
+  use_global_scale_token: true
+  global_scale_fields: [scale]
+
+precompute:
+  enabled: false
+  cache_dir: runs/_smoke_cache/v13_main4_feat_normcurv
+  k_neighbors: 30
+
+loss:
+  name: ce_supcon
+  ce_weight: 1.0
+  supcon_weight: 0.2
+  temperature: 0.07
+  proj_dim: 128
+
+augment:
+  rotate_z: null
+  scale: null
+  scale_min: 0.98
+  scale_max: 1.02
+  rotate_z_deg: 0
+  two_views: true
+  view1: {jitter_sigma: 0.005, dropout_ratio: 0.1}
+  view2: {jitter_sigma: 0.01,  dropout_ratio: 0.2}

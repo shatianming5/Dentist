@@ -1,0 +1,14 @@
+defaults:
+  - A2B_baseline.yaml
+
+exp:
+  name: dsbn
+
+model:
+  name: pointnet_dsbn
+
+domain:
+  method: dsbn
+  group_key: tooth_position
+  tooth_position_dropout: 0.5
+

@@ -1,0 +1,10 @@
+defaults:
+  - supcon.yaml
+
+exp:
+  name: teeth3ds_fdi_pretrain_supcon
+
+train:
+  init_feat: runs/pretrain/teeth3ds_fdi_pointnet_seed1337/ckpt_best.pt
+  freeze_feat_epochs: 0
+

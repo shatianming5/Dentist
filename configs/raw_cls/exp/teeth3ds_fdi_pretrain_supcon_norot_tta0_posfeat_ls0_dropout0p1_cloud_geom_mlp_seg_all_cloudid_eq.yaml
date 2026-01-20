@@ -1,0 +1,9 @@
+defaults:
+  - teeth3ds_fdi_pretrain_supcon_norot_tta0_posfeat_ls0_dropout0p1_seg_all_cloudid_eq.yaml
+
+exp:
+  name: teeth3ds_fdi_pretrain_supcon_norot_tta0_posfeat_ls0_dropout0p1_cloud_geom_mlp_seg_all_cloudid_eq
+
+model:
+  name: cloud_geom_mlp
+

@@ -1,0 +1,11 @@
+data:
+  task: domain_shift
+  version: v13_main4
+  root: processed/raw_cls/v13_main4
+  n_points: 4096
+
+domain:
+  train_source: ""
+  test_source: ""
+  val_ratio: 0.1
+  split_seed: 0

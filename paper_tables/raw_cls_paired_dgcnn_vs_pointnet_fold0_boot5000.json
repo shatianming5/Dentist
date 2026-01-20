@@ -1,0 +1,45 @@
+{
+  "run_dir": "/home/ubuntu/tiasha/dentist/runs/raw_cls_baseline/paper_rawcls_v13_main4_dgcnn_n4096_k5_fold0_seed1337_bal_ls0p1_tta8",
+  "split": "test",
+  "n": 52,
+  "num_classes": 4,
+  "point_estimate": {
+    "accuracy": 0.3269230769230769,
+    "macro_f1_all": 0.3060073983987028,
+    "macro_f1_present": 0.3060073983987028,
+    "balanced_accuracy_present": 0.3672619047619048
+  },
+  "ci95": {
+    "accuracy": {
+      "mean": 0.326,
+      "lo": 0.19230769230769232,
+      "hi": 0.46153846153846156
+    },
+    "macro_f1_all": {
+      "mean": 0.2956488133651065,
+      "lo": 0.17272727272727273,
+      "hi": 0.43311760521628756
+    },
+    "macro_f1_present": {
+      "mean": 0.29581494424062865,
+      "lo": 0.17272727272727273,
+      "hi": 0.4336157796451913
+    },
+    "balanced_accuracy_present": {
+      "mean": 0.3672497680515552,
+      "lo": 0.2360977564102564,
+      "hi": 0.510571902056277
+    }
+  },
+  "paired_diff": {
+    "metric": "macro_f1_present",
+    "n": 52,
+    "diff_mean": -0.09248092528441393,
+    "diff_ci95": [
+      -0.24286329498861461,
+      0.05805226693945925
+    ],
+    "p_two_sided": 0.224
+  },
+  "compare_run_dir": "/home/ubuntu/tiasha/dentist/runs/raw_cls_baseline/paper_rawcls_v13_main4_pointnet_n4096_k5_fold0_seed1337_bal_ls0p1_tta8"
+}

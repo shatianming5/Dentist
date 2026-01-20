@@ -1,0 +1,3 @@
+model:
+  name: dgcnn
+  dgcnn_k: 20

@@ -1,0 +1,13 @@
+defaults:
+  - A2B_baseline.yaml
+  - ../../raw_cls/model_pointnet.yaml
+
+exp:
+  name: coral
+
+domain:
+  method: coral
+  group_key: tooth_position
+  coral_weight: 0.1
+  coral_proj_dim: 128
+

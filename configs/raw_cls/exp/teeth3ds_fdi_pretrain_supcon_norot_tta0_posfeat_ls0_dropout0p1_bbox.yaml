@@ -1,0 +1,11 @@
+defaults:
+  - teeth3ds_fdi_pretrain_supcon_norot_tta0_posfeat_ls0_dropout0p1.yaml
+
+exp:
+  name: teeth3ds_fdi_pretrain_supcon_norot_tta0_posfeat_ls0_dropout0p1_bbox
+
+data:
+  input_normalize: bbox_diag
+  input_pca_align: false
+  input_pca_align_globalz: false
+

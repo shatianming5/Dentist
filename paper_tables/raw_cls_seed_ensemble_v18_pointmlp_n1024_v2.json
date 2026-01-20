@@ -1,0 +1,48 @@
+{
+  "runs_root": "/home/ubuntu/tiasha/dentist/runs/raw_cls/v18_main4_seg_all_cloudid_eq",
+  "exp": "teeth3ds_fdi_pretrain_supcon_rotz_tta8_posfeat_ls0_dropout0p1_seg_all_cloudid_eq_xyzonly_pointmlp_n1024_v2",
+  "model": "pointmlp",
+  "seeds": [
+    1337,
+    2020,
+    2021
+  ],
+  "folds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "per_fold": [
+    {
+      "fold": 0,
+      "n": 52,
+      "accuracy": 0.38461538461538464
+    },
+    {
+      "fold": 1,
+      "n": 50,
+      "accuracy": 0.3
+    },
+    {
+      "fold": 2,
+      "n": 50,
+      "accuracy": 0.24
+    },
+    {
+      "fold": 3,
+      "n": 48,
+      "accuracy": 0.4583333333333333
+    },
+    {
+      "fold": 4,
+      "n": 48,
+      "accuracy": 0.3333333333333333
+    }
+  ],
+  "mean_acc_over_folds": 0.34325641025641024,
+  "std_acc_over_folds": 0.07427615193022677,
+  "overall_acc": 0.34274193548387094,
+  "overall_n": 248
+}

@@ -1,0 +1,3 @@
+logging:
+  # Train-loop step logging (0 = epoch-only).
+  log_every: 50

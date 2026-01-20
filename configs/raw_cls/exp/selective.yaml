@@ -1,0 +1,16 @@
+defaults:
+  - baseline.yaml
+
+exp:
+  name: selective
+
+calibration:
+  temperature_scaling: true
+  bins: 15
+
+eval:
+  selective:
+    enabled: true
+    use_calibrated: true
+    coverages: [1.0, 0.9, 0.8, 0.7]
+

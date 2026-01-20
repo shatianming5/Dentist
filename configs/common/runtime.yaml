@@ -1,0 +1,9 @@
+runtime:
+  device: auto
+  num_workers: 2
+  deterministic: true
+  cudnn_benchmark: false
+
+repro:
+  seed: 1337
+  fold: 0

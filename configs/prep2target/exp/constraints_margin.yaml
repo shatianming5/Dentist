@@ -1,0 +1,10 @@
+defaults:
+  - baseline.yaml
+
+exp:
+  name: constraints_margin
+
+constraints:
+  lambda_margin: 0.1
+  lambda_occlusion: 0.0
+

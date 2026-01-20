@@ -1,0 +1,19 @@
+defaults:
+  - teeth3ds_fdi_pretrain_supcon_rotz_tta8_posfeat_ls0_dropout0p1_seg_all_cloudid_eq_xyzonly.yaml
+  - ../model_dgcnn_v2.yaml
+
+exp:
+  name: teeth3ds_fdi_pretrain_supcon_rotz_tta8_posfeat_ls0_dropout0p1_seg_all_cloudid_eq_xyzonly_dgcnn_v2_n1024
+
+data:
+  # DGCNN uses O(N^2) kNN; keep N modest for speed/memory.
+  n_points: 1024
+
+runtime:
+  # Keep memory predictable (and avoid per-worker CUDA context overhead).
+  num_workers: 0
+
+train:
+  init_feat: runs/pretrain/teeth3ds_fdi_dgcnn_v2_seed1337/ckpt_best.pt
+  batch_size: 32
+

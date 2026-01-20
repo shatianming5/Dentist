@@ -1,0 +1,2573 @@
+{
+  "generated_at": "2026-01-16T11:08:58Z",
+  "seed": 1337,
+  "ratios": {
+    "train": 0.8,
+    "val": 0.1,
+    "test": 0.1
+  },
+  "strategy": "case-level stratified split by canonical label; case_key == manifest[].input",
+  "splits": {
+    "train": [
+      "专家标注/Group-cjj.bin",
+      "专家标注/Group-cm.bin",
+      "专家标注/Group-cmc.bin",
+      "专家标注/Group-cmf.bin",
+      "专家标注/Group-cmz.bin",
+      "专家标注/Group-cph.bin",
+      "专家标注/Group-cqz.bin",
+      "专家标注/Group-crj.bin",
+      "专家标注/Group-csc1.bin",
+      "专家标注/Group-ljh1.bin",
+      "专家标注/Group-ljh2.bin",
+      "专家标注/Group-ll.bin",
+      "专家标注/Group-llg.bin",
+      "专家标注/Group-llx.bin",
+      "专家标注/Group-lly.bin",
+      "专家标注/Group-lme.bin",
+      "专家标注/Group-lnn.bin",
+      "专家标注/Group-lph.bin",
+      "专家标注/Group-lqh.bin",
+      "专家标注/Group-lqr1.bin",
+      "专家标注/Group-lqr2.bin",
+      "专家标注/Group-lqz.bin",
+      "专家标注/Group-lrx.bin",
+      "专家标注/Group-lsw.bin",
+      "专家标注/Group-ltz1.bin",
+      "专家标注/Group-lwc.bin",
+      "专家标注/Group-lxf.bin",
+      "专家标注/Group-lxl.bin",
+      "专家标注/Group-lxp1.bin",
+      "专家标注/Group-lxt.bin",
+      "专家标注/Group-lxz.bin",
+      "专家标注/Group-lyf.bin",
+      "专家标注/Group-lyh1.bin",
+      "专家标注/Group-lyh2.bin",
+      "专家标注/Group-lyx.bin",
+      "专家标注/Group-lyy.bin",
+      "专家标注/Group-lzh.bin",
+      "专家标注/Group-lzp.bin",
+      "专家标注/Group-mjy.bin",
+      "专家标注/Group-mwy.bin",
+      "专家标注/Group-nym.bin",
+      "专家标注/Group-ph.bin",
+      "专家标注/Group-pjs.bin",
+      "专家标注/Group-qcy.bin",
+      "专家标注/Group-ql.bin",
+      "专家标注/Group-qqf.bin",
+      "专家标注/Group-qxj.bin",
+      "专家标注/Group-ryl.bin",
+      "专家标注/Group-ryl2.bin",
+      "专家标注/Group-slt.bin",
+      "专家标注/Group-sp.bin",
+      "专家标注/Group-sw2.bin",
+      "专家标注/Group-tjm1.bin",
+      "专家标注/Group-tjm2.bin",
+      "专家标注/Group-tjy-qjb.bin",
+      "专家标注/Group-tjy.bin",
+      "专家标注/Group-tjy2-1.bin",
+      "专家标注/Group-tyh.bin",
+      "专家标注/Group-wbh.bin",
+      "专家标注/Group-wdq.bin",
+      "专家标注/Group-wgl.bin",
+      "专家标注/Group-whp.bin",
+      "专家标注/Group-whw.bin",
+      "专家标注/Group-wjm.bin",
+      "专家标注/Group-yyl2.bin",
+      "专家标注/Group-yyy.bin",
+      "专家标注/Group-zgg.bin",
+      "专家标注/Group-zjy.bin",
+      "专家标注/Group-zqt Lower.bin",
+      "普通标注/Group-10.bin",
+      "普通标注/Group-12.bin",
+      "普通标注/Group-124.bin",
+      "普通标注/Group-13.bin",
+      "普通标注/Group-15.bin",
+      "普通标注/Group-16.bin",
+      "普通标注/Group-17.bin",
+      "普通标注/Group-18.bin",
+      "普通标注/Group-19.bin",
+      "普通标注/Group-20.bin",
+      "普通标注/Group-22.bin",
+      "普通标注/Group-23.bin",
+      "普通标注/Group-24.bin",
+      "普通标注/Group-25.bin",
+      "普通标注/Group-26.bin",
+      "普通标注/Group-28.bin",
+      "普通标注/Group-29.bin",
+      "普通标注/Group-31.bin",
+      "普通标注/Group-32.bin",
+      "普通标注/Group-33.bin",
+      "普通标注/Group-34.bin",
+      "普通标注/Group-36.bin",
+      "普通标注/Group-37.bin",
+      "普通标注/Group-38.bin",
+      "普通标注/Group-5.bin",
+      "普通标注/Group-6.bin",
+      "普通标注/Group-8.bin",
+      "普通标注/Group-9.bin",
+      "普通标注/Group-91.bin",
+      "普通标注/Group-bk Lower39.bin",
+      "普通标注/Group-bk Upper40.bin",
+      "普通标注/Group-bse-41.bin",
+      "普通标注/Group-cb-42.bin",
+      "普通标注/Group-ccx43.bin",
+      "普通标注/Group-cfn44.bin",
+      "普通标注/Group-cfr45.bin",
+      "普通标注/Group-chk49.bin",
+      "普通标注/Group-chr 假壁Lower1。。50.bin",
+      "普通标注/Group-chr 假壁Lower2。。51.bin",
+      "普通标注/Group-chr 无假壁Lower2。。53.bin",
+      "普通标注/Group-chr 无假壁Upper。。54.bin",
+      "普通标注/Group-chr假壁Upper-55.bin",
+      "普通标注/Group-cj56.bin",
+      "普通标注/Group-cjc57.bin",
+      "普通标注/Group-cjh58.bin",
+      "普通标注/Group-csc2-59.bin",
+      "普通标注/Group-csk60.bin",
+      "普通标注/Group-csr1-61.bin",
+      "普通标注/Group-csr2-62.bin",
+      "普通标注/Group-csy-63.bin",
+      "普通标注/Group-ctt-64.bin",
+      "普通标注/Group-cuiximei1-65.bin",
+      "普通标注/Group-cw-66.bin",
+      "普通标注/Group-cx-67.bin",
+      "普通标注/Group-cxj1-68.bin",
+      "普通标注/Group-cxj2-69.bin",
+      "普通标注/Group-cxm-71.bin",
+      "普通标注/Group-cyp-75.bin",
+      "普通标注/Group-cyr-76.bin",
+      "普通标注/Group-cyx-77.bin",
+      "普通标注/Group-czj-78.bin",
+      "普通标注/Group-czj2-79.bin",
+      "普通标注/Group-czw-80.bin",
+      "普通标注/Group-czz-81.bin",
+      "普通标注/Group-dp-82.bin",
+      "普通标注/Group-lbh-83.bin",
+      "普通标注/Group-lcm-84.bin",
+      "普通标注/Group-lcr-85.bin",
+      "普通标注/Group-ldf-86.bin",
+      "普通标注/Group-ldw-87.bin",
+      "普通标注/Group-lfq-88.bin",
+      "普通标注/Group-lh-89.bin",
+      "普通标注/Group-lhb-90.bin",
+      "普通标注/Group-lianghuixia-92.bin",
+      "普通标注/Group-liangzhiye-93.bin",
+      "普通标注/Group-lihailing-94.bin",
+      "普通标注/Group-lihaolin-95.bin",
+      "普通标注/Group-lihuixia-96.bin",
+      "普通标注/Group-lijia-97.bin",
+      "普通标注/Group-linzhiying-100.bin",
+      "普通标注/Group-liujie-101.bin",
+      "普通标注/Group-liujing（婧）-102.bin",
+      "普通标注/Group-liujing（静）-103.bin",
+      "普通标注/Group-liyuan-104.bin",
+      "普通标注/Group-wlw-106.bin",
+      "普通标注/Group-wq-108.bin",
+      "普通标注/Group-wsr-110.bin",
+      "普通标注/Group-wwf-111.bin",
+      "普通标注/Group-wwm 029-112.bin",
+      "普通标注/Group-wwm 063-113.bin",
+      "普通标注/Group-wwm 063-2-114.bin",
+      "普通标注/Group-wwy-115.bin",
+      "普通标注/Group-wxj-116.bin",
+      "普通标注/Group-wxy-118.bin",
+      "普通标注/Group-wyg Lower-119.bin",
+      "普通标注/Group-wym-121.bin",
+      "普通标注/Group-wyy-122.bin",
+      "普通标注/Group-xhl1-125.bin",
+      "普通标注/Group-xjt Lower3-129.bin",
+      "普通标注/Group-xjt-130.bin",
+      "普通标注/Group-xpt-131.bin",
+      "普通标注/Group-xwt-132.bin",
+      "普通标注/Group-xwx-133.bin",
+      "普通标注/Group-xym1-134.bin",
+      "普通标注/Group-xyz-136.bin",
+      "普通标注/Group-yangyupei-138.bin",
+      "普通标注/Group-yb-139.bin",
+      "普通标注/Group-yc-140.bin",
+      "普通标注/Group-yeyaping-141.bin",
+      "普通标注/Group-yhl-142.bin",
+      "普通标注/Group-yjl-144.bin",
+      "普通标注/Group-yks-145.bin",
+      "普通标注/Group-yml-146.bin",
+      "普通标注/Group-yrb-148.bin",
+      "普通标注/Group-yrf-149.bin",
+      "普通标注/Group-ysb-150.bin",
+      "普通标注/Group-yxf-152.bin",
+      "普通标注/Group-yxl-153.bin",
+      "普通标注/Group-yxm-154.bin",
+      "普通标注/Group-yxy-155.bin",
+      "普通标注/Group-yy R-157.bin",
+      "普通标注/Group-yy-158.bin",
+      "普通标注/Group-yyj-159.bin",
+      "普通标注/Group-yyl1-160.bin",
+      "普通标注/Group-zqt Upper2-162.bin",
+      "普通标注/Group-zwx-163.bin",
+      "普通标注/Group-zy-164.bin",
+      "普通标注/Group-zz-166.bin",
+      "普通标注/Group_1.bin",
+      "普通标注/Group_4.bin"
+    ],
+    "val": [
+      "专家标注/Group-clq.bin",
+      "专家标注/Group-lm.bin",
+      "专家标注/Group-lrr.bin",
+      "专家标注/Group-mlj.bin",
+      "专家标注/Group-tzy.bin",
+      "专家标注/Group-wkk.bin",
+      "普通标注/Group-21.bin",
+      "普通标注/Group-3.bin",
+      "普通标注/Group-35.bin",
+      "普通标注/Group-7.bin",
+      "普通标注/Group-ch47.bin",
+      "普通标注/Group-chr 无假壁Lower1.。52.bin",
+      "普通标注/Group-cxm1-72.bin",
+      "普通标注/Group-linying-99.bin",
+      "普通标注/Group-wsm-109.bin",
+      "普通标注/Group-wxl-117.bin",
+      "普通标注/Group-xjt Lower1-127.bin",
+      "普通标注/Group-xjt Lower2-128.bin",
+      "普通标注/Group-xzy-137.bin",
+      "普通标注/Group-zqt Upper1-161.bin",
+      "普通标注/Group-zyong-165.bin",
+      "普通标注/Group_2.bin"
+    ],
+    "test": [
+      "专家标注/Group-lme2.bin",
+      "专家标注/Group-ltz2.bin",
+      "专家标注/Group-lxl2.bin",
+      "专家标注/Group-lxp2.bin",
+      "专家标注/Group-mcy.bin",
+      "专家标注/Group-mq.bin",
+      "专家标注/Group-qsy.bin",
+      "专家标注/Group-scq.bin",
+      "专家标注/Group-sw1.bin",
+      "专家标注/Group-tjy2-2.bin",
+      "专家标注/Group-wj.bin",
+      "专家标注/Group-zhx.bin",
+      "普通标注/Group-11.bin",
+      "普通标注/Group-14.bin",
+      "普通标注/Group-27.bin",
+      "普通标注/Group-30.bin",
+      "普通标注/Group-cgy46.bin",
+      "普通标注/Group-chengxiaomin48.bin",
+      "普通标注/Group-cxj3-70.bin",
+      "普通标注/Group-cxm2-73.bin",
+      "普通标注/Group-cyj-74.bin",
+      "普通标注/Group-lijun-98.bin",
+      "普通标注/Group-wls-105.bin",
+      "普通标注/Group-wnh-107.bin",
+      "普通标注/Group-wyg Upper-120.bin",
+      "普通标注/Group-xdy-123.bin",
+      "普通标注/Group-xhl2-126.bin",
+      "普通标注/Group-xym2-135.bin",
+      "普通标注/Group-yj-143.bin",
+      "普通标注/Group-ypy-147.bin",
+      "普通标注/Group-ywd-151.bin",
+      "普通标注/Group-yy L-156.bin"
+    ]
+  },
+  "label_distribution": {
+    "train": {
+      "高嵌体": 76,
+      "桩核冠": 52,
+      "全冠": 46,
+      "充填": 22,
+      "未知": 3
+    },
+    "val": {
+      "高嵌体": 9,
+      "桩核冠": 6,
+      "全冠": 5,
+      "充填": 2
+    },
+    "test": {
+      "高嵌体": 11,
+      "桩核冠": 8,
+      "全冠": 7,
+      "充填": 4,
+      "拔除": 1,
+      "未知": 1
+    }
+  },
+  "cases": [
+    {
+      "case_key": "专家标注/Group-cjj.bin",
+      "source": "专家标注",
+      "label_raw": "桩核冠",
+      "label": "桩核冠",
+      "tooth_position": null,
+      "input_bytes": 16678986,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-clq.bin",
+      "source": "专家标注",
+      "label_raw": "高嵌体",
+      "label": "高嵌体",
+      "tooth_position": null,
+      "input_bytes": 16626066,
+      "split": "val"
+    },
+    {
+      "case_key": "专家标注/Group-cm.bin",
+      "source": "专家标注",
+      "label_raw": "高嵌体",
+      "label": "高嵌体",
+      "tooth_position": null,
+      "input_bytes": 16931758,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-cmc.bin",
+      "source": "专家标注",
+      "label_raw": "充填",
+      "label": "充填",
+      "tooth_position": null,
+      "input_bytes": 16830720,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-cmf.bin",
+      "source": "专家标注",
+      "label_raw": "桩核冠",
+      "label": "桩核冠",
+      "tooth_position": null,
+      "input_bytes": 16743864,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-cmz.bin",
+      "source": "专家标注",
+      "label_raw": "桩核冠",
+      "label": "桩核冠",
+      "tooth_position": null,
+      "input_bytes": 16451998,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-cph.bin",
+      "source": "专家标注",
+      "label_raw": "高嵌体",
+      "label": "高嵌体",
+      "tooth_position": null,
+      "input_bytes": 16843200,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-cqz.bin",
+      "source": "专家标注",
+      "label_raw": "高嵌体",
+      "label": "高嵌体",
+      "tooth_position": null,
+      "input_bytes": 16982641,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-crj.bin",
+      "source": "专家标注",
+      "label_raw": "高嵌体",
+      "label": "高嵌体",
+      "tooth_position": null,
+      "input_bytes": 17004186,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-csc1.bin",
+      "source": "专家标注",
+      "label_raw": "实在看不清",
+      "label": "未知",
+      "tooth_position": null,
+      "input_bytes": 16612731,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-ljh1.bin",
+      "source": "专家标注",
+      "label_raw": "高嵌体",
+      "label": "高嵌体",
+      "tooth_position": null,
+      "input_bytes": 16686266,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-ljh2.bin",
+      "source": "专家标注",
+      "label_raw": "高嵌体",
+      "label": "高嵌体",
+      "tooth_position": null,
+      "input_bytes": 16940390,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-ll.bin",
+      "source": "专家标注",
+      "label_raw": "高嵌体",
+      "label": "高嵌体",
+      "tooth_position": null,
+      "input_bytes": 16821506,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-llg.bin",
+      "source": "专家标注",
+      "label_raw": "全冠",
+      "label": "全冠",
+      "tooth_position": null,
+      "input_bytes": 16362925,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-llx.bin",
+      "source": "专家标注",
+      "label_raw": "高嵌体",
+      "label": "高嵌体",
+      "tooth_position": null,
+      "input_bytes": 16840182,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-lly.bin",
+      "source": "专家标注",
+      "label_raw": "高嵌体",
+      "label": "高嵌体",
+      "tooth_position": null,
+      "input_bytes": 16862765,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-lm.bin",
+      "source": "专家标注",
+      "label_raw": "高嵌体",
+      "label": "高嵌体",
+      "tooth_position": null,
+      "input_bytes": 16737677,
+      "split": "val"
+    },
+    {
+      "case_key": "专家标注/Group-lme.bin",
+      "source": "专家标注",
+      "label_raw": "高嵌体",
+      "label": "高嵌体",
+      "tooth_position": null,
+      "input_bytes": 16644909,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-lme2.bin",
+      "source": "专家标注",
+      "label_raw": "桩核冠",
+      "label": "桩核冠",
+      "tooth_position": null,
+      "input_bytes": 16275540,
+      "split": "test"
+    },
+    {
+      "case_key": "专家标注/Group-lnn.bin",
+      "source": "专家标注",
+      "label_raw": "桩核冠",
+      "label": "桩核冠",
+      "tooth_position": null,
+      "input_bytes": 16550897,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-lph.bin",
+      "source": "专家标注",
+      "label_raw": "高嵌体",
+      "label": "高嵌体",
+      "tooth_position": null,
+      "input_bytes": 16744054,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-lqh.bin",
+      "source": "专家标注",
+      "label_raw": "高嵌体",
+      "label": "高嵌体",
+      "tooth_position": null,
+      "input_bytes": 16816521,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-lqr1.bin",
+      "source": "专家标注",
+      "label_raw": "高嵌体",
+      "label": "高嵌体",
+      "tooth_position": null,
+      "input_bytes": 16872357,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-lqr2.bin",
+      "source": "专家标注",
+      "label_raw": "高嵌体",
+      "label": "高嵌体",
+      "tooth_position": null,
+      "input_bytes": 16610949,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-lqz.bin",
+      "source": "专家标注",
+      "label_raw": "高嵌体",
+      "label": "高嵌体",
+      "tooth_position": null,
+      "input_bytes": 16685382,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-lrr.bin",
+      "source": "专家标注",
+      "label_raw": "桩核冠",
+      "label": "桩核冠",
+      "tooth_position": null,
+      "input_bytes": 16765014,
+      "split": "val"
+    },
+    {
+      "case_key": "专家标注/Group-lrx.bin",
+      "source": "专家标注",
+      "label_raw": "桩核冠",
+      "label": "桩核冠",
+      "tooth_position": null,
+      "input_bytes": 16733434,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-lsw.bin",
+      "source": "专家标注",
+      "label_raw": "高嵌体",
+      "label": "高嵌体",
+      "tooth_position": null,
+      "input_bytes": 16844124,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-ltz1.bin",
+      "source": "专家标注",
+      "label_raw": "桩核冠",
+      "label": "桩核冠",
+      "tooth_position": null,
+      "input_bytes": 16544898,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-ltz2.bin",
+      "source": "专家标注",
+      "label_raw": "高嵌体",
+      "label": "高嵌体",
+      "tooth_position": null,
+      "input_bytes": 16454117,
+      "split": "test"
+    },
+    {
+      "case_key": "专家标注/Group-lwc.bin",
+      "source": "专家标注",
+      "label_raw": "高嵌体",
+      "label": "高嵌体",
+      "tooth_position": null,
+      "input_bytes": 16724837,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-lxf.bin",
+      "source": "专家标注",
+      "label_raw": "高嵌体",
+      "label": "高嵌体",
+      "tooth_position": null,
+      "input_bytes": 16622210,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-lxl.bin",
+      "source": "专家标注",
+      "label_raw": "高嵌体",
+      "label": "高嵌体",
+      "tooth_position": null,
+      "input_bytes": 16985718,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-lxl2.bin",
+      "source": "专家标注",
+      "label_raw": "桩核冠",
+      "label": "桩核冠",
+      "tooth_position": null,
+      "input_bytes": 16740153,
+      "split": "test"
+    },
+    {
+      "case_key": "专家标注/Group-lxp1.bin",
+      "source": "专家标注",
+      "label_raw": "桩核冠",
+      "label": "桩核冠",
+      "tooth_position": null,
+      "input_bytes": 16668658,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-lxp2.bin",
+      "source": "专家标注",
+      "label_raw": "桩核冠",
+      "label": "桩核冠",
+      "tooth_position": null,
+      "input_bytes": 16469810,
+      "split": "test"
+    },
+    {
+      "case_key": "专家标注/Group-lxt.bin",
+      "source": "专家标注",
+      "label_raw": "高嵌体",
+      "label": "高嵌体",
+      "tooth_position": null,
+      "input_bytes": 16968442,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-lxz.bin",
+      "source": "专家标注",
+      "label_raw": "全冠",
+      "label": "全冠",
+      "tooth_position": null,
+      "input_bytes": 16589985,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-lyf.bin",
+      "source": "专家标注",
+      "label_raw": "全冠",
+      "label": "全冠",
+      "tooth_position": null,
+      "input_bytes": 16598814,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-lyh1.bin",
+      "source": "专家标注",
+      "label_raw": "桩核冠",
+      "label": "桩核冠",
+      "tooth_position": null,
+      "input_bytes": 16253727,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-lyh2.bin",
+      "source": "专家标注",
+      "label_raw": "高嵌体",
+      "label": "高嵌体",
+      "tooth_position": null,
+      "input_bytes": 16732082,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-lyx.bin",
+      "source": "专家标注",
+      "label_raw": "高嵌体",
+      "label": "高嵌体",
+      "tooth_position": null,
+      "input_bytes": 16570626,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-lyy.bin",
+      "source": "专家标注",
+      "label_raw": "高嵌体",
+      "label": "高嵌体",
+      "tooth_position": null,
+      "input_bytes": 16964898,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-lzh.bin",
+      "source": "专家标注",
+      "label_raw": "高嵌体",
+      "label": "高嵌体",
+      "tooth_position": null,
+      "input_bytes": 16951234,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-lzp.bin",
+      "source": "专家标注",
+      "label_raw": "高嵌体",
+      "label": "高嵌体",
+      "tooth_position": null,
+      "input_bytes": 17064021,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-mcy.bin",
+      "source": "专家标注",
+      "label_raw": "高嵌体",
+      "label": "高嵌体",
+      "tooth_position": null,
+      "input_bytes": 16954438,
+      "split": "test"
+    },
+    {
+      "case_key": "专家标注/Group-mjy.bin",
+      "source": "专家标注",
+      "label_raw": "高嵌体",
+      "label": "高嵌体",
+      "tooth_position": null,
+      "input_bytes": 16569669,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-mlj.bin",
+      "source": "专家标注",
+      "label_raw": "桩核冠",
+      "label": "桩核冠",
+      "tooth_position": null,
+      "input_bytes": 16552331,
+      "split": "val"
+    },
+    {
+      "case_key": "专家标注/Group-mq.bin",
+      "source": "专家标注",
+      "label_raw": "高嵌体",
+      "label": "高嵌体",
+      "tooth_position": null,
+      "input_bytes": 17066234,
+      "split": "test"
+    },
+    {
+      "case_key": "专家标注/Group-mwy.bin",
+      "source": "专家标注",
+      "label_raw": "高嵌体",
+      "label": "高嵌体",
+      "tooth_position": null,
+      "input_bytes": 16588449,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-nym.bin",
+      "source": "专家标注",
+      "label_raw": "高嵌体",
+      "label": "高嵌体",
+      "tooth_position": null,
+      "input_bytes": 16987987,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-ph.bin",
+      "source": "专家标注",
+      "label_raw": "高嵌体",
+      "label": "高嵌体",
+      "tooth_position": null,
+      "input_bytes": 16979123,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-pjs.bin",
+      "source": "专家标注",
+      "label_raw": "高嵌体",
+      "label": "高嵌体",
+      "tooth_position": null,
+      "input_bytes": 16961175,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-qcy.bin",
+      "source": "专家标注",
+      "label_raw": "桩核冠",
+      "label": "桩核冠",
+      "tooth_position": null,
+      "input_bytes": 17047352,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-ql.bin",
+      "source": "专家标注",
+      "label_raw": "桩核冠",
+      "label": "桩核冠",
+      "tooth_position": null,
+      "input_bytes": 16529052,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-qqf.bin",
+      "source": "专家标注",
+      "label_raw": "全冠",
+      "label": "全冠",
+      "tooth_position": null,
+      "input_bytes": 16392499,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-qsy.bin",
+      "source": "专家标注",
+      "label_raw": "高嵌体",
+      "label": "高嵌体",
+      "tooth_position": null,
+      "input_bytes": 17442778,
+      "split": "test"
+    },
+    {
+      "case_key": "专家标注/Group-qxj.bin",
+      "source": "专家标注",
+      "label_raw": "高嵌体",
+      "label": "高嵌体",
+      "tooth_position": null,
+      "input_bytes": 16762181,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-ryl.bin",
+      "source": "专家标注",
+      "label_raw": "全冠",
+      "label": "全冠",
+      "tooth_position": null,
+      "input_bytes": 16762257,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-ryl2.bin",
+      "source": "专家标注",
+      "label_raw": "桩核冠",
+      "label": "桩核冠",
+      "tooth_position": null,
+      "input_bytes": 16706144,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-scq.bin",
+      "source": "专家标注",
+      "label_raw": "桩核冠",
+      "label": "桩核冠",
+      "tooth_position": null,
+      "input_bytes": 16523171,
+      "split": "test"
+    },
+    {
+      "case_key": "专家标注/Group-slt.bin",
+      "source": "专家标注",
+      "label_raw": "高嵌体",
+      "label": "高嵌体",
+      "tooth_position": null,
+      "input_bytes": 16480713,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-sp.bin",
+      "source": "专家标注",
+      "label_raw": "高嵌体",
+      "label": "高嵌体",
+      "tooth_position": null,
+      "input_bytes": 16964705,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-sw1.bin",
+      "source": "专家标注",
+      "label_raw": "高嵌体",
+      "label": "高嵌体",
+      "tooth_position": null,
+      "input_bytes": 16304573,
+      "split": "test"
+    },
+    {
+      "case_key": "专家标注/Group-sw2.bin",
+      "source": "专家标注",
+      "label_raw": "高嵌体",
+      "label": "高嵌体",
+      "tooth_position": null,
+      "input_bytes": 16319129,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-tjm1.bin",
+      "source": "专家标注",
+      "label_raw": "高嵌体",
+      "label": "高嵌体",
+      "tooth_position": null,
+      "input_bytes": 16975212,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-tjm2.bin",
+      "source": "专家标注",
+      "label_raw": "全冠",
+      "label": "全冠",
+      "tooth_position": null,
+      "input_bytes": 16456670,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-tjy-qjb.bin",
+      "source": "专家标注",
+      "label_raw": "全冠",
+      "label": "全冠",
+      "tooth_position": null,
+      "input_bytes": 16887655,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-tjy.bin",
+      "source": "专家标注",
+      "label_raw": "高嵌体",
+      "label": "高嵌体",
+      "tooth_position": null,
+      "input_bytes": 16722454,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-tjy2-1.bin",
+      "source": "专家标注",
+      "label_raw": "全冠",
+      "label": "全冠",
+      "tooth_position": null,
+      "input_bytes": 16798916,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-tjy2-2.bin",
+      "source": "专家标注",
+      "label_raw": "拔除",
+      "label": "拔除",
+      "tooth_position": null,
+      "input_bytes": 16299797,
+      "split": "test"
+    },
+    {
+      "case_key": "专家标注/Group-tyh.bin",
+      "source": "专家标注",
+      "label_raw": "充填",
+      "label": "充填",
+      "tooth_position": null,
+      "input_bytes": 17032349,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-tzy.bin",
+      "source": "专家标注",
+      "label_raw": "高嵌体",
+      "label": "高嵌体",
+      "tooth_position": null,
+      "input_bytes": 16502893,
+      "split": "val"
+    },
+    {
+      "case_key": "专家标注/Group-wbh.bin",
+      "source": "专家标注",
+      "label_raw": "高嵌体",
+      "label": "高嵌体",
+      "tooth_position": null,
+      "input_bytes": 16742039,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-wdq.bin",
+      "source": "专家标注",
+      "label_raw": "充填",
+      "label": "充填",
+      "tooth_position": null,
+      "input_bytes": 16822207,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-wgl.bin",
+      "source": "专家标注",
+      "label_raw": "高嵌体",
+      "label": "高嵌体",
+      "tooth_position": null,
+      "input_bytes": 16899889,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-whp.bin",
+      "source": "专家标注",
+      "label_raw": "高嵌体",
+      "label": "高嵌体",
+      "tooth_position": null,
+      "input_bytes": 16922619,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-whw.bin",
+      "source": "专家标注",
+      "label_raw": "高嵌体",
+      "label": "高嵌体",
+      "tooth_position": null,
+      "input_bytes": 16922921,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-wj.bin",
+      "source": "专家标注",
+      "label_raw": "高嵌体",
+      "label": "高嵌体",
+      "tooth_position": null,
+      "input_bytes": 17081911,
+      "split": "test"
+    },
+    {
+      "case_key": "专家标注/Group-wjm.bin",
+      "source": null,
+      "label_raw": null,
+      "label": "未知",
+      "tooth_position": null,
+      "input_bytes": 16897256,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-wkk.bin",
+      "source": "专家标注",
+      "label_raw": "高嵌体",
+      "label": "高嵌体",
+      "tooth_position": null,
+      "input_bytes": 16844845,
+      "split": "val"
+    },
+    {
+      "case_key": "专家标注/Group-yyl2.bin",
+      "source": "专家标注",
+      "label_raw": "高嵌体",
+      "label": "高嵌体",
+      "tooth_position": null,
+      "input_bytes": 16934586,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-yyy.bin",
+      "source": "专家标注",
+      "label_raw": "高嵌体",
+      "label": "高嵌体",
+      "tooth_position": null,
+      "input_bytes": 16847086,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-zgg.bin",
+      "source": "专家标注",
+      "label_raw": "高嵌体",
+      "label": "高嵌体",
+      "tooth_position": null,
+      "input_bytes": 16731746,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-zhx.bin",
+      "source": null,
+      "label_raw": null,
+      "label": "未知",
+      "tooth_position": null,
+      "input_bytes": 16758940,
+      "split": "test"
+    },
+    {
+      "case_key": "专家标注/Group-zjy.bin",
+      "source": "专家标注",
+      "label_raw": "桩核冠",
+      "label": "桩核冠",
+      "tooth_position": null,
+      "input_bytes": 17036165,
+      "split": "train"
+    },
+    {
+      "case_key": "专家标注/Group-zqt Lower.bin",
+      "source": "专家标注",
+      "label_raw": "桩核冠",
+      "label": "桩核冠",
+      "tooth_position": null,
+      "input_bytes": 16563141,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-10.bin",
+      "source": "普通标注",
+      "label_raw": "桩核冠",
+      "label": "桩核冠",
+      "tooth_position": "磨牙",
+      "input_bytes": 16986394,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-11.bin",
+      "source": "普通标注",
+      "label_raw": "桩核冠",
+      "label": "桩核冠",
+      "tooth_position": "前磨牙",
+      "input_bytes": 16314631,
+      "split": "test"
+    },
+    {
+      "case_key": "普通标注/Group-12.bin",
+      "source": "普通标注",
+      "label_raw": "嵌体/高嵌体",
+      "label": "高嵌体",
+      "tooth_position": "磨牙",
+      "input_bytes": 17250743,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-124.bin",
+      "source": "普通标注",
+      "label_raw": "全冠",
+      "label": "全冠",
+      "tooth_position": "磨牙",
+      "input_bytes": 16802050,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-13.bin",
+      "source": "普通标注",
+      "label_raw": "全冠",
+      "label": "全冠",
+      "tooth_position": "前磨牙",
+      "input_bytes": 16546637,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-14.bin",
+      "source": "普通标注",
+      "label_raw": "全冠",
+      "label": "全冠",
+      "tooth_position": "磨牙",
+      "input_bytes": 16788967,
+      "split": "test"
+    },
+    {
+      "case_key": "普通标注/Group-15.bin",
+      "source": "普通标注",
+      "label_raw": "桩核冠",
+      "label": "桩核冠",
+      "tooth_position": "磨牙",
+      "input_bytes": 16609141,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-16.bin",
+      "source": "普通标注",
+      "label_raw": "嵌体/高嵌体",
+      "label": "高嵌体",
+      "tooth_position": "磨牙",
+      "input_bytes": 17511726,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-17.bin",
+      "source": "普通标注",
+      "label_raw": "树脂充填修复",
+      "label": "充填",
+      "tooth_position": "前磨牙",
+      "input_bytes": 16571759,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-18.bin",
+      "source": "普通标注",
+      "label_raw": "未标注",
+      "label": "未知",
+      "tooth_position": null,
+      "input_bytes": 3224259,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-19.bin",
+      "source": "普通标注",
+      "label_raw": "全冠",
+      "label": "全冠",
+      "tooth_position": "磨牙",
+      "input_bytes": 17058524,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-20.bin",
+      "source": "普通标注",
+      "label_raw": "桩核冠",
+      "label": "桩核冠",
+      "tooth_position": "前磨牙",
+      "input_bytes": 16406015,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-21.bin",
+      "source": "普通标注",
+      "label_raw": "全冠",
+      "label": "全冠",
+      "tooth_position": "磨牙",
+      "input_bytes": 16785065,
+      "split": "val"
+    },
+    {
+      "case_key": "普通标注/Group-22.bin",
+      "source": "普通标注",
+      "label_raw": "树脂充填修复",
+      "label": "充填",
+      "tooth_position": "磨牙",
+      "input_bytes": 16933030,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-23.bin",
+      "source": "普通标注",
+      "label_raw": "全冠",
+      "label": "全冠",
+      "tooth_position": "磨牙",
+      "input_bytes": 17051793,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-24.bin",
+      "source": "普通标注",
+      "label_raw": "全冠",
+      "label": "全冠",
+      "tooth_position": "磨牙",
+      "input_bytes": 16767358,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-25.bin",
+      "source": "普通标注",
+      "label_raw": "嵌体/高嵌体",
+      "label": "高嵌体",
+      "tooth_position": "磨牙",
+      "input_bytes": 16978386,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-26.bin",
+      "source": "普通标注",
+      "label_raw": "桩核冠",
+      "label": "桩核冠",
+      "tooth_position": "前磨牙",
+      "input_bytes": 16376618,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-27.bin",
+      "source": "普通标注",
+      "label_raw": "嵌体/高嵌体",
+      "label": "高嵌体",
+      "tooth_position": "前磨牙",
+      "input_bytes": 17202555,
+      "split": "test"
+    },
+    {
+      "case_key": "普通标注/Group-28.bin",
+      "source": "普通标注",
+      "label_raw": "嵌体/高嵌体",
+      "label": "高嵌体",
+      "tooth_position": "磨牙",
+      "input_bytes": 17202555,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-29.bin",
+      "source": "普通标注",
+      "label_raw": "桩核冠",
+      "label": "桩核冠",
+      "tooth_position": "磨牙",
+      "input_bytes": 16690154,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-3.bin",
+      "source": "普通标注",
+      "label_raw": "嵌体/高嵌体",
+      "label": "高嵌体",
+      "tooth_position": "磨牙",
+      "input_bytes": 17003070,
+      "split": "val"
+    },
+    {
+      "case_key": "普通标注/Group-30.bin",
+      "source": "普通标注",
+      "label_raw": "全冠",
+      "label": "全冠",
+      "tooth_position": "磨牙",
+      "input_bytes": 17016261,
+      "split": "test"
+    },
+    {
+      "case_key": "普通标注/Group-31.bin",
+      "source": "普通标注",
+      "label_raw": "树脂充填修复",
+      "label": "充填",
+      "tooth_position": "前磨牙",
+      "input_bytes": 16561995,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-32.bin",
+      "source": "普通标注",
+      "label_raw": "树脂充填修复",
+      "label": "充填",
+      "tooth_position": "磨牙",
+      "input_bytes": 16646810,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-33.bin",
+      "source": "普通标注",
+      "label_raw": "嵌体/高嵌体",
+      "label": "高嵌体",
+      "tooth_position": "磨牙",
+      "input_bytes": 16705866,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-34.bin",
+      "source": "普通标注",
+      "label_raw": "桩核冠",
+      "label": "桩核冠",
+      "tooth_position": "前磨牙",
+      "input_bytes": 16937025,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-35.bin",
+      "source": "普通标注",
+      "label_raw": "全冠",
+      "label": "全冠",
+      "tooth_position": "前磨牙",
+      "input_bytes": 16937025,
+      "split": "val"
+    },
+    {
+      "case_key": "普通标注/Group-36.bin",
+      "source": "普通标注",
+      "label_raw": "全冠",
+      "label": "全冠",
+      "tooth_position": "磨牙",
+      "input_bytes": 16786221,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-37.bin",
+      "source": "普通标注",
+      "label_raw": "嵌体/高嵌体",
+      "label": "高嵌体",
+      "tooth_position": "磨牙",
+      "input_bytes": 16977930,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-38.bin",
+      "source": "普通标注",
+      "label_raw": "嵌体/高嵌体",
+      "label": "高嵌体",
+      "tooth_position": "磨牙",
+      "input_bytes": 16894771,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-5.bin",
+      "source": "普通标注",
+      "label_raw": "树脂充填修复",
+      "label": "充填",
+      "tooth_position": "磨牙",
+      "input_bytes": 16914755,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-6.bin",
+      "source": "普通标注",
+      "label_raw": "桩核冠",
+      "label": "桩核冠",
+      "tooth_position": "前磨牙",
+      "input_bytes": 16741678,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-7.bin",
+      "source": "普通标注",
+      "label_raw": "嵌体/高嵌体",
+      "label": "高嵌体",
+      "tooth_position": "磨牙",
+      "input_bytes": 17080011,
+      "split": "val"
+    },
+    {
+      "case_key": "普通标注/Group-8.bin",
+      "source": "普通标注",
+      "label_raw": "桩核冠",
+      "label": "桩核冠",
+      "tooth_position": "磨牙",
+      "input_bytes": 16853803,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-9.bin",
+      "source": "普通标注",
+      "label_raw": "全冠",
+      "label": "全冠",
+      "tooth_position": "磨牙",
+      "input_bytes": 16715447,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-91.bin",
+      "source": "普通标注",
+      "label_raw": "全冠",
+      "label": "全冠",
+      "tooth_position": "磨牙",
+      "input_bytes": 16886677,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-bk Lower39.bin",
+      "source": "普通标注",
+      "label_raw": "嵌体/高嵌体",
+      "label": "高嵌体",
+      "tooth_position": "磨牙",
+      "input_bytes": 16750668,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-bk Upper40.bin",
+      "source": "普通标注",
+      "label_raw": "树脂充填修复",
+      "label": "充填",
+      "tooth_position": "磨牙",
+      "input_bytes": 16764610,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-bse-41.bin",
+      "source": "普通标注",
+      "label_raw": "嵌体/高嵌体",
+      "label": "高嵌体",
+      "tooth_position": "磨牙",
+      "input_bytes": 16910540,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-cb-42.bin",
+      "source": "普通标注",
+      "label_raw": "树脂充填修复",
+      "label": "充填",
+      "tooth_position": "磨牙",
+      "input_bytes": 16980552,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-ccx43.bin",
+      "source": "普通标注",
+      "label_raw": "嵌体/高嵌体",
+      "label": "高嵌体",
+      "tooth_position": "前磨牙",
+      "input_bytes": 16384590,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-cfn44.bin",
+      "source": "普通标注",
+      "label_raw": "树脂充填修复",
+      "label": "充填",
+      "tooth_position": "磨牙",
+      "input_bytes": 16840761,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-cfr45.bin",
+      "source": "普通标注",
+      "label_raw": "嵌体/高嵌体",
+      "label": "高嵌体",
+      "tooth_position": "磨牙",
+      "input_bytes": 16979514,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-cgy46.bin",
+      "source": "普通标注",
+      "label_raw": "全冠",
+      "label": "全冠",
+      "tooth_position": "前磨牙",
+      "input_bytes": 16564631,
+      "split": "test"
+    },
+    {
+      "case_key": "普通标注/Group-ch47.bin",
+      "source": "普通标注",
+      "label_raw": "嵌体/高嵌体",
+      "label": "高嵌体",
+      "tooth_position": "磨牙",
+      "input_bytes": 16878816,
+      "split": "val"
+    },
+    {
+      "case_key": "普通标注/Group-chengxiaomin48.bin",
+      "source": "普通标注",
+      "label_raw": "树脂充填修复",
+      "label": "充填",
+      "tooth_position": "磨牙",
+      "input_bytes": 16967317,
+      "split": "test"
+    },
+    {
+      "case_key": "普通标注/Group-chk49.bin",
+      "source": "普通标注",
+      "label_raw": "嵌体/高嵌体",
+      "label": "高嵌体",
+      "tooth_position": "前磨牙",
+      "input_bytes": 16484289,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-chr 假壁Lower1。。50.bin",
+      "source": "普通标注",
+      "label_raw": "全冠",
+      "label": "全冠",
+      "tooth_position": "磨牙",
+      "input_bytes": 17002253,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-chr 假壁Lower2。。51.bin",
+      "source": "普通标注",
+      "label_raw": "全冠",
+      "label": "全冠",
+      "tooth_position": "前磨牙",
+      "input_bytes": 16658074,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-chr 无假壁Lower1.。52.bin",
+      "source": "普通标注",
+      "label_raw": "桩核冠",
+      "label": "桩核冠",
+      "tooth_position": "磨牙",
+      "input_bytes": 16792181,
+      "split": "val"
+    },
+    {
+      "case_key": "普通标注/Group-chr 无假壁Lower2。。53.bin",
+      "source": "普通标注",
+      "label_raw": "全冠",
+      "label": "全冠",
+      "tooth_position": "前磨牙",
+      "input_bytes": 16675130,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-chr 无假壁Upper。。54.bin",
+      "source": "普通标注",
+      "label_raw": "嵌体/高嵌体",
+      "label": "高嵌体",
+      "tooth_position": "磨牙",
+      "input_bytes": 16846479,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-chr假壁Upper-55.bin",
+      "source": "普通标注",
+      "label_raw": "嵌体/高嵌体",
+      "label": "高嵌体",
+      "tooth_position": "磨牙",
+      "input_bytes": 16938595,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-cj56.bin",
+      "source": "普通标注",
+      "label_raw": "嵌体/高嵌体",
+      "label": "高嵌体",
+      "tooth_position": "磨牙",
+      "input_bytes": 16814498,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-cjc57.bin",
+      "source": "普通标注",
+      "label_raw": "全冠",
+      "label": "全冠",
+      "tooth_position": "前磨牙",
+      "input_bytes": 16534407,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-cjh58.bin",
+      "source": "普通标注",
+      "label_raw": "桩核冠",
+      "label": "桩核冠",
+      "tooth_position": "磨牙",
+      "input_bytes": 17041016,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-csc2-59.bin",
+      "source": "普通标注",
+      "label_raw": "桩核冠",
+      "label": "桩核冠",
+      "tooth_position": "磨牙",
+      "input_bytes": 16362869,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-csk60.bin",
+      "source": "普通标注",
+      "label_raw": "树脂充填修复",
+      "label": "充填",
+      "tooth_position": "磨牙",
+      "input_bytes": 16972807,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-csr1-61.bin",
+      "source": "普通标注",
+      "label_raw": "全冠",
+      "label": "全冠",
+      "tooth_position": "磨牙",
+      "input_bytes": 16941187,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-csr2-62.bin",
+      "source": "普通标注",
+      "label_raw": "嵌体/高嵌体",
+      "label": "高嵌体",
+      "tooth_position": "前磨牙",
+      "input_bytes": 16467846,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-csy-63.bin",
+      "source": "普通标注",
+      "label_raw": "桩核冠",
+      "label": "桩核冠",
+      "tooth_position": "磨牙",
+      "input_bytes": 16610750,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-ctt-64.bin",
+      "source": "普通标注",
+      "label_raw": "全冠",
+      "label": "全冠",
+      "tooth_position": "前磨牙",
+      "input_bytes": 16597862,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-cuiximei1-65.bin",
+      "source": "普通标注",
+      "label_raw": "全冠",
+      "label": "全冠",
+      "tooth_position": "前磨牙",
+      "input_bytes": 16641922,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-cw-66.bin",
+      "source": "普通标注",
+      "label_raw": "嵌体/高嵌体",
+      "label": "高嵌体",
+      "tooth_position": "磨牙",
+      "input_bytes": 16930626,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-cx-67.bin",
+      "source": "普通标注",
+      "label_raw": "树脂充填修复",
+      "label": "充填",
+      "tooth_position": "前磨牙",
+      "input_bytes": 16510251,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-cxj1-68.bin",
+      "source": "普通标注",
+      "label_raw": "全冠",
+      "label": "全冠",
+      "tooth_position": "磨牙",
+      "input_bytes": 16365021,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-cxj2-69.bin",
+      "source": "普通标注",
+      "label_raw": "桩核冠",
+      "label": "桩核冠",
+      "tooth_position": "磨牙",
+      "input_bytes": 16319188,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-cxj3-70.bin",
+      "source": "普通标注",
+      "label_raw": "桩核冠",
+      "label": "桩核冠",
+      "tooth_position": "磨牙",
+      "input_bytes": 16252936,
+      "split": "test"
+    },
+    {
+      "case_key": "普通标注/Group-cxm-71.bin",
+      "source": "普通标注",
+      "label_raw": "树脂充填修复",
+      "label": "充填",
+      "tooth_position": "前磨牙",
+      "input_bytes": 16602638,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-cxm1-72.bin",
+      "source": "普通标注",
+      "label_raw": "桩核冠",
+      "label": "桩核冠",
+      "tooth_position": "前磨牙",
+      "input_bytes": 16419614,
+      "split": "val"
+    },
+    {
+      "case_key": "普通标注/Group-cxm2-73.bin",
+      "source": "普通标注",
+      "label_raw": "全冠",
+      "label": "全冠",
+      "tooth_position": "前磨牙",
+      "input_bytes": 16481146,
+      "split": "test"
+    },
+    {
+      "case_key": "普通标注/Group-cyj-74.bin",
+      "source": "普通标注",
+      "label_raw": "嵌体/高嵌体",
+      "label": "高嵌体",
+      "tooth_position": "前磨牙",
+      "input_bytes": 16748819,
+      "split": "test"
+    },
+    {
+      "case_key": "普通标注/Group-cyp-75.bin",
+      "source": "普通标注",
+      "label_raw": "嵌体/高嵌体",
+      "label": "高嵌体",
+      "tooth_position": "磨牙",
+      "input_bytes": 16924058,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-cyr-76.bin",
+      "source": "普通标注",
+      "label_raw": "桩核冠",
+      "label": "桩核冠",
+      "tooth_position": "前磨牙",
+      "input_bytes": 16499518,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-cyx-77.bin",
+      "source": "普通标注",
+      "label_raw": "嵌体/高嵌体",
+      "label": "高嵌体",
+      "tooth_position": "磨牙",
+      "input_bytes": 17012061,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-czj-78.bin",
+      "source": "普通标注",
+      "label_raw": "桩核冠",
+      "label": "桩核冠",
+      "tooth_position": "磨牙",
+      "input_bytes": 16872024,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-czj2-79.bin",
+      "source": "普通标注",
+      "label_raw": "全冠",
+      "label": "全冠",
+      "tooth_position": "磨牙",
+      "input_bytes": 16929847,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-czw-80.bin",
+      "source": "普通标注",
+      "label_raw": "全冠",
+      "label": "全冠",
+      "tooth_position": "磨牙",
+      "input_bytes": 16770196,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-czz-81.bin",
+      "source": "普通标注",
+      "label_raw": "桩核冠",
+      "label": "桩核冠",
+      "tooth_position": "磨牙",
+      "input_bytes": 16536329,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-dp-82.bin",
+      "source": "普通标注",
+      "label_raw": "嵌体/高嵌体",
+      "label": "高嵌体",
+      "tooth_position": "磨牙",
+      "input_bytes": 16717617,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-lbh-83.bin",
+      "source": "普通标注",
+      "label_raw": "全冠",
+      "label": "全冠",
+      "tooth_position": "磨牙",
+      "input_bytes": 16760661,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-lcm-84.bin",
+      "source": "普通标注",
+      "label_raw": "全冠",
+      "label": "全冠",
+      "tooth_position": "磨牙",
+      "input_bytes": 16574863,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-lcr-85.bin",
+      "source": "普通标注",
+      "label_raw": "全冠",
+      "label": "全冠",
+      "tooth_position": "磨牙",
+      "input_bytes": 16587772,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-ldf-86.bin",
+      "source": "普通标注",
+      "label_raw": "桩核冠",
+      "label": "桩核冠",
+      "tooth_position": "前磨牙",
+      "input_bytes": 16353178,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-ldw-87.bin",
+      "source": "普通标注",
+      "label_raw": "桩核冠",
+      "label": "桩核冠",
+      "tooth_position": "磨牙",
+      "input_bytes": 16705917,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-lfq-88.bin",
+      "source": "普通标注",
+      "label_raw": "桩核冠",
+      "label": "桩核冠",
+      "tooth_position": "磨牙",
+      "input_bytes": 16889069,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-lh-89.bin",
+      "source": "普通标注",
+      "label_raw": "全冠",
+      "label": "全冠",
+      "tooth_position": "磨牙",
+      "input_bytes": 16692242,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-lhb-90.bin",
+      "source": "普通标注",
+      "label_raw": "桩核冠",
+      "label": "桩核冠",
+      "tooth_position": "前磨牙",
+      "input_bytes": 16451077,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-lianghuixia-92.bin",
+      "source": "普通标注",
+      "label_raw": "树脂充填修复",
+      "label": "充填",
+      "tooth_position": "磨牙",
+      "input_bytes": 16869834,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-liangzhiye-93.bin",
+      "source": "普通标注",
+      "label_raw": "全冠",
+      "label": "全冠",
+      "tooth_position": "磨牙",
+      "input_bytes": 16941030,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-lihailing-94.bin",
+      "source": "普通标注",
+      "label_raw": "桩核冠",
+      "label": "桩核冠",
+      "tooth_position": "磨牙",
+      "input_bytes": 16707054,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-lihaolin-95.bin",
+      "source": "普通标注",
+      "label_raw": "嵌体/高嵌体",
+      "label": "高嵌体",
+      "tooth_position": "磨牙",
+      "input_bytes": 16670817,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-lihuixia-96.bin",
+      "source": "普通标注",
+      "label_raw": "全冠",
+      "label": "全冠",
+      "tooth_position": "磨牙",
+      "input_bytes": 16883898,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-lijia-97.bin",
+      "source": "普通标注",
+      "label_raw": "桩核冠",
+      "label": "桩核冠",
+      "tooth_position": "磨牙",
+      "input_bytes": 16741102,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-lijun-98.bin",
+      "source": "普通标注",
+      "label_raw": "嵌体/高嵌体",
+      "label": "高嵌体",
+      "tooth_position": "磨牙",
+      "input_bytes": 16860080,
+      "split": "test"
+    },
+    {
+      "case_key": "普通标注/Group-linying-99.bin",
+      "source": "普通标注",
+      "label_raw": "全冠",
+      "label": "全冠",
+      "tooth_position": "磨牙",
+      "input_bytes": 16817041,
+      "split": "val"
+    },
+    {
+      "case_key": "普通标注/Group-linzhiying-100.bin",
+      "source": "普通标注",
+      "label_raw": "桩核冠",
+      "label": "桩核冠",
+      "tooth_position": "磨牙",
+      "input_bytes": 16531670,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-liujie-101.bin",
+      "source": "普通标注",
+      "label_raw": "全冠",
+      "label": "全冠",
+      "tooth_position": "磨牙",
+      "input_bytes": 16702413,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-liujing（婧）-102.bin",
+      "source": "普通标注",
+      "label_raw": "桩核冠",
+      "label": "桩核冠",
+      "tooth_position": "磨牙",
+      "input_bytes": 16484310,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-liujing（静）-103.bin",
+      "source": "普通标注",
+      "label_raw": "树脂充填修复",
+      "label": "充填",
+      "tooth_position": "磨牙",
+      "input_bytes": 16587043,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-liyuan-104.bin",
+      "source": "普通标注",
+      "label_raw": "嵌体/高嵌体",
+      "label": "高嵌体",
+      "tooth_position": "磨牙",
+      "input_bytes": 16698518,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-wls-105.bin",
+      "source": "普通标注",
+      "label_raw": "嵌体/高嵌体",
+      "label": "高嵌体",
+      "tooth_position": "磨牙",
+      "input_bytes": 16792602,
+      "split": "test"
+    },
+    {
+      "case_key": "普通标注/Group-wlw-106.bin",
+      "source": "普通标注",
+      "label_raw": "全冠",
+      "label": "全冠",
+      "tooth_position": "磨牙",
+      "input_bytes": 16765818,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-wnh-107.bin",
+      "source": "普通标注",
+      "label_raw": "树脂充填修复",
+      "label": "充填",
+      "tooth_position": "前磨牙",
+      "input_bytes": 16709204,
+      "split": "test"
+    },
+    {
+      "case_key": "普通标注/Group-wq-108.bin",
+      "source": "普通标注",
+      "label_raw": "全冠",
+      "label": "全冠",
+      "tooth_position": "磨牙",
+      "input_bytes": 16805913,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-wsm-109.bin",
+      "source": "普通标注",
+      "label_raw": "树脂充填修复",
+      "label": "充填",
+      "tooth_position": "磨牙",
+      "input_bytes": 16489845,
+      "split": "val"
+    },
+    {
+      "case_key": "普通标注/Group-wsr-110.bin",
+      "source": "普通标注",
+      "label_raw": "桩核冠",
+      "label": "桩核冠",
+      "tooth_position": "磨牙",
+      "input_bytes": 16806563,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-wwf-111.bin",
+      "source": "普通标注",
+      "label_raw": "桩核冠",
+      "label": "桩核冠",
+      "tooth_position": "前磨牙",
+      "input_bytes": 16330961,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-wwm 029-112.bin",
+      "source": "普通标注",
+      "label_raw": "桩核冠",
+      "label": "桩核冠",
+      "tooth_position": "前磨牙",
+      "input_bytes": 16441586,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-wwm 063-113.bin",
+      "source": "普通标注",
+      "label_raw": "桩核冠",
+      "label": "桩核冠",
+      "tooth_position": "磨牙",
+      "input_bytes": 16524473,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-wwm 063-2-114.bin",
+      "source": "普通标注",
+      "label_raw": "全冠",
+      "label": "全冠",
+      "tooth_position": "前磨牙",
+      "input_bytes": 16466066,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-wwy-115.bin",
+      "source": "普通标注",
+      "label_raw": "桩核冠",
+      "label": "桩核冠",
+      "tooth_position": "磨牙",
+      "input_bytes": 16866053,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-wxj-116.bin",
+      "source": "普通标注",
+      "label_raw": "嵌体/高嵌体",
+      "label": "高嵌体",
+      "tooth_position": "磨牙",
+      "input_bytes": 17031930,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-wxl-117.bin",
+      "source": "普通标注",
+      "label_raw": "嵌体/高嵌体",
+      "label": "高嵌体",
+      "tooth_position": "前磨牙",
+      "input_bytes": 16574618,
+      "split": "val"
+    },
+    {
+      "case_key": "普通标注/Group-wxy-118.bin",
+      "source": "普通标注",
+      "label_raw": "嵌体/高嵌体",
+      "label": "高嵌体",
+      "tooth_position": "磨牙",
+      "input_bytes": 16906190,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-wyg Lower-119.bin",
+      "source": "普通标注",
+      "label_raw": "嵌体/高嵌体",
+      "label": "高嵌体",
+      "tooth_position": "前磨牙",
+      "input_bytes": 16522393,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-wyg Upper-120.bin",
+      "source": "普通标注",
+      "label_raw": "树脂充填修复",
+      "label": "充填",
+      "tooth_position": "磨牙",
+      "input_bytes": 16512281,
+      "split": "test"
+    },
+    {
+      "case_key": "普通标注/Group-wym-121.bin",
+      "source": "普通标注",
+      "label_raw": "树脂充填修复",
+      "label": "充填",
+      "tooth_position": "磨牙",
+      "input_bytes": 16835806,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-wyy-122.bin",
+      "source": "普通标注",
+      "label_raw": "树脂充填修复",
+      "label": "充填",
+      "tooth_position": "磨牙",
+      "input_bytes": 16850340,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-xdy-123.bin",
+      "source": "普通标注",
+      "label_raw": "全冠",
+      "label": "全冠",
+      "tooth_position": "磨牙",
+      "input_bytes": 16887282,
+      "split": "test"
+    },
+    {
+      "case_key": "普通标注/Group-xhl1-125.bin",
+      "source": "普通标注",
+      "label_raw": "桩核冠",
+      "label": "桩核冠",
+      "tooth_position": "前磨牙",
+      "input_bytes": 16348334,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-xhl2-126.bin",
+      "source": "普通标注",
+      "label_raw": "全冠",
+      "label": "全冠",
+      "tooth_position": "前磨牙",
+      "input_bytes": 16368134,
+      "split": "test"
+    },
+    {
+      "case_key": "普通标注/Group-xjt Lower1-127.bin",
+      "source": "普通标注",
+      "label_raw": "嵌体/高嵌体",
+      "label": "高嵌体",
+      "tooth_position": "前磨牙",
+      "input_bytes": 16371743,
+      "split": "val"
+    },
+    {
+      "case_key": "普通标注/Group-xjt Lower2-128.bin",
+      "source": "普通标注",
+      "label_raw": "桩核冠",
+      "label": "桩核冠",
+      "tooth_position": "磨牙",
+      "input_bytes": 16598286,
+      "split": "val"
+    },
+    {
+      "case_key": "普通标注/Group-xjt Lower3-129.bin",
+      "source": "普通标注",
+      "label_raw": "嵌体/高嵌体",
+      "label": "高嵌体",
+      "tooth_position": "磨牙",
+      "input_bytes": 16787479,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-xjt-130.bin",
+      "source": "普通标注",
+      "label_raw": "桩核冠",
+      "label": "桩核冠",
+      "tooth_position": "前磨牙",
+      "input_bytes": 16463821,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-xpt-131.bin",
+      "source": "普通标注",
+      "label_raw": "桩核冠",
+      "label": "桩核冠",
+      "tooth_position": "磨牙",
+      "input_bytes": 16640903,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-xwt-132.bin",
+      "source": "普通标注",
+      "label_raw": "全冠",
+      "label": "全冠",
+      "tooth_position": "磨牙",
+      "input_bytes": 16664019,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-xwx-133.bin",
+      "source": "普通标注",
+      "label_raw": "桩核冠",
+      "label": "桩核冠",
+      "tooth_position": "前磨牙",
+      "input_bytes": 16340434,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-xym1-134.bin",
+      "source": "普通标注",
+      "label_raw": "嵌体/高嵌体",
+      "label": "高嵌体",
+      "tooth_position": "磨牙",
+      "input_bytes": 17044942,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-xym2-135.bin",
+      "source": "普通标注",
+      "label_raw": "树脂充填修复",
+      "label": "充填",
+      "tooth_position": "前磨牙",
+      "input_bytes": 16281317,
+      "split": "test"
+    },
+    {
+      "case_key": "普通标注/Group-xyz-136.bin",
+      "source": "普通标注",
+      "label_raw": "桩核冠",
+      "label": "桩核冠",
+      "tooth_position": "磨牙",
+      "input_bytes": 16676605,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-xzy-137.bin",
+      "source": "普通标注",
+      "label_raw": "树脂充填修复",
+      "label": "充填",
+      "tooth_position": "磨牙",
+      "input_bytes": 16641794,
+      "split": "val"
+    },
+    {
+      "case_key": "普通标注/Group-yangyupei-138.bin",
+      "source": "普通标注",
+      "label_raw": "嵌体/高嵌体",
+      "label": "高嵌体",
+      "tooth_position": "磨牙",
+      "input_bytes": 16868401,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-yb-139.bin",
+      "source": "普通标注",
+      "label_raw": "全冠",
+      "label": "全冠",
+      "tooth_position": "前磨牙",
+      "input_bytes": 16532858,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-yc-140.bin",
+      "source": "普通标注",
+      "label_raw": "嵌体/高嵌体",
+      "label": "高嵌体",
+      "tooth_position": "磨牙",
+      "input_bytes": 16803906,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-yeyaping-141.bin",
+      "source": "普通标注",
+      "label_raw": "全冠",
+      "label": "全冠",
+      "tooth_position": "前磨牙",
+      "input_bytes": 16556092,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-yhl-142.bin",
+      "source": "普通标注",
+      "label_raw": "树脂充填修复",
+      "label": "充填",
+      "tooth_position": "磨牙",
+      "input_bytes": 16756105,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-yj-143.bin",
+      "source": "普通标注",
+      "label_raw": "桩核冠",
+      "label": "桩核冠",
+      "tooth_position": "磨牙",
+      "input_bytes": 16633382,
+      "split": "test"
+    },
+    {
+      "case_key": "普通标注/Group-yjl-144.bin",
+      "source": "普通标注",
+      "label_raw": "全冠",
+      "label": "全冠",
+      "tooth_position": "前磨牙",
+      "input_bytes": 16691554,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-yks-145.bin",
+      "source": "普通标注",
+      "label_raw": "桩核冠",
+      "label": "桩核冠",
+      "tooth_position": "磨牙",
+      "input_bytes": 16650577,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-yml-146.bin",
+      "source": "普通标注",
+      "label_raw": "全冠",
+      "label": "全冠",
+      "tooth_position": "磨牙",
+      "input_bytes": 17092235,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-ypy-147.bin",
+      "source": "普通标注",
+      "label_raw": "嵌体/高嵌体",
+      "label": "高嵌体",
+      "tooth_position": "磨牙",
+      "input_bytes": 16640629,
+      "split": "test"
+    },
+    {
+      "case_key": "普通标注/Group-yrb-148.bin",
+      "source": "普通标注",
+      "label_raw": "嵌体/高嵌体",
+      "label": "高嵌体",
+      "tooth_position": "磨牙",
+      "input_bytes": 16713890,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-yrf-149.bin",
+      "source": "普通标注",
+      "label_raw": "嵌体/高嵌体",
+      "label": "高嵌体",
+      "tooth_position": "磨牙",
+      "input_bytes": 16747634,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-ysb-150.bin",
+      "source": "普通标注",
+      "label_raw": "桩核冠",
+      "label": "桩核冠",
+      "tooth_position": "磨牙",
+      "input_bytes": 16907946,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-ywd-151.bin",
+      "source": "普通标注",
+      "label_raw": "全冠",
+      "label": "全冠",
+      "tooth_position": "前磨牙",
+      "input_bytes": 16349898,
+      "split": "test"
+    },
+    {
+      "case_key": "普通标注/Group-yxf-152.bin",
+      "source": "普通标注",
+      "label_raw": "全冠",
+      "label": "全冠",
+      "tooth_position": "磨牙",
+      "input_bytes": 16753142,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-yxl-153.bin",
+      "source": "普通标注",
+      "label_raw": "嵌体/高嵌体",
+      "label": "高嵌体",
+      "tooth_position": "磨牙",
+      "input_bytes": 16987669,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-yxm-154.bin",
+      "source": "普通标注",
+      "label_raw": "全冠",
+      "label": "全冠",
+      "tooth_position": "磨牙",
+      "input_bytes": 16806688,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-yxy-155.bin",
+      "source": "普通标注",
+      "label_raw": "树脂充填修复",
+      "label": "充填",
+      "tooth_position": "磨牙",
+      "input_bytes": 17060602,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-yy L-156.bin",
+      "source": "普通标注",
+      "label_raw": "桩核冠",
+      "label": "桩核冠",
+      "tooth_position": "前磨牙",
+      "input_bytes": 16625508,
+      "split": "test"
+    },
+    {
+      "case_key": "普通标注/Group-yy R-157.bin",
+      "source": "普通标注",
+      "label_raw": "桩核冠",
+      "label": "桩核冠",
+      "tooth_position": "前磨牙",
+      "input_bytes": 16615153,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-yy-158.bin",
+      "source": "普通标注",
+      "label_raw": "树脂充填修复",
+      "label": "充填",
+      "tooth_position": "磨牙",
+      "input_bytes": 16811046,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-yyj-159.bin",
+      "source": "普通标注",
+      "label_raw": "嵌体/高嵌体",
+      "label": "高嵌体",
+      "tooth_position": "磨牙",
+      "input_bytes": 16918583,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-yyl1-160.bin",
+      "source": "普通标注",
+      "label_raw": "全冠",
+      "label": "全冠",
+      "tooth_position": "前磨牙",
+      "input_bytes": 16445002,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-zqt Upper1-161.bin",
+      "source": "普通标注",
+      "label_raw": "全冠",
+      "label": "全冠",
+      "tooth_position": "磨牙",
+      "input_bytes": 17102926,
+      "split": "val"
+    },
+    {
+      "case_key": "普通标注/Group-zqt Upper2-162.bin",
+      "source": "普通标注",
+      "label_raw": "全冠",
+      "label": "全冠",
+      "tooth_position": "前磨牙",
+      "input_bytes": 16567490,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-zwx-163.bin",
+      "source": "普通标注",
+      "label_raw": "全冠",
+      "label": "全冠",
+      "tooth_position": "磨牙",
+      "input_bytes": 17199973,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-zy-164.bin",
+      "source": "普通标注",
+      "label_raw": "桩核冠",
+      "label": "桩核冠",
+      "tooth_position": "前磨牙",
+      "input_bytes": 16129862,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group-zyong-165.bin",
+      "source": "普通标注",
+      "label_raw": "桩核冠",
+      "label": "桩核冠",
+      "tooth_position": "磨牙",
+      "input_bytes": 16728656,
+      "split": "val"
+    },
+    {
+      "case_key": "普通标注/Group-zz-166.bin",
+      "source": "普通标注",
+      "label_raw": "桩核冠",
+      "label": "桩核冠",
+      "tooth_position": "磨牙",
+      "input_bytes": 16588274,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group_1.bin",
+      "source": "普通标注",
+      "label_raw": "树脂充填修复",
+      "label": "充填",
+      "tooth_position": "前磨牙",
+      "input_bytes": 19795561,
+      "split": "train"
+    },
+    {
+      "case_key": "普通标注/Group_2.bin",
+      "source": "普通标注",
+      "label_raw": "全冠",
+      "label": "全冠",
+      "tooth_position": "磨牙",
+      "input_bytes": 16549536,
+      "split": "val"
+    },
+    {
+      "case_key": "普通标注/Group_4.bin",
+      "source": "普通标注",
+      "label_raw": "桩核冠",
+      "label": "桩核冠",
+      "tooth_position": "磨牙",
+      "input_bytes": 16729361,
+      "split": "train"
+    }
+  ]
+}

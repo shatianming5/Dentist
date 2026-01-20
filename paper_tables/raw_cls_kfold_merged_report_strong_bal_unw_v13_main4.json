@@ -1,0 +1,933 @@
+{
+  "generated_at": "2026-01-17T06:17:53Z",
+  "runs_dir": "/home/ubuntu/tiasha/dentist/runs/raw_cls_strong1",
+  "data_tag": "v13_main4",
+  "n_bootstrap": 2000,
+  "seed": 1337,
+  "groups": [
+    {
+      "key": {
+        "data_tag": "v13_main4",
+        "model": "dgcnn",
+        "n_points": 4096,
+        "kfold_k": 5,
+        "balanced": true,
+        "label_smoothing": 0.1,
+        "extra_features": "",
+        "tta": 8
+      },
+      "seeds": {
+        "1337": {
+          "seed": 1337,
+          "n_cases": 248,
+          "num_classes": 4,
+          "overall": {
+            "accuracy": 0.36693548387096775,
+            "macro_f1_all": 0.37063497871575385,
+            "macro_f1_present": 0.37063497871575385,
+            "balanced_accuracy_present": 0.4199309131959994
+          },
+          "overall_calibration": {
+            "total": 248,
+            "ece": 0.12668648025681897,
+            "nll": 1.408191957051266,
+            "brier": 0.7528542487116632,
+            "mean_conf": 0.4770211031840694,
+            "accuracy": 0.36693548387096775
+          },
+          "ci95": {
+            "accuracy": {
+              "mean": 0.3667197580645161,
+              "lo": 0.3064516129032258,
+              "hi": 0.4274193548387097
+            },
+            "macro_f1_present": {
+              "mean": 0.3683900085501471,
+              "lo": 0.3091001043482543,
+              "hi": 0.4291432385891453
+            },
+            "balanced_accuracy_present": {
+              "mean": 0.41965449843835845,
+              "lo": 0.3547382417978015,
+              "hi": 0.4868133774120615
+            },
+            "ece": {
+              "mean": 0.13946825815911496,
+              "lo": 0.08895863018509363,
+              "hi": 0.19388447335410502
+            }
+          },
+          "by_source": {
+            "专家标注": {
+              "accuracy": 0.3253012048192771,
+              "macro_f1_all": 0.2944147355912062,
+              "macro_f1_present": 0.2944147355912062,
+              "balanced_accuracy_present": 0.4654812148295266,
+              "total": 83
+            },
+            "普通标注": {
+              "accuracy": 0.3878787878787879,
+              "macro_f1_all": 0.39374393988364575,
+              "macro_f1_present": 0.39374393988364575,
+              "balanced_accuracy_present": 0.4166452251360713,
+              "total": 165
+            }
+          },
+          "by_source_calibration": {
+            "专家标注": {
+              "total": 83,
+              "ece": 0.15571614417685084,
+              "nll": 1.4088149174353557,
+              "brier": 0.7686658671968417,
+              "mean_conf": 0.4785880123276308,
+              "accuracy": 0.3253012048192771
+            },
+            "普通标注": {
+              "total": 165,
+              "ece": 0.12015966754971126,
+              "nll": 1.407878589100482,
+              "brier": 0.7449005254736643,
+              "mean_conf": 0.47623290040276267,
+              "accuracy": 0.3878787878787879
+            }
+          }
+        },
+        "2020": {
+          "seed": 2020,
+          "n_cases": 248,
+          "num_classes": 4,
+          "overall": {
+            "accuracy": 0.3467741935483871,
+            "macro_f1_all": 0.3368695175438597,
+            "macro_f1_present": 0.3368695175438597,
+            "balanced_accuracy_present": 0.3444998787132408
+          },
+          "overall_calibration": {
+            "total": 248,
+            "ece": 0.1937174366847161,
+            "nll": 1.4246504870684165,
+            "brier": 0.7534585431261732,
+            "mean_conf": 0.522038867396693,
+            "accuracy": 0.3467741935483871
+          },
+          "ci95": {
+            "accuracy": {
+              "mean": 0.34693548387096773,
+              "lo": 0.2862903225806452,
+              "hi": 0.4032258064516129
+            },
+            "macro_f1_present": {
+              "mean": 0.3347197692093441,
+              "lo": 0.274937236867643,
+              "hi": 0.3972823229646435
+            },
+            "balanced_accuracy_present": {
+              "mean": 0.34409670832568945,
+              "lo": 0.2804886951958362,
+              "hi": 0.40747306872719696
+            },
+            "ece": {
+              "mean": 0.19976997639178748,
+              "lo": 0.1475322806366509,
+              "hi": 0.255384383083231
+            }
+          },
+          "by_source": {
+            "专家标注": {
+              "accuracy": 0.3373493975903614,
+              "macro_f1_all": 0.23435966086568497,
+              "macro_f1_present": 0.23435966086568497,
+              "balanced_accuracy_present": 0.2526688182720953,
+              "total": 83
+            },
+            "普通标注": {
+              "accuracy": 0.3515151515151515,
+              "macro_f1_all": 0.3546533527686042,
+              "macro_f1_present": 0.3546533527686042,
+              "balanced_accuracy_present": 0.3659228104898565,
+              "total": 165
+            }
+          },
+          "by_source_calibration": {
+            "专家标注": {
+              "total": 83,
+              "ece": 0.19023021588842554,
+              "nll": 1.3354232261265608,
+              "brier": 0.713576815625505,
+              "mean_conf": 0.5227055671703384,
+              "accuracy": 0.3373493975903614
+            },
+            "普通标注": {
+              "total": 165,
+              "ece": 0.21677402221795286,
+              "nll": 1.469534503178562,
+              "brier": 0.7735202605962065,
+              "mean_conf": 0.521703497207526,
+              "accuracy": 0.3515151515151515
+            }
+          }
+        },
+        "2021": {
+          "seed": 2021,
+          "n_cases": 248,
+          "num_classes": 4,
+          "overall": {
+            "accuracy": 0.3225806451612903,
+            "macro_f1_all": 0.3256470121638661,
+            "macro_f1_present": 0.3256470121638661,
+            "balanced_accuracy_present": 0.3610298645320197
+          },
+          "overall_calibration": {
+            "total": 248,
+            "ece": 0.15978563901397488,
+            "nll": 1.3739290666471808,
+            "brier": 0.75219544341669,
+            "mean_conf": 0.481516839635949,
+            "accuracy": 0.3225806451612903
+          },
+          "ci95": {
+            "accuracy": {
+              "mean": 0.3228447580645161,
+              "lo": 0.2660282258064516,
+              "hi": 0.38306451612903225
+            },
+            "macro_f1_present": {
+              "mean": 0.3239958619055412,
+              "lo": 0.2636811311221663,
+              "hi": 0.387422918414619
+            },
+            "balanced_accuracy_present": {
+              "mean": 0.3612991001091473,
+              "lo": 0.2952797032137835,
+              "hi": 0.42815260312933956
+            },
+            "ece": {
+              "mean": 0.17267761738520232,
+              "lo": 0.120463563480805,
+              "hi": 0.22669611869439962
+            }
+          },
+          "by_source": {
+            "专家标注": {
+              "accuracy": 0.30120481927710846,
+              "macro_f1_all": 0.24978198826700493,
+              "macro_f1_present": 0.24978198826700493,
+              "balanced_accuracy_present": 0.34245696789142666,
+              "total": 83
+            },
+            "普通标注": {
+              "accuracy": 0.3333333333333333,
+              "macro_f1_all": 0.3451836968063383,
+              "macro_f1_present": 0.3451836968063383,
+              "balanced_accuracy_present": 0.3601608114794656,
+              "total": 165
+            }
+          },
+          "by_source_calibration": {
+            "专家标注": {
+              "total": 83,
+              "ece": 0.22423440110252565,
+              "nll": 1.3548490331638021,
+              "brier": 0.7500214657180045,
+              "mean_conf": 0.479125087160662,
+              "accuracy": 0.30120481927710846
+            },
+            "普通标注": {
+              "total": 165,
+              "ece": 0.16251273263584484,
+              "nll": 1.3835269016721534,
+              "brier": 0.7532890200772409,
+              "mean_conf": 0.48271996360836605,
+              "accuracy": 0.3333333333333333
+            }
+          }
+        }
+      },
+      "seed_mean": {
+        "accuracy": 0.34543010752688175,
+        "macro_f1_present": 0.34438383614115986,
+        "macro_f1_all": 0.34438383614115986,
+        "balanced_accuracy_present": 0.3751535521470866,
+        "ece": 0.16006318531850333
+      },
+      "seed_std": {
+        "accuracy": 0.022207945755185903,
+        "macro_f1_present": 0.023416404967559416,
+        "macro_f1_all": 0.023416404967559416,
+        "balanced_accuracy_present": 0.039649327291528876,
+        "ece": 0.03351634010259815
+      }
+    },
+    {
+      "key": {
+        "data_tag": "v13_main4",
+        "model": "dgcnn",
+        "n_points": 4096,
+        "kfold_k": 5,
+        "balanced": true,
+        "label_smoothing": 0.1,
+        "extra_features": "scale,log_points,objects_used",
+        "tta": 8
+      },
+      "seeds": {
+        "1337": {
+          "seed": 1337,
+          "n_cases": 248,
+          "num_classes": 4,
+          "overall": {
+            "accuracy": 0.3225806451612903,
+            "macro_f1_all": 0.3117950126704618,
+            "macro_f1_present": 0.3117950126704618,
+            "balanced_accuracy_present": 0.3287465946409912
+          },
+          "overall_calibration": {
+            "total": 248,
+            "ece": 0.16717450428874261,
+            "nll": 1.43282253037458,
+            "brier": 0.7643984127666957,
+            "mean_conf": 0.48975514945003296,
+            "accuracy": 0.3225806451612903
+          },
+          "ci95": {
+            "accuracy": {
+              "mean": 0.323304435483871,
+              "lo": 0.2661290322580645,
+              "hi": 0.38306451612903225
+            },
+            "macro_f1_present": {
+              "mean": 0.31022975386978585,
+              "lo": 0.25188899016810484,
+              "hi": 0.3701884903568115
+            },
+            "balanced_accuracy_present": {
+              "mean": 0.3293401005013345,
+              "lo": 0.2654520032471844,
+              "hi": 0.39331938244047615
+            },
+            "ece": {
+              "mean": 0.17530222031402012,
+              "lo": 0.1244877091939411,
+              "hi": 0.22970264060723197
+            }
+          },
+          "by_source": {
+            "专家标注": {
+              "accuracy": 0.3614457831325301,
+              "macro_f1_all": 0.2731800766283525,
+              "macro_f1_present": 0.2731800766283525,
+              "balanced_accuracy_present": 0.3563906818934128,
+              "total": 83
+            },
+            "普通标注": {
+              "accuracy": 0.30303030303030304,
+              "macro_f1_all": 0.3073521818365901,
+              "macro_f1_present": 0.3073521818365901,
+              "balanced_accuracy_present": 0.31051212271152895,
+              "total": 165
+            }
+          },
+          "by_source_calibration": {
+            "专家标注": {
+              "total": 83,
+              "ece": 0.17288410196821377,
+              "nll": 1.482699013505425,
+              "brier": 0.7507058985036236,
+              "mean_conf": 0.48888618508017206,
+              "accuracy": 0.3614457831325301
+            },
+            "普通标注": {
+              "total": 165,
+              "ece": 0.1901639927517284,
+              "nll": 1.4077331479511854,
+              "brier": 0.7712861623656956,
+              "mean_conf": 0.4901922648603266,
+              "accuracy": 0.30303030303030304
+            }
+          }
+        },
+        "2020": {
+          "seed": 2020,
+          "n_cases": 248,
+          "num_classes": 4,
+          "overall": {
+            "accuracy": 0.29838709677419356,
+            "macro_f1_all": 0.29708123350306287,
+            "macro_f1_present": 0.29708123350306287,
+            "balanced_accuracy_present": 0.3183684131959994
+          },
+          "overall_calibration": {
+            "total": 248,
+            "ece": 0.1578897128422414,
+            "nll": 1.372558946531032,
+            "brier": 0.7513434323586639,
+            "mean_conf": 0.45627680961643496,
+            "accuracy": 0.29838709677419356
+          },
+          "ci95": {
+            "accuracy": {
+              "mean": 0.2982177419354839,
+              "lo": 0.24193548387096775,
+              "hi": 0.35493951612903174
+            },
+            "macro_f1_present": {
+              "mean": 0.2950958760673042,
+              "lo": 0.23520773871475628,
+              "hi": 0.3570187525732012
+            },
+            "balanced_accuracy_present": {
+              "mean": 0.3177273252396011,
+              "lo": 0.2525097617099459,
+              "hi": 0.38496016580033354
+            },
+            "ece": {
+              "mean": 0.16273330377613104,
+              "lo": 0.10653265562929934,
+              "hi": 0.2184677201924064
+            }
+          },
+          "by_source": {
+            "专家标注": {
+              "accuracy": 0.30120481927710846,
+              "macro_f1_all": 0.2631860762580461,
+              "macro_f1_present": 0.2631860762580461,
+              "balanced_accuracy_present": 0.3617593512082092,
+              "total": 83
+            },
+            "普通标注": {
+              "accuracy": 0.296969696969697,
+              "macro_f1_all": 0.29941910765047586,
+              "macro_f1_present": 0.29941910765047586,
+              "balanced_accuracy_present": 0.3081024245423058,
+              "total": 165
+            }
+          },
+          "by_source_calibration": {
+            "专家标注": {
+              "total": 83,
+              "ece": 0.1668541898210365,
+              "nll": 1.3703349338806319,
+              "brier": 0.7645949559674955,
+              "mean_conf": 0.4680590090981449,
+              "accuracy": 0.30120481927710846
+            },
+            "普通标注": {
+              "total": 165,
+              "ece": 0.16119970245794815,
+              "nll": 1.373677692288506,
+              "brier": 0.7446775144221,
+              "mean_conf": 0.4503500062407869,
+              "accuracy": 0.296969696969697
+            }
+          }
+        },
+        "2021": {
+          "seed": 2021,
+          "n_cases": 248,
+          "num_classes": 4,
+          "overall": {
+            "accuracy": 0.3346774193548387,
+            "macro_f1_all": 0.3335214906514753,
+            "macro_f1_present": 0.3335214906514753,
+            "balanced_accuracy_present": 0.3478632538438573
+          },
+          "overall_calibration": {
+            "total": 248,
+            "ece": 0.14076063793993768,
+            "nll": 1.407422803346045,
+            "brier": 0.7549697507665839,
+            "mean_conf": 0.47543805729477634,
+            "accuracy": 0.3346774193548387
+          },
+          "ci95": {
+            "accuracy": {
+              "mean": 0.3362016129032258,
+              "lo": 0.2782258064516129,
+              "hi": 0.3951612903225806
+            },
+            "macro_f1_present": {
+              "mean": 0.3333250879445561,
+              "lo": 0.2709418957729304,
+              "hi": 0.39415592008310435
+            },
+            "balanced_accuracy_present": {
+              "mean": 0.3498946122916778,
+              "lo": 0.2858933666008141,
+              "hi": 0.4142641161315704
+            },
+            "ece": {
+              "mean": 0.15069424721262145,
+              "lo": 0.1003162680524251,
+              "hi": 0.2037742443052269
+            }
+          },
+          "by_source": {
+            "专家标注": {
+              "accuracy": 0.3493975903614458,
+              "macro_f1_all": 0.268939393939394,
+              "macro_f1_present": 0.268939393939394,
+              "balanced_accuracy_present": 0.3273336643495531,
+              "total": 83
+            },
+            "普通标注": {
+              "accuracy": 0.32727272727272727,
+              "macro_f1_all": 0.33759389265545214,
+              "macro_f1_present": 0.33759389265545214,
+              "balanced_accuracy_present": 0.340512122711529,
+              "total": 165
+            }
+          },
+          "by_source_calibration": {
+            "专家标注": {
+              "total": 83,
+              "ece": 0.1537167968520199,
+              "nll": 1.3620276522944899,
+              "brier": 0.7351843984868516,
+              "mean_conf": 0.47543536180473234,
+              "accuracy": 0.3493975903614458
+            },
+            "普通标注": {
+              "total": 165,
+              "ece": 0.15557961156873995,
+              "nll": 1.430257939935615,
+              "brier": 0.7649223825194189,
+              "mean_conf": 0.47543941320795,
+              "accuracy": 0.32727272727272727
+            }
+          }
+        }
+      },
+      "seed_mean": {
+        "accuracy": 0.3185483870967742,
+        "macro_f1_present": 0.31413257894166663,
+        "macro_f1_all": 0.31413257894166663,
+        "balanced_accuracy_present": 0.33165942056028264,
+        "ece": 0.15527495169030722
+      },
+      "seed_std": {
+        "accuracy": 0.018478127802241274,
+        "macro_f1_present": 0.018332246106650754,
+        "macro_f1_all": 0.018332246106650754,
+        "balanced_accuracy_present": 0.01496161162233884,
+        "ece": 0.013399657301005147
+      }
+    },
+    {
+      "key": {
+        "data_tag": "v13_main4",
+        "model": "pointnet",
+        "n_points": 4096,
+        "kfold_k": 5,
+        "balanced": true,
+        "label_smoothing": 0.1,
+        "extra_features": "",
+        "tta": 8
+      },
+      "seeds": {
+        "1337": {
+          "seed": 1337,
+          "n_cases": 248,
+          "num_classes": 4,
+          "overall": {
+            "accuracy": 0.3346774193548387,
+            "macro_f1_all": 0.3334690744329299,
+            "macro_f1_present": 0.3334690744329299,
+            "balanced_accuracy_present": 0.35669386288998356
+          },
+          "overall_calibration": {
+            "total": 248,
+            "ece": 0.13762106494076792,
+            "nll": 1.3254629125101867,
+            "brier": 0.7393940069439454,
+            "mean_conf": 0.4357902875110026,
+            "accuracy": 0.3346774193548387
+          },
+          "ci95": {
+            "accuracy": {
+              "mean": 0.33566532258064513,
+              "lo": 0.27419354838709675,
+              "hi": 0.3951612903225806
+            },
+            "macro_f1_present": {
+              "mean": 0.3321605958443717,
+              "lo": 0.27005891762624507,
+              "hi": 0.39396824453372337
+            },
+            "balanced_accuracy_present": {
+              "mean": 0.3573589599087537,
+              "lo": 0.290732701118177,
+              "hi": 0.422487181969543
+            },
+            "ece": {
+              "mean": 0.14411131697616753,
+              "lo": 0.0945104574394082,
+              "hi": 0.20096618482662784
+            }
+          },
+          "by_source": {
+            "专家标注": {
+              "accuracy": 0.27710843373493976,
+              "macro_f1_all": 0.22086051627725517,
+              "macro_f1_present": 0.22086051627725517,
+              "balanced_accuracy_present": 0.3149309003641178,
+              "total": 83
+            },
+            "普通标注": {
+              "accuracy": 0.36363636363636365,
+              "macro_f1_all": 0.3700292368434205,
+              "macro_f1_present": 0.3700292368434205,
+              "balanced_accuracy_present": 0.3730974764967838,
+              "total": 165
+            }
+          },
+          "by_source_calibration": {
+            "专家标注": {
+              "total": 83,
+              "ece": 0.1894554434770561,
+              "nll": 1.335238789316312,
+              "brier": 0.7669267092301939,
+              "mean_conf": 0.44055642959583236,
+              "accuracy": 0.27710843373493976
+            },
+            "普通标注": {
+              "total": 165,
+              "ece": 0.11587248859983501,
+              "nll": 1.320545350238014,
+              "brier": 0.7255442233696506,
+              "mean_conf": 0.43339277361378525,
+              "accuracy": 0.36363636363636365
+            }
+          }
+        },
+        "2020": {
+          "seed": 2020,
+          "n_cases": 248,
+          "num_classes": 4,
+          "overall": {
+            "accuracy": 0.3225806451612903,
+            "macro_f1_all": 0.3213178869779142,
+            "macro_f1_present": 0.3213178869779142,
+            "balanced_accuracy_present": 0.35795687789222275
+          },
+          "overall_calibration": {
+            "total": 248,
+            "ece": 0.14154644743088754,
+            "nll": 1.3722590228775462,
+            "brier": 0.7574988590609081,
+            "mean_conf": 0.45034931960605806,
+            "accuracy": 0.3225806451612903
+          },
+          "ci95": {
+            "accuracy": {
+              "mean": 0.32229233870967744,
+              "lo": 0.2661290322580645,
+              "hi": 0.3870967741935484
+            },
+            "macro_f1_present": {
+              "mean": 0.31923094394227697,
+              "lo": 0.2608773267224445,
+              "hi": 0.38027506984241416
+            },
+            "balanced_accuracy_present": {
+              "mean": 0.3570251696971069,
+              "lo": 0.2901295430259403,
+              "hi": 0.4231382030367996
+            },
+            "ece": {
+              "mean": 0.14635656619985257,
+              "lo": 0.09267978125942812,
+              "hi": 0.20217164341480504
+            }
+          },
+          "by_source": {
+            "专家标注": {
+              "accuracy": 0.27710843373493976,
+              "macro_f1_all": 0.23720671064124574,
+              "macro_f1_present": 0.23720671064124574,
+              "balanced_accuracy_present": 0.34146391923204233,
+              "total": 83
+            },
+            "普通标注": {
+              "accuracy": 0.34545454545454546,
+              "macro_f1_all": 0.3481418263591909,
+              "macro_f1_present": 0.3481418263591909,
+              "balanced_accuracy_present": 0.359203364670955,
+              "total": 165
+            }
+          },
+          "by_source_calibration": {
+            "专家标注": {
+              "total": 83,
+              "ece": 0.20449187166719557,
+              "nll": 1.3940321837271248,
+              "brier": 0.7848964486682269,
+              "mean_conf": 0.46984596424792185,
+              "accuracy": 0.27710843373493976
+            },
+            "普通标注": {
+              "total": 165,
+              "ece": 0.10988299160292654,
+              "nll": 1.361306463177455,
+              "brier": 0.7437170412584385,
+              "mean_conf": 0.44054191654378716,
+              "accuracy": 0.34545454545454546
+            }
+          }
+        },
+        "2021": {
+          "seed": 2021,
+          "n_cases": 248,
+          "num_classes": 4,
+          "overall": {
+            "accuracy": 0.3185483870967742,
+            "macro_f1_all": 0.3073274247948949,
+            "macro_f1_present": 0.3073274247948949,
+            "balanced_accuracy_present": 0.3288492218987909
+          },
+          "overall_calibration": {
+            "total": 248,
+            "ece": 0.11644869045384469,
+            "nll": 1.3286911607803507,
+            "brier": 0.7419951654537232,
+            "mean_conf": 0.42904035566795257,
+            "accuracy": 0.3185483870967742
+          },
+          "ci95": {
+            "accuracy": {
+              "mean": 0.3182379032258065,
+              "lo": 0.26199596774193545,
+              "hi": 0.3790322580645161
+            },
+            "macro_f1_present": {
+              "mean": 0.3049991037568031,
+              "lo": 0.24534617749066379,
+              "hi": 0.3687556465718733
+            },
+            "balanced_accuracy_present": {
+              "mean": 0.3282917604619302,
+              "lo": 0.26555637605857385,
+              "hi": 0.39574754397984224
+            },
+            "ece": {
+              "mean": 0.13001374859470993,
+              "lo": 0.08161097595227822,
+              "hi": 0.18395132149960247
+            }
+          },
+          "by_source": {
+            "专家标注": {
+              "accuracy": 0.2891566265060241,
+              "macro_f1_all": 0.27417557932263814,
+              "macro_f1_present": 0.27417557932263814,
+              "balanced_accuracy_present": 0.4344484442237669,
+              "total": 83
+            },
+            "普通标注": {
+              "accuracy": 0.3333333333333333,
+              "macro_f1_all": 0.31773620591329366,
+              "macro_f1_present": 0.31773620591329366,
+              "balanced_accuracy_present": 0.3198416625432954,
+              "total": 165
+            }
+          },
+          "by_source_calibration": {
+            "专家标注": {
+              "total": 83,
+              "ece": 0.1799742719495153,
+              "nll": 1.343389032765884,
+              "brier": 0.7683479342032792,
+              "mean_conf": 0.4427047705793955,
+              "accuracy": 0.2891566265060241
+            },
+            "普通标注": {
+              "total": 165,
+              "ece": 0.10990143039009787,
+              "nll": 1.321297685781567,
+              "brier": 0.7287389242039467,
+              "mean_conf": 0.4221667408943176,
+              "accuracy": 0.3333333333333333
+            }
+          }
+        }
+      },
+      "seed_mean": {
+        "accuracy": 0.32526881720430106,
+        "macro_f1_present": 0.320704795401913,
+        "macro_f1_all": 0.320704795401913,
+        "balanced_accuracy_present": 0.34783332089366575,
+        "ece": 0.13187206760850007
+      },
+      "seed_std": {
+        "accuracy": 0.008393814513976335,
+        "macro_f1_present": 0.013081604351526102,
+        "macro_f1_all": 0.013081604351526102,
+        "balanced_accuracy_present": 0.016452836008098302,
+        "ece": 0.013500465883238737
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "kind": "model_pair",
+      "family": {
+        "data_tag": "v13_main4",
+        "n_points": 4096,
+        "kfold_k": 5,
+        "balanced": true,
+        "label_smoothing": 0.1,
+        "tta": 8
+      },
+      "a": {
+        "model": "dgcnn",
+        "extra_features": ""
+      },
+      "b": {
+        "model": "pointnet",
+        "extra_features": ""
+      },
+      "result": {
+        "metric": "macro_f1_present",
+        "delta_mean": 0.023669688901038138,
+        "delta_observed": 0.023679040739246888,
+        "delta_ci95": {
+          "lo": -0.019050962883574264,
+          "hi": 0.06480328959495335
+        },
+        "p_two_sided": 0.274,
+        "seeds": [
+          1337,
+          2020,
+          2021
+        ],
+        "n_seeds": 3,
+        "n_cases_per_seed": [
+          248,
+          248,
+          248
+        ]
+      }
+    },
+    {
+      "kind": "model_pair",
+      "family": {
+        "data_tag": "v13_main4",
+        "n_points": 4096,
+        "kfold_k": 5,
+        "balanced": true,
+        "label_smoothing": 0.1,
+        "tta": 8
+      },
+      "a": {
+        "model": "dgcnn",
+        "extra_features": ""
+      },
+      "b": {
+        "model": "pointnet",
+        "extra_features": ""
+      },
+      "result": {
+        "metric": "accuracy",
+        "delta_mean": 0.02101814516129032,
+        "delta_observed": 0.020161290322580665,
+        "delta_ci95": {
+          "lo": -0.02150537634408602,
+          "hi": 0.06182795698924731
+        },
+        "p_two_sided": 0.334,
+        "seeds": [
+          1337,
+          2020,
+          2021
+        ],
+        "n_seeds": 3,
+        "n_cases_per_seed": [
+          248,
+          248,
+          248
+        ]
+      }
+    },
+    {
+      "kind": "extra_vs_none",
+      "family": {
+        "data_tag": "v13_main4",
+        "n_points": 4096,
+        "kfold_k": 5,
+        "balanced": true,
+        "label_smoothing": 0.1,
+        "tta": 8
+      },
+      "a": {
+        "model": "dgcnn",
+        "extra_features": "scale,log_points,objects_used"
+      },
+      "b": {
+        "model": "dgcnn",
+        "extra_features": ""
+      },
+      "result": {
+        "metric": "macro_f1_present",
+        "delta_mean": -0.029771906570493396,
+        "delta_observed": -0.03025125719949323,
+        "delta_ci95": {
+          "lo": -0.07832943998027278,
+          "hi": 0.01667563970532348
+        },
+        "p_two_sided": 0.235,
+        "seeds": [
+          1337,
+          2020,
+          2021
+        ],
+        "n_seeds": 3,
+        "n_cases_per_seed": [
+          248,
+          248,
+          248
+        ]
+      }
+    },
+    {
+      "kind": "extra_vs_none",
+      "family": {
+        "data_tag": "v13_main4",
+        "n_points": 4096,
+        "kfold_k": 5,
+        "balanced": true,
+        "label_smoothing": 0.1,
+        "tta": 8
+      },
+      "a": {
+        "model": "dgcnn",
+        "extra_features": "scale,log_points,objects_used"
+      },
+      "b": {
+        "model": "dgcnn",
+        "extra_features": ""
+      },
+      "result": {
+        "metric": "accuracy",
+        "delta_mean": -0.026070564516129033,
+        "delta_observed": -0.02688172043010754,
+        "delta_ci95": {
+          "lo": -0.07392473118279573,
+          "hi": 0.02419354838709677
+        },
+        "p_two_sided": 0.312,
+        "seeds": [
+          1337,
+          2020,
+          2021
+        ],
+        "n_seeds": 3,
+        "n_cases_per_seed": [
+          248,
+          248,
+          248
+        ]
+      }
+    }
+  ],
+  "warnings": [
+    "missing folds for group=pointnet extra=scale,log_points,objects_used seed=1337: have [0]"
+  ]
+}

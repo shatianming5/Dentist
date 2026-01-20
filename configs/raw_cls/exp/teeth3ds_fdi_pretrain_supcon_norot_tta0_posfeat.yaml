@@ -1,0 +1,12 @@
+defaults:
+  - teeth3ds_fdi_pretrain_supcon_norot_tta0.yaml
+
+exp:
+  name: teeth3ds_fdi_pretrain_supcon_norot_tta0_posfeat
+
+features:
+  extra_features:
+    - tooth_position_premolar
+    - tooth_position_molar
+    - tooth_position_missing
+

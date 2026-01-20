@@ -1,0 +1,12 @@
+defaults:
+  - teeth3ds_fdi_pretrain_supcon_norot_tta0_posfeat_ls0_dropout0p1_seg_small1_cloudid_eq.yaml
+
+exp:
+  name: teeth3ds_fdi_pretrain_supcon_rotz_tta8_posfeat_ls0_dropout0p1_seg_small1_cloudid_eq
+
+augment:
+  rotate_z: true
+
+eval:
+  tta: 8
+

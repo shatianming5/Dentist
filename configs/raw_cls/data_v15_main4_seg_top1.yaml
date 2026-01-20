@@ -1,0 +1,7 @@
+data:
+  task: raw_cls
+  version: v15_main4_seg_top1
+  root: processed/raw_cls/v15_main4_seg_top1
+  kfold: metadata/splits_raw_case_kfold.json
+  n_points: 4096
+

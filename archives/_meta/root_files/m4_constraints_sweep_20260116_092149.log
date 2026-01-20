@@ -1,0 +1,216 @@
+[INFO] start: 2026-01-16T09:21:49+00:00
+[INFO] runs_dir: runs/teeth3ds_prep2target_constraints/m4_20260116_092149
+torch 2.6.0+cu124 cuda True
+
+[RUN] 2026-01-16T09:21:50+00:00 exp=m4_p2tC_n256_lm0p0_lo0p0_seed1337_20260116_092149 lambda_margin=0.0 lambda_occ=0.0
+[epoch 001] train_total=0.079997 val_total=0.067160 best=0.067160 (epoch 1)
+[epoch 002] train_total=0.067561 val_total=0.065303 best=0.065303 (epoch 2)
+[epoch 003] train_total=0.064081 val_total=0.063226 best=0.063226 (epoch 3)
+[epoch 004] train_total=0.062108 val_total=0.060965 best=0.060965 (epoch 4)
+[epoch 005] train_total=0.060774 val_total=0.061310 best=0.060965 (epoch 4)
+[epoch 006] train_total=0.059941 val_total=0.058483 best=0.058483 (epoch 6)
+[epoch 007] train_total=0.059022 val_total=0.058165 best=0.058165 (epoch 7)
+[epoch 008] train_total=0.058836 val_total=0.057633 best=0.057633 (epoch 8)
+[epoch 009] train_total=0.058056 val_total=0.057127 best=0.057127 (epoch 9)
+[epoch 010] train_total=0.057778 val_total=0.057412 best=0.057127 (epoch 9)
+[OK] out_dir: /home/ubuntu/tiasha/dentist/runs/teeth3ds_prep2target_constraints/m4_20260116_092149/m4_p2tC_n256_lm0p0_lo0p0_seed1337_20260116_092149
+[OK] test_total: 0.057342
+[EVAL] 2026-01-16T09:22:25+00:00 exp=m4_p2tC_n256_lm0p0_lo0p0_seed1337_20260116_092149 split=val
+[OK] wrote: /home/ubuntu/tiasha/dentist/runs/teeth3ds_prep2target_constraints/m4_20260116_092149/m4_p2tC_n256_lm0p0_lo0p0_seed1337_20260116_092149/eval_val.json
+{
+  "count": 1585,
+  "chamfer": 0.05708139311016922,
+  "margin": 0.025666235226326935,
+  "occlusion_count": 1585,
+  "occlusion_pen_mean": 0.0033309990540146828,
+  "occlusion_pen_max": 0.47790291905403137,
+  "occlusion_pen_p95": 0.0,
+  "occlusion_contact_ratio": 0.025473186119873818
+}
+
+[RUN] 2026-01-16T09:22:27+00:00 exp=m4_p2tC_n256_lm0p0_lo0p05_seed1337_20260116_092149 lambda_margin=0.0 lambda_occ=0.05
+[epoch 001] train_total=0.080484 val_total=0.068809 best=0.068809 (epoch 1)
+[epoch 002] train_total=0.067386 val_total=0.063618 best=0.063618 (epoch 2)
+[epoch 003] train_total=0.064414 val_total=0.063467 best=0.063467 (epoch 3)
+[epoch 004] train_total=0.062281 val_total=0.060788 best=0.060788 (epoch 4)
+[epoch 005] train_total=0.061048 val_total=0.060728 best=0.060728 (epoch 5)
+[epoch 006] train_total=0.060059 val_total=0.059988 best=0.059988 (epoch 6)
+[epoch 007] train_total=0.059402 val_total=0.058513 best=0.058513 (epoch 7)
+[epoch 008] train_total=0.059090 val_total=0.057349 best=0.057349 (epoch 8)
+[epoch 009] train_total=0.058179 val_total=0.057404 best=0.057349 (epoch 8)
+[epoch 010] train_total=0.057844 val_total=0.057310 best=0.057310 (epoch 10)
+[OK] out_dir: /home/ubuntu/tiasha/dentist/runs/teeth3ds_prep2target_constraints/m4_20260116_092149/m4_p2tC_n256_lm0p0_lo0p05_seed1337_20260116_092149
+[OK] test_total: 0.057576
+[EVAL] 2026-01-16T09:23:03+00:00 exp=m4_p2tC_n256_lm0p0_lo0p05_seed1337_20260116_092149 split=val
+[OK] wrote: /home/ubuntu/tiasha/dentist/runs/teeth3ds_prep2target_constraints/m4_20260116_092149/m4_p2tC_n256_lm0p0_lo0p05_seed1337_20260116_092149/eval_val.json
+{
+  "count": 1585,
+  "chamfer": 0.057140778287164046,
+  "margin": 0.025537209065883693,
+  "occlusion_count": 1585,
+  "occlusion_pen_mean": 0.0033137474674731493,
+  "occlusion_pen_max": 0.5,
+  "occlusion_pen_p95": 0.0,
+  "occlusion_contact_ratio": 0.025298205835962144
+}
+
+[RUN] 2026-01-16T09:23:05+00:00 exp=m4_p2tC_n256_lm0p0_lo0p1_seed1337_20260116_092149 lambda_margin=0.0 lambda_occ=0.1
+[epoch 001] train_total=0.080805 val_total=0.067789 best=0.067789 (epoch 1)
+[epoch 002] train_total=0.067798 val_total=0.063561 best=0.063561 (epoch 2)
+[epoch 003] train_total=0.064766 val_total=0.062925 best=0.062925 (epoch 3)
+[epoch 004] train_total=0.062676 val_total=0.062402 best=0.062402 (epoch 4)
+[epoch 005] train_total=0.061132 val_total=0.060388 best=0.060388 (epoch 5)
+[epoch 006] train_total=0.060371 val_total=0.060561 best=0.060388 (epoch 5)
+[epoch 007] train_total=0.059705 val_total=0.058206 best=0.058206 (epoch 7)
+[epoch 008] train_total=0.059235 val_total=0.057832 best=0.057832 (epoch 8)
+[epoch 009] train_total=0.058358 val_total=0.057811 best=0.057811 (epoch 9)
+[epoch 010] train_total=0.058105 val_total=0.058071 best=0.057811 (epoch 9)
+[OK] out_dir: /home/ubuntu/tiasha/dentist/runs/teeth3ds_prep2target_constraints/m4_20260116_092149/m4_p2tC_n256_lm0p0_lo0p1_seed1337_20260116_092149
+[OK] test_total: 0.058090
+[EVAL] 2026-01-16T09:23:40+00:00 exp=m4_p2tC_n256_lm0p0_lo0p1_seed1337_20260116_092149 split=val
+[OK] wrote: /home/ubuntu/tiasha/dentist/runs/teeth3ds_prep2target_constraints/m4_20260116_092149/m4_p2tC_n256_lm0p0_lo0p1_seed1337_20260116_092149/eval_val.json
+{
+  "count": 1585,
+  "chamfer": 0.057507554251312834,
+  "margin": 0.025737476031580934,
+  "occlusion_count": 1585,
+  "occlusion_pen_mean": 0.003308387938886881,
+  "occlusion_pen_max": 0.5,
+  "occlusion_pen_p95": 0.0,
+  "occlusion_contact_ratio": 0.025256309148264985
+}
+
+[RUN] 2026-01-16T09:23:43+00:00 exp=m4_p2tC_n256_lm0p1_lo0p0_seed1337_20260116_092149 lambda_margin=0.1 lambda_occ=0.0
+[epoch 001] train_total=0.083810 val_total=0.071587 best=0.071587 (epoch 1)
+[epoch 002] train_total=0.070822 val_total=0.067901 best=0.067901 (epoch 2)
+[epoch 003] train_total=0.067042 val_total=0.065306 best=0.065306 (epoch 3)
+[epoch 004] train_total=0.065033 val_total=0.063793 best=0.063793 (epoch 4)
+[epoch 005] train_total=0.063354 val_total=0.064221 best=0.063793 (epoch 4)
+[epoch 006] train_total=0.062600 val_total=0.061959 best=0.061959 (epoch 6)
+[epoch 007] train_total=0.061821 val_total=0.060632 best=0.060632 (epoch 7)
+[epoch 008] train_total=0.061361 val_total=0.060418 best=0.060418 (epoch 8)
+[epoch 009] train_total=0.060539 val_total=0.059814 best=0.059814 (epoch 9)
+[epoch 010] train_total=0.060023 val_total=0.058988 best=0.058988 (epoch 10)
+[OK] out_dir: /home/ubuntu/tiasha/dentist/runs/teeth3ds_prep2target_constraints/m4_20260116_092149/m4_p2tC_n256_lm0p1_lo0p0_seed1337_20260116_092149
+[OK] test_total: 0.059179
+[EVAL] 2026-01-16T09:24:18+00:00 exp=m4_p2tC_n256_lm0p1_lo0p0_seed1337_20260116_092149 split=val
+[OK] wrote: /home/ubuntu/tiasha/dentist/runs/teeth3ds_prep2target_constraints/m4_20260116_092149/m4_p2tC_n256_lm0p1_lo0p0_seed1337_20260116_092149/eval_val.json
+{
+  "count": 1585,
+  "chamfer": 0.056552025285617036,
+  "margin": 0.023829079961128038,
+  "occlusion_count": 1585,
+  "occlusion_pen_mean": 0.0033571405801922083,
+  "occlusion_pen_max": 0.46875,
+  "occlusion_pen_p95": 0.0,
+  "occlusion_contact_ratio": 0.025579160094637225
+}
+
+[RUN] 2026-01-16T09:24:20+00:00 exp=m4_p2tC_n256_lm0p1_lo0p1_seed1337_20260116_092149 lambda_margin=0.1 lambda_occ=0.1
+[epoch 001] train_total=0.083634 val_total=0.070612 best=0.070612 (epoch 1)
+[epoch 002] train_total=0.070682 val_total=0.067691 best=0.067691 (epoch 2)
+[epoch 003] train_total=0.067666 val_total=0.065471 best=0.065471 (epoch 3)
+[epoch 004] train_total=0.065315 val_total=0.063824 best=0.063824 (epoch 4)
+[epoch 005] train_total=0.063867 val_total=0.064346 best=0.063824 (epoch 4)
+[epoch 006] train_total=0.063177 val_total=0.062121 best=0.062121 (epoch 6)
+[epoch 007] train_total=0.062188 val_total=0.060742 best=0.060742 (epoch 7)
+[epoch 008] train_total=0.061933 val_total=0.061065 best=0.060742 (epoch 7)
+[epoch 009] train_total=0.060836 val_total=0.059893 best=0.059893 (epoch 9)
+[epoch 010] train_total=0.060564 val_total=0.060319 best=0.059893 (epoch 9)
+[OK] out_dir: /home/ubuntu/tiasha/dentist/runs/teeth3ds_prep2target_constraints/m4_20260116_092149/m4_p2tC_n256_lm0p1_lo0p1_seed1337_20260116_092149
+[OK] test_total: 0.060150
+[EVAL] 2026-01-16T09:24:55+00:00 exp=m4_p2tC_n256_lm0p1_lo0p1_seed1337_20260116_092149 split=val
+[OK] wrote: /home/ubuntu/tiasha/dentist/runs/teeth3ds_prep2target_constraints/m4_20260116_092149/m4_p2tC_n256_lm0p1_lo0p1_seed1337_20260116_092149/eval_val.json
+{
+  "count": 1585,
+  "chamfer": 0.05717742020963494,
+  "margin": 0.02408796458825328,
+  "occlusion_count": 1585,
+  "occlusion_pen_mean": 0.003324212972074747,
+  "occlusion_pen_max": 0.46875,
+  "occlusion_pen_p95": 0.0,
+  "occlusion_contact_ratio": 0.02518730283911672
+}
+
+[RUN] 2026-01-16T09:24:58+00:00 exp=m4_p2tC_n256_lm0p5_lo0p0_seed1337_20260116_092149 lambda_margin=0.5 lambda_occ=0.0
+[epoch 001] train_total=0.097540 val_total=0.083954 best=0.083954 (epoch 1)
+[epoch 002] train_total=0.082435 val_total=0.079217 best=0.079217 (epoch 2)
+[epoch 003] train_total=0.078497 val_total=0.075859 best=0.075859 (epoch 3)
+[epoch 004] train_total=0.076027 val_total=0.074232 best=0.074232 (epoch 4)
+[epoch 005] train_total=0.074137 val_total=0.073644 best=0.073644 (epoch 5)
+[epoch 006] train_total=0.073132 val_total=0.072387 best=0.072387 (epoch 6)
+[epoch 007] train_total=0.072255 val_total=0.070831 best=0.070831 (epoch 7)
+[epoch 008] train_total=0.071489 val_total=0.070335 best=0.070335 (epoch 8)
+[epoch 009] train_total=0.070842 val_total=0.069868 best=0.069868 (epoch 9)
+[epoch 010] train_total=0.070620 val_total=0.070615 best=0.069868 (epoch 9)
+[OK] out_dir: /home/ubuntu/tiasha/dentist/runs/teeth3ds_prep2target_constraints/m4_20260116_092149/m4_p2tC_n256_lm0p5_lo0p0_seed1337_20260116_092149
+[OK] test_total: 0.070158
+[EVAL] 2026-01-16T09:25:33+00:00 exp=m4_p2tC_n256_lm0p5_lo0p0_seed1337_20260116_092149 split=val
+[OK] wrote: /home/ubuntu/tiasha/dentist/runs/teeth3ds_prep2target_constraints/m4_20260116_092149/m4_p2tC_n256_lm0p5_lo0p0_seed1337_20260116_092149/eval_val.json
+{
+  "count": 1585,
+  "chamfer": 0.05908570387856065,
+  "margin": 0.021540270839767877,
+  "occlusion_count": 1585,
+  "occlusion_pen_mean": 0.003291528904810548,
+  "occlusion_pen_max": 0.5,
+  "occlusion_pen_p95": 0.0,
+  "occlusion_contact_ratio": 0.025209483438485805
+}
+
+[RUN] 2026-01-16T09:25:35+00:00 exp=m4_p2tC_n256_lm1p0_lo0p0_seed1337_20260116_092149 lambda_margin=1.0 lambda_occ=0.0
+[epoch 001] train_total=0.115799 val_total=0.101143 best=0.101143 (epoch 1)
+[epoch 002] train_total=0.097593 val_total=0.095835 best=0.095835 (epoch 2)
+[epoch 003] train_total=0.093267 val_total=0.090388 best=0.090388 (epoch 3)
+[epoch 004] train_total=0.089964 val_total=0.088085 best=0.088085 (epoch 4)
+[epoch 005] train_total=0.088209 val_total=0.086353 best=0.086353 (epoch 5)
+[epoch 006] train_total=0.086323 val_total=0.084898 best=0.084898 (epoch 6)
+[epoch 007] train_total=0.085276 val_total=0.084009 best=0.084009 (epoch 7)
+[epoch 008] train_total=0.084525 val_total=0.083490 best=0.083490 (epoch 8)
+[epoch 009] train_total=0.083744 val_total=0.082189 best=0.082189 (epoch 9)
+[epoch 010] train_total=0.083470 val_total=0.081879 best=0.081879 (epoch 10)
+[OK] out_dir: /home/ubuntu/tiasha/dentist/runs/teeth3ds_prep2target_constraints/m4_20260116_092149/m4_p2tC_n256_lm1p0_lo0p0_seed1337_20260116_092149
+[OK] test_total: 0.082209
+[EVAL] 2026-01-16T09:26:10+00:00 exp=m4_p2tC_n256_lm1p0_lo0p0_seed1337_20260116_092149 split=val
+[OK] wrote: /home/ubuntu/tiasha/dentist/runs/teeth3ds_prep2target_constraints/m4_20260116_092149/m4_p2tC_n256_lm1p0_lo0p0_seed1337_20260116_092149/eval_val.json
+{
+  "count": 1585,
+  "chamfer": 0.06145457809185756,
+  "margin": 0.02041390615189301,
+  "occlusion_count": 1585,
+  "occlusion_pen_mean": 0.003236752236261964,
+  "occlusion_pen_max": 0.5,
+  "occlusion_pen_p95": 0.0,
+  "occlusion_contact_ratio": 0.025009858044164036
+}
+
+[RUN] 2026-01-16T09:26:13+00:00 exp=m4_p2tC_n256_lm0p5_lo0p1_seed1337_20260116_092149 lambda_margin=0.5 lambda_occ=0.1
+[epoch 001] train_total=0.097285 val_total=0.083014 best=0.083014 (epoch 1)
+[epoch 002] train_total=0.083244 val_total=0.081742 best=0.081742 (epoch 2)
+[epoch 003] train_total=0.078779 val_total=0.078310 best=0.078310 (epoch 3)
+[epoch 004] train_total=0.076697 val_total=0.076512 best=0.076512 (epoch 4)
+[epoch 005] train_total=0.074656 val_total=0.075490 best=0.075490 (epoch 5)
+[epoch 006] train_total=0.073740 val_total=0.072354 best=0.072354 (epoch 6)
+[epoch 007] train_total=0.072581 val_total=0.071401 best=0.071401 (epoch 7)
+[epoch 008] train_total=0.072038 val_total=0.071019 best=0.071019 (epoch 8)
+[epoch 009] train_total=0.071333 val_total=0.070237 best=0.070237 (epoch 9)
+[epoch 010] train_total=0.070639 val_total=0.069949 best=0.069949 (epoch 10)
+[OK] out_dir: /home/ubuntu/tiasha/dentist/runs/teeth3ds_prep2target_constraints/m4_20260116_092149/m4_p2tC_n256_lm0p5_lo0p1_seed1337_20260116_092149
+[OK] test_total: 0.070213
+[EVAL] 2026-01-16T09:26:48+00:00 exp=m4_p2tC_n256_lm0p5_lo0p1_seed1337_20260116_092149 split=val
+[OK] wrote: /home/ubuntu/tiasha/dentist/runs/teeth3ds_prep2target_constraints/m4_20260116_092149/m4_p2tC_n256_lm0p5_lo0p1_seed1337_20260116_092149/eval_val.json
+{
+  "count": 1585,
+  "chamfer": 0.058735214813086516,
+  "margin": 0.02147001254281223,
+  "occlusion_count": 1585,
+  "occlusion_pen_mean": 0.003360375761985779,
+  "occlusion_pen_max": 0.47790291905403137,
+  "occlusion_pen_p95": 0.0,
+  "occlusion_contact_ratio": 0.025480579652996844
+}
+
+[SUMMARY] 2026-01-16T09:26:50+00:00
+[OK] wrote: /home/ubuntu/tiasha/dentist/runs/teeth3ds_prep2target_constraints/m4_20260116_092149/summary_20260116_092149.csv
+[OK] wrote: /home/ubuntu/tiasha/dentist/runs/teeth3ds_prep2target_constraints/m4_20260116_092149/summary_20260116_092149.md
+[DONE] 2026-01-16T09:26:50+00:00

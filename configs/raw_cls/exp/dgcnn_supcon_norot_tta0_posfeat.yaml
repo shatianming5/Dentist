@@ -1,0 +1,31 @@
+defaults:
+  - baseline.yaml
+
+exp:
+  name: dgcnn_supcon_norot_tta0_posfeat
+
+model:
+  name: dgcnn
+
+loss:
+  name: ce_supcon
+  ce_weight: 1.0
+  supcon_weight: 0.2
+  temperature: 0.07
+  proj_dim: 128
+
+augment:
+  rotate_z: false
+  two_views: true
+  view1: {jitter_sigma: 0.005, dropout_ratio: 0.1}
+  view2: {jitter_sigma: 0.01,  dropout_ratio: 0.2}
+
+eval:
+  tta: 0
+
+features:
+  extra_features:
+    - tooth_position_premolar
+    - tooth_position_molar
+    - tooth_position_missing
+

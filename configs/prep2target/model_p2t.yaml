@@ -1,0 +1,6 @@
+model:
+  name: p2t
+  latent_dim: 256
+  cond_label: false
+  init_ckpt: ""
+

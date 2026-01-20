@@ -1,0 +1,14 @@
+defaults:
+  - baseline.yaml
+  - ../model_pointnet.yaml
+
+exp:
+  name: pretrain_finetune
+
+train:
+  # Optional: initialize PointNet feat weights from an AE checkpoint.
+  # This file is expected to come from `scripts/phase2_train_raw_ae.py`
+  # (it saves `model_state` with `feat.*` keys).
+  init_feat: runs/pretrain/teeth3ds_pointnet_ae_n1024_seed1337/ckpt_best.pt
+  freeze_feat_epochs: 10
+

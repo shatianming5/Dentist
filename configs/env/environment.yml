@@ -1,0 +1,14 @@
+name: dentist
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python>=3.10
+  - numpy>=1.23
+  - pip
+  - pytorch
+  # If using CUDA via conda, uncomment and pick a matching version:
+  # - pytorch-cuda=11.8
+  - pip:
+      - -r requirements.txt

@@ -1,0 +1,16 @@
+defaults:
+  - teeth3ds_fdi_pretrain_supcon_norot_tta0_posfeat.yaml
+
+exp:
+  name: teeth3ds_fdi_pretrain_supcon_norot_tta0_posfeat_normcurv
+
+features:
+  use_normals: true
+  use_curvature: true
+  use_radius: true
+
+precompute:
+  enabled: true
+  cache_dir: processed/raw_cls/v13_main4_feat_normcurv_cache
+  k_neighbors: 30
+

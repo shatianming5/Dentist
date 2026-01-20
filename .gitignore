@@ -1,27 +1,28 @@
-# OS/files
-.DS_Store
-Thumbs.db
-
-# Python
+# Python caches
 __pycache__/
 *.pyc
-.venv/
-.env
+*.pyo
 
-# Editors/IDE
+# OS / editor
+.DS_Store
 .vscode/
-.idea/
 
-# Large data and vendor repos
-data/
-data_ply/
-.cc_repo/
-*.zip
-*.7z
-*.rar
-*.tar
-*.gz
+# Large local datasets / artifacts (kept locally, not committed)
+/data/teeth3ds/
+/raw/
+/converted/
+/processed/
 
-# Logs
-*.log
+# Large run outputs (keep the short guide only)
+/runs/*
+!/runs/README.md
 
+# Archives can be huge; keep only the small meta docs we generate
+/archives/*
+!/archives/_meta/
+!/archives/_meta/**
+
+# Meta subfolders that are not meant for publishing
+/archives/_meta/tmp/
+/archives/_meta/caches/
+/archives/_meta/rd_queue/

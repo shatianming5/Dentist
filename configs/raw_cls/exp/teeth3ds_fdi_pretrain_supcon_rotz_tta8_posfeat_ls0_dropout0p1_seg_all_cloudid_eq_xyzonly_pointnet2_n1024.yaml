@@ -1,0 +1,15 @@
+defaults:
+  - teeth3ds_fdi_pretrain_supcon_rotz_tta8_posfeat_ls0_dropout0p1_seg_all_cloudid_eq_xyzonly.yaml
+  - ../model_pointnet2.yaml
+
+exp:
+  name: teeth3ds_fdi_pretrain_supcon_rotz_tta8_posfeat_ls0_dropout0p1_seg_all_cloudid_eq_xyzonly_pointnet2_n1024
+
+data:
+  # PointNet2 uses FPS+grouping; keep N modest for speed/memory.
+  n_points: 1024
+
+train:
+  # Default init checkpoint (can be overridden by run scripts).
+  init_feat: runs/pretrain/teeth3ds_fdi_pointnet2_seed1337/ckpt_best.pt
+

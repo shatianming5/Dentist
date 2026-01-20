@@ -1,0 +1,10 @@
+defaults:
+  - baseline.yaml
+
+exp:
+  name: temp_scaling
+
+calibration:
+  temperature_scaling: true
+  bins: 15
+

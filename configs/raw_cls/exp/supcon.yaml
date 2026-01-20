@@ -1,0 +1,18 @@
+defaults:
+  - baseline.yaml
+  - ../model_pointnet.yaml
+
+exp:
+  name: supcon
+
+loss:
+  name: ce_supcon
+  ce_weight: 1.0
+  supcon_weight: 0.2
+  temperature: 0.07
+  proj_dim: 128
+
+augment:
+  two_views: true
+  view1: {jitter_sigma: 0.005, dropout_ratio: 0.1}
+  view2: {jitter_sigma: 0.01,  dropout_ratio: 0.2}

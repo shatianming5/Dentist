@@ -1,0 +1,12 @@
+defaults:
+  - teeth3ds_fdi_pretrain_supcon_rotz_tta8_posfeat_ls0_dropout0p1_seg_all_cloudid_eq_xyzonly.yaml
+  - ../model_pointmlp.yaml
+
+exp:
+  name: teeth3ds_fdi_pretrain_supcon_rotz_tta8_posfeat_ls0_dropout0p1_seg_all_cloudid_eq_xyzonly_pointmlp_n1024_v2
+
+data:
+  n_points: 1024
+
+train:
+  init_feat: runs/pretrain/teeth3ds_fdi_pointmlp_seed1337/ckpt_best.pt

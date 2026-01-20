@@ -1,0 +1,10 @@
+defaults:
+  - teeth3ds_fdi_pretrain_supcon_norot_tta0_posfeat_ls0_dropout0p1.yaml
+  - ../data_v14_main4_rgb.yaml
+
+exp:
+  name: teeth3ds_fdi_pretrain_supcon_norot_tta0_posfeat_ls0_dropout0p1_rgb
+
+features:
+  point_features: [xyz, rgb]
+

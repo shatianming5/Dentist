@@ -1,0 +1,11 @@
+train:
+  epochs: 200
+  patience: 40
+  batch_size: 32
+  preview_samples: 16
+
+constraints:
+  lambda_margin: 0.0
+  lambda_occlusion: 0.0
+  occlusion_clearance: 0.5
+

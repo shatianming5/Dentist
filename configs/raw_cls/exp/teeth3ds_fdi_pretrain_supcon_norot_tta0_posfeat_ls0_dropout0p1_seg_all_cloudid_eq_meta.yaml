@@ -1,0 +1,15 @@
+defaults:
+  - teeth3ds_fdi_pretrain_supcon_norot_tta0_posfeat_ls0_dropout0p1_seg_all_cloudid_eq.yaml
+
+exp:
+  name: teeth3ds_fdi_pretrain_supcon_norot_tta0_posfeat_ls0_dropout0p1_seg_all_cloudid_eq_meta
+
+features:
+  extra_features:
+    - tooth_position_premolar
+    - tooth_position_molar
+    - tooth_position_missing
+    - scale
+    - log_points
+    - objects_used
+

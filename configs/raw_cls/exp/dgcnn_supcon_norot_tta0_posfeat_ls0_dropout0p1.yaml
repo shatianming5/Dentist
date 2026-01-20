@@ -1,0 +1,12 @@
+defaults:
+  - dgcnn_supcon_norot_tta0_posfeat.yaml
+
+exp:
+  name: dgcnn_supcon_norot_tta0_posfeat_ls0_dropout0p1
+
+loss:
+  label_smoothing: 0.0
+
+train:
+  dropout: 0.1
+

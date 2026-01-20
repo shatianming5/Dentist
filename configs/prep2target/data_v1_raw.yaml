@@ -1,0 +1,6 @@
+data:
+  task: prep2target
+  version: v1
+  root: processed/raw_prep2target/v1
+  n_points: 512
+

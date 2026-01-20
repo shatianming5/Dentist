@@ -1,0 +1,42 @@
+[epoch 001] train_loss=1.9834 train_acc=0.216 val_macro_f1_present=0.000 *
+[epoch 002] train_loss=1.8093 train_acc=0.256 val_macro_f1_present=0.107 *
+[epoch 003] train_loss=1.8112 train_acc=0.231 val_macro_f1_present=0.093 
+[epoch 004] train_loss=1.7551 train_acc=0.236 val_macro_f1_present=0.093 
+[epoch 005] train_loss=1.6417 train_acc=0.266 val_macro_f1_present=0.093 
+[epoch 006] train_loss=1.6412 train_acc=0.302 val_macro_f1_present=0.093 
+[epoch 007] train_loss=1.5403 train_acc=0.236 val_macro_f1_present=0.225 *
+[epoch 008] train_loss=1.5023 train_acc=0.281 val_macro_f1_present=0.248 *
+[epoch 009] train_loss=1.4749 train_acc=0.276 val_macro_f1_present=0.209 
+[epoch 010] train_loss=1.4495 train_acc=0.307 val_macro_f1_present=0.261 *
+[epoch 011] train_loss=1.3966 train_acc=0.307 val_macro_f1_present=0.304 *
+[epoch 012] train_loss=1.4542 train_acc=0.231 val_macro_f1_present=0.294 
+[epoch 013] train_loss=1.4885 train_acc=0.296 val_macro_f1_present=0.508 *
+[epoch 014] train_loss=1.3902 train_acc=0.291 val_macro_f1_present=0.520 *
+[epoch 015] train_loss=1.3907 train_acc=0.251 val_macro_f1_present=0.352 
+[epoch 016] train_loss=1.3255 train_acc=0.362 val_macro_f1_present=0.279 
+[epoch 017] train_loss=1.3673 train_acc=0.312 val_macro_f1_present=0.412 
+[epoch 018] train_loss=1.2090 train_acc=0.327 val_macro_f1_present=0.474 
+[epoch 019] train_loss=1.2943 train_acc=0.256 val_macro_f1_present=0.418 
+[epoch 020] train_loss=1.2987 train_acc=0.296 val_macro_f1_present=0.374 
+[epoch 021] train_loss=1.3119 train_acc=0.286 val_macro_f1_present=0.216 
+[epoch 022] train_loss=1.3117 train_acc=0.296 val_macro_f1_present=0.232 
+[epoch 023] train_loss=1.2202 train_acc=0.291 val_macro_f1_present=0.249 
+[epoch 024] train_loss=1.2217 train_acc=0.352 val_macro_f1_present=0.343 
+[epoch 025] train_loss=1.2716 train_acc=0.296 val_macro_f1_present=0.271 
+[epoch 026] train_loss=1.2535 train_acc=0.327 val_macro_f1_present=0.333 
+[epoch 027] train_loss=1.1505 train_acc=0.367 val_macro_f1_present=0.366 
+[epoch 028] train_loss=1.1611 train_acc=0.392 val_macro_f1_present=0.457 
+[epoch 029] train_loss=1.1614 train_acc=0.342 val_macro_f1_present=0.457 
+[epoch 030] train_loss=1.2432 train_acc=0.261 val_macro_f1_present=0.415 
+[epoch 031] train_loss=1.0889 train_acc=0.372 val_macro_f1_present=0.419 
+[epoch 032] train_loss=1.2650 train_acc=0.327 val_macro_f1_present=0.364 
+[epoch 033] train_loss=1.1866 train_acc=0.307 val_macro_f1_present=0.370 
+[epoch 034] train_loss=1.3197 train_acc=0.342 val_macro_f1_present=0.323 
+[epoch 035] train_loss=1.1246 train_acc=0.382 val_macro_f1_present=0.382 
+[epoch 036] train_loss=1.1701 train_acc=0.347 val_macro_f1_present=0.376 
+[epoch 037] train_loss=1.2028 train_acc=0.402 val_macro_f1_present=0.341 
+[epoch 038] train_loss=1.0945 train_acc=0.352 val_macro_f1_present=0.263 
+[epoch 039] train_loss=1.1232 train_acc=0.342 val_macro_f1_present=0.266 
+[early-stop] no improvement for 25 epochs (best_epoch=14)
+[OK] run_dir: /home/ubuntu/tiasha/dentist/runs/raw_cls_baseline/m1_pointnet_v6_e120_p25_bs64_20260116_091649
+[OK] wrote: /home/ubuntu/tiasha/dentist/runs/raw_cls_baseline/m1_pointnet_v6_e120_p25_bs64_20260116_091649/metrics.json

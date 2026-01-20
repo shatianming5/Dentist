@@ -1,0 +1,10 @@
+defaults:
+  - teeth3ds_fdi_pretrain_supcon_norot_tta0_posfeat_ls0_dropout0p1_seg_all_cloudid_eq.yaml
+
+exp:
+  name: teeth3ds_fdi_pretrain_supcon_norot_tta0_posfeat_ls0_dropout0p1_tpdrop0p5_seg_all_cloudid_eq
+
+domain:
+  # Train-time dropout for tooth_position on samples where it exists (regularizes posfeat shortcut).
+  tooth_position_dropout: 0.5
+

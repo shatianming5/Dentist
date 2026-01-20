@@ -1,0 +1,10 @@
+defaults:
+  - teeth3ds_fdi_pretrain_supcon_norot_tta0_posfeat_ls0_dropout0p1.yaml
+  - ../data_v17_main4_seg_all_cloudid.yaml
+
+exp:
+  name: teeth3ds_fdi_pretrain_supcon_norot_tta0_posfeat_ls0_dropout0p1_seg_all_cloudid
+
+features:
+  point_features: [xyz, cloud_id]
+

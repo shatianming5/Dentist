@@ -1,0 +1,5 @@
+numpy>=1.23
+# Install PyTorch per your platform/CUDA; training scripts require torch.
+torch
+PyYAML>=6.0
+matplotlib>=3.8

@@ -1,0 +1,12 @@
+defaults:
+  - A2B_baseline.yaml
+  - ../../raw_cls/model_pointnet.yaml
+
+exp:
+  name: groupdro
+
+domain:
+  method: groupdro
+  group_key: tooth_position
+  groupdro_eta: 0.1
+

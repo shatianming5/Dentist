@@ -1,0 +1,9 @@
+defaults:
+  - teeth3ds_fdi_pretrain_finetune.yaml
+
+exp:
+  name: teeth3ds_fdi_pretrain_finetune_freeze10
+
+train:
+  freeze_feat_epochs: 10
+

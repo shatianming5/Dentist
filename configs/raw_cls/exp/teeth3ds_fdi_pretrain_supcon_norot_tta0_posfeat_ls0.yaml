@@ -1,0 +1,9 @@
+defaults:
+  - teeth3ds_fdi_pretrain_supcon_norot_tta0_posfeat.yaml
+
+exp:
+  name: teeth3ds_fdi_pretrain_supcon_norot_tta0_posfeat_ls0
+
+loss:
+  label_smoothing: 0.0
+

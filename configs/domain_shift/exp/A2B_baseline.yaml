@@ -1,0 +1,11 @@
+defaults:
+  - ../data_v13_main4.yaml
+  - ../train_cls_base.yaml
+  - ../../raw_cls/model_dgcnn.yaml
+  - ../../common/runtime.yaml
+  - ../../common/optim_adamw.yaml
+  - ../../common/augment_raw_cls.yaml
+
+exp:
+  name: baseline
+  out_root: runs/domain_shift

@@ -1,0 +1,13 @@
+defaults:
+  - ../data_v13_main4.yaml
+  - ../train_cls_base.yaml
+  - ../model_dgcnn.yaml
+  - ../../common/runtime.yaml
+  - ../../common/logging.yaml
+  - ../../common/optim_adamw.yaml
+  - ../../common/sched_cosine.yaml
+  - ../../common/augment_raw_cls.yaml
+
+exp:
+  name: baseline
+  out_root: runs/raw_cls

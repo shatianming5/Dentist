@@ -1,0 +1,14 @@
+defaults:
+  - teeth3ds_fdi_pretrain_supcon_rotz_tta8_posfeat_ls0_dropout0p1_seg_all_cloudid_eq_xyzonly.yaml
+  - ../model_point_transformer.yaml
+
+exp:
+  name: teeth3ds_fdi_pretrain_supcon_rotz_tta8_posfeat_ls0_dropout0p1_seg_all_cloudid_eq_xyzonly_pointtransformer_n1024_v2
+
+data:
+  # Point Transformer uses kNN attention; keep N modest for speed/memory.
+  n_points: 1024
+
+train:
+  # Default init checkpoint (can be overridden by run scripts).
+  init_feat: runs/pretrain/teeth3ds_fdi_pointtransformer_seed1337/ckpt_best.pt

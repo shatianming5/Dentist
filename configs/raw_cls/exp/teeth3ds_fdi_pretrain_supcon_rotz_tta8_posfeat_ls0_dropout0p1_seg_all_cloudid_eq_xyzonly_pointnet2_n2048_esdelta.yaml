@@ -1,0 +1,11 @@
+defaults:
+  - teeth3ds_fdi_pretrain_supcon_rotz_tta8_posfeat_ls0_dropout0p1_seg_all_cloudid_eq_xyzonly_pointnet2_n2048.yaml
+
+exp:
+  name: teeth3ds_fdi_pretrain_supcon_rotz_tta8_posfeat_ls0_dropout0p1_seg_all_cloudid_eq_xyzonly_pointnet2_n2048_esdelta
+
+train:
+  # The val metric is noisy on small data; require a meaningful delta to reset patience.
+  patience: 15
+  early_stop_min_delta: 0.005
+

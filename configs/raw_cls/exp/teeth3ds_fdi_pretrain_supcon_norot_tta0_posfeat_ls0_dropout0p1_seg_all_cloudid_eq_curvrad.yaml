@@ -1,0 +1,13 @@
+defaults:
+  - teeth3ds_fdi_pretrain_supcon_norot_tta0_posfeat_ls0_dropout0p1_seg_all_cloudid_eq.yaml
+
+exp:
+  name: teeth3ds_fdi_pretrain_supcon_norot_tta0_posfeat_ls0_dropout0p1_seg_all_cloudid_eq_curvrad
+
+features:
+  point_features: [xyz, cloud_id, curvature, radius]
+  precompute:
+    enabled: true
+    cache_dir: processed/raw_cls/v18_main4_seg_all_cloudid_eq_cache_xyz_cloudid_curvrad_k30
+    k_neighbors: 30
+

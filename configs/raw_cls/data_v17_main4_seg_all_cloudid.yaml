@@ -1,0 +1,7 @@
+data:
+  task: raw_cls
+  version: v17_main4_seg_all_cloudid
+  root: processed/raw_cls/v17_main4_seg_all_cloudid
+  kfold: metadata/splits_raw_case_kfold.json
+  n_points: 4096
+

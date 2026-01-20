@@ -1,0 +1,7 @@
+model:
+  name: pointnet2
+  pointnet2_sa1_npoint: 512
+  pointnet2_sa1_nsample: 32
+  pointnet2_sa2_npoint: 128
+  pointnet2_sa2_nsample: 64
+

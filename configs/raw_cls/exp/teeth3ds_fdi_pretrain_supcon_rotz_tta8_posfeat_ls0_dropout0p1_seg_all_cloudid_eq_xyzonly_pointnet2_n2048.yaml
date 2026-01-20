@@ -1,0 +1,18 @@
+defaults:
+  - teeth3ds_fdi_pretrain_supcon_rotz_tta8_posfeat_ls0_dropout0p1_seg_all_cloudid_eq_xyzonly.yaml
+  - ../model_pointnet2.yaml
+
+exp:
+  name: teeth3ds_fdi_pretrain_supcon_rotz_tta8_posfeat_ls0_dropout0p1_seg_all_cloudid_eq_xyzonly_pointnet2_n2048
+
+data:
+  n_points: 2048
+
+model:
+  pointnet2_sa1_npoint: 1024
+  pointnet2_sa1_nsample: 32
+  pointnet2_sa2_npoint: 256
+  pointnet2_sa2_nsample: 64
+
+train:
+  init_feat: runs/pretrain/teeth3ds_fdi_pointnet2_seed1337/ckpt_best.pt

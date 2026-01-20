@@ -1,0 +1,57 @@
+{
+  "generated_at": "2026-01-16T11:08:58Z",
+  "root": "/home/ubuntu/tiasha/dentist",
+  "disk_usage": {
+    "total_bytes": 983350071296,
+    "used_bytes": 795536441344,
+    "free_bytes": 137786662912
+  },
+  "directories": {
+    "data": {
+      "files": 4056,
+      "bytes": 31324897956
+    },
+    "archives": {
+      "files": 12,
+      "bytes": 8903498613
+    },
+    "raw": {
+      "files": 257,
+      "bytes": 4223252247
+    },
+    "converted": {
+      "files": 4714,
+      "bytes": 5781673312
+    },
+    "scripts": {
+      "files": 48,
+      "bytes": 882296
+    }
+  },
+  "artifacts": {
+    "DATASET_STATS.json": {
+      "bytes": 1890111,
+      "sha1": "50faf2709e19f32267cc78f68d42239d1a0c3cb3"
+    },
+    "RAW_DATASET_STATS.json": {
+      "bytes": 75782,
+      "sha1": "4480ee7f180c9ee6a281ff943e1073aaf22395f4"
+    },
+    "converted/raw/manifest_with_labels.json": {
+      "bytes": 1021119,
+      "sha1": "4625162a2c0270636bef32f5a05c44e2d0b803fa"
+    },
+    "converted/raw/labels.csv": {
+      "bytes": 20581,
+      "sha1": "7cafdd73f1fea96da937dfd8415a1bec1e2e68ed"
+    },
+    "scripts/convert_ccb2_bin.py": {
+      "bytes": 12141,
+      "sha1": "11f43f6b7e1e069d9d0c7661d22076daeeec9796"
+    },
+    "scripts/label_converted_raw.py": {
+      "bytes": 3385,
+      "sha1": "de7008ab22ee4203d0739f791b2d5ca149d3607c"
+    }
+  }
+}

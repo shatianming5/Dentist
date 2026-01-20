@@ -1,0 +1,14 @@
+defaults:
+  - teeth3ds_fdi_pretrain_supcon_rotz_tta8_posfeat_ls0_dropout0p1_seg_all_cloudid_eq_xyzonly.yaml
+  - ../data_v19_main4_seg_all_cloudid_eq_n8192.yaml
+
+exp:
+  name: teeth3ds_fdi_pretrain_supcon_rotz_tta8_posfeat_ls0_dropout0p1_seg_all_cloudid_eq_n8192_xyz_normcurvrad
+
+features:
+  point_features: [xyz, normals, curvature, radius]
+  precompute:
+    enabled: true
+    cache_dir: processed/raw_cls/v19_main4_seg_all_cloudid_eq_n8192_cache_xyz_normcurvrad_k30
+    k_neighbors: 30
+
