@@ -177,6 +177,7 @@ bsdtar -xf archives/3DTeethLand_landmarks_test.zip -C data/landmarks/test
 - 当前 repo 内 SOTA（v18 multi-member mean-prob ensemble）：
   - overall_acc=0.6371 / macro_f1=0.6128 / bal_acc=0.6261 / ece=0.1255（n=248）
   - 证据：`paper_tables/raw_cls_ensemble_eval_mean_v18_best.json`（完整指标）与 `paper_tables/raw_cls_multi_ensemble_v18_pointnet_pointnet_curvrad_pointnet2.json`（acc 汇总）
+  - members：pointnet(xyzonly) + pointnet(xyz_curvrad) + pointnet2(xyzonly_n1024)
 
 #### raw_cls 方法索引（读表用）
 
