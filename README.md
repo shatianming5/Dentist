@@ -158,14 +158,25 @@ bsdtar -xf archives/3DTeethLand_landmarks_test.zip -C data/landmarks/test
 - 看结果：优先看 `paper_tables/INDEX.md` 与本 README 的「已尝试过的模型、方法与表现」
 - 用户验收：进入任意 `runs/**/` 检查是否包含 `metrics.json / preds_*.jsonl / config.yaml / logs.txt`（说明见 `runs/README.md`）
 
+## 结果速览（当前最佳）
+
+> 口径：以 `paper_tables/` 聚合产物为准；raw_cls 越大越好，其余回归/约束类指标越小越好。
+
+| task | best | evidence |
+|---|---:|---|
+| raw_cls（4 类分类） | overall_acc=0.6371 / macro_f1=0.6128 / bal_acc=0.6261 / ece=0.1255 (n=248) | `paper_tables/raw_cls_ensemble_eval_mean_v18_best.json` |
+| prep2target（synthetic proxy） | test_total=0.0628±0.0004 (seeds=3) | `paper_tables/prep2target_summary.md` |
+| constraints（teeth3ds_prep2target_constraints） | eval_test_total=0.057178 | `paper_tables/constraints_summary.md` |
+
 ## 已尝试过的模型、方法与表现（完整清单）
 
 > 数据来源：`paper_tables/` 下的聚合表与 JSON（每个文件顶部 `generated_at` 可追溯）；run 级证据见 `runs/`。
 
 ### raw_cls（修复体 4 类分类）
 
-- 当前 repo 内 SOTA（v18 multi-member mean-prob ensemble）：`paper_tables/raw_cls_multi_ensemble_v18_pointnet_pointnet_curvrad_pointnet2.json`（overall_acc=0.6371）
-- v18 更完整指标（含 confusion_matrix + 校准）：`paper_tables/raw_cls_ensemble_eval_mean_v18_best.json`
+- 当前 repo 内 SOTA（v18 multi-member mean-prob ensemble）：
+  - overall_acc=0.6371 / macro_f1=0.6128 / bal_acc=0.6261 / ece=0.1255（n=248）
+  - 证据：`paper_tables/raw_cls_ensemble_eval_mean_v18_best.json`（完整指标）与 `paper_tables/raw_cls_multi_ensemble_v18_pointnet_pointnet_curvrad_pointnet2.json`（acc 汇总）
 
 #### raw_cls 方法索引（读表用）
 
@@ -444,6 +455,8 @@ Source: `paper_tables/domain_shift_delta.md`
 
 ### prep2target（synthetic proxy）
 
+- 当前最优（test_total 越小越好）：`constraints_occlusion`（λ_occ=0.1, clearance=0.5）→ test_total=0.0628±0.0004（seeds=3），见 `paper_tables/prep2target_summary.md`
+
 <details>
 <summary><b>prep2target：各方法表现（seeds=3 聚合）</b></summary>
 
@@ -459,6 +472,8 @@ Source: `paper_tables/prep2target_summary.md`
 </details>
 
 ### constraints（teeth3ds_prep2target_constraints）
+
+- 当前最优（eval_test_total 越小越好）：0.057178（jaw + cut=z，λ_margin=0，λ_occ=0.1），exp=`p2tC_n256_seed1337_20251214_073510`，见 `paper_tables/constraints_summary.md`
 
 <details>
 <summary><b>constraints：不同 λ/切割模式的评估汇总</b></summary>
