@@ -1,5 +1,16 @@
 # 数据说明（已解压并整理）
 
+## 速览（结果 / 证据 / 可视化）
+
+- raw_cls 当前 SOTA（v18，mean-prob multi-member ensemble）：
+  - accuracy=0.6371 / macro_f1=0.6128 / balanced_acc=0.6261 / ece=0.1255 (n=248)
+  - 证据：`paper_tables/raw_cls_ensemble_eval_mean_v18_best.json`（完整指标+confusion_matrix）
+  - 成员：`paper_tables/raw_cls_multi_ensemble_v18_pointnet_pointnet_curvrad_pointnet2.json`
+- 可视化（公开可复现图）：
+  - raw_cls confusion matrix：见下图（由 `scripts/make_readme_figures.py` 从 `paper_tables/*.json` 生成）
+
+![raw_cls v18 mean ensemble confusion matrix](assets/readme/paper_tables/raw_cls_cm_v18_mean.png)
+
 ## 项目入口（只看 README）
 
 - 快速开始（smoke / SOTA）：见下文「快速开始」
@@ -8,6 +19,7 @@
 - 结果与表格：`paper_tables/`（索引：`paper_tables/INDEX.md`）
 - runs 证据：`runs/`（说明：`runs/README.md`）
 - 脚本索引：`scripts/INDEX.md`
+- 可视化（STL/热力图）依赖：`configs/env/requirements_vis.txt`
 
 ## 快速开始
 
@@ -19,6 +31,9 @@
 cd configs/env
 conda env create -f environment.yml
 conda activate dentist
+
+# （可选）STL/热力图可视化依赖
+pip install -r requirements_vis.txt
 ```
 
 或 pip（需要你自行安装匹配 CUDA 的 PyTorch）：
@@ -26,6 +41,9 @@ conda activate dentist
 ```bash
 cd configs/env
 pip install -r requirements.txt
+
+# （可选）STL/热力图可视化依赖
+pip install -r requirements_vis.txt
 ```
 
 ### 1) 最小 smoke（CPU，~分钟级）
@@ -164,7 +182,7 @@ bsdtar -xf archives/3DTeethLand_landmarks_test.zip -C data/landmarks/test
 
 | task | best | evidence |
 |---|---:|---|
-| raw_cls（4 类分类） | overall_acc=0.6371 / macro_f1=0.6128 / bal_acc=0.6261 / ece=0.1255 (n=248) | `paper_tables/raw_cls_ensemble_eval_mean_v18_best.json` |
+| raw_cls（4 类分类） | accuracy=0.6371 / macro_f1=0.6128 / balanced_acc=0.6261 / ece=0.1255 (n=248) | `paper_tables/raw_cls_ensemble_eval_mean_v18_best.json` |
 | prep2target（synthetic proxy） | test_total=0.0628±0.0004 (seeds=3) | `paper_tables/prep2target_summary.md` |
 | constraints（teeth3ds_prep2target_constraints） | eval_test_total=0.057178 | `paper_tables/constraints_summary.md` |
 
@@ -240,6 +258,69 @@ Source: `paper_tables/raw_cls_summary_v18_main4_seg_all_cloudid_eq_rotz_tta8_clo
 | 0.1154±0.0000 | 0.0517±0.0000 | 0.2500±0.0000 | 0.6708±0.0000 | 1 | dgcnn_v2 | smoke_dgcnn_v2_initfeat | (base) | xyz | pos | bal |
 
 </details>
+
+## 体内库（STL）可视化（整牙 / 热力图）
+
+> 说明：体内库（intraoral STL）通常包含隐私信息，本仓库 **不** 提供原始体内库数据。
+> 下方图片为脱敏示例（仅展示几何/热力图效果，不含姓名/路径/case_id），用于说明可视化能力与复现命令。
+
+### 1) 安装可视化依赖
+
+```bash
+cd configs/env
+pip install -r requirements_vis.txt
+```
+
+### 2) 建立本地体内库索引（不会提交到 git）
+
+索引输出默认在 `metadata/internal_db/index.jsonl`（已在 `.gitignore` 里忽略）：
+
+```bash
+python scripts/internal_db/index_internal_db.py \
+  --root /path/to/体内数据库
+```
+
+### 3) 生成 HTML + 截图（整牙）
+
+- 纯几何查看（upper/lower/bite）：`scripts/vis_internal_db_case.py`
+- 热力图上色/点云叠加（raw_seg / raw_cls_saliency / custom_scalar）：`scripts/vis_internal_db_heatmap.py`
+
+示例（自定义几何标量：曲率，保证任何 STL 都能跑）：
+
+```bash
+python scripts/vis_internal_db_heatmap.py \
+  --query 关键词(如姓名/文件名片段) \
+  --tasks custom_scalar \
+  --scalar curvature_mean \
+  --screenshots outputs/internal_db_heatmap/screens
+```
+
+示例（raw_seg / raw_cls_saliency 需要对应 run_dir，见 `runs/`）：
+
+```bash
+python scripts/vis_internal_db_heatmap.py --query 关键词 --tasks raw_seg --raw-seg-run-dir /path/to/run_dir --screenshots outputs/internal_db_heatmap/screens
+python scripts/vis_internal_db_heatmap.py --query 关键词 --tasks raw_cls_saliency --raw-cls-run-dir /path/to/run_dir --screenshots outputs/internal_db_heatmap/screens
+```
+
+### 4) 脱敏示例图
+
+| 几何（custom_scalar） | 分割不确定性（raw_seg） | 分类解释热力（raw_cls_saliency） |
+|---|---|---|
+| ![](assets/readme/intraoral_demo/intraoral_demo_custom_scalar.png) | ![](assets/readme/intraoral_demo/intraoral_demo_raw_seg.png) | ![](assets/readme/intraoral_demo/intraoral_demo_raw_cls_saliency.png) |
+
+### 5) README 图与一致性检查（维护用）
+
+从 `paper_tables/*.json` 生成 README 用图：
+
+```bash
+python scripts/make_readme_figures.py
+```
+
+检查 README 是否缺少细节/引用路径是否存在/头部指标是否与 `paper_tables/` 一致：
+
+```bash
+python scripts/readme_audit.py
+```
 
 <details>
 <summary><b>raw_cls v18：ensemble 尝试（汇总）</b></summary>
