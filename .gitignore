@@ -3,6 +3,9 @@ __pycache__/
 *.pyc
 *.pyo
 
+# Local experiment queue (logs/results)
+/.rd_queue/
+
 # OS / editor
 .DS_Store
 .vscode/
@@ -17,6 +20,9 @@ __pycache__/
 /runs/*
 !/runs/README.md
 
+# Large model weights (kept locally, not committed)
+/weights/
+
 # Archives can be huge; keep only the small meta docs we generate
 /archives/*
 !/archives/_meta/
@@ -26,3 +32,8 @@ __pycache__/
 /archives/_meta/tmp/
 /archives/_meta/caches/
 /archives/_meta/rd_queue/
+
+# Internal "intraoral database" (PII / large) + rendered artifacts (local only)
+/downloads/
+/metadata/internal_db/
+/outputs/

@@ -8,6 +8,9 @@
 - raw/ 转点云：`scripts/convert_ccb2_bin.py`
 - raw_cls 构建数据集：`scripts/phase1_build_raw_cls.py`
 - raw_cls 训练主逻辑：`scripts/phase3_train_raw_cls_baseline.py`
+- 体内库（STL）索引：`scripts/internal_db/index_internal_db.py`
+- 体内库（STL）整牙可视化（HTML）：`scripts/vis_internal_db_case.py`
+- 体内库（STL）热力图上色/点云叠加（HTML+截图）：`scripts/vis_internal_db_heatmap.py`
 - 汇总 runs：`scripts/aggregate_runs.py`
 - 期刊表格：`scripts/paper_table_raw_cls.py`
 - 集成（multi-member mean-prob）：`scripts/paper_raw_cls_multi_ensemble.py`
@@ -25,4 +28,3 @@
 - 文档闭环审计（docs-spec）：`scripts/docs_audit.py`
 - 论文范围/协议审计：`scripts/paper_audit.py`
 - 期刊自检报告：`scripts/journal_audit.py`
-

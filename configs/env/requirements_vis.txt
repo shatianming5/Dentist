@@ -1,0 +1,19 @@
+# Optional visualization dependencies (for intraoral STL viewer)
+#
+# Install:
+#   pip install -r configs/env/requirements_vis.txt
+#
+# Notes:
+# - `vtk` can be large; keep it optional to avoid impacting training installs.
+# - `pyvista.export_html()` requires the trame stack below.
+
+numpy>=1.23
+pyvista>=0.43
+vtk>=9.2
+trimesh>=4.0
+plotly>=5.18
+
+# HTML export (pyvista + trame)
+trame>=3.6
+trame-vtk>=2.8
+trame-vuetify>=2.6
