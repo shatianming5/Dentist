@@ -11,6 +11,8 @@
 
 ![raw_cls v18 mean ensemble confusion matrix](assets/readme/paper_tables/raw_cls_cm_v18_mean.png)
 
+![raw_cls v18 mean ensemble reliability diagram](assets/readme/paper_tables/raw_cls_calibration_v18_mean.png)
+
 ## 项目入口（只看 README）
 
 - 快速开始（smoke / SOTA）：见下文「快速开始」
