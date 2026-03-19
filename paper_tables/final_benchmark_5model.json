@@ -1,0 +1,140 @@
+{
+  "main_table": {
+    "RF": {
+      "description": "Hand-crafted geometric features",
+      "balanced": {
+        "mean": 0.9064930790993627,
+        "std": 0.029620027544226053,
+        "n": 15
+      },
+      "natural": {
+        "mean": 0.545717687050764,
+        "std": 0.020562545744635712,
+        "n": 15
+      },
+      "gap": 0.36077539204859876,
+      "relative_drop": 0.39799023331434985
+    },
+    "PointNet": {
+      "description": "Per-point MLP, no local context",
+      "balanced": {
+        "mean": 0.8322686066741599,
+        "std": 0.08773988424992175,
+        "n": 15
+      },
+      "natural": {
+        "mean": 0.6620428731977005,
+        "std": 0.02980779475872903,
+        "n": 15
+      },
+      "gap": 0.17022573347645942,
+      "relative_drop": 0.20453220524164767
+    },
+    "PointNet++": {
+      "description": "Hierarchical set abstraction",
+      "balanced": {
+        "mean": 0.9503492774586609,
+        "std": 0.045337182439322034,
+        "n": 15
+      },
+      "natural": {
+        "mean": 0.5933731428109347,
+        "std": 0.10165990869738147,
+        "n": 15
+      },
+      "gap": 0.35697613464772626,
+      "relative_drop": 0.37562624933258215
+    },
+    "DGCNN": {
+      "description": "Dynamic graph CNN, k-NN edges",
+      "balanced": {
+        "mean": 0.9568913965168261,
+        "std": 0.04376003357827405,
+        "n": 15
+      },
+      "natural": {
+        "mean": 0.6900840971703031,
+        "std": 0.037639268536558745,
+        "n": 15
+      },
+      "gap": 0.26680729934652303,
+      "relative_drop": 0.27882714832396494
+    },
+    "DINOv3": {
+      "description": "Frozen ViT-S/16, multi-view rendering",
+      "balanced": {
+        "mean": 0.875608628457891,
+        "std": 0.04845759360297435,
+        "n": 15
+      },
+      "natural": {
+        "mean": 0.655419571556026,
+        "std": 0.04251265246015086,
+        "n": 15
+      },
+      "gap": 0.22018905690186497,
+      "relative_drop": 0.2514697203128967
+    }
+  },
+  "pt_sidebar": {
+    "balanced": {
+      "mean": 0.582629916598007,
+      "std": 0.24525296273945035,
+      "n": 15
+    },
+    "natural": {
+      "mean": 0.5553244664963131,
+      "std": 0.04063444669761739,
+      "n": 15
+    },
+    "note": "Excluded from main table due to severe seed sensitivity (33%/13% convergence)"
+  },
+  "aggregation_note": "Fold-level mIoU: each fold is one observation. 5-fold \u00d7 3 seeds = 15 per cell. Per-case analysis in supplementary.",
+  "pn2_instability": "3/15 natural runs below 0.45 mIoU (partial convergence failure on specific fold-seed combos)",
+  "rankings": {
+    "balanced": [
+      [
+        "DGCNN",
+        0.9568913965168261
+      ],
+      [
+        "PointNet++",
+        0.9503492774586609
+      ],
+      [
+        "RF",
+        0.9064930790993627
+      ],
+      [
+        "DINOv3",
+        0.875608628457891
+      ],
+      [
+        "PointNet",
+        0.8322686066741599
+      ]
+    ],
+    "natural": [
+      [
+        "DGCNN",
+        0.6900840971703031
+      ],
+      [
+        "PointNet",
+        0.6620428731977005
+      ],
+      [
+        "DINOv3",
+        0.655419571556026
+      ],
+      [
+        "PointNet++",
+        0.5933731428109347
+      ],
+      [
+        "RF",
+        0.545717687050764
+      ]
+    ]
+  }
+}

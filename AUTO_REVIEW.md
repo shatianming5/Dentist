@@ -1301,3 +1301,32 @@ Kurtosis = −0.117 (platykurtic). Distribution: 12 cases <0.5, 12 cases 0.5–0
 1. Following Option A: integrate DINOv3 into existing benchmark
 2. Testing predicted-mask classification to determine supplementary viability
 3. Maintaining all prior evidence (5 models, clinical metrics, selective prediction)
+
+---
+
+## Enhanced Benchmark — Round 2 Review (aris-reviewer)
+
+**Score: 8.0/10 — ALMOST**
+
+### Weaknesses (severity-ordered)
+- **W1 (Severe):** RF n=3 vs n=15 asymmetry → **FIXED**: expanded to fold-level n=15
+- **W2 (Moderate):** PN2 natural instability unexplained → **FIXED**: 3/15 runs below 0.45, documented
+- **W3 (Moderate):** DINOv3/PN2 not in clinical metrics → Deferred to paper writing phase
+- **W4 (Minor):** PT should be supplementary → **FIXED**: moved to sidebar
+- **W5 (Minor):** Aggregation level confusion → **FIXED**: footnote added
+- **W6 (Minor):** DINOv3 frozen-only limits → Acknowledged as "out-of-box transfer"
+
+### Final 5-Model Table (all n=15 fold-level)
+
+| Model | Balanced | Natural | Gap | Drop |
+|-------|----------|---------|-----|------|
+| RF | 0.906±0.030 | 0.546±0.021 | 0.361 | 39.8% |
+| PointNet | 0.832±0.088 | 0.662±0.030 | 0.170 | 20.5% |
+| PointNet++ | 0.950±0.045 | 0.593±0.102 | 0.357 | 37.6% |
+| DGCNN | 0.957±0.044 | 0.690±0.038 | 0.267 | 27.9% |
+| DINOv3 | 0.876±0.048 | 0.655±0.043 | 0.220 | 25.1% |
+
+Ranking reversal: PN #5→#2 (↑3), PN2 #2→#4 (↓2), RF #3→#5 (↓2)
+PT: sidebar only (33% convergence rate)
+
+### Venue: DMFR (Dentomaxillofacial Radiology) recommended
