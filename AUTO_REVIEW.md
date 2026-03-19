@@ -1330,3 +1330,31 @@ Ranking reversal: PN #5→#2 (↑3), PN2 #2→#4 (↓2), RF #3→#5 (↓2)
 PT: sidebar only (33% convergence rate)
 
 ### Venue: DMFR (Dentomaxillofacial Radiology) recommended
+
+---
+
+## Enhanced Benchmark — Round 3 Review (aris-reviewer)
+
+**Score: 8.5/10 — READY ✅**
+
+Reviewer verdict: "Ship it. The experimental evidence is sufficient. No additional training runs needed."
+
+### Fixes Applied
+- W1: Deprecated stale `benchmark_6model_2protocol.json` (points to final_benchmark_5model.json)
+- W2 (PN2 sensitivity): All runs 0.593±0.102; excluding 3 failures → 0.641±0.038
+- PN vs DINOv3 pairwise: Δ=+0.007, p=0.637 → NS, tied at #2-3
+
+### Remaining (paper writing phase only)
+- W3: DINOv3 boundary IoU → nice-to-have, not blocking
+- W4: Chinese→English labels → during manuscript preparation
+- W5: RF vulnerability CIs → note in methods
+
+### Paper Writing Guidance from Reviewer
+- Target: DMFR (Dentomaxillofacial Radiology) full paper, ≤3500 words
+- Main display: Table 1 (dataset), Table 2 (5-model dual-protocol), Figure 1 (ranking reversal)
+- Supplementary: PT sidebar, boundary IoU, per-type breakdown, learning curves, selective prediction
+- Frame as: "first systematic benchmark + dual-protocol evaluation reveals..."
+- PN vs DINOv3 call out as "statistically tied" not ranked
+- Include 4-class classification negative as brief section to set future expectations
+
+### FINAL STATUS: 8.5/10 READY for DMFR submission

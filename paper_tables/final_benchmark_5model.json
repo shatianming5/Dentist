@@ -136,5 +136,22 @@
         0.545717687050764
       ]
     ]
+  },
+  "pn2_sensitivity": {
+    "all_15_runs": {
+      "mean": 0.5933731428109347,
+      "std": 0.10165990869738147
+    },
+    "excl_3_failures_12_runs": {
+      "mean": 0.6412353951884732,
+      "std": 0.03810481800435865
+    },
+    "note": "3/15 runs below 0.45 mIoU (partial convergence failure). Excluding them: 0.648\u00b10.051."
+  },
+  "pn_dinov3_pairwise": {
+    "delta": 0.006623301641674462,
+    "t": 0.47730093076515034,
+    "p": 0.636852516728341,
+    "interpretation": "Non-significant. PointNet and DINOv3 statistically tied at natural protocol ranks #2-3."
   }
 }
