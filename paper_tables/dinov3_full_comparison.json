@@ -1,0 +1,38 @@
+{
+  "dinov3_cls_optimization": {
+    "baseline_cls_mlp": {
+      "acc": 0.418,
+      "f1": 0.359
+    },
+    "cls_balanced_strongreg": {
+      "acc": 0.43,
+      "f1": 0.425
+    },
+    "seg_guided_dense": {
+      "acc": 0.535,
+      "f1": 0.533
+    },
+    "seg_guided_strongreg": {
+      "acc": 0.483,
+      "f1": 0.516
+    },
+    "prototypical": {
+      "acc": 0.313,
+      "f1": 0.261
+    },
+    "binary_direct_indirect": {
+      "acc": 0.76,
+      "f1": 0.604
+    }
+  },
+  "previous_best_pointnet": {
+    "acc": 0.329,
+    "f1": 0.279
+  },
+  "random_baseline": {
+    "acc": 0.25,
+    "f1": 0.25
+  },
+  "dinov3_seg_miou": 0.876,
+  "dgcnn_seg_miou": 0.732
+}
