@@ -1252,3 +1252,22 @@ Kurtosis = −0.117 (platykurtic). Distribution: 12 cases <0.5, 12 cases 0.5–0
 - Consider "Performance Degradation" instead of "Performance Collapse" in title
 - JDR format: ≤2500 words, move per-type table to supplementary
 
+
+## Round 4 (All R3 Fixes Applied) — Score: 8.5/10 — READY ✅
+
+**Score progression**: 4.5 → 7.5 → 8.0 → **8.5 READY**
+
+**Verdict**: READY for JDR Short Communication submission.
+
+**All fixes verified**:
+- W1: Selective prediction 0.818 verified correct ✓
+- W2: Vulnerability paradox properly scoped ✓
+- W3: English labels mapped ✓
+
+**Remaining polish (~20 min during manuscript drafting)**:
+1. Fill Table 3 per-type values from existing JSON
+2. Pick one aggregation for abstract (recommend per-case 0.732)
+3. Decide Cohen's d column: full pairwise or remove
+
+**Reviewer summary**: "Submit. All weaknesses addressed. Evidence package complete, internally consistent, properly caveated. No new experiments needed."
+

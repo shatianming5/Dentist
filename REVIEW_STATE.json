@@ -1,11 +1,22 @@
 {
-  "status": "in_progress",
-  "stage": "review_loop",
-  "round": 3,
-  "active_direction": "Enhance existing benchmarking paper with clinical framing + learning curve + Dice",
-  "last_score": 8.0,
-  "last_verdict": "ALMOST",
-  "pending_runs": [],
+  "status": "completed",
+  "stage": "finalized",
+  "round": 4,
+  "active_direction": "Enhanced benchmarking paper: dual-protocol evaluation with learning curve + Dice + clinical framing",
+  "last_score": 8.5,
+  "last_verdict": "READY",
+  "score_progression": [
+    4.5,
+    7.5,
+    8.0,
+    8.5
+  ],
+  "verdict_progression": [
+    "NOT READY",
+    "ALMOST",
+    "ALMOST",
+    "READY"
+  ],
   "experiments_completed": [
     "D1",
     "D2",
@@ -15,14 +26,14 @@
     "D6",
     "D6.2",
     "D6.3",
-    "D7"
+    "D7",
+    "learning_curve"
   ],
-  "timestamp": "2026-03-19T18:21:42.355365",
-  "reviewer_action": "Option B: Add clinical sections to existing 8.5 paper, run learning curve + Dice",
-  "r3_fixes_done": [
-    "W1_selective_verified",
-    "W2_vulnerability_scoped",
-    "W3_english_labels",
-    "power_wording_fix"
-  ]
+  "submission_target": "JDR Short Communication",
+  "remaining_polish": [
+    "Fill Table 3 per-type values",
+    "Pick abstract aggregation (recommend per-case 0.732)",
+    "Cohen d column: full pairwise or remove"
+  ],
+  "timestamp": "2026-03-19T18:28:13.021066"
 }
