@@ -1,0 +1,83 @@
+{
+  "learning_curve": [
+    {
+      "fraction": 0.25,
+      "n_train": 15,
+      "miou_mean": 0.40334111531575517,
+      "miou_std": 0.0097077450296877,
+      "dice_mean": 0.445875701165049,
+      "dice_std": 0.005852446105746194
+    },
+    {
+      "fraction": 0.5,
+      "n_train": 31,
+      "miou_mean": 0.7130008222904901,
+      "miou_std": 0.01337139776366382,
+      "dice_mean": 0.7951605644575702,
+      "dice_std": 0.01393038972946431
+    },
+    {
+      "fraction": 0.75,
+      "n_train": 47,
+      "miou_mean": 0.7261762921500337,
+      "miou_std": 0.024295603742096446,
+      "dice_mean": 0.8042903110143851,
+      "dice_std": 0.022257240877239518
+    },
+    {
+      "fraction": 1.0,
+      "n_train": 63,
+      "miou_mean": 0.7698961410631757,
+      "miou_std": 0.028845530803214295,
+      "dice_mean": 0.8393128704610134,
+      "dice_std": 0.03219104664080805
+    }
+  ],
+  "curve_fit": {
+    "a": 0.9427614448766111,
+    "b": 4.9999999999924265,
+    "c": 0.8362485428333727,
+    "predictions": {
+      "n_for_0.8": 71,
+      "n_for_0.85": 118,
+      "n_for_0.9": 298
+    }
+  },
+  "power_analysis": {
+    "current_n": 79,
+    "current_per_class_min": 12,
+    "current_per_class_max": 41,
+    "observed_effect": 0.029000000000000026,
+    "observed_f1": 0.279,
+    "random_f1": 0.25,
+    "recommendation": {
+      "minimum_viable": {
+        "n_per_class": 50,
+        "total": 200,
+        "note": "Minimum for stable 4-class estimates"
+      },
+      "recommended": {
+        "n_per_class": 100,
+        "total": 400,
+        "note": "Recommended for power 0.80"
+      },
+      "robust": {
+        "n_per_class": 200,
+        "total": 800,
+        "note": "Robust with class imbalance tolerance"
+      }
+    },
+    "explanation": "With n=79 and 4 classes (min class=12), each test fold has ~2-3 samples per class. This is insufficient for any classifier to learn discriminative features. Based on observed effect sizes (F1-random=0.029), a sample of n>=250 with balanced classes is needed to achieve power 0.80 at alpha=0.05."
+  },
+  "dice_at_full_n": {
+    "mean": 0.8393128704610134,
+    "std": 0.03219104664080805,
+    "per_fold": [
+      0.8011166512635972,
+      0.8363190363553351,
+      0.8938651557788815,
+      0.8146292996222211,
+      0.8506342092850326
+    ]
+  }
+}

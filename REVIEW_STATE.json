@@ -1,69 +1,22 @@
 {
-  "status": "completed",
-  "stage": "finalized",
-  "round": 19,
-  "active_direction": "JDR-targeted: dual-protocol segmentation benchmark with paired bootstrap",
-  "last_score_dmfr": 8.5,
-  "last_score_jdr": 8.5,
-  "target": "JDR >= 8.5",
-  "target_met": true,
-  "score_history_dmfr": [
-    4.0,
-    3.5,
-    2.5,
-    5.5,
-    6.0,
-    6.5,
-    7.0,
-    7.5,
-    8.0,
-    8.5
-  ],
-  "score_history_jdr": [
-    6.0, 7.0, 7.5, 8.0, 8.0, 8.0, 8.0, 8.5
-  ],
+  "status": "in_progress",
+  "stage": "review_loop",
+  "round": 1,
+  "active_direction": "Enhance existing benchmarking paper with clinical framing + learning curve + Dice",
+  "last_score": 4.5,
+  "last_verdict": "NOT READY",
   "pending_runs": [],
-  "timestamp": "2026-03-19T14:43:11.746280",
-  "round12_actions": [
-    "Per-point sensitivity (0.743) / specificity (0.933)",
-    "Confidence-based selective prediction (top 50% -> 0.818 mIoU)",
-    "Cross-model Cohen kappa 0.671 (substantial agreement)",
-    "Cross-seed kappa 0.695 (reproducibility metric)",
-    "Bootstrap 95% CIs on all per-type results",
-    "No unrestored arches available for specificity testing",
-    "Reframe as pilot feasibility study"
+  "experiments_completed": [
+    "D1",
+    "D2",
+    "D3",
+    "D4",
+    "D5",
+    "D6",
+    "D6.2",
+    "D6.3",
+    "D7"
   ],
-  "round12_score": 6.0,
-  "round12_verdict": "ALMOST",
-  "score_history": {
-    "jdr": [
-      6.0, 7.0, 7.5, 8.0, 8.0, 8.0, 8.0, 8.5
-    ]
-  },
-  "round13_fixes": [
-    "Fix1: Reframe inter-rater -> inter-model consistency",
-    "Fix2: Selective prediction failure analysis + uncertainty-fraction screening",
-    "Fix3: Specify clinical use case (pre-visit chart review)",
-    "Fix4: Add ML class-imbalance citations (Luque 2019, He 2009)",
-    "Fix5: Explicit limitations paragraph with multi-center recommendation",
-    "New: ROC-AUC 0.938, ECE 0.023, SHAFIEI failure investigation",
-    "New: Short Communication format recommendation"
-  ],
-  "last_score": 8.5,
-  "last_verdict": "READY",
-  "final_format": "JDR Short Communication",
-  "remaining_polish": [
-    "Add 1 sentence on boundary IoU triviality in Discussion",
-    "Fix best_metric label in confidence_metric_comparison.json",
-    "Add hypothesis-generating qualifier for n<=13 subgroups"
-  ],
-  "round14_strategy": "Transform from evaluation-only to evaluation+mitigation paper. Add natural-ratio-aware training strategies (focal loss, weighted CE, TTA) to show the problem AND solution.",
-  "round14_evidence": {
-    "cross_protocol_mismatch": "DGCNN 0.957->0.433, PN2 0.950->0.266, PN 0.832->0.608",
-    "architecture_vulnerability_paradox": "sophisticated models MORE fragile",
-    "focal_loss": "HURTS (0.634 vs 0.690)",
-    "tta": "marginal (+0.009, NS)",
-    "geometric_predictor": "planarity r=-0.359 strongest failure predictor",
-    "mitigation": "protocol-matched training recovers 0.08-0.40 mIoU"
-  }
+  "timestamp": "2026-03-19T17:36:35.048080",
+  "reviewer_action": "Option B: Add clinical sections to existing 8.5 paper, run learning curve + Dice"
 }

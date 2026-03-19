@@ -1,0 +1,20 @@
+{
+  "experiment": "D6.3_transfer_comparison",
+  "description": "Compare PointNet vs DGCNN transfer from Teeth3DS to restoration segmentation",
+  "pointnet": {
+    "scratch_miou": 0.6475,
+    "pretrained_miou": 0.659,
+    "delta": 0.0115,
+    "bootstrap_p": 0.484,
+    "significant": false
+  },
+  "dgcnn": {
+    "scratch_miou": 0.7653,
+    "pretrained_miou": 0.7722,
+    "delta": 0.0069,
+    "paired_t_p": 0.626,
+    "bootstrap_p": 0.865,
+    "significant": false
+  },
+  "conclusion": "Neither architecture benefits significantly from Teeth3DS pretraining. DGCNN is substantially better than PointNet for segmentation (0.765 vs 0.648), but this advantage comes from architecture, not transfer learning."
+}
