@@ -1271,3 +1271,33 @@ Kurtosis = −0.117 (platykurtic). Distribution: 12 cases <0.5, 12 cases 0.5–0
 
 **Reviewer summary**: "Submit. All weaknesses addressed. Evidence package complete, internally consistent, properly caveated. No new experiments needed."
 
+
+---
+
+## Multi-Paradigm Proposal — Round 1 Review (aris-reviewer)
+
+**Score: 4.0/10 — NOT READY**
+
+### Critical Weaknesses
+
+**W1 (Critical): Seg-guided classification uses GT masks at test time.** The `DenseFeatDataset` loads `d["labels"]` which are ground-truth segmentation labels, not model predictions. F1=0.533 is an oracle result. The central classification claim is false as stated.
+
+**W2 (Critical): Classification uses 1 seed vs segmentation's 3 seeds.** Asymmetric confidence makes "task-dependent paradigm" claim undefensible.
+
+**W3 (Severe): This pivot dilutes the 8.5-rated segmentation paper.** Drops 3 models (RF, PN2, PT), ranking reversal finding, clinical metrics, selective prediction. Strict downgrade.
+
+**W4 (Severe): Unfair classification comparison.** 21M-param pretrained ViT vs hand-crafted features. Demonstrates pretrained > handcrafted, not paradigm advantage.
+
+**W5 (Moderate): "DINOv3" naming.** Verified: exists in timm as `vit_small_patch16_dinov3`. Not a naming error.
+
+**W6 (Moderate): Classification not tested on natural protocol.** Confirmed — F1=0.190 on natural (near random).
+
+**W7 (Minor): "Paradigm should be task-dependent" is trivially obvious.** Not a contribution.
+
+### Reviewer Recommendation: Option A
+**Do NOT pivot. Add DINOv3 as one more row in the existing 8.5-rated segmentation benchmark paper.** Move classification to supplementary with oracle mask caveat. Publish as full benchmarking paper to DMFR or Journal of Dentistry.
+
+### Actions Taken
+1. Following Option A: integrate DINOv3 into existing benchmark
+2. Testing predicted-mask classification to determine supplementary viability
+3. Maintaining all prior evidence (5 models, clinical metrics, selective prediction)
