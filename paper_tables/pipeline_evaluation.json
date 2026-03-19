@@ -1,0 +1,75 @@
+{
+  "pipeline_performance": {
+    "segmentation_miou": 0.732,
+    "classification_accuracy": 0.35443037974683544,
+    "classification_macro_f1": 0.22662128531693748,
+    "classification_weighted_f1": 0.34155645614093605,
+    "tooth_localization": "FDI metadata available"
+  },
+  "classification_details": {
+    "method": "GradientBoosting on geometric boundary features",
+    "cv_folds": 5,
+    "n_features": 10,
+    "n_samples": 79,
+    "feature_names": [
+      "n_seg_pts",
+      "n_rem_pts",
+      "boundary_frac",
+      "step_mean",
+      "step_p95",
+      "curv_boundary",
+      "curv_ratio",
+      "smooth_cv",
+      "margin_w",
+      "boundary_perim"
+    ],
+    "feature_importances": {
+      "n_seg_pts": 0.13033377555043335,
+      "n_rem_pts": 0.1789668464580279,
+      "boundary_frac": 0.10754149913929978,
+      "step_mean": 0.07609135619722177,
+      "step_p95": 0.09354355831194062,
+      "curv_boundary": 0.03608270389073523,
+      "curv_ratio": 0.10359367447974144,
+      "smooth_cv": 0.11898843077068352,
+      "margin_w": 0.0367162324520293,
+      "boundary_perim": 0.11814192274988698
+    },
+    "per_class": {
+      "充填": {
+        "n": 12,
+        "precision": 0.06666666666666667,
+        "recall": 0.08333333333333333
+      },
+      "全冠": {
+        "n": 13,
+        "precision": 0.2857142857142857,
+        "recall": 0.15384615384615385
+      },
+      "桩核冠": {
+        "n": 13,
+        "precision": 0.1,
+        "recall": 0.07692307692307693
+      },
+      "高嵌体": {
+        "n": 41,
+        "precision": 0.5106382978723404,
+        "recall": 0.5853658536585366
+      }
+    }
+  },
+  "clinical_utility": {
+    "use_case": "Automated restoration charting from intraoral 3D scans",
+    "workflow": "Scan → Segment restoration (DGCNN) → Extract boundary features → Classify type (GBM) → Map to tooth (FDI)",
+    "advantages": [
+      "Fully automated, no manual annotation needed at inference",
+      "Works with standard intraoral scanners",
+      "Sub-second inference on GPU"
+    ],
+    "limitations": [
+      "Single-center training (n=79)",
+      "4 restoration types only",
+      "Classification relies on geometric features, not learned end-to-end"
+    ]
+  }
+}

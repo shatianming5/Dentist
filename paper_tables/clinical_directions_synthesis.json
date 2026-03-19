@@ -1,0 +1,27 @@
+{
+  "direction_2_boundary": {
+    "result": "Negative — no significant type differences in boundary geometry",
+    "step_heights_um": {
+      "充填": 54.78882481694617,
+      "全冠": 48.011965228305755,
+      "桩核冠": 42.10779670766621,
+      "高嵌体": 50.09106364299201
+    },
+    "kruskal_wallis_p": 0.17404997283813456,
+    "clinical_value": "All margins within acceptable range (<120μm), uniform quality across types"
+  },
+  "direction_3_transfer": {
+    "scratch_miou": 0.6475324109190259,
+    "pretrained_miou": 0.6590387735379238,
+    "difference": 0.011506362618897814,
+    "paired_t_p": 0.4843666567393811,
+    "folds_improved": 4,
+    "verdict": "Marginal improvement, not statistically significant"
+  },
+  "direction_1_pipeline": {
+    "segmentation_miou": 0.732,
+    "classification_f1": 0.22662128531693748,
+    "classification_acc": 0.35443037974683544,
+    "bottleneck": "Classification — geometric features insufficient, need learned features"
+  }
+}

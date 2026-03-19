@@ -1,0 +1,2181 @@
+{
+  "n_cases": 79,
+  "boundary_threshold_mm": 0.3,
+  "per_case": [
+    {
+      "case_key": "01王美琴/3维模型/Group-wangmeiqin.bin",
+      "label": "全冠",
+      "tooth_position": "17",
+      "n_seg_points": 160172,
+      "n_rem_points": 832396,
+      "n_boundary_points": 3117,
+      "boundary_fraction": 0.019460330145094025,
+      "metrics": {
+        "step_height_mean": 0.06977417682006362,
+        "step_height_median": 0.04191024130092558,
+        "step_height_std": 0.0690448344966792,
+        "step_height_p95": 0.20499555228362842,
+        "curvature_boundary_mean": 0.0018717746631939348,
+        "curvature_boundary_median": 0.001029283506795764,
+        "curvature_interior_mean": 0.005771591654361328,
+        "curvature_ratio": 0.3243082225591442,
+        "smoothness_cv": 0.41890417918712375,
+        "boundary_spacing": 0.04416067069500285,
+        "margin_width": 0.23139115205654232,
+        "boundary_perimeter": 36.59341360184356
+      }
+    },
+    {
+      "case_key": "02SHAFIEI/Group-SHAFIEI.bin",
+      "label": "高嵌体",
+      "tooth_position": "17",
+      "n_seg_points": 264692,
+      "n_rem_points": 712150,
+      "n_boundary_points": 734,
+      "boundary_fraction": 0.002773034319133181,
+      "metrics": {
+        "step_height_mean": 0.06964572785276242,
+        "step_height_median": 0.05965967974703901,
+        "step_height_std": 0.044453803625438756,
+        "step_height_p95": 0.16199112396134124,
+        "curvature_boundary_mean": 0.0012046976882649776,
+        "curvature_boundary_median": 0.0008055878570303321,
+        "curvature_interior_mean": 0.010344439993934793,
+        "curvature_ratio": 0.11645847211888466,
+        "smoothness_cv": 0.474252576141209,
+        "boundary_spacing": 0.04086875160489461,
+        "margin_width": 0.2526435047571249,
+        "boundary_perimeter": 29.322250255629314
+      }
+    },
+    {
+      "case_key": "03丁健雄/Group-dingjianxiong.bin",
+      "label": "桩核冠",
+      "tooth_position": "45",
+      "n_seg_points": 93802,
+      "n_rem_points": 900346,
+      "n_boundary_points": 4555,
+      "boundary_fraction": 0.04855973220187203,
+      "metrics": {
+        "step_height_mean": 0.035596055047794964,
+        "step_height_median": 0.02159834070925415,
+        "step_height_std": 0.046460769656866914,
+        "step_height_p95": 0.1345211663855954,
+        "curvature_boundary_mean": 0.003584727401959306,
+        "curvature_boundary_median": 0.0013422888005152345,
+        "curvature_interior_mean": 0.012161630812867951,
+        "curvature_ratio": 0.2947571281879954,
+        "smoothness_cv": 0.2691178335159907,
+        "boundary_spacing": 0.0382162639385798,
+        "margin_width": 0.18633653882632212,
+        "boundary_perimeter": 22.37602714905795
+      }
+    },
+    {
+      "case_key": "04丁敏/Group-dingmin.bin",
+      "label": "桩核冠",
+      "tooth_position": "27",
+      "n_seg_points": 230272,
+      "n_rem_points": 767686,
+      "n_boundary_points": 8549,
+      "boundary_fraction": 0.0371256600889383,
+      "metrics": {
+        "step_height_mean": 0.02600979561321366,
+        "step_height_median": 0.01812924001012206,
+        "step_height_std": 0.0274809341531853,
+        "step_height_p95": 0.08019508259014216,
+        "curvature_boundary_mean": 0.0015652533976409778,
+        "curvature_boundary_median": 0.0007566765998490155,
+        "curvature_interior_mean": 0.012144908529736131,
+        "curvature_ratio": 0.12888144698005732,
+        "smoothness_cv": 0.22890019634017628,
+        "boundary_spacing": 0.03808631361667924,
+        "margin_width": 0.17296697776555103,
+        "boundary_perimeter": 36.57770222562766
+      }
+    },
+    {
+      "case_key": "05.1付饶 - 牙2/Group-furao2.bin",
+      "label": "充填",
+      "tooth_position": "26",
+      "n_seg_points": 827787,
+      "n_rem_points": 1993,
+      "n_boundary_points": 2189,
+      "boundary_fraction": 0.0026444000690999015,
+      "metrics": {
+        "step_height_mean": 0.028463309155088004,
+        "step_height_median": 0.019178388054729822,
+        "step_height_std": 0.031922706664908214,
+        "step_height_p95": 0.11252073921476781,
+        "curvature_boundary_mean": 0.0039562055044307055,
+        "curvature_boundary_median": 0.001268468564376235,
+        "curvature_interior_mean": 0.016340570252391263,
+        "curvature_ratio": 0.24210938903070528,
+        "smoothness_cv": 0.21283183548174778,
+        "boundary_spacing": 0.04160428572873404,
+        "margin_width": 0.16826824712781416,
+        "boundary_perimeter": 17.505407263482503
+      }
+    },
+    {
+      "case_key": "05付饶/Group-furao1.bin",
+      "label": "充填",
+      "tooth_position": "26",
+      "n_seg_points": 208171,
+      "n_rem_points": 789085,
+      "n_boundary_points": 6692,
+      "boundary_fraction": 0.032146648668642606,
+      "metrics": {
+        "step_height_mean": 0.06859447392520827,
+        "step_height_median": 0.06032031037406327,
+        "step_height_std": 0.04803991700346347,
+        "step_height_p95": 0.1700478085208436,
+        "curvature_boundary_mean": 0.004064558996240956,
+        "curvature_boundary_median": 0.0021054133540019393,
+        "curvature_interior_mean": 0.01065009740186506,
+        "curvature_ratio": 0.3816452380392917,
+        "smoothness_cv": 0.23260419214235528,
+        "boundary_spacing": 0.042588022311524094,
+        "margin_width": 0.1971756833394769,
+        "boundary_perimeter": 36.998570393899584
+      }
+    },
+    {
+      "case_key": "06何一/Group-heyi.bin",
+      "label": "高嵌体",
+      "tooth_position": "35",
+      "n_seg_points": 77278,
+      "n_rem_points": 917665,
+      "n_boundary_points": 2221,
+      "boundary_fraction": 0.02874039183208675,
+      "metrics": {
+        "step_height_mean": 0.06966696451817334,
+        "step_height_median": 0.0501120092407632,
+        "step_height_std": 0.0611884485051066,
+        "step_height_p95": 0.18470158549452265,
+        "curvature_boundary_mean": 0.004083000055970945,
+        "curvature_boundary_median": 0.001798556069843471,
+        "curvature_interior_mean": 0.008661867711765444,
+        "curvature_ratio": 0.4713763987976118,
+        "smoothness_cv": 0.4086371146992345,
+        "boundary_spacing": 0.048103651235938925,
+        "margin_width": 0.20529882826239484,
+        "boundary_perimeter": 24.326222610375627
+      }
+    },
+    {
+      "case_key": "07何文飞/Group-hwf.bin",
+      "label": "桩核冠",
+      "tooth_position": "25",
+      "n_seg_points": 81103,
+      "n_rem_points": 914434,
+      "n_boundary_points": 3554,
+      "boundary_fraction": 0.0438208204382082,
+      "metrics": {
+        "step_height_mean": 0.05600764542157323,
+        "step_height_median": 0.04035693356480341,
+        "step_height_std": 0.0483643615282455,
+        "step_height_p95": 0.1545908032629952,
+        "curvature_boundary_mean": 0.0045730969547234735,
+        "curvature_boundary_median": 0.002265036106109619,
+        "curvature_interior_mean": 0.009798639511544024,
+        "curvature_ratio": 0.46670733244804646,
+        "smoothness_cv": 0.44653739027879813,
+        "boundary_spacing": 0.04226675399387988,
+        "margin_width": 0.20073627777898734,
+        "boundary_perimeter": 22.087363378667387
+      }
+    },
+    {
+      "case_key": "08何江波68M/Group-hejiangbo.bin",
+      "label": "桩核冠",
+      "tooth_position": "25",
+      "n_seg_points": 70288,
+      "n_rem_points": 922429,
+      "n_boundary_points": 4639,
+      "boundary_fraction": 0.06599988618256317,
+      "metrics": {
+        "step_height_mean": 0.041866841019025464,
+        "step_height_median": 0.027614578726012695,
+        "step_height_std": 0.04564589113374787,
+        "step_height_p95": 0.13374871388889167,
+        "curvature_boundary_mean": 0.0057995399745116825,
+        "curvature_boundary_median": 0.002433513756841421,
+        "curvature_interior_mean": 0.010385709705353838,
+        "curvature_ratio": 0.5584153691182492,
+        "smoothness_cv": 0.21023762385477476,
+        "boundary_spacing": 0.057262652422676696,
+        "margin_width": 0.17752703258513242,
+        "boundary_perimeter": 32.53611941109027
+      }
+    },
+    {
+      "case_key": "09何诗琪/Group-heshiqi.bin",
+      "label": "高嵌体",
+      "tooth_position": "26",
+      "n_seg_points": 176104,
+      "n_rem_points": 818993,
+      "n_boundary_points": 5818,
+      "boundary_fraction": 0.033037296143188115,
+      "metrics": {
+        "step_height_mean": 0.04352122454932963,
+        "step_height_median": 0.03203385842259543,
+        "step_height_std": 0.04156896870344902,
+        "step_height_p95": 0.13210151393134253,
+        "curvature_boundary_mean": 0.002337746325860274,
+        "curvature_boundary_median": 0.0010335762053728104,
+        "curvature_interior_mean": 0.011040684599500673,
+        "curvature_ratio": 0.21173925254527023,
+        "smoothness_cv": 0.31015316797282866,
+        "boundary_spacing": 0.04119742623931645,
+        "margin_width": 0.20486570106926683,
+        "boundary_perimeter": 27.494747851793083
+      }
+    },
+    {
+      "case_key": "11冯卓斌/Group-fengzhuobin.bin",
+      "label": "高嵌体",
+      "tooth_position": "15",
+      "n_seg_points": 155241,
+      "n_rem_points": 828716,
+      "n_boundary_points": 4945,
+      "boundary_fraction": 0.031853698443065945,
+      "metrics": {
+        "step_height_mean": 0.048848874896403646,
+        "step_height_median": 0.03848391079428026,
+        "step_height_std": 0.03924823773662551,
+        "step_height_p95": 0.12816380842460262,
+        "curvature_boundary_mean": 0.0038346019331405427,
+        "curvature_boundary_median": 0.0016192224575206637,
+        "curvature_interior_mean": 0.00741354792373022,
+        "curvature_ratio": 0.5172424756494819,
+        "smoothness_cv": 0.21760403485776547,
+        "boundary_spacing": 0.039556402417586414,
+        "margin_width": 0.18424623996535872,
+        "boundary_perimeter": 25.75528082337994
+      }
+    },
+    {
+      "case_key": "12冯永材/Group-fengyongcai.bin",
+      "label": "高嵌体",
+      "tooth_position": "47",
+      "n_seg_points": 309234,
+      "n_rem_points": 661056,
+      "n_boundary_points": 4218,
+      "boundary_fraction": 0.013640155998370167,
+      "metrics": {
+        "step_height_mean": 0.041481674448019645,
+        "step_height_median": 0.029366454370764572,
+        "step_height_std": 0.03891593041772118,
+        "step_height_p95": 0.1261545771628027,
+        "curvature_boundary_mean": 0.0018433926415535682,
+        "curvature_boundary_median": 0.0008669374801684171,
+        "curvature_interior_mean": 0.010385290932728821,
+        "curvature_ratio": 0.17750033540169374,
+        "smoothness_cv": 0.22568108931312475,
+        "boundary_spacing": 0.03888033546040772,
+        "margin_width": 0.1944234950226133,
+        "boundary_perimeter": 39.190424920221695
+      }
+    },
+    {
+      "case_key": "13冯稚殷/Group-fengzhiyin.bin",
+      "label": "全冠",
+      "tooth_position": "46",
+      "n_seg_points": 268067,
+      "n_rem_points": 716700,
+      "n_boundary_points": 4783,
+      "boundary_fraction": 0.017842554286801433,
+      "metrics": {
+        "step_height_mean": 0.0433118442295718,
+        "step_height_median": 0.023645261947294216,
+        "step_height_std": 0.049698277231127456,
+        "step_height_p95": 0.16361326682897392,
+        "curvature_boundary_mean": 0.0016126337708136874,
+        "curvature_boundary_median": 0.0006648374255746603,
+        "curvature_interior_mean": 0.0174422030614056,
+        "curvature_ratio": 0.09245585296139455,
+        "smoothness_cv": 0.6655945182568541,
+        "boundary_spacing": 0.039701319217449176,
+        "margin_width": 0.19237260561432382,
+        "boundary_perimeter": 35.25991418516373
+      }
+    },
+    {
+      "case_key": "14刘中海/Group-liuzhonghai.bin",
+      "label": "高嵌体",
+      "tooth_position": "37",
+      "n_seg_points": 192999,
+      "n_rem_points": 800407,
+      "n_boundary_points": 4436,
+      "boundary_fraction": 0.022984575049611655,
+      "metrics": {
+        "step_height_mean": 0.057903822585165285,
+        "step_height_median": 0.04613510335378379,
+        "step_height_std": 0.04410457771031579,
+        "step_height_p95": 0.14026707299598584,
+        "curvature_boundary_mean": 0.004715762978313748,
+        "curvature_boundary_median": 0.0027062244480475783,
+        "curvature_interior_mean": 0.009213892148505329,
+        "curvature_ratio": 0.5118100853717641,
+        "smoothness_cv": 0.5263751727047926,
+        "boundary_spacing": 0.04575740705727485,
+        "margin_width": 0.17820972863860512,
+        "boundary_perimeter": 36.94645818524352
+      }
+    },
+    {
+      "case_key": "15刘思雯/Group-liusiwen.bin",
+      "label": "高嵌体",
+      "tooth_position": "46",
+      "n_seg_points": 223742,
+      "n_rem_points": 764928,
+      "n_boundary_points": 4639,
+      "boundary_fraction": 0.02073370221058183,
+      "metrics": {
+        "step_height_mean": 0.047157984074435,
+        "step_height_median": 0.03683140160088172,
+        "step_height_std": 0.04025038301265996,
+        "step_height_p95": 0.1271781607722111,
+        "curvature_boundary_mean": 0.0036960287684098623,
+        "curvature_boundary_median": 0.0014648620272055268,
+        "curvature_interior_mean": 0.009990514045635064,
+        "curvature_ratio": 0.3699538096369832,
+        "smoothness_cv": 0.46762607589343586,
+        "boundary_spacing": 0.03927657696111903,
+        "margin_width": 0.17720402729620308,
+        "boundary_perimeter": 35.90238431151983
+      }
+    },
+    {
+      "case_key": "16刘珍珠/Group-liuzhenzhu.bin",
+      "label": "全冠",
+      "tooth_position": "14",
+      "n_seg_points": 157606,
+      "n_rem_points": 822313,
+      "n_boundary_points": 2804,
+      "boundary_fraction": 0.017791200842607515,
+      "metrics": {
+        "step_height_mean": 0.04308114845404039,
+        "step_height_median": 0.031521679899180644,
+        "step_height_std": 0.041355422427295764,
+        "step_height_p95": 0.13231011434922102,
+        "curvature_boundary_mean": 0.004573682494375796,
+        "curvature_boundary_median": 0.001726551039610058,
+        "curvature_interior_mean": 0.011444460985399928,
+        "curvature_ratio": 0.3996415785982786,
+        "smoothness_cv": 0.21891841545485247,
+        "boundary_spacing": 0.04263914530188337,
+        "margin_width": 0.18258317960752024,
+        "boundary_perimeter": 23.04646496017227
+      }
+    },
+    {
+      "case_key": "17刘素妍/Group-liusuyan.bin",
+      "label": "充填",
+      "tooth_position": "46",
+      "n_seg_points": 206063,
+      "n_rem_points": 777761,
+      "n_boundary_points": 2993,
+      "boundary_fraction": 0.014524684198521811,
+      "metrics": {
+        "step_height_mean": 0.041751783579350825,
+        "step_height_median": 0.03387328014355262,
+        "step_height_std": 0.034673822088609585,
+        "step_height_p95": 0.1068545702160729,
+        "curvature_boundary_mean": 0.0026758873347283926,
+        "curvature_boundary_median": 0.001316754729487002,
+        "curvature_interior_mean": 0.00737456096326423,
+        "curvature_ratio": 0.36285377689230963,
+        "smoothness_cv": 0.277504295772239,
+        "boundary_spacing": 0.04212736483454166,
+        "margin_width": 0.18238077930042706,
+        "boundary_perimeter": 30.917935629527175
+      }
+    },
+    {
+      "case_key": "18劳延生/Group-laoyansheng.bin",
+      "label": "高嵌体",
+      "tooth_position": "47",
+      "n_seg_points": 242723,
+      "n_rem_points": 723561,
+      "n_boundary_points": 2616,
+      "boundary_fraction": 0.010777717810013885,
+      "metrics": {
+        "step_height_mean": 0.041314104360454997,
+        "step_height_median": 0.017157096951290418,
+        "step_height_std": 0.05487312958364516,
+        "step_height_p95": 0.18543707967874035,
+        "curvature_boundary_mean": 0.004770956547149371,
+        "curvature_boundary_median": 0.0012371483608148992,
+        "curvature_interior_mean": 0.011971925367838412,
+        "curvature_ratio": 0.39851204887352093,
+        "smoothness_cv": 0.2702512375828437,
+        "boundary_spacing": 0.038923115090623024,
+        "margin_width": 0.17969810930605842,
+        "boundary_perimeter": 33.581609409433796
+      }
+    },
+    {
+      "case_key": "19单玉薇/Group-syw.bin",
+      "label": "全冠",
+      "tooth_position": "46",
+      "n_seg_points": 152912,
+      "n_rem_points": 832248,
+      "n_boundary_points": 2109,
+      "boundary_fraction": 0.01379224652087475,
+      "metrics": {
+        "step_height_mean": 0.06062873194698501,
+        "step_height_median": 0.05199953628479648,
+        "step_height_std": 0.04670874677691534,
+        "step_height_p95": 0.15075386854382553,
+        "curvature_boundary_mean": 0.005253095759096045,
+        "curvature_boundary_median": 0.0030548120848834515,
+        "curvature_interior_mean": 0.010520295641752454,
+        "curvature_ratio": 0.49932966601383705,
+        "smoothness_cv": 0.25654457172418743,
+        "boundary_spacing": 0.04261792174548108,
+        "margin_width": 0.20173102889284605,
+        "boundary_perimeter": 29.80962195124483
+      }
+    },
+    {
+      "case_key": "20可博文/Group-kebowen.bin",
+      "label": "高嵌体",
+      "tooth_position": "46",
+      "n_seg_points": 268795,
+      "n_rem_points": 701930,
+      "n_boundary_points": 2227,
+      "boundary_fraction": 0.008285124351271414,
+      "metrics": {
+        "step_height_mean": 0.0380400185116989,
+        "step_height_median": 0.01607751392162271,
+        "step_height_std": 0.05579526502710923,
+        "step_height_p95": 0.1694439182195884,
+        "curvature_boundary_mean": 0.002089906952324227,
+        "curvature_boundary_median": 0.0012179077602922916,
+        "curvature_interior_mean": 0.016632455935569668,
+        "curvature_ratio": 0.12565233588201377,
+        "smoothness_cv": 0.27042817560168414,
+        "boundary_spacing": 0.04396905526941204,
+        "margin_width": 0.19869663743816066,
+        "boundary_perimeter": 37.84711241359728
+      }
+    },
+    {
+      "case_key": "21姜智慧/Group-jiangzhihui.bin",
+      "label": "充填",
+      "tooth_position": "46",
+      "n_seg_points": 282547,
+      "n_rem_points": 664491,
+      "n_boundary_points": 4305,
+      "boundary_fraction": 0.015236403147087033,
+      "metrics": {
+        "step_height_mean": 0.05351864723483136,
+        "step_height_median": 0.03597529985612358,
+        "step_height_std": 0.05047754038297765,
+        "step_height_p95": 0.15342610140099772,
+        "curvature_boundary_mean": 0.003695804444518363,
+        "curvature_boundary_median": 0.0018332699546590447,
+        "curvature_interior_mean": 0.007828325213933568,
+        "curvature_ratio": 0.47210665069580504,
+        "smoothness_cv": 0.21638444736328868,
+        "boundary_spacing": 0.03627055097410964,
+        "margin_width": 0.18337811820836683,
+        "boundary_perimeter": 33.43510539153972
+      }
+    },
+    {
+      "case_key": "22康维峰/Group-kangweifeng.bin",
+      "label": "充填",
+      "tooth_position": "46",
+      "n_seg_points": 261827,
+      "n_rem_points": 725179,
+      "n_boundary_points": 6568,
+      "boundary_fraction": 0.02508526622540838,
+      "metrics": {
+        "step_height_mean": 0.054589438389056597,
+        "step_height_median": 0.04314297787504273,
+        "step_height_std": 0.04531940831902687,
+        "step_height_p95": 0.14223241957031546,
+        "curvature_boundary_mean": 0.003324034535917174,
+        "curvature_boundary_median": 0.001200023340061307,
+        "curvature_interior_mean": 0.009288007827451657,
+        "curvature_ratio": 0.35788454982824147,
+        "smoothness_cv": 0.22925510048017306,
+        "boundary_spacing": 0.03633752017889443,
+        "margin_width": 0.18969294718433324,
+        "boundary_perimeter": 35.59351203434946
+      }
+    },
+    {
+      "case_key": "23戴晓敏/Group-dxm.bin",
+      "label": "充填",
+      "tooth_position": "46",
+      "n_seg_points": 347951,
+      "n_rem_points": 592649,
+      "n_boundary_points": 754,
+      "boundary_fraction": 0.0021669717862572604,
+      "metrics": {
+        "step_height_mean": 0.07532135596455085,
+        "step_height_median": 0.05884884060619189,
+        "step_height_std": 0.06258605832649874,
+        "step_height_p95": 0.1949409599284229,
+        "curvature_boundary_mean": 0.008546821180360814,
+        "curvature_boundary_median": 0.0032857819460332394,
+        "curvature_interior_mean": 0.008994656088991906,
+        "curvature_ratio": 0.9502109920355629,
+        "smoothness_cv": 0.24612153948386933,
+        "boundary_spacing": 0.03596273544547937,
+        "margin_width": 0.18896489587644139,
+        "boundary_perimeter": 5.560251044743668
+      }
+    },
+    {
+      "case_key": "24李彩霞/Group-licaixia.bin",
+      "label": "高嵌体",
+      "tooth_position": "26",
+      "n_seg_points": 172439,
+      "n_rem_points": 818423,
+      "n_boundary_points": 3878,
+      "boundary_fraction": 0.022489112091812178,
+      "metrics": {
+        "step_height_mean": 0.038657937832130264,
+        "step_height_median": 0.021135163715651828,
+        "step_height_std": 0.04797578362047362,
+        "step_height_p95": 0.1627938567309222,
+        "curvature_boundary_mean": 0.0025165815707457015,
+        "curvature_boundary_median": 0.0010649016476236284,
+        "curvature_interior_mean": 0.012415307127112465,
+        "curvature_ratio": 0.2026999030076362,
+        "smoothness_cv": 0.262600177700492,
+        "boundary_spacing": 0.045775594288745024,
+        "margin_width": 0.18983486187725113,
+        "boundary_perimeter": 32.346812299494765
+      }
+    },
+    {
+      "case_key": "25江燕/Group-jiangyan.bin",
+      "label": "高嵌体",
+      "tooth_position": "25",
+      "n_seg_points": 149299,
+      "n_rem_points": 838344,
+      "n_boundary_points": 3581,
+      "boundary_fraction": 0.023985425220530612,
+      "metrics": {
+        "step_height_mean": 0.1044914842592237,
+        "step_height_median": 0.1037551816358473,
+        "step_height_std": 0.06587963912146556,
+        "step_height_p95": 0.2101640495201309,
+        "curvature_boundary_mean": 0.005909159596000626,
+        "curvature_boundary_median": 0.002868626732379198,
+        "curvature_interior_mean": 0.008001784806708746,
+        "curvature_ratio": 0.7384801847205803,
+        "smoothness_cv": 0.24222404308279183,
+        "boundary_spacing": 0.03975501808196683,
+        "margin_width": 0.20873191151092463,
+        "boundary_perimeter": 25.570962396351977
+      }
+    },
+    {
+      "case_key": "26洪跃尹/Group-hongyueyin下颌.bin",
+      "label": "高嵌体",
+      "tooth_position": "37",
+      "n_seg_points": 174451,
+      "n_rem_points": 815340,
+      "n_boundary_points": 4118,
+      "boundary_fraction": 0.023605482341746392,
+      "metrics": {
+        "step_height_mean": 0.032217562468792524,
+        "step_height_median": 0.02339488180718341,
+        "step_height_std": 0.033430661410091274,
+        "step_height_p95": 0.09556123266158748,
+        "curvature_boundary_mean": 0.002506282961281233,
+        "curvature_boundary_median": 0.0010686093010008335,
+        "curvature_interior_mean": 0.010543219550070353,
+        "curvature_ratio": 0.23771514247685324,
+        "smoothness_cv": 0.22108250832596726,
+        "boundary_spacing": 0.043924912583560786,
+        "margin_width": 0.18033614799865977,
+        "boundary_perimeter": 37.9006628540125
+      }
+    },
+    {
+      "case_key": "27洪跃尹26/Group-hongyueyin上颌26.bin",
+      "label": "高嵌体",
+      "tooth_position": "26",
+      "n_seg_points": 189370,
+      "n_rem_points": 802964,
+      "n_boundary_points": 3403,
+      "boundary_fraction": 0.01797011142208375,
+      "metrics": {
+        "step_height_mean": 0.06472963184174936,
+        "step_height_median": 0.05523391445784753,
+        "step_height_std": 0.04610067886608619,
+        "step_height_p95": 0.146632828816519,
+        "curvature_boundary_mean": 0.004250392161227241,
+        "curvature_boundary_median": 0.0024285248946398497,
+        "curvature_interior_mean": 0.009926158821327408,
+        "curvature_ratio": 0.4282010992283049,
+        "smoothness_cv": 0.3292341870949275,
+        "boundary_spacing": 0.0431790197635049,
+        "margin_width": 0.20160703424453616,
+        "boundary_perimeter": 34.17872714498794
+      }
+    },
+    {
+      "case_key": "28洪银妆/Group-hongyinzhuang.bin",
+      "label": "充填",
+      "tooth_position": "27",
+      "n_seg_points": 201703,
+      "n_rem_points": 784184,
+      "n_boundary_points": 4940,
+      "boundary_fraction": 0.02449145525847409,
+      "metrics": {
+        "step_height_mean": 0.04349582620365795,
+        "step_height_median": 0.02943341787875564,
+        "step_height_std": 0.0435751689374864,
+        "step_height_p95": 0.12095288817543302,
+        "curvature_boundary_mean": 0.0029958165686623846,
+        "curvature_boundary_median": 0.0011577503755688667,
+        "curvature_interior_mean": 0.008327511323758812,
+        "curvature_ratio": 0.3597493196004713,
+        "smoothness_cv": 0.5029133777076584,
+        "boundary_spacing": 0.03718779105705519,
+        "margin_width": 0.19318115743006534,
+        "boundary_perimeter": 33.28631521863925
+      }
+    },
+    {
+      "case_key": "29符巧敏/Group-fuqiaomin.bin",
+      "label": "高嵌体",
+      "tooth_position": "35",
+      "n_seg_points": 126183,
+      "n_rem_points": 862504,
+      "n_boundary_points": 3756,
+      "boundary_fraction": 0.029766291814269753,
+      "metrics": {
+        "step_height_mean": 0.02299336018513159,
+        "step_height_median": 0.011217161819724097,
+        "step_height_std": 0.033596928467738804,
+        "step_height_p95": 0.10360184132948191,
+        "curvature_boundary_mean": 0.0032973578653921892,
+        "curvature_boundary_median": 0.0006820843846071512,
+        "curvature_interior_mean": 0.007557191405264439,
+        "curvature_ratio": 0.4363205382707593,
+        "smoothness_cv": 0.21903088990323047,
+        "boundary_spacing": 0.04121462983371438,
+        "margin_width": 0.18735979483746706,
+        "boundary_perimeter": 24.165431104293067
+      }
+    },
+    {
+      "case_key": "30纪敏芳/Group-jiminfang.bin",
+      "label": "全冠",
+      "tooth_position": "46",
+      "n_seg_points": 287535,
+      "n_rem_points": 683201,
+      "n_boundary_points": 4762,
+      "boundary_fraction": 0.016561462082876868,
+      "metrics": {
+        "step_height_mean": 0.04020327863551959,
+        "step_height_median": 0.025415182958433036,
+        "step_height_std": 0.03905001396302669,
+        "step_height_p95": 0.11809333450826213,
+        "curvature_boundary_mean": 0.003678789901697004,
+        "curvature_boundary_median": 0.001448199269361794,
+        "curvature_interior_mean": 0.010665426167137775,
+        "curvature_ratio": 0.3449266639282915,
+        "smoothness_cv": 0.21518738066172163,
+        "boundary_spacing": 0.04072694513339982,
+        "margin_width": 0.17968310475472699,
+        "boundary_perimeter": 36.20181859074866
+      }
+    },
+    {
+      "case_key": "31纪静/Group-jijing.bin",
+      "label": "桩核冠",
+      "tooth_position": "17",
+      "n_seg_points": 212885,
+      "n_rem_points": 776848,
+      "n_boundary_points": 4192,
+      "boundary_fraction": 0.019691382671395353,
+      "metrics": {
+        "step_height_mean": 0.032025430252994924,
+        "step_height_median": 0.02059364113738127,
+        "step_height_std": 0.033389760070109104,
+        "step_height_p95": 0.1023520156303375,
+        "curvature_boundary_mean": 0.0024310419077735305,
+        "curvature_boundary_median": 0.0011740014306269586,
+        "curvature_interior_mean": 0.0104841334774992,
+        "curvature_ratio": 0.231878189056173,
+        "smoothness_cv": 0.7499934245461519,
+        "boundary_spacing": 0.04294905921818651,
+        "margin_width": 0.17609250938704096,
+        "boundary_perimeter": 32.21677082633247
+      }
+    },
+    {
+      "case_key": "32胡丽芬/Group-hulifen.bin",
+      "label": "高嵌体",
+      "tooth_position": "16",
+      "n_seg_points": 241395,
+      "n_rem_points": 741135,
+      "n_boundary_points": 5944,
+      "boundary_fraction": 0.02462354232689161,
+      "metrics": {
+        "step_height_mean": 0.06389222706838195,
+        "step_height_median": 0.05859320433551307,
+        "step_height_std": 0.04663065710172315,
+        "step_height_p95": 0.1485240792488351,
+        "curvature_boundary_mean": 0.0038905807839242513,
+        "curvature_boundary_median": 0.001443399058189243,
+        "curvature_interior_mean": 0.010598298330165927,
+        "curvature_ratio": 0.3670948510801031,
+        "smoothness_cv": 0.24125870738932903,
+        "boundary_spacing": 0.0363024587356166,
+        "margin_width": 0.19481567858064525,
+        "boundary_perimeter": 33.02791101537221
+      }
+    },
+    {
+      "case_key": "33胡勇亮/Group-hyl.bin",
+      "label": "高嵌体",
+      "tooth_position": "25",
+      "n_seg_points": 171244,
+      "n_rem_points": 813146,
+      "n_boundary_points": 2078,
+      "boundary_fraction": 0.012134731727826961,
+      "metrics": {
+        "step_height_mean": 0.07957335643604166,
+        "step_height_median": 0.07799882060100272,
+        "step_height_std": 0.04361450920796547,
+        "step_height_p95": 0.15433634278787414,
+        "curvature_boundary_mean": 0.0038293594904552208,
+        "curvature_boundary_median": 0.0016477208118885756,
+        "curvature_interior_mean": 0.008090979749268444,
+        "curvature_ratio": 0.47328748332026277,
+        "smoothness_cv": 0.24567523629027424,
+        "boundary_spacing": 0.03985676959429671,
+        "margin_width": 0.2123727035191548,
+        "boundary_perimeter": 25.605065211420413
+      }
+    },
+    {
+      "case_key": "34胡春红/Group-huchunhong.bin",
+      "label": "高嵌体",
+      "tooth_position": "46",
+      "n_seg_points": 232921,
+      "n_rem_points": 754082,
+      "n_boundary_points": 3988,
+      "boundary_fraction": 0.01712168503484014,
+      "metrics": {
+        "step_height_mean": 0.0461052932007961,
+        "step_height_median": 0.02895748840652601,
+        "step_height_std": 0.04783738905463598,
+        "step_height_p95": 0.15192622932711397,
+        "curvature_boundary_mean": 0.0028984617839511195,
+        "curvature_boundary_median": 0.0008954824879765511,
+        "curvature_interior_mean": 0.012477874635984335,
+        "curvature_ratio": 0.23228809755497762,
+        "smoothness_cv": 2.259214116099148,
+        "boundary_spacing": 0.04083755892677875,
+        "margin_width": 0.189743306688042,
+        "boundary_perimeter": 35.12938823212776
+      }
+    },
+    {
+      "case_key": "35胡泓宇/Group-huhongyu.bin",
+      "label": "桩核冠",
+      "tooth_position": "47",
+      "n_seg_points": 265756,
+      "n_rem_points": 727927,
+      "n_boundary_points": 7921,
+      "boundary_fraction": 0.02980553590511597,
+      "metrics": {
+        "step_height_mean": 0.05880769089704865,
+        "step_height_median": 0.04771378568121065,
+        "step_height_std": 0.05088134390550139,
+        "step_height_p95": 0.16104817681095013,
+        "curvature_boundary_mean": 0.0032500092945784397,
+        "curvature_boundary_median": 0.0013058973709121346,
+        "curvature_interior_mean": 0.010110509441031718,
+        "curvature_ratio": 0.32144861556075394,
+        "smoothness_cv": 0.25889296719833127,
+        "boundary_spacing": 0.035783055944156934,
+        "margin_width": 0.19646328275547473,
+        "boundary_perimeter": 37.565626571980104
+      }
+    },
+    {
+      "case_key": "36胡逸璇/Group-huyixuan.bin",
+      "label": "全冠",
+      "tooth_position": "46",
+      "n_seg_points": 200433,
+      "n_rem_points": 788016,
+      "n_boundary_points": 3129,
+      "boundary_fraction": 0.015611201748215115,
+      "metrics": {
+        "step_height_mean": 0.06267972669206578,
+        "step_height_median": 0.05132450091682017,
+        "step_height_std": 0.047579805299883246,
+        "step_height_p95": 0.15113222777939084,
+        "curvature_boundary_mean": 0.003409105552904205,
+        "curvature_boundary_median": 0.0017096423543989658,
+        "curvature_interior_mean": 0.01066898665875633,
+        "curvature_ratio": 0.3195341441497487,
+        "smoothness_cv": 0.2707557645108117,
+        "boundary_spacing": 0.04495411757305982,
+        "margin_width": 0.21300138448033398,
+        "boundary_perimeter": 36.57653165204983
+      }
+    },
+    {
+      "case_key": "37菅晓燕/Group-jianxiaoyan.bin",
+      "label": "桩核冠",
+      "tooth_position": "17",
+      "n_seg_points": 131700,
+      "n_rem_points": 865743,
+      "n_boundary_points": 7058,
+      "boundary_fraction": 0.05359149582384207,
+      "metrics": {
+        "step_height_mean": 0.0314922615102713,
+        "step_height_median": 0.022740032312409397,
+        "step_height_std": 0.028440101976743466,
+        "step_height_p95": 0.08847695544084891,
+        "curvature_boundary_mean": 0.002258048487429306,
+        "curvature_boundary_median": 0.0012656241306103766,
+        "curvature_interior_mean": 0.01284410471299052,
+        "curvature_ratio": 0.17580427132185322,
+        "smoothness_cv": 0.22957414078062505,
+        "boundary_spacing": 0.038415015354214065,
+        "margin_width": 0.16838852993554054,
+        "boundary_perimeter": 32.18381542070135
+      }
+    },
+    {
+      "case_key": "38蒋宇鹏/Group-jiangyupeng.bin",
+      "label": "全冠",
+      "tooth_position": "17",
+      "n_seg_points": 257465,
+      "n_rem_points": 735256,
+      "n_boundary_points": 6654,
+      "boundary_fraction": 0.025844289515079718,
+      "metrics": {
+        "step_height_mean": 0.0389973646611456,
+        "step_height_median": 0.03196121421147069,
+        "step_height_std": 0.030966069730985434,
+        "step_height_p95": 0.09444256857619403,
+        "curvature_boundary_mean": 0.002318851971420303,
+        "curvature_boundary_median": 0.0011907470179721713,
+        "curvature_interior_mean": 0.016914592605564393,
+        "curvature_ratio": 0.13709180065905283,
+        "smoothness_cv": 0.2597886603996361,
+        "boundary_spacing": 0.04069930115174646,
+        "margin_width": 0.17545333667707722,
+        "boundary_perimeter": 37.50272426651284
+      }
+    },
+    {
+      "case_key": "39蒋淑晶/Group-jiangshujin.bin",
+      "label": "充填",
+      "tooth_position": "14",
+      "n_seg_points": 177566,
+      "n_rem_points": 802784,
+      "n_boundary_points": 3966,
+      "boundary_fraction": 0.022335356994019125,
+      "metrics": {
+        "step_height_mean": 0.06206878939326843,
+        "step_height_median": 0.035762667883585175,
+        "step_height_std": 0.06582277929639416,
+        "step_height_p95": 0.22062034862671132,
+        "curvature_boundary_mean": 0.003021453869513287,
+        "curvature_boundary_median": 0.0009276415221393108,
+        "curvature_interior_mean": 0.007623632923038167,
+        "curvature_ratio": 0.3963272970226443,
+        "smoothness_cv": 0.2425219775996219,
+        "boundary_spacing": 0.035946258237000914,
+        "margin_width": 0.1873799697921349,
+        "boundary_perimeter": 25.0463695966528
+      }
+    },
+    {
+      "case_key": "40蒋燕翠/Group-jiangyancui.bin",
+      "label": "全冠",
+      "tooth_position": "27",
+      "n_seg_points": 223419,
+      "n_rem_points": 762289,
+      "n_boundary_points": 3536,
+      "boundary_fraction": 0.01582676495732234,
+      "metrics": {
+        "step_height_mean": 0.03972579292040623,
+        "step_height_median": 0.02962423315708107,
+        "step_height_std": 0.036386832338073966,
+        "step_height_p95": 0.11017418551346658,
+        "curvature_boundary_mean": 0.002388889945943994,
+        "curvature_boundary_median": 0.0009587111417204142,
+        "curvature_interior_mean": 0.016124966216852773,
+        "curvature_ratio": 0.1481485231660472,
+        "smoothness_cv": 0.2749311047544774,
+        "boundary_spacing": 0.04077505563726547,
+        "margin_width": 0.18049661966869612,
+        "boundary_perimeter": 31.27682753540929
+      }
+    },
+    {
+      "case_key": "41.1蓝春雨/Group-lanchunyu2.bin",
+      "label": "桩核冠",
+      "tooth_position": "14",
+      "n_seg_points": 77068,
+      "n_rem_points": 921889,
+      "n_boundary_points": 5586,
+      "boundary_fraction": 0.07248144495769969,
+      "metrics": {
+        "step_height_mean": 0.04950276936215861,
+        "step_height_median": 0.028686632242285626,
+        "step_height_std": 0.05058708460601532,
+        "step_height_p95": 0.15108062308418546,
+        "curvature_boundary_mean": 0.0038317730112910255,
+        "curvature_boundary_median": 0.0021001591812819242,
+        "curvature_interior_mean": 0.009338585233266349,
+        "curvature_ratio": 0.4103162175582744,
+        "smoothness_cv": 0.22084506063318865,
+        "boundary_spacing": 0.0400063432845559,
+        "margin_width": 0.18556150493136225,
+        "boundary_perimeter": 25.950755326407577
+      }
+    },
+    {
+      "case_key": "41蓝春雨/Group-lanchunyu1.bin",
+      "label": "高嵌体",
+      "tooth_position": "15",
+      "n_seg_points": 102660,
+      "n_rem_points": 893701,
+      "n_boundary_points": 4675,
+      "boundary_fraction": 0.04553867134229495,
+      "metrics": {
+        "step_height_mean": 0.05019064013001609,
+        "step_height_median": 0.03388546532812908,
+        "step_height_std": 0.04668216688944769,
+        "step_height_p95": 0.14388114733236648,
+        "curvature_boundary_mean": 0.003923846255375874,
+        "curvature_boundary_median": 0.0018662147922441363,
+        "curvature_interior_mean": 0.008809267116912088,
+        "curvature_ratio": 0.4454225486363779,
+        "smoothness_cv": 0.23981098028759293,
+        "boundary_spacing": 0.04028026088142545,
+        "margin_width": 0.1850264501800092,
+        "boundary_perimeter": 25.86652541395288
+      }
+    },
+    {
+      "case_key": "42蓝颂庭/Group-lansongtiing.bin",
+      "label": "充填",
+      "tooth_position": "27",
+      "n_seg_points": 214081,
+      "n_rem_points": 773275,
+      "n_boundary_points": 4611,
+      "boundary_fraction": 0.021538576520102205,
+      "metrics": {
+        "step_height_mean": 0.05153060691058563,
+        "step_height_median": 0.025238506175115916,
+        "step_height_std": 0.05452372435296625,
+        "step_height_p95": 0.15884716130145526,
+        "curvature_boundary_mean": 0.0014575499481306459,
+        "curvature_boundary_median": 0.0005516632809303701,
+        "curvature_interior_mean": 0.006386608988336593,
+        "curvature_ratio": 0.22821969028799102,
+        "smoothness_cv": 0.2522729530033153,
+        "boundary_spacing": 0.03704980560114464,
+        "margin_width": 0.19521462578276616,
+        "boundary_perimeter": 32.574233368828764
+      }
+    },
+    {
+      "case_key": "43贡晓光/Group-gongxiaoguang1.bin",
+      "label": "高嵌体",
+      "tooth_position": "37",
+      "n_seg_points": 171945,
+      "n_rem_points": 808762,
+      "n_boundary_points": 4534,
+      "boundary_fraction": 0.026368897031027363,
+      "metrics": {
+        "step_height_mean": 0.033090848660178494,
+        "step_height_median": 0.021490795082670933,
+        "step_height_std": 0.03464334337566497,
+        "step_height_p95": 0.099899807798666,
+        "curvature_boundary_mean": 0.002059938788237272,
+        "curvature_boundary_median": 0.0010608428274281323,
+        "curvature_interior_mean": 0.008352951402567123,
+        "curvature_ratio": 0.24661208527359327,
+        "smoothness_cv": 0.23636515814617787,
+        "boundary_spacing": 0.04054933681100912,
+        "margin_width": 0.18634800899896278,
+        "boundary_perimeter": 31.328356919326797
+      }
+    },
+    {
+      "case_key": "43贡晓光/Group-gongxiaoguang2.bin",
+      "label": "高嵌体",
+      "tooth_position": "37",
+      "n_seg_points": 204386,
+      "n_rem_points": 749953,
+      "n_boundary_points": 3179,
+      "boundary_fraction": 0.015553902909201217,
+      "metrics": {
+        "step_height_mean": 0.0420416723803119,
+        "step_height_median": 0.02915074214633151,
+        "step_height_std": 0.039428959574190424,
+        "step_height_p95": 0.13146694030679879,
+        "curvature_boundary_mean": 0.0031452417118037145,
+        "curvature_boundary_median": 0.0016359201399609447,
+        "curvature_interior_mean": 0.006237629993351584,
+        "curvature_ratio": 0.5042366515379118,
+        "smoothness_cv": 0.2260768929518028,
+        "boundary_spacing": 0.040193880885094437,
+        "margin_width": 0.17943157688825176,
+        "boundary_perimeter": 30.26755594131434
+      }
+    },
+    {
+      "case_key": "44.1邓冠虹 - 副本/Group-dengguanhong2.bin",
+      "label": "桩核冠",
+      "tooth_position": "27",
+      "n_seg_points": 192710,
+      "n_rem_points": 792653,
+      "n_boundary_points": 1254,
+      "boundary_fraction": 0.006507186964869493,
+      "metrics": {
+        "step_height_mean": 0.03468356689248681,
+        "step_height_median": 0.018728020903367337,
+        "step_height_std": 0.042502201356626954,
+        "step_height_p95": 0.11732966853112109,
+        "curvature_boundary_mean": 0.001292475541856185,
+        "curvature_boundary_median": 0.00043221843952778727,
+        "curvature_interior_mean": 0.020236484339015988,
+        "curvature_ratio": 0.06386858081754009,
+        "smoothness_cv": 2.0032551633648317,
+        "boundary_spacing": 0.04715974583693697,
+        "margin_width": 0.2254020211213708,
+        "boundary_perimeter": 35.219152013518965
+      }
+    },
+    {
+      "case_key": "44邓冠虹/Group-dengguanhong1.bin",
+      "label": "高嵌体",
+      "tooth_position": "26",
+      "n_seg_points": 233397,
+      "n_rem_points": 752464,
+      "n_boundary_points": 2328,
+      "boundary_fraction": 0.00997442126505482,
+      "metrics": {
+        "step_height_mean": 0.054735299617202735,
+        "step_height_median": 0.04504788671480142,
+        "step_height_std": 0.046427119624895985,
+        "step_height_p95": 0.13797951845548795,
+        "curvature_boundary_mean": 0.0038211988830112865,
+        "curvature_boundary_median": 0.0008989988127723336,
+        "curvature_interior_mean": 0.009841909042713815,
+        "curvature_ratio": 0.3882578905780903,
+        "smoothness_cv": 2.3832605743311124,
+        "boundary_spacing": 0.046759816144170026,
+        "margin_width": 0.20295037808916036,
+        "boundary_perimeter": 34.312481973501285
+      }
+    },
+    {
+      "case_key": "45邓华坤/Group-dhs.bin",
+      "label": "高嵌体",
+      "tooth_position": "26",
+      "n_seg_points": 214053,
+      "n_rem_points": 757798,
+      "n_boundary_points": 4891,
+      "boundary_fraction": 0.0228494812032534,
+      "metrics": {
+        "step_height_mean": 0.0580680289256057,
+        "step_height_median": 0.05554198611731209,
+        "step_height_std": 0.044365148324210596,
+        "step_height_p95": 0.13667868679938477,
+        "curvature_boundary_mean": 0.003884864153158047,
+        "curvature_boundary_median": 0.001901971292681992,
+        "curvature_interior_mean": 0.012920412459153157,
+        "curvature_ratio": 0.30067647881769133,
+        "smoothness_cv": 0.22885435776580015,
+        "boundary_spacing": 0.04352442146280292,
+        "margin_width": 0.1934856650316343,
+        "boundary_perimeter": 33.291764643250474
+      }
+    },
+    {
+      "case_key": "46邓萱/Group-dengxuan.bin",
+      "label": "高嵌体",
+      "tooth_position": "25",
+      "n_seg_points": 157341,
+      "n_rem_points": 838425,
+      "n_boundary_points": 7142,
+      "boundary_fraction": 0.04539185590532665,
+      "metrics": {
+        "step_height_mean": 0.042249713137752436,
+        "step_height_median": 0.032515763496402506,
+        "step_height_std": 0.03799915988848674,
+        "step_height_p95": 0.11074821080878224,
+        "curvature_boundary_mean": 0.0026831810787152303,
+        "curvature_boundary_median": 0.0008419797522947192,
+        "curvature_interior_mean": 0.007669686001826631,
+        "curvature_ratio": 0.3498423590081734,
+        "smoothness_cv": 0.23899520938967256,
+        "boundary_spacing": 0.03468538190186581,
+        "margin_width": 0.17933084952924472,
+        "boundary_perimeter": 24.921380090597424
+      }
+    },
+    {
+      "case_key": "47郭丽娟/Group-guolijuan.bin",
+      "label": "高嵌体",
+      "tooth_position": "47",
+      "n_seg_points": 141726,
+      "n_rem_points": 858341,
+      "n_boundary_points": 7329,
+      "boundary_fraction": 0.05171245925236019,
+      "metrics": {
+        "step_height_mean": 0.032043563081993354,
+        "step_height_median": 0.021121748686972808,
+        "step_height_std": 0.03383832976352379,
+        "step_height_p95": 0.10163685434563942,
+        "curvature_boundary_mean": 0.0034470471566344827,
+        "curvature_boundary_median": 0.0014162593288347125,
+        "curvature_interior_mean": 0.009786375587873408,
+        "curvature_ratio": 0.3522291874514712,
+        "smoothness_cv": 0.21978020165266812,
+        "boundary_spacing": 0.04672476499400657,
+        "margin_width": 0.1687105003430872,
+        "boundary_perimeter": 38.73040027130432
+      }
+    },
+    {
+      "case_key": "48郭勇军/Group-guoyongjun.bin",
+      "label": "全冠",
+      "tooth_position": "15",
+      "n_seg_points": 205742,
+      "n_rem_points": 776789,
+      "n_boundary_points": 3664,
+      "boundary_fraction": 0.01780871188187147,
+      "metrics": {
+        "step_height_mean": 0.03209808008230841,
+        "step_height_median": 0.017926047117256982,
+        "step_height_std": 0.03993861141865248,
+        "step_height_p95": 0.11626513870960654,
+        "curvature_boundary_mean": 0.0018076409106798867,
+        "curvature_boundary_median": 0.0003805073065450415,
+        "curvature_interior_mean": 0.012257213786023567,
+        "curvature_ratio": 0.14747567656798993,
+        "smoothness_cv": 0.30091767323769764,
+        "boundary_spacing": 0.0396032815688139,
+        "margin_width": 0.18745240882054287,
+        "boundary_perimeter": 29.89264158738606
+      }
+    },
+    {
+      "case_key": "49郭昱成/Group-guoyucheng.bin",
+      "label": "高嵌体",
+      "tooth_position": "46",
+      "n_seg_points": 222651,
+      "n_rem_points": 765520,
+      "n_boundary_points": 4132,
+      "boundary_fraction": 0.018558191968596593,
+      "metrics": {
+        "step_height_mean": 0.034563916566098765,
+        "step_height_median": 0.019993736739540857,
+        "step_height_std": 0.03594975424088658,
+        "step_height_p95": 0.10802078721080405,
+        "curvature_boundary_mean": 0.0015052613591298423,
+        "curvature_boundary_median": 0.0008437871874775738,
+        "curvature_interior_mean": 0.010562158999367967,
+        "curvature_ratio": 0.14251455076262923,
+        "smoothness_cv": 0.36727887430150713,
+        "boundary_spacing": 0.04540465939871247,
+        "margin_width": 0.1971216935775204,
+        "boundary_perimeter": 35.73489093539286
+      }
+    },
+    {
+      "case_key": "50郭英东/Group-guoyingdong.bin",
+      "label": "充填",
+      "tooth_position": "15",
+      "n_seg_points": 136373,
+      "n_rem_points": 860199,
+      "n_boundary_points": 8186,
+      "boundary_fraction": 0.06002654484392072,
+      "metrics": {
+        "step_height_mean": 0.04527174608042874,
+        "step_height_median": 0.028130053222817253,
+        "step_height_std": 0.04575252379359217,
+        "step_height_p95": 0.13472739514262866,
+        "curvature_boundary_mean": 0.0031893123253654144,
+        "curvature_boundary_median": 0.0010647179442457855,
+        "curvature_interior_mean": 0.006849901940605923,
+        "curvature_ratio": 0.46559969857368894,
+        "smoothness_cv": 0.23307259189959598,
+        "boundary_spacing": 0.03418561291904719,
+        "margin_width": 0.17161663411826664,
+        "boundary_perimeter": 24.291975087353503
+      }
+    },
+    {
+      "case_key": "51郭黎/Group-guoli.bin",
+      "label": "高嵌体",
+      "tooth_position": "17",
+      "n_seg_points": 208129,
+      "n_rem_points": 771515,
+      "n_boundary_points": 2122,
+      "boundary_fraction": 0.010195599844327316,
+      "metrics": {
+        "step_height_mean": 0.06891769245879882,
+        "step_height_median": 0.050342850291971164,
+        "step_height_std": 0.0609403838791021,
+        "step_height_p95": 0.184273637582557,
+        "curvature_boundary_mean": 0.007735437930115759,
+        "curvature_boundary_median": 0.003807180328294635,
+        "curvature_interior_mean": 0.008272575918165239,
+        "curvature_ratio": 0.9350700329776346,
+        "smoothness_cv": 0.2424967997317924,
+        "boundary_spacing": 0.04054749519038486,
+        "margin_width": 0.1958779874707166,
+        "boundary_perimeter": 29.14545634456121
+      }
+    },
+    {
+      "case_key": "52韩会叶/Group-hanhuiye.bin",
+      "label": "高嵌体",
+      "tooth_position": "17",
+      "n_seg_points": 173029,
+      "n_rem_points": 814900,
+      "n_boundary_points": 1920,
+      "boundary_fraction": 0.011096405804807287,
+      "metrics": {
+        "step_height_mean": 0.07888504924030186,
+        "step_height_median": 0.07116959406323176,
+        "step_height_std": 0.05796312885315122,
+        "step_height_p95": 0.19868882362171683,
+        "curvature_boundary_mean": 0.0046654384087607545,
+        "curvature_boundary_median": 0.0018192417337559164,
+        "curvature_interior_mean": 0.009414064233008685,
+        "curvature_ratio": 0.49558174277631106,
+        "smoothness_cv": 0.23478083733509705,
+        "boundary_spacing": 0.04549998811848717,
+        "margin_width": 0.22170670239954143,
+        "boundary_perimeter": 31.1370757964741
+      }
+    },
+    {
+      "case_key": "53韩梦楚/Group-hanmengchu.bin",
+      "label": "高嵌体",
+      "tooth_position": "16",
+      "n_seg_points": 196874,
+      "n_rem_points": 786512,
+      "n_boundary_points": 1437,
+      "boundary_fraction": 0.007299084693763524,
+      "metrics": {
+        "step_height_mean": 0.10731151255944203,
+        "step_height_median": 0.08648747062494522,
+        "step_height_std": 0.06268197556451952,
+        "step_height_p95": 0.23015851761428208,
+        "curvature_boundary_mean": 0.001256054298988556,
+        "curvature_boundary_median": 0.0006764730205759406,
+        "curvature_interior_mean": 0.008320237454460585,
+        "curvature_ratio": 0.1509637544321279,
+        "smoothness_cv": 0.6599701629829426,
+        "boundary_spacing": 0.04625948951611514,
+        "margin_width": 0.2530930902405965,
+        "boundary_perimeter": 31.418168150071022
+      }
+    },
+    {
+      "case_key": "54韩锡明/Group-hanximing.bin",
+      "label": "充填",
+      "tooth_position": "34",
+      "n_seg_points": 198014,
+      "n_rem_points": 794240,
+      "n_boundary_points": 3911,
+      "boundary_fraction": 0.019751128708071147,
+      "metrics": {
+        "step_height_mean": 0.06745133158034498,
+        "step_height_median": 0.051834602908041205,
+        "step_height_std": 0.05762741308272068,
+        "step_height_p95": 0.19366628294775534,
+        "curvature_boundary_mean": 0.0019813288359474186,
+        "curvature_boundary_median": 0.0010231256019324064,
+        "curvature_interior_mean": 0.008152813069296825,
+        "curvature_ratio": 0.24302394704799876,
+        "smoothness_cv": 0.5185511069196624,
+        "boundary_spacing": 0.04077756790768439,
+        "margin_width": 0.21486057554900062,
+        "boundary_perimeter": 34.06272451754604
+      }
+    },
+    {
+      "case_key": "55高笑芳/Group-gaoxiaofang.bin",
+      "label": "高嵌体",
+      "tooth_position": "15",
+      "n_seg_points": 68056,
+      "n_rem_points": 922943,
+      "n_boundary_points": 1586,
+      "boundary_fraction": 0.023304337604325848,
+      "metrics": {
+        "step_height_mean": 0.05248726624617662,
+        "step_height_median": 0.04610703849862796,
+        "step_height_std": 0.035707305204117745,
+        "step_height_p95": 0.12259190264984893,
+        "curvature_boundary_mean": 0.0051928885820575746,
+        "curvature_boundary_median": 0.002859468339011073,
+        "curvature_interior_mean": 0.0073561527018115155,
+        "curvature_ratio": 0.7059245127125121,
+        "smoothness_cv": 0.2440982635908951,
+        "boundary_spacing": 0.0628943366718866,
+        "margin_width": 0.18998853335129393,
+        "boundary_perimeter": 25.648445622128033
+      }
+    },
+    {
+      "case_key": "56高芳/Group-gaofang.bin",
+      "label": "高嵌体",
+      "tooth_position": "24",
+      "n_seg_points": 156859,
+      "n_rem_points": 839922,
+      "n_boundary_points": 7080,
+      "boundary_fraction": 0.04513607762385327,
+      "metrics": {
+        "step_height_mean": 0.02820706430814797,
+        "step_height_median": 0.019929118359462095,
+        "step_height_std": 0.026617671743302748,
+        "step_height_p95": 0.08185927730596088,
+        "curvature_boundary_mean": 0.0019143237474646166,
+        "curvature_boundary_median": 0.0007968661957420409,
+        "curvature_interior_mean": 0.010158575199136976,
+        "curvature_ratio": 0.18844411653150306,
+        "smoothness_cv": 0.24741486698914095,
+        "boundary_spacing": 0.03728146037956963,
+        "margin_width": 0.18088299156445795,
+        "boundary_perimeter": 28.398427291580507
+      }
+    },
+    {
+      "case_key": "57高颖/Group-gaoying.bin",
+      "label": "高嵌体",
+      "tooth_position": "46",
+      "n_seg_points": 203704,
+      "n_rem_points": 780636,
+      "n_boundary_points": 2915,
+      "boundary_fraction": 0.01430997918548482,
+      "metrics": {
+        "step_height_mean": 0.062221684992930286,
+        "step_height_median": 0.04073081555132774,
+        "step_height_std": 0.06079624500361855,
+        "step_height_p95": 0.192438106827326,
+        "curvature_boundary_mean": 0.005530864685934556,
+        "curvature_boundary_median": 0.0013385532656684518,
+        "curvature_interior_mean": 0.012737910629439284,
+        "curvature_ratio": 0.4342050123770982,
+        "smoothness_cv": 0.5601063515417342,
+        "boundary_spacing": 0.046570850384565356,
+        "margin_width": 0.18497173377776377,
+        "boundary_perimeter": 33.85883079331687
+      }
+    },
+    {
+      "case_key": "58黄丽芳/Group-huanglifang.bin",
+      "label": "高嵌体",
+      "tooth_position": "37",
+      "n_seg_points": 220416,
+      "n_rem_points": 770363,
+      "n_boundary_points": 5989,
+      "boundary_fraction": 0.027171348722415795,
+      "metrics": {
+        "step_height_mean": 0.030956659359053992,
+        "step_height_median": 0.02125860042558614,
+        "step_height_std": 0.03201860984287778,
+        "step_height_p95": 0.0969325678132348,
+        "curvature_boundary_mean": 0.0021586852551407185,
+        "curvature_boundary_median": 0.0007647738675586879,
+        "curvature_interior_mean": 0.009246659092716436,
+        "curvature_ratio": 0.23345569574372418,
+        "smoothness_cv": 0.24098909198085688,
+        "boundary_spacing": 0.036118958178993674,
+        "margin_width": 0.17454839648962736,
+        "boundary_perimeter": 37.07558329239317
+      }
+    },
+    {
+      "case_key": "59黄伟宸/Group-huangweichen.bin",
+      "label": "高嵌体",
+      "tooth_position": "36",
+      "n_seg_points": 236496,
+      "n_rem_points": 749685,
+      "n_boundary_points": 7842,
+      "boundary_fraction": 0.033159123198701033,
+      "metrics": {
+        "step_height_mean": 0.03164468625123036,
+        "step_height_median": 0.022067415725704365,
+        "step_height_std": 0.03109314993011435,
+        "step_height_p95": 0.1005869956810784,
+        "curvature_boundary_mean": 0.001427829467238807,
+        "curvature_boundary_median": 0.0006801990966778249,
+        "curvature_interior_mean": 0.010333154402894434,
+        "curvature_ratio": 0.13817943657368675,
+        "smoothness_cv": 0.22938923471899322,
+        "boundary_spacing": 0.03768354471199483,
+        "margin_width": 0.1718694994648335,
+        "boundary_perimeter": 38.1994534167998
+      }
+    },
+    {
+      "case_key": "60黄佳妮/Group-huangjiani.bin",
+      "label": "高嵌体",
+      "tooth_position": "47",
+      "n_seg_points": 201978,
+      "n_rem_points": 790345,
+      "n_boundary_points": 3902,
+      "boundary_fraction": 0.019318935725673093,
+      "metrics": {
+        "step_height_mean": 0.029739571303953275,
+        "step_height_median": 0.021796891710817334,
+        "step_height_std": 0.029918969274198307,
+        "step_height_p95": 0.09293818136696073,
+        "curvature_boundary_mean": 0.001923711991119344,
+        "curvature_boundary_median": 0.0008888672164175659,
+        "curvature_interior_mean": 0.01053408492188464,
+        "curvature_ratio": 0.18261785310473744,
+        "smoothness_cv": 0.5525728878642925,
+        "boundary_spacing": 0.04509244365987078,
+        "margin_width": 0.17855397881234886,
+        "boundary_perimeter": 36.33017350532883
+      }
+    },
+    {
+      "case_key": "61黄勇/Group-huangyong.bin",
+      "label": "全冠",
+      "tooth_position": "27",
+      "n_seg_points": 188921,
+      "n_rem_points": 806973,
+      "n_boundary_points": 7051,
+      "boundary_fraction": 0.0373224787080314,
+      "metrics": {
+        "step_height_mean": 0.039872318600129596,
+        "step_height_median": 0.03201718146435972,
+        "step_height_std": 0.0329782342402703,
+        "step_height_p95": 0.10507320982107027,
+        "curvature_boundary_mean": 0.0026288355362781178,
+        "curvature_boundary_median": 0.0015400180127471685,
+        "curvature_interior_mean": 0.012305070431701096,
+        "curvature_ratio": 0.2136383964241039,
+        "smoothness_cv": 0.2855777077394812,
+        "boundary_spacing": 0.03844542593515487,
+        "margin_width": 0.17081150482337917,
+        "boundary_perimeter": 34.67912199672322
+      }
+    },
+    {
+      "case_key": "62黄岩/Group-huangyan.bin",
+      "label": "高嵌体",
+      "tooth_position": "27",
+      "n_seg_points": 247408,
+      "n_rem_points": 737025,
+      "n_boundary_points": 7413,
+      "boundary_fraction": 0.029962652784065187,
+      "metrics": {
+        "step_height_mean": 0.04647901498224308,
+        "step_height_median": 0.03322304500622408,
+        "step_height_std": 0.043711820252678675,
+        "step_height_p95": 0.13578608750288332,
+        "curvature_boundary_mean": 0.0037052109338034773,
+        "curvature_boundary_median": 0.0017940836260095239,
+        "curvature_interior_mean": 0.010628387966508307,
+        "curvature_ratio": 0.3486145698310706,
+        "smoothness_cv": 0.30463799682641746,
+        "boundary_spacing": 0.03882431805210045,
+        "margin_width": 0.18710636485577356,
+        "boundary_perimeter": 36.60161026649104
+      }
+    },
+    {
+      "case_key": "63黄嵩/Group-hs.bin",
+      "label": "全冠",
+      "tooth_position": "36",
+      "n_seg_points": 158576,
+      "n_rem_points": 832813,
+      "n_boundary_points": 4813,
+      "boundary_fraction": 0.030351377257592575,
+      "metrics": {
+        "step_height_mean": 0.054645497342619025,
+        "step_height_median": 0.03273865505124629,
+        "step_height_std": 0.056660084728896186,
+        "step_height_p95": 0.18480145889722485,
+        "curvature_boundary_mean": 0.004097662637109236,
+        "curvature_boundary_median": 0.001942926086485386,
+        "curvature_interior_mean": 0.010057703034715086,
+        "curvature_ratio": 0.40741534943159907,
+        "smoothness_cv": 1.10733063547453,
+        "boundary_spacing": 0.04439130662763079,
+        "margin_width": 0.18134886628029023,
+        "boundary_perimeter": 31.681550233092125
+      }
+    },
+    {
+      "case_key": "64黄建华/Group-huangjianhua.bin",
+      "label": "高嵌体",
+      "tooth_position": "26",
+      "n_seg_points": 199258,
+      "n_rem_points": 785054,
+      "n_boundary_points": 2723,
+      "boundary_fraction": 0.013665699746057875,
+      "metrics": {
+        "step_height_mean": 0.041221920123295695,
+        "step_height_median": 0.03091360139711785,
+        "step_height_std": 0.036300161943437374,
+        "step_height_p95": 0.1140659884747823,
+        "curvature_boundary_mean": 0.0034714094460385077,
+        "curvature_boundary_median": 0.001902052783407271,
+        "curvature_interior_mean": 0.011770233698564697,
+        "curvature_ratio": 0.2949312227308368,
+        "smoothness_cv": 0.21986329463830503,
+        "boundary_spacing": 0.046750252837801216,
+        "margin_width": 0.1741323533300255,
+        "boundary_perimeter": 32.054177882988
+      }
+    },
+    {
+      "case_key": "65黄征艳/Group-huangzhengyan.bin",
+      "label": "全冠",
+      "tooth_position": "47",
+      "n_seg_points": 171472,
+      "n_rem_points": 821875,
+      "n_boundary_points": 4181,
+      "boundary_fraction": 0.024382989642623868,
+      "metrics": {
+        "step_height_mean": 0.07162050743515236,
+        "step_height_median": 0.059477147958730825,
+        "step_height_std": 0.05526864601377535,
+        "step_height_p95": 0.17711916950423046,
+        "curvature_boundary_mean": 0.0039661873005492985,
+        "curvature_boundary_median": 0.0022953536827117205,
+        "curvature_interior_mean": 0.013527104056207464,
+        "curvature_ratio": 0.29320298378343246,
+        "smoothness_cv": 0.2934592396148136,
+        "boundary_spacing": 0.047921385194015884,
+        "margin_width": 0.2043553831432356,
+        "boundary_perimeter": 34.0812749570158
+      }
+    },
+    {
+      "case_key": "66.1黄柏锋 - 副本/Group-hbf上颌患牙.bin",
+      "label": "桩核冠",
+      "tooth_position": "47",
+      "n_seg_points": 193762,
+      "n_rem_points": 802498,
+      "n_boundary_points": 5729,
+      "boundary_fraction": 0.029567200999163924,
+      "metrics": {
+        "step_height_mean": 0.033813576570518235,
+        "step_height_median": 0.02552238230693149,
+        "step_height_std": 0.03316788873133817,
+        "step_height_p95": 0.09183343950471393,
+        "curvature_boundary_mean": 0.0028159114251921787,
+        "curvature_boundary_median": 0.0013666466111317277,
+        "curvature_interior_mean": 0.01146041191459517,
+        "curvature_ratio": 0.24570769546557603,
+        "smoothness_cv": 0.2578403100681592,
+        "boundary_spacing": 0.04580595890114078,
+        "margin_width": 0.17880033896897166,
+        "boundary_perimeter": 38.22609635111133
+      }
+    },
+    {
+      "case_key": "66.1黄柏锋 - 副本/Group-hbf下颌患牙.bin",
+      "label": "桩核冠",
+      "tooth_position": "47",
+      "n_seg_points": 204949,
+      "n_rem_points": 787618,
+      "n_boundary_points": 4118,
+      "boundary_fraction": 0.020092803575523666,
+      "metrics": {
+        "step_height_mean": 0.04284009269544062,
+        "step_height_median": 0.03815388941067255,
+        "step_height_std": 0.0286922774334033,
+        "step_height_p95": 0.09691465670877411,
+        "curvature_boundary_mean": 0.00259316573021994,
+        "curvature_boundary_median": 0.0011773299193009734,
+        "curvature_interior_mean": 0.015407878007109684,
+        "curvature_ratio": 0.16830128796406893,
+        "smoothness_cv": 0.7818340119646576,
+        "boundary_spacing": 0.04219253037577552,
+        "margin_width": 0.19340689606607656,
+        "boundary_perimeter": 37.21094359844971
+      }
+    },
+    {
+      "case_key": "66黄柏锋/Group-hbf上颌患牙.bin",
+      "label": "高嵌体",
+      "tooth_position": "17",
+      "n_seg_points": 193762,
+      "n_rem_points": 802498,
+      "n_boundary_points": 5729,
+      "boundary_fraction": 0.029567200999163924,
+      "metrics": {
+        "step_height_mean": 0.033813576570518235,
+        "step_height_median": 0.02552238230693149,
+        "step_height_std": 0.03316788873133817,
+        "step_height_p95": 0.09183343950471393,
+        "curvature_boundary_mean": 0.0028159114251921787,
+        "curvature_boundary_median": 0.0013666466111317277,
+        "curvature_interior_mean": 0.011269044249424952,
+        "curvature_ratio": 0.24988023277553895,
+        "smoothness_cv": 0.2578403100681592,
+        "boundary_spacing": 0.04580595890114078,
+        "margin_width": 0.17880033896897166,
+        "boundary_perimeter": 38.22609635111133
+      }
+    },
+    {
+      "case_key": "66黄柏锋/Group-hbf下颌患牙.bin",
+      "label": "高嵌体",
+      "tooth_position": "17",
+      "n_seg_points": 204949,
+      "n_rem_points": 787618,
+      "n_boundary_points": 4118,
+      "boundary_fraction": 0.020092803575523666,
+      "metrics": {
+        "step_height_mean": 0.04284009269544062,
+        "step_height_median": 0.03815388941067255,
+        "step_height_std": 0.0286922774334033,
+        "step_height_p95": 0.09691465670877411,
+        "curvature_boundary_mean": 0.00259316573021994,
+        "curvature_boundary_median": 0.0011773299193009734,
+        "curvature_interior_mean": 0.015133997440782697,
+        "curvature_ratio": 0.1713470431874953,
+        "smoothness_cv": 0.7818340119646576,
+        "boundary_spacing": 0.04219253037577552,
+        "margin_width": 0.19340689606607656,
+        "boundary_perimeter": 37.21094359844971
+      }
+    },
+    {
+      "case_key": "67黄梅兰/Group-hml.bin",
+      "label": "高嵌体",
+      "tooth_position": "14",
+      "n_seg_points": 132800,
+      "n_rem_points": 861915,
+      "n_boundary_points": 4459,
+      "boundary_fraction": 0.033576807228915664,
+      "metrics": {
+        "step_height_mean": 0.05070429353102353,
+        "step_height_median": 0.03721113039473534,
+        "step_height_std": 0.044147940423295326,
+        "step_height_p95": 0.14351543318414492,
+        "curvature_boundary_mean": 0.0033296597588190575,
+        "curvature_boundary_median": 0.0017438088543713093,
+        "curvature_interior_mean": 0.010995188582161064,
+        "curvature_ratio": 0.3028287967646432,
+        "smoothness_cv": 0.2643007164332872,
+        "boundary_spacing": 0.03971366484609546,
+        "margin_width": 0.1867468936742098,
+        "boundary_perimeter": 25.132418340058045
+      }
+    },
+    {
+      "case_key": "68黄翠美/Group-huangcuimei.bin",
+      "label": "桩核冠",
+      "tooth_position": "26",
+      "n_seg_points": 214583,
+      "n_rem_points": 779622,
+      "n_boundary_points": 4607,
+      "boundary_fraction": 0.021469547913860836,
+      "metrics": {
+        "step_height_mean": 0.033687328461961014,
+        "step_height_median": 0.02000323211925714,
+        "step_height_std": 0.03632167290475983,
+        "step_height_p95": 0.10663221391047124,
+        "curvature_boundary_mean": 0.0022054951259310204,
+        "curvature_boundary_median": 0.0012904535979032516,
+        "curvature_interior_mean": 0.013091331029884168,
+        "curvature_ratio": 0.16846989080403277,
+        "smoothness_cv": 0.2811083191522293,
+        "boundary_spacing": 0.04196568878341104,
+        "margin_width": 0.1780597025628664,
+        "boundary_perimeter": 33.78260120562975
+      }
+    },
+    {
+      "case_key": "69黄菊莉/Group-huangjuli.bin",
+      "label": "高嵌体",
+      "tooth_position": "46",
+      "n_seg_points": 220415,
+      "n_rem_points": 773722,
+      "n_boundary_points": 6971,
+      "boundary_fraction": 0.03162670417167616,
+      "metrics": {
+        "step_height_mean": 0.04658551567880032,
+        "step_height_median": 0.032790193145084245,
+        "step_height_std": 0.041365941005087885,
+        "step_height_p95": 0.12856898946506234,
+        "curvature_boundary_mean": 0.003650223484779843,
+        "curvature_boundary_median": 0.0018167649395763874,
+        "curvature_interior_mean": 0.011879572373794871,
+        "curvature_ratio": 0.30726892679276674,
+        "smoothness_cv": 0.3501594584797119,
+        "boundary_spacing": 0.03805456973654111,
+        "margin_width": 0.17195796489166168,
+        "boundary_perimeter": 33.8699786699946
+      }
+    },
+    {
+      "case_key": "70黄郁辉/Group-huangyuhui.bin",
+      "label": "全冠",
+      "tooth_position": "26",
+      "n_seg_points": 200433,
+      "n_rem_points": 786189,
+      "n_boundary_points": 1606,
+      "boundary_fraction": 0.008012652607105616,
+      "metrics": {
+        "step_height_mean": 0.027517080147967384,
+        "step_height_median": 0.014037160559191797,
+        "step_height_std": 0.04372100529184308,
+        "step_height_p95": 0.13736196354816316,
+        "curvature_boundary_mean": 0.0023238264704206037,
+        "curvature_boundary_median": 0.0012621704954653978,
+        "curvature_interior_mean": 0.009608688693276236,
+        "curvature_ratio": 0.24184636638942056,
+        "smoothness_cv": 1.71009644632881,
+        "boundary_spacing": 0.04545491177758501,
+        "margin_width": 0.1842277392003574,
+        "boundary_perimeter": 26.721934661606163
+      }
+    },
+    {
+      "case_key": "71黎建文/Group-lijianwen.bin",
+      "label": "充填",
+      "tooth_position": "44",
+      "n_seg_points": 166585,
+      "n_rem_points": 822314,
+      "n_boundary_points": 4426,
+      "boundary_fraction": 0.02656901881922142,
+      "metrics": {
+        "step_height_mean": 0.06540858938698234,
+        "step_height_median": 0.04964727912196665,
+        "step_height_std": 0.0592242644139091,
+        "step_height_p95": 0.18924880250322804,
+        "curvature_boundary_mean": 0.003963441806703221,
+        "curvature_boundary_median": 0.0008212101820390671,
+        "curvature_interior_mean": 0.011453473610197398,
+        "curvature_ratio": 0.34604713879724025,
+        "smoothness_cv": 0.2898562136370747,
+        "boundary_spacing": 0.03515389549451385,
+        "margin_width": 0.2016583655742501,
+        "boundary_perimeter": 22.884733651524368
+      }
+    },
+    {
+      "case_key": "72黎荃/Group-liquan.bin",
+      "label": "桩核冠",
+      "tooth_position": "15",
+      "n_seg_points": 120198,
+      "n_rem_points": 871532,
+      "n_boundary_points": 1850,
+      "boundary_fraction": 0.015391271069402154,
+      "metrics": {
+        "step_height_mean": 0.07106830345517329,
+        "step_height_median": 0.06439954488114985,
+        "step_height_std": 0.0514345696059388,
+        "step_height_p95": 0.16326985973619257,
+        "curvature_boundary_mean": 0.0037472460081752037,
+        "curvature_boundary_median": 0.0020246546482667327,
+        "curvature_interior_mean": 0.010087959802330442,
+        "curvature_ratio": 0.37145726633088066,
+        "smoothness_cv": 0.27996776539740736,
+        "boundary_spacing": 0.04195329281849562,
+        "margin_width": 0.2129724991391677,
+        "boundary_perimeter": 24.070387391340766
+      }
+    },
+    {
+      "case_key": "73龚颖怡/Group-gongyignyi.bin",
+      "label": "高嵌体",
+      "tooth_position": "14",
+      "n_seg_points": 172031,
+      "n_rem_points": 803964,
+      "n_boundary_points": 3981,
+      "boundary_fraction": 0.02314117804349216,
+      "metrics": {
+        "step_height_mean": 0.0444930774734668,
+        "step_height_median": 0.0245157359960686,
+        "step_height_std": 0.05200175493741531,
+        "step_height_p95": 0.1597892982992306,
+        "curvature_boundary_mean": 0.0028753917702561416,
+        "curvature_boundary_median": 0.0011598174460232258,
+        "curvature_interior_mean": 0.008702371986217258,
+        "curvature_ratio": 0.3304147124219341,
+        "smoothness_cv": 0.23331526747165404,
+        "boundary_spacing": 0.03794805854437096,
+        "margin_width": 0.18458112543413843,
+        "boundary_perimeter": 24.273209822643413
+      }
+    }
+  ],
+  "by_type_summary": {
+    "全冠": {
+      "n": 13,
+      "metrics": {
+        "step_height_mean": {
+          "mean": 0.04801196522830575,
+          "std": 0.013717299998956484,
+          "median": 0.04308114845404039,
+          "min": 0.027517080147967384,
+          "max": 0.07162050743515236
+        },
+        "step_height_median": {
+          "mean": 0.03412292637129134,
+          "std": 0.013033558460682543,
+          "median": 0.03196121421147069,
+          "min": 0.014037160559191797,
+          "max": 0.059477147958730825
+        },
+        "step_height_std": {
+          "mean": 0.0453351218428788,
+          "std": 0.010157775481605926,
+          "median": 0.04372100529184308,
+          "min": 0.030966069730985434,
+          "max": 0.0690448344966792
+        },
+        "step_height_p95": {
+          "mean": 0.14201046606640444,
+          "std": 0.032401705589648035,
+          "median": 0.13736196354816316,
+          "min": 0.09444256857619403,
+          "max": 0.20499555228362842
+        },
+        "curvature_boundary_mean": {
+          "mean": 0.0030716136088063165,
+          "std": 0.0011199086577977089,
+          "median": 0.0026288355362781178,
+          "min": 0.0016126337708136874,
+          "max": 0.005253095759096045
+        },
+        "curvature_boundary_median": {
+          "mean": 0.001477212263405538,
+          "std": 0.000676901842375137,
+          "median": 0.001448199269361794,
+          "min": 0.0003805073065450415,
+          "max": 0.0030548120848834515
+        },
+        "curvature_interior_mean": {
+          "mean": 0.01210063869178108,
+          "std": 0.003131484520513055,
+          "median": 0.011444460985399928,
+          "min": 0.005771591654361328,
+          "max": 0.0174422030614056
+        },
+        "curvature_ratio": {
+          "mean": 0.27453963266402615,
+          "std": 0.11851168933369939,
+          "median": 0.29320298378343246,
+          "min": 0.09245585296139455,
+          "max": 0.49932966601383705
+        },
+        "smoothness_cv": {
+          "mean": 0.4829235613342306,
+          "std": 0.4271521930701383,
+          "median": 0.2855777077394812,
+          "min": 0.21518738066172163,
+          "max": 1.71009644632881
+        },
+        "boundary_spacing": {
+          "mean": 0.04246852211988373,
+          "std": 0.002667838413737845,
+          "median": 0.04261792174548108,
+          "min": 0.03844542593515487,
+          "max": 0.047921385194015884
+        },
+        "margin_width": {
+          "mean": 0.191146793386144,
+          "std": 0.016456783972347722,
+          "median": 0.1842277392003574,
+          "min": 0.17081150482337917,
+          "max": 0.23139115205654232
+        },
+        "boundary_perimeter": {
+          "mean": 32.563372321459106,
+          "std": 4.168347797045384,
+          "median": 34.0812749570158,
+          "min": 23.04646496017227,
+          "max": 37.50272426651284
+        }
+      }
+    },
+    "高嵌体": {
+      "n": 41,
+      "metrics": {
+        "step_height_mean": {
+          "mean": 0.05009106364299201,
+          "std": 0.018702221624046438,
+          "median": 0.0461052932007961,
+          "min": 0.02299336018513159,
+          "max": 0.10731151255944203
+        },
+        "step_height_median": {
+          "mean": 0.03822221322934113,
+          "std": 0.019908950119556634,
+          "median": 0.032790193145084245,
+          "min": 0.011217161819724097,
+          "max": 0.1037551816358473
+        },
+        "step_height_std": {
+          "mean": 0.043461565777444304,
+          "std": 0.010061217408361614,
+          "median": 0.04361450920796547,
+          "min": 0.026617671743302748,
+          "max": 0.06587963912146556
+        },
+        "step_height_p95": {
+          "mean": 0.13829836970058754,
+          "std": 0.03530753529674797,
+          "median": 0.13578608750288332,
+          "min": 0.08185927730596088,
+          "max": 0.23015851761428208
+        },
+        "curvature_boundary_mean": {
+          "mean": 0.0033266111318527,
+          "std": 0.0013448913194123422,
+          "median": 0.0033296597588190575,
+          "min": 0.0012046976882649776,
+          "max": 0.007735437930115759
+        },
+        "curvature_boundary_median": {
+          "mean": 0.0014611578868736128,
+          "std": 0.0006871533280716956,
+          "median": 0.0013385532656684518,
+          "min": 0.0006764730205759406,
+          "max": 0.003807180328294635
+        },
+        "curvature_interior_mean": {
+          "mean": 0.010151171574142633,
+          "std": 0.0020694402951270873,
+          "median": 0.010158575199136976,
+          "min": 0.006237629993351584,
+          "max": 0.016632455935569668
+        },
+        "curvature_ratio": {
+          "mean": 0.34672809579844543,
+          "std": 0.17408169281803254,
+          "median": 0.3304147124219341,
+          "min": 0.11645847211888466,
+          "max": 0.9350700329776346
+        },
+        "smoothness_cv": {
+          "mean": 0.4135492759048134,
+          "std": 0.451954431681066,
+          "median": 0.24741486698914095,
+          "min": 0.21760403485776547,
+          "max": 2.3832605743311124
+        },
+        "boundary_spacing": {
+          "mean": 0.04226192989584237,
+          "std": 0.004763899565557438,
+          "median": 0.04086875160489461,
+          "min": 0.03468538190186581,
+          "max": 0.0628943366718866
+        },
+        "margin_width": {
+          "mean": 0.19172482157176524,
+          "std": 0.018106601041354014,
+          "median": 0.18710636485577356,
+          "min": 0.1687105003430872,
+          "max": 0.2530930902405965
+        },
+        "boundary_perimeter": {
+          "mean": 31.983533082250847,
+          "std": 4.817192968667453,
+          "median": 33.02791101537221,
+          "min": 24.165431104293067,
+          "max": 39.190424920221695
+        }
+      }
+    },
+    "桩核冠": {
+      "n": 13,
+      "metrics": {
+        "step_height_mean": {
+          "mean": 0.04210779670766621,
+          "std": 0.012639354991883556,
+          "median": 0.035596055047794964,
+          "min": 0.02600979561321366,
+          "max": 0.07106830345517329
+        },
+        "step_height_median": {
+          "mean": 0.03032617338498905,
+          "std": 0.013233472910565428,
+          "median": 0.02552238230693149,
+          "min": 0.01812924001012206,
+          "max": 0.06439954488114985
+        },
+        "step_height_std": {
+          "mean": 0.04025914285096015,
+          "std": 0.008911244009320361,
+          "median": 0.042502201356626954,
+          "min": 0.0274809341531853,
+          "max": 0.0514345696059388
+        },
+        "step_height_p95": {
+          "mean": 0.12169179811424766,
+          "std": 0.02839846577531323,
+          "median": 0.11732966853112109,
+          "min": 0.08019508259014216,
+          "max": 0.16326985973619257
+        },
+        "curvature_boundary_mean": {
+          "mean": 0.0030729064816370976,
+          "std": 0.0011953942339808065,
+          "median": 0.0028159114251921787,
+          "min": 0.001292475541856185,
+          "max": 0.0057995399745116825
+        },
+        "curvature_boundary_median": {
+          "mean": 0.0014565000456059352,
+          "std": 0.0005649938209835728,
+          "median": 0.0013058973709121346,
+          "min": 0.00043221843952778727,
+          "max": 0.002433513756841421
+        },
+        "curvature_interior_mean": {
+          "mean": 0.012119406655171165,
+          "std": 0.0028496790810443595,
+          "median": 0.01146041191459517,
+          "min": 0.009338585233266349,
+          "max": 0.020236484339015988
+        },
+        "curvature_ratio": {
+          "mean": 0.2773856378164232,
+          "std": 0.13822556719407825,
+          "median": 0.24570769546557603,
+          "min": 0.06386858081754009,
+          "max": 0.5584153691182492
+        },
+        "smoothness_cv": {
+          "mean": 0.4783157082381017,
+          "std": 0.4782477597520588,
+          "median": 0.2691178335159907,
+          "min": 0.21023762385477476,
+          "max": 2.0032551633648317
+        },
+        "boundary_spacing": {
+          "mean": 0.042466359576052985,
+          "std": 0.0052429626524989744,
+          "median": 0.04196568878341104,
+          "min": 0.035783055944156934,
+          "max": 0.057262652422676696
+        },
+        "margin_width": {
+          "mean": 0.1886703162941434,
+          "std": 0.016014415789600066,
+          "median": 0.18556150493136225,
+          "min": 0.16838852993554054,
+          "max": 0.2254020211213708
+        },
+        "boundary_perimeter": {
+          "mean": 31.53872006691656,
+          "std": 5.6795570006162,
+          "median": 32.53611941109027,
+          "min": 22.087363378667387,
+          "max": 38.22609635111133
+        }
+      }
+    },
+    "充填": {
+      "n": 12,
+      "metrics": {
+        "step_height_mean": {
+          "mean": 0.05478882481694617,
+          "std": 0.013011757690417932,
+          "median": 0.05405404281194398,
+          "min": 0.028463309155088004,
+          "max": 0.07532135596455085
+        },
+        "step_height_median": {
+          "mean": 0.039282135341665476,
+          "std": 0.012847488046718147,
+          "median": 0.035868983869854376,
+          "min": 0.019178388054729822,
+          "max": 0.06032031037406327
+        },
+        "step_height_std": {
+          "mean": 0.04996211055521277,
+          "std": 0.010080749924687183,
+          "median": 0.04925872869322056,
+          "min": 0.031922706664908214,
+          "max": 0.06582277929639416
+        },
+        "step_height_p95": {
+          "mean": 0.15817378979571933,
+          "std": 0.034818430032588776,
+          "median": 0.1561366313512265,
+          "min": 0.1068545702160729,
+          "max": 0.22062034862671132
+        },
+        "curvature_boundary_mean": {
+          "mean": 0.0035726846125432314,
+          "std": 0.0016821315697169447,
+          "median": 0.003256673430641294,
+          "min": 0.0014575499481306459,
+          "max": 0.008546821180360814
+        },
+        "curvature_boundary_median": {
+          "mean": 0.0013796517329562146,
+          "std": 0.0007006952118759162,
+          "median": 0.0011788868578150868,
+          "min": 0.0005516632809303701,
+          "max": 0.0032857819460332394
+        },
+        "curvature_interior_mean": {
+          "mean": 0.009105846633594284,
+          "std": 0.0025997888043531652,
+          "median": 0.008240162196527819,
+          "min": 0.006386608988336593,
+          "max": 0.016340570252391263
+        },
+        "curvature_ratio": {
+          "mean": 0.40048147398766254,
+          "std": 0.1824249645032158,
+          "median": 0.3613015482463905,
+          "min": 0.22821969028799102,
+          "max": 0.9502109920355629
+        },
+        "smoothness_cv": {
+          "mean": 0.28782413595755013,
+          "std": 0.10200857975624916,
+          "median": 0.24432175854174562,
+          "min": 0.21283183548174778,
+          "max": 0.5185511069196624
+        },
+        "boundary_spacing": {
+          "mean": 0.03793261755747745,
+          "std": 0.0028441740333958318,
+          "median": 0.03669366289001953,
+          "min": 0.03418561291904719,
+          "max": 0.042588022311524094
+        },
+        "margin_width": {
+          "mean": 0.1894809999402786,
+          "std": 0.012109518413982848,
+          "median": 0.18932892153038733,
+          "min": 0.16826824712781416,
+          "max": 0.21486057554900062
+        },
+        "boundary_perimeter": {
+          "mean": 27.679761099840565,
+          "std": 8.772130522068087,
+          "median": 31.746084499177968,
+          "min": 5.560251044743668,
+          "max": 36.998570393899584
+        }
+      }
+    }
+  }
+}

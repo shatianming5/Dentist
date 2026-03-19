@@ -1,0 +1,265 @@
+{
+  "experiments": [
+    {
+      "config": {
+        "name": "PointNet_balanced_whole",
+        "model": "pointnet",
+        "seg_root": "processed/raw_seg/v1",
+        "n_points": 4096,
+        "epochs": 150,
+        "patience": 25
+      },
+      "accuracy": 0.3291139240506329,
+      "macro_f1": 0.27926240426240423,
+      "per_class": {
+        "充填": {
+          "precision": 0.3,
+          "recall": 0.25,
+          "f1-score": 0.2727272727272727,
+          "support": 12.0
+        },
+        "全冠": {
+          "precision": 0.15384615384615385,
+          "recall": 0.15384615384615385,
+          "f1-score": 0.15384615384615385,
+          "support": 13.0
+        },
+        "桩核冠": {
+          "precision": 0.13793103448275862,
+          "recall": 0.3076923076923077,
+          "f1-score": 0.19047619047619047,
+          "support": 13.0
+        },
+        "高嵌体": {
+          "precision": 0.6296296296296297,
+          "recall": 0.4146341463414634,
+          "f1-score": 0.5,
+          "support": 41.0
+        },
+        "accuracy": 0.3291139240506329,
+        "macro avg": {
+          "precision": 0.30535170448963556,
+          "recall": 0.28154315196998125,
+          "f1-score": 0.27926240426240423,
+          "support": 79.0
+        },
+        "weighted avg": {
+          "precision": 0.420353395735325,
+          "recall": 0.3291139240506329,
+          "f1-score": 0.35758123732807273,
+          "support": 79.0
+        }
+      },
+      "n_samples": 79
+    },
+    {
+      "config": {
+        "name": "PointNet_balanced_seg_crop",
+        "model": "pointnet",
+        "seg_root": "processed/raw_seg/v1",
+        "n_points": 2048,
+        "epochs": 150,
+        "patience": 25
+      },
+      "accuracy": 0.3037974683544304,
+      "macro_f1": 0.19983141858141856,
+      "per_class": {
+        "充填": {
+          "precision": 0.07142857142857142,
+          "recall": 0.08333333333333333,
+          "f1-score": 0.07692307692307693,
+          "support": 12.0
+        },
+        "全冠": {
+          "precision": 0.3333333333333333,
+          "recall": 0.07692307692307693,
+          "f1-score": 0.125,
+          "support": 13.0
+        },
+        "桩核冠": {
+          "precision": 0.13333333333333333,
+          "recall": 0.15384615384615385,
+          "f1-score": 0.14285714285714285,
+          "support": 13.0
+        },
+        "高嵌体": {
+          "precision": 0.425531914893617,
+          "recall": 0.4878048780487805,
+          "f1-score": 0.45454545454545453,
+          "support": 41.0
+        },
+        "accuracy": 0.3037974683544304,
+        "macro avg": {
+          "precision": 0.2409067882472138,
+          "recall": 0.20047686053783614,
+          "f1-score": 0.19983141858141856,
+          "support": 79.0
+        },
+        "weighted avg": {
+          "precision": 0.3084888358790864,
+          "recall": 0.3037974683544304,
+          "f1-score": 0.2916656128681445,
+          "support": 79.0
+        }
+      },
+      "n_samples": 79
+    },
+    {
+      "config": {
+        "name": "PointNet_natural_seg_crop",
+        "model": "pointnet",
+        "seg_root": "processed/raw_seg/v2_natural",
+        "n_points": 2048,
+        "epochs": 150,
+        "patience": 25
+      },
+      "accuracy": 0.26582278481012656,
+      "macro_f1": 0.23288012837193167,
+      "per_class": {
+        "充填": {
+          "precision": 0.1875,
+          "recall": 0.25,
+          "f1-score": 0.21428571428571427,
+          "support": 12.0
+        },
+        "全冠": {
+          "precision": 0.14285714285714285,
+          "recall": 0.15384615384615385,
+          "f1-score": 0.14814814814814814,
+          "support": 13.0
+        },
+        "桩核冠": {
+          "precision": 0.10344827586206896,
+          "recall": 0.23076923076923078,
+          "f1-score": 0.14285714285714285,
+          "support": 13.0
+        },
+        "高嵌体": {
+          "precision": 0.65,
+          "recall": 0.3170731707317073,
+          "f1-score": 0.4262295081967213,
+          "support": 41.0
+        },
+        "accuracy": 0.26582278481012656,
+        "macro avg": {
+          "precision": 0.27095135467980297,
+          "recall": 0.237922138836773,
+          "f1-score": 0.23288012837193167,
+          "support": 79.0
+        },
+        "weighted avg": {
+          "precision": 0.40635405624493365,
+          "recall": 0.26582278481012656,
+          "f1-score": 0.30164439481725225,
+          "support": 79.0
+        }
+      },
+      "n_samples": 79
+    },
+    {
+      "config": {
+        "name": "DGCNN_balanced_seg_crop",
+        "model": "dgcnn",
+        "seg_root": "processed/raw_seg/v1",
+        "n_points": 2048,
+        "epochs": 150,
+        "patience": 25
+      },
+      "accuracy": 0.20253164556962025,
+      "macro_f1": 0.18474310776942354,
+      "per_class": {
+        "充填": {
+          "precision": 0.16666666666666666,
+          "recall": 0.4166666666666667,
+          "f1-score": 0.23809523809523808,
+          "support": 12.0
+        },
+        "全冠": {
+          "precision": 0.16666666666666666,
+          "recall": 0.07692307692307693,
+          "f1-score": 0.10526315789473684,
+          "support": 13.0
+        },
+        "桩核冠": {
+          "precision": 0.1111111111111111,
+          "recall": 0.23076923076923078,
+          "f1-score": 0.15,
+          "support": 13.0
+        },
+        "高嵌体": {
+          "precision": 0.4375,
+          "recall": 0.17073170731707318,
+          "f1-score": 0.24561403508771928,
+          "support": 41.0
+        },
+        "accuracy": 0.20253164556962025,
+        "macro avg": {
+          "precision": 0.2204861111111111,
+          "recall": 0.22377267041901192,
+          "f1-score": 0.18474310776942354,
+          "support": 79.0
+        },
+        "weighted avg": {
+          "precision": 0.29808368495077353,
+          "recall": 0.20253164556962025,
+          "f1-score": 0.20564227023254336,
+          "support": 79.0
+        }
+      },
+      "n_samples": 79
+    },
+    {
+      "config": {
+        "name": "DGCNN_natural_seg_crop",
+        "model": "dgcnn",
+        "seg_root": "processed/raw_seg/v2_natural",
+        "n_points": 2048,
+        "epochs": 150,
+        "patience": 25
+      },
+      "accuracy": 0.34177215189873417,
+      "macro_f1": 0.24457784862196627,
+      "per_class": {
+        "充填": {
+          "precision": 0.2,
+          "recall": 0.16666666666666666,
+          "f1-score": 0.18181818181818182,
+          "support": 12.0
+        },
+        "全冠": {
+          "precision": 0.25,
+          "recall": 0.07692307692307693,
+          "f1-score": 0.11764705882352941,
+          "support": 13.0
+        },
+        "桩核冠": {
+          "precision": 0.11538461538461539,
+          "recall": 0.23076923076923078,
+          "f1-score": 0.15384615384615385,
+          "support": 13.0
+        },
+        "高嵌体": {
+          "precision": 0.5384615384615384,
+          "recall": 0.5121951219512195,
+          "f1-score": 0.525,
+          "support": 41.0
+        },
+        "accuracy": 0.34177215189873417,
+        "macro avg": {
+          "precision": 0.2759615384615385,
+          "recall": 0.24663852407754847,
+          "f1-score": 0.24457784862196627,
+          "support": 79.0
+        },
+        "weighted avg": {
+          "precision": 0.36996105160662124,
+          "recall": 0.34177215189873417,
+          "f1-score": 0.34476240438638056,
+          "support": 79.0
+        }
+      },
+      "n_samples": 79
+    }
+  ],
+  "timestamp": "2026-03-19T08:47:24Z"
+}

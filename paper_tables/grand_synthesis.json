@@ -1,0 +1,39 @@
+{
+  "segmentation": {
+    "best_balanced": {
+      "model": "DGCNN",
+      "miou": 0.983
+    },
+    "best_natural": {
+      "model": "DGCNN",
+      "miou": 0.732
+    },
+    "transfer_teeth3ds": {
+      "delta": 0.012,
+      "p": 0.484,
+      "sig": false
+    },
+    "domain_adapt_bal2nat": {
+      "delta": 0.003,
+      "p": 0.716,
+      "sig": false
+    }
+  },
+  "classification": {
+    "best_method": "PointNet whole-case",
+    "best_acc": 0.329,
+    "best_f1": 0.279,
+    "random_baseline_f1": 0.25,
+    "verdict": "Near chance — data scarcity is fundamental bottleneck"
+  },
+  "boundary": {
+    "all_within_threshold": true,
+    "max_step_um": 54.8,
+    "type_differences": "Not significant (all KW p>0.05)"
+  },
+  "multitask": {
+    "hurts_both_tasks": true,
+    "seg_miou_balanced": 0.753,
+    "cls_f1_balanced": 0.141
+  }
+}
