@@ -1,0 +1,32 @@
+{
+  "canonical_aggregation": {
+    "method": "per_case_n75_best_per_fold",
+    "description": "Best checkpoint per fold, evaluate each of 75 test cases once, per-case mIoU",
+    "dgcnn_natural_miou": 0.7323,
+    "dgcnn_natural_miou_std": 0.1691,
+    "dgcnn_natural_dice": 0.8116,
+    "dgcnn_natural_dice_std": 0.1616,
+    "dgcnn_natural_dice_median": 0.8774
+  },
+  "learning_curve_aggregation": {
+    "method": "per_fold_5fold_single_seed",
+    "description": "Single seed (1337), 5-fold CV, fold-level mIoU average",
+    "dgcnn_natural_miou": 0.7699,
+    "dgcnn_natural_dice": 0.8393,
+    "note": "Higher than canonical: single seed + per-fold averaging (not per-case)"
+  },
+  "fifteen_run_aggregation": {
+    "method": "fold_level_15run_average",
+    "description": "3 seeds × 5 folds = 15 runs, fold-level mIoU averaged",
+    "dgcnn_natural_miou": 0.69,
+    "dgcnn_natural_miou_std": 0.045,
+    "note": "Most conservative: fold-level averaging includes seed variance"
+  },
+  "recommended_for_paper": {
+    "primary_table": "Use 15-run fold-level (0.690±0.045) in main Table 1 for consistency with all architectures",
+    "per_case_analysis": "Use per-case (0.732, n=75) for clinical metrics table and per-type stratification",
+    "learning_curve": "Report as 'single-seed 5-fold CV' with note that canonical 3-seed mIoU is 0.732",
+    "dice_score": "Report Dice=0.812±0.162 (per-case, 3-seed canonical) and Dice=0.839±0.032 (learning curve, single-seed fold-level)"
+  },
+  "seed_count_note": "Learning curve analysis used seed 1337 only (4 fractions × 5 folds = 20 training runs). Main results use 3 seeds (1337, 2020, 2021) × 5 folds = 15 runs per protocol."
+}

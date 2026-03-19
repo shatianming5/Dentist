@@ -43,7 +43,18 @@
       "n_for_0.9": 298
     }
   },
-  "power_analysis": {
+  "dice_at_full_n": {
+    "mean": 0.8393128704610134,
+    "std": 0.03219104664080805,
+    "per_fold": [
+      0.8011166512635972,
+      0.8363190363553351,
+      0.8938651557788815,
+      0.8146292996222211,
+      0.8506342092850326
+    ]
+  },
+  "sample_size_estimation": {
     "current_n": 79,
     "current_per_class_min": 12,
     "current_per_class_max": 41,
@@ -67,17 +78,84 @@
         "note": "Robust with class imbalance tolerance"
       }
     },
-    "explanation": "With n=79 and 4 classes (min class=12), each test fold has ~2-3 samples per class. This is insufficient for any classifier to learn discriminative features. Based on observed effect sizes (F1-random=0.029), a sample of n>=250 with balanced classes is needed to achieve power 0.80 at alpha=0.05."
+    "explanation": "With n=79 and 4 classes (min class=12), each test fold has ~2-3 samples per class. This is insufficient for any classifier to learn discriminative features. Based on observed effect sizes (F1-random=0.029), a sample of n>=250 with balanced classes is needed to achieve power 0.80 at alpha=0.05.",
+    "methodology": "Rule-of-thumb estimation (not formal statistical power analysis)"
   },
-  "dice_at_full_n": {
-    "mean": 0.8393128704610134,
-    "std": 0.03219104664080805,
-    "per_fold": [
-      0.8011166512635972,
-      0.8363190363553351,
-      0.8938651557788815,
-      0.8146292996222211,
-      0.8506342092850326
-    ]
+  "curve_fit_original": {
+    "a": 0.9427614448766111,
+    "b": 4.9999999999924265,
+    "c": 0.8362485428333727,
+    "predictions": {
+      "n_for_0.8": 71,
+      "n_for_0.85": 118,
+      "n_for_0.9": 298
+    }
+  },
+  "curve_fit_2param": {
+    "sqrt_inverse": {
+      "formula": "mIoU = a - b/sqrt(n)",
+      "a": 1.1477,
+      "b": 2.7881,
+      "a_se": 0.0992,
+      "b_se": 0.538,
+      "rmse": 0.0384,
+      "df": 2,
+      "predictions": {
+        "n_for_0.8": 65,
+        "n_for_0.85": 88,
+        "n_for_0.9": 127
+      }
+    },
+    "log_linear": {
+      "formula": "mIoU = a + b*ln(n)",
+      "a": -0.2417,
+      "b": 0.2532,
+      "a_se": 0.2386,
+      "b_se": 0.0667,
+      "rmse": 0.0509,
+      "df": 2,
+      "predictions": {
+        "n_for_0.8": 62,
+        "n_for_0.85": 75,
+        "n_for_0.9": 91
+      }
+    }
+  },
+  "curve_fit_caveats": [
+    "Original 3-parameter power law hit optimizer boundary (b=5.0 at upper bound)",
+    "2-parameter fits (sqrt-inverse, log-linear) have 2 df from 4 data points",
+    "Extrapolation beyond n≈120 should be treated as order-of-magnitude estimates",
+    "Extrapolated ranges presented as intervals, not point estimates",
+    "Single seed (1337) used for learning curve; main results use 3 seeds"
+  ],
+  "extrapolation_ranges": {
+    "n_for_0.8": {
+      "range": [
+        62,
+        65
+      ],
+      "note": "Approximate range from 2-parameter fits"
+    },
+    "n_for_0.85": {
+      "range": [
+        75,
+        88
+      ],
+      "note": "Approximate range from 2-parameter fits"
+    },
+    "n_for_0.9": {
+      "range": [
+        91,
+        127
+      ],
+      "note": "Approximate range from 2-parameter fits"
+    }
+  },
+  "aggregation_note": {
+    "learning_curve_seed": "single seed (1337)",
+    "main_results_seeds": "3 seeds (1337, 2020, 2021)",
+    "canonical_3seed_miou": 0.7323,
+    "canonical_3seed_dice": 0.8116,
+    "reconciliation": "Learning curve mIoU=0.770 at full n is per-fold single-seed; canonical per-case 3-seed mIoU=0.732 is the definitive result reported in the main table."
   }
 }
