@@ -1,0 +1,52 @@
+{
+  "round3_fixes": {
+    "W1_selective_prediction": {
+      "claim": "Top 50% confidence → mIoU 0.818",
+      "verified": true,
+      "actual_value": 0.8183,
+      "source": "paper_tables/selective_prediction_analysis.json",
+      "method": "Sort 75 cases by maxprob confidence descending, take top 37, mean mIoU",
+      "breakdown": {
+        "top_25pct_18cases": 0.8318,
+        "top_50pct_37cases": 0.8183,
+        "top_75pct_56cases": 0.784,
+        "all_75cases": 0.7323
+      }
+    },
+    "W2_vulnerability_scoping": {
+      "original_claim": "Sophisticated models MORE fragile: PN2 gap=0.317 > DGCNN gap=0.250 > PN gap=0.188",
+      "scoped_claim": "Among reliably converging deep learning architectures, model complexity correlates with vulnerability gap (PN2: 0.317 > DGCNN: 0.250 > PointNet: 0.188). RF's larger gap (0.360) reflects hand-crafted feature limitations rather than model complexity, while PT's near-zero gap reflects baseline-level performance under both protocols.",
+      "full_gaps": {
+        "RF": {
+          "gap": 0.36,
+          "note": "Simplest; large gap from feature-space limitations"
+        },
+        "PN2": {
+          "gap": 0.317,
+          "note": "Most complex DL; most fragile"
+        },
+        "DGCNN": {
+          "gap": 0.25,
+          "note": "Mid-complexity; mid-gap"
+        },
+        "PointNet": {
+          "gap": 0.188,
+          "note": "Simplest DL; most robust"
+        },
+        "PT": {
+          "gap": 0.028,
+          "note": "Most parameters; near-chance both protocols"
+        }
+      }
+    },
+    "W3_english_labels": {
+      "充填": "Filling (direct)",
+      "全冠": "Full crown",
+      "桩核冠": "Post-core crown",
+      "高嵌体": "Onlay",
+      "note": "Use English labels in all tables/figures for JDR. Add parenthetical Chinese for reproducibility."
+    }
+  },
+  "title_note": "Consider 'Performance Degradation' instead of 'Performance Collapse' — DGCNN drops 28%, PN 20% (degradation), while PN2 drops 36%, RF 40% (collapse-level). Alternative: use both terms in abstract to scope model-dependent severity.",
+  "jdr_format_note": "JDR Short Communication: ≤2500 words, 2-3 display items. Proposed: Table 1 (dual-protocol) + Table 2 (clinical metrics) + Figure 1 (learning curve). Table 3 (per-type) → supplementary."
+}

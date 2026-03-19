@@ -1206,3 +1206,49 @@ Kurtosis = −0.117 (platykurtic). Distribution: 12 cases <0.5, 12 cases 0.5–0
 ### Score Progression (JDR track)
 6.0 → 7.0 → 7.5 → 8.0 → 8.0 → 8.0 → 8.0 → **8.5** ✅
 
+
+---
+
+## Round 1 (Clinical Pivot) — Score: 4.5/10 — NOT READY
+
+**Proposal**: Comprehensive "what works, what doesn't" paper with all 11 experiments.
+
+**Verdict**: Strict downgrade from existing 8.5 benchmarking paper. 4/5 claims are null/negative. Boundary analysis lacks physical validation. Classification negative provides no insight beyond "n too small."
+
+**Recommendation**: Don't pivot. Submit the existing benchmarking paper with clinical framing.
+
+## Round 2 (Enhanced Benchmarking) — Score: 7.5/10 — ALMOST
+
+**Changes**: Returned to focused benchmarking paper. Added learning curve, Dice scores, sample size estimation.
+
+**Remaining fixes** (all writing-level):
+1. ✅ Power law fit over-parameterized → replaced with 2-param fits + caveats
+2. ✅ Single seed vs 3 seeds → added reconciliation note
+3. ✅ "Power analysis" mislabeled → renamed "sample size estimation"
+4. ✅ Inconsistent mIoU baselines → created aggregation_reconciliation.json
+
+**New paper-ready numbers**:
+- Dice = 0.812 ± 0.162 (per-case, 3-seed canonical)
+- Learning curve: mIoU 0.85 at n ≈ 75–88 cases (2-param fits)
+- Sample size: n≥250 balanced for 4-class typing (estimation)
+
+
+## Round 3 (Enhanced + R2 Fixes) — Score: 8.0/10 — ALMOST
+
+**Changes**: All 4 R2 fixes implemented (2-param fits, seed reconciliation, sample size rename, aggregation doc).
+
+**R3 fix quality assessment**: 9.5/10 — "diligent, careful work"
+
+**Remaining fixes** (all writing, ~30 min total):
+1. ✅ W1: Selective prediction 0.818 VERIFIED correct (0.8183 from maxprob top-50%)
+2. ✅ W2: Vulnerability paradox scoped to "reliably converging DL architectures"
+3. ✅ W3: Chinese labels mapped to English (Filling/Full crown/Post-core crown/Onlay)
+4. ✅ Bonus: Fixed "power 0.80" → "80% detection probability" leftover
+
+**Reviewer notes**:
+- "This paper has been through 19+ experimental rounds and 3 review rounds"
+- "The evidence is genuine, the fixes are implemented"
+- "Fix the three minor issues, draft the manuscript, and submit"
+- Consider "Performance Degradation" instead of "Performance Collapse" in title
+- JDR format: ≤2500 words, move per-type table to supplementary
+

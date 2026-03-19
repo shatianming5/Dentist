@@ -70,7 +70,7 @@
       "recommended": {
         "n_per_class": 100,
         "total": 400,
-        "note": "Recommended for power 0.80"
+        "note": "Recommended for 80% detection probability"
       },
       "robust": {
         "n_per_class": 200,

@@ -1,10 +1,10 @@
 {
   "status": "in_progress",
   "stage": "review_loop",
-  "round": 1,
+  "round": 3,
   "active_direction": "Enhance existing benchmarking paper with clinical framing + learning curve + Dice",
-  "last_score": 4.5,
-  "last_verdict": "NOT READY",
+  "last_score": 8.0,
+  "last_verdict": "ALMOST",
   "pending_runs": [],
   "experiments_completed": [
     "D1",
@@ -17,6 +17,12 @@
     "D6.3",
     "D7"
   ],
-  "timestamp": "2026-03-19T17:36:35.048080",
-  "reviewer_action": "Option B: Add clinical sections to existing 8.5 paper, run learning curve + Dice"
+  "timestamp": "2026-03-19T18:21:42.355365",
+  "reviewer_action": "Option B: Add clinical sections to existing 8.5 paper, run learning curve + Dice",
+  "r3_fixes_done": [
+    "W1_selective_verified",
+    "W2_vulnerability_scoped",
+    "W3_english_labels",
+    "power_wording_fix"
+  ]
 }
