@@ -1,0 +1,1439 @@
+{
+  "generated_at": "2026-03-17T07:50:48.379213Z",
+  "root": "/mnt/SSD_4TB/zechuan/Dentist/runs/research_segcls_full",
+  "variants": {
+    "all_pointnet": {
+      "n": 15,
+      "runs": [
+        {
+          "run": "all_pointnet_fold0_seed1337",
+          "fold": 0,
+          "seed": 1337,
+          "pair_key": "fold0_seed1337",
+          "test_accuracy": 0.25,
+          "test_macro_f1_present": 0.1625,
+          "test_balanced_accuracy_present": 0.3333333333333333,
+          "test_ece": 0.32165172696113586
+        },
+        {
+          "run": "all_pointnet_fold0_seed2020",
+          "fold": 0,
+          "seed": 2020,
+          "pair_key": "fold0_seed2020",
+          "test_accuracy": 0.375,
+          "test_macro_f1_present": 0.256578947368421,
+          "test_balanced_accuracy_present": 0.3888888888888889,
+          "test_ece": 0.295449947938323
+        },
+        {
+          "run": "all_pointnet_fold0_seed2021",
+          "fold": 0,
+          "seed": 2021,
+          "pair_key": "fold0_seed2021",
+          "test_accuracy": 0.125,
+          "test_macro_f1_present": 0.08712121212121213,
+          "test_balanced_accuracy_present": 0.2777777777777778,
+          "test_ece": 0.3693151157349348
+        },
+        {
+          "run": "all_pointnet_fold1_seed1337",
+          "fold": 1,
+          "seed": 1337,
+          "pair_key": "fold1_seed1337",
+          "test_accuracy": 0.3125,
+          "test_macro_f1_present": 0.14705882352941177,
+          "test_balanced_accuracy_present": 0.25,
+          "test_ece": 0.28438205271959305
+        },
+        {
+          "run": "all_pointnet_fold1_seed2020",
+          "fold": 1,
+          "seed": 2020,
+          "pair_key": "fold1_seed2020",
+          "test_accuracy": 0.1875,
+          "test_macro_f1_present": 0.08823529411764706,
+          "test_balanced_accuracy_present": 0.15,
+          "test_ece": 0.34120358899235725
+        },
+        {
+          "run": "all_pointnet_fold1_seed2021",
+          "fold": 1,
+          "seed": 2021,
+          "pair_key": "fold1_seed2021",
+          "test_accuracy": 0.25,
+          "test_macro_f1_present": 0.14583333333333334,
+          "test_balanced_accuracy_present": 0.2,
+          "test_ece": 0.4089699722826481
+        },
+        {
+          "run": "all_pointnet_fold2_seed1337",
+          "fold": 2,
+          "seed": 1337,
+          "pair_key": "fold2_seed1337",
+          "test_accuracy": 0.125,
+          "test_macro_f1_present": 0.08333333333333333,
+          "test_balanced_accuracy_present": 0.047619047619047616,
+          "test_ece": 0.3128440510481596
+        },
+        {
+          "run": "all_pointnet_fold2_seed2020",
+          "fold": 2,
+          "seed": 2020,
+          "pair_key": "fold2_seed2020",
+          "test_accuracy": 0.375,
+          "test_macro_f1_present": 0.19999999999999998,
+          "test_balanced_accuracy_present": 0.14285714285714285,
+          "test_ece": 0.06356131844222546
+        },
+        {
+          "run": "all_pointnet_fold2_seed2021",
+          "fold": 2,
+          "seed": 2021,
+          "pair_key": "fold2_seed2021",
+          "test_accuracy": 0.1875,
+          "test_macro_f1_present": 0.12605042016806722,
+          "test_balanced_accuracy_present": 0.38095238095238093,
+          "test_ece": 0.4111093282699585
+        },
+        {
+          "run": "all_pointnet_fold3_seed1337",
+          "fold": 3,
+          "seed": 1337,
+          "pair_key": "fold3_seed1337",
+          "test_accuracy": 0.125,
+          "test_macro_f1_present": 0.07142857142857144,
+          "test_balanced_accuracy_present": 0.125,
+          "test_ece": 0.4675485771149397
+        },
+        {
+          "run": "all_pointnet_fold3_seed2020",
+          "fold": 3,
+          "seed": 2020,
+          "pair_key": "fold3_seed2020",
+          "test_accuracy": 0.0625,
+          "test_macro_f1_present": 0.03571428571428572,
+          "test_balanced_accuracy_present": 0.0625,
+          "test_ece": 0.5289506204426289
+        },
+        {
+          "run": "all_pointnet_fold3_seed2021",
+          "fold": 3,
+          "seed": 2021,
+          "pair_key": "fold3_seed2021",
+          "test_accuracy": 0.25,
+          "test_macro_f1_present": 0.1488095238095238,
+          "test_balanced_accuracy_present": 0.1875,
+          "test_ece": 0.3025539945811033
+        },
+        {
+          "run": "all_pointnet_fold4_seed1337",
+          "fold": 4,
+          "seed": 1337,
+          "pair_key": "fold4_seed1337",
+          "test_accuracy": 0.26666666666666666,
+          "test_macro_f1_present": 0.24038461538461536,
+          "test_balanced_accuracy_present": 0.23214285714285715,
+          "test_ece": 0.3480118830998738
+        },
+        {
+          "run": "all_pointnet_fold4_seed2020",
+          "fold": 4,
+          "seed": 2020,
+          "pair_key": "fold4_seed2020",
+          "test_accuracy": 0.2,
+          "test_macro_f1_present": 0.15476190476190477,
+          "test_balanced_accuracy_present": 0.19642857142857142,
+          "test_ece": 0.19529221455256146
+        },
+        {
+          "run": "all_pointnet_fold4_seed2021",
+          "fold": 4,
+          "seed": 2021,
+          "pair_key": "fold4_seed2021",
+          "test_accuracy": 0.26666666666666666,
+          "test_macro_f1_present": 0.17142857142857143,
+          "test_balanced_accuracy_present": 0.16964285714285715,
+          "test_ece": 0.14473866820335388
+        }
+      ],
+      "test_accuracy": [
+        0.25,
+        0.375,
+        0.125,
+        0.3125,
+        0.1875,
+        0.25,
+        0.125,
+        0.375,
+        0.1875,
+        0.125,
+        0.0625,
+        0.25,
+        0.26666666666666666,
+        0.2,
+        0.26666666666666666
+      ],
+      "test_macro_f1_present": [
+        0.1625,
+        0.256578947368421,
+        0.08712121212121213,
+        0.14705882352941177,
+        0.08823529411764706,
+        0.14583333333333334,
+        0.08333333333333333,
+        0.19999999999999998,
+        0.12605042016806722,
+        0.07142857142857144,
+        0.03571428571428572,
+        0.1488095238095238,
+        0.24038461538461536,
+        0.15476190476190477,
+        0.17142857142857143
+      ],
+      "test_balanced_accuracy_present": [
+        0.3333333333333333,
+        0.3888888888888889,
+        0.2777777777777778,
+        0.25,
+        0.15,
+        0.2,
+        0.047619047619047616,
+        0.14285714285714285,
+        0.38095238095238093,
+        0.125,
+        0.0625,
+        0.1875,
+        0.23214285714285715,
+        0.19642857142857142,
+        0.16964285714285715
+      ],
+      "test_ece": [
+        0.32165172696113586,
+        0.295449947938323,
+        0.3693151157349348,
+        0.28438205271959305,
+        0.34120358899235725,
+        0.4089699722826481,
+        0.3128440510481596,
+        0.06356131844222546,
+        0.4111093282699585,
+        0.4675485771149397,
+        0.5289506204426289,
+        0.3025539945811033,
+        0.3480118830998738,
+        0.19529221455256146,
+        0.14473866820335388
+      ],
+      "test_seg_mean_iou": [],
+      "seg_only_test_accuracy": [],
+      "seg_only_test_mean_iou": []
+    },
+    "gtseg_pointnet": {
+      "n": 15,
+      "runs": [
+        {
+          "run": "gtseg_pointnet_fold0_seed1337",
+          "fold": 0,
+          "seed": 1337,
+          "pair_key": "fold0_seed1337",
+          "test_accuracy": 0.375,
+          "test_macro_f1_present": 0.16666666666666666,
+          "test_balanced_accuracy_present": 0.16666666666666666,
+          "test_ece": 0.3063754700124264
+        },
+        {
+          "run": "gtseg_pointnet_fold0_seed2020",
+          "fold": 0,
+          "seed": 2020,
+          "pair_key": "fold0_seed2020",
+          "test_accuracy": 0.25,
+          "test_macro_f1_present": 0.16346153846153846,
+          "test_balanced_accuracy_present": 0.2152777777777778,
+          "test_ece": 0.35688794776797295
+        },
+        {
+          "run": "gtseg_pointnet_fold0_seed2021",
+          "fold": 0,
+          "seed": 2021,
+          "pair_key": "fold0_seed2021",
+          "test_accuracy": 0.375,
+          "test_macro_f1_present": 0.3903846153846154,
+          "test_balanced_accuracy_present": 0.5902777777777778,
+          "test_ece": 0.31854784302413464
+        },
+        {
+          "run": "gtseg_pointnet_fold1_seed1337",
+          "fold": 1,
+          "seed": 1337,
+          "pair_key": "fold1_seed1337",
+          "test_accuracy": 0.375,
+          "test_macro_f1_present": 0.30833333333333335,
+          "test_balanced_accuracy_present": 0.3875,
+          "test_ece": 0.2443748153746128
+        },
+        {
+          "run": "gtseg_pointnet_fold1_seed2020",
+          "fold": 1,
+          "seed": 2020,
+          "pair_key": "fold1_seed2020",
+          "test_accuracy": 0.1875,
+          "test_macro_f1_present": 0.17142857142857143,
+          "test_balanced_accuracy_present": 0.225,
+          "test_ece": 0.4018836859613657
+        },
+        {
+          "run": "gtseg_pointnet_fold1_seed2021",
+          "fold": 1,
+          "seed": 2021,
+          "pair_key": "fold1_seed2021",
+          "test_accuracy": 0.4375,
+          "test_macro_f1_present": 0.43333333333333335,
+          "test_balanced_accuracy_present": 0.4375,
+          "test_ece": 0.34155104495584965
+        },
+        {
+          "run": "gtseg_pointnet_fold2_seed1337",
+          "fold": 2,
+          "seed": 1337,
+          "pair_key": "fold2_seed1337",
+          "test_accuracy": 0.1875,
+          "test_macro_f1_present": 0.3333333333333333,
+          "test_balanced_accuracy_present": 0.6904761904761906,
+          "test_ece": 0.3437146656215191
+        },
+        {
+          "run": "gtseg_pointnet_fold2_seed2020",
+          "fold": 2,
+          "seed": 2020,
+          "pair_key": "fold2_seed2020",
+          "test_accuracy": 0.125,
+          "test_macro_f1_present": 0.25,
+          "test_balanced_accuracy_present": 0.6666666666666666,
+          "test_ece": 0.3536566961556673
+        },
+        {
+          "run": "gtseg_pointnet_fold2_seed2021",
+          "fold": 2,
+          "seed": 2021,
+          "pair_key": "fold2_seed2021",
+          "test_accuracy": 0.125,
+          "test_macro_f1_present": 0.19393939393939394,
+          "test_balanced_accuracy_present": 0.6666666666666666,
+          "test_ece": 0.3406098559498787
+        },
+        {
+          "run": "gtseg_pointnet_fold3_seed1337",
+          "fold": 3,
+          "seed": 1337,
+          "pair_key": "fold3_seed1337",
+          "test_accuracy": 0.25,
+          "test_macro_f1_present": 0.21666666666666662,
+          "test_balanced_accuracy_present": 0.22916666666666666,
+          "test_ece": 0.22987517528235912
+        },
+        {
+          "run": "gtseg_pointnet_fold3_seed2020",
+          "fold": 3,
+          "seed": 2020,
+          "pair_key": "fold3_seed2020",
+          "test_accuracy": 0.3125,
+          "test_macro_f1_present": 0.3053571428571429,
+          "test_balanced_accuracy_present": 0.375,
+          "test_ece": 0.27851494029164314
+        },
+        {
+          "run": "gtseg_pointnet_fold3_seed2021",
+          "fold": 3,
+          "seed": 2021,
+          "pair_key": "fold3_seed2021",
+          "test_accuracy": 0.4375,
+          "test_macro_f1_present": 0.3458333333333333,
+          "test_balanced_accuracy_present": 0.3958333333333333,
+          "test_ece": 0.237062219530344
+        },
+        {
+          "run": "gtseg_pointnet_fold4_seed1337",
+          "fold": 4,
+          "seed": 1337,
+          "pair_key": "fold4_seed1337",
+          "test_accuracy": 0.4666666666666667,
+          "test_macro_f1_present": 0.38571428571428573,
+          "test_balanced_accuracy_present": 0.45535714285714285,
+          "test_ece": 0.3465631564458211
+        },
+        {
+          "run": "gtseg_pointnet_fold4_seed2020",
+          "fold": 4,
+          "seed": 2020,
+          "pair_key": "fold4_seed2020",
+          "test_accuracy": 0.3333333333333333,
+          "test_macro_f1_present": 0.21969696969696967,
+          "test_balanced_accuracy_present": 0.2589285714285714,
+          "test_ece": 0.32832708954811096
+        },
+        {
+          "run": "gtseg_pointnet_fold4_seed2021",
+          "fold": 4,
+          "seed": 2021,
+          "pair_key": "fold4_seed2021",
+          "test_accuracy": 0.4,
+          "test_macro_f1_present": 0.3205128205128205,
+          "test_balanced_accuracy_present": 0.39285714285714285,
+          "test_ece": 0.3047626078128815
+        }
+      ],
+      "test_accuracy": [
+        0.375,
+        0.25,
+        0.375,
+        0.375,
+        0.1875,
+        0.4375,
+        0.1875,
+        0.125,
+        0.125,
+        0.25,
+        0.3125,
+        0.4375,
+        0.4666666666666667,
+        0.3333333333333333,
+        0.4
+      ],
+      "test_macro_f1_present": [
+        0.16666666666666666,
+        0.16346153846153846,
+        0.3903846153846154,
+        0.30833333333333335,
+        0.17142857142857143,
+        0.43333333333333335,
+        0.3333333333333333,
+        0.25,
+        0.19393939393939394,
+        0.21666666666666662,
+        0.3053571428571429,
+        0.3458333333333333,
+        0.38571428571428573,
+        0.21969696969696967,
+        0.3205128205128205
+      ],
+      "test_balanced_accuracy_present": [
+        0.16666666666666666,
+        0.2152777777777778,
+        0.5902777777777778,
+        0.3875,
+        0.225,
+        0.4375,
+        0.6904761904761906,
+        0.6666666666666666,
+        0.6666666666666666,
+        0.22916666666666666,
+        0.375,
+        0.3958333333333333,
+        0.45535714285714285,
+        0.2589285714285714,
+        0.39285714285714285
+      ],
+      "test_ece": [
+        0.3063754700124264,
+        0.35688794776797295,
+        0.31854784302413464,
+        0.2443748153746128,
+        0.4018836859613657,
+        0.34155104495584965,
+        0.3437146656215191,
+        0.3536566961556673,
+        0.3406098559498787,
+        0.22987517528235912,
+        0.27851494029164314,
+        0.237062219530344,
+        0.3465631564458211,
+        0.32832708954811096,
+        0.3047626078128815
+      ],
+      "test_seg_mean_iou": [],
+      "seg_only_test_accuracy": [],
+      "seg_only_test_mean_iou": []
+    },
+    "joint_pointnet": {
+      "n": 15,
+      "runs": [
+        {
+          "run": "joint_pointnet_fold0_seed1337",
+          "fold": 0,
+          "seed": 1337,
+          "pair_key": "fold0_seed1337",
+          "test_accuracy": 0.1875,
+          "test_macro_f1_present": 0.15651709401709402,
+          "test_balanced_accuracy_present": 0.2152777777777778,
+          "test_ece": 0.31180502846837044,
+          "test_seg_mean_iou": 0.6934632643561757
+        },
+        {
+          "run": "joint_pointnet_fold0_seed2020",
+          "fold": 0,
+          "seed": 2020,
+          "pair_key": "fold0_seed2020",
+          "test_accuracy": 0.25,
+          "test_macro_f1_present": 0.1388888888888889,
+          "test_balanced_accuracy_present": 0.14583333333333331,
+          "test_ece": 0.3045708183199167,
+          "test_seg_mean_iou": 0.8160115270154036
+        },
+        {
+          "run": "joint_pointnet_fold0_seed2021",
+          "fold": 0,
+          "seed": 2021,
+          "pair_key": "fold0_seed2021",
+          "test_accuracy": 0.1875,
+          "test_macro_f1_present": 0.12179487179487178,
+          "test_balanced_accuracy_present": 0.1527777777777778,
+          "test_ece": 0.5441411286592484,
+          "test_seg_mean_iou": 0.7964085630311759
+        },
+        {
+          "run": "joint_pointnet_fold1_seed1337",
+          "fold": 1,
+          "seed": 1337,
+          "pair_key": "fold1_seed1337",
+          "test_accuracy": 0.25,
+          "test_macro_f1_present": 0.1596638655462185,
+          "test_balanced_accuracy_present": 0.2125,
+          "test_ece": 0.5715494956821203,
+          "test_seg_mean_iou": 0.7758763151065647
+        },
+        {
+          "run": "joint_pointnet_fold1_seed2020",
+          "fold": 1,
+          "seed": 2020,
+          "pair_key": "fold1_seed2020",
+          "test_accuracy": 0.125,
+          "test_macro_f1_present": 0.09545454545454546,
+          "test_balanced_accuracy_present": 0.1125,
+          "test_ece": 0.36505765467882156,
+          "test_seg_mean_iou": 0.5891394083270604
+        },
+        {
+          "run": "joint_pointnet_fold1_seed2021",
+          "fold": 1,
+          "seed": 2021,
+          "pair_key": "fold1_seed2021",
+          "test_accuracy": 0.3125,
+          "test_macro_f1_present": 0.19090909090909092,
+          "test_balanced_accuracy_present": 0.25,
+          "test_ece": 0.5402567274868488,
+          "test_seg_mean_iou": 0.7605065472836521
+        },
+        {
+          "run": "joint_pointnet_fold2_seed1337",
+          "fold": 2,
+          "seed": 1337,
+          "pair_key": "fold2_seed1337",
+          "test_accuracy": 0.0,
+          "test_macro_f1_present": 0.0,
+          "test_balanced_accuracy_present": 0.0,
+          "test_ece": 0.5011172089725733,
+          "test_seg_mean_iou": 0.8576246376882428
+        },
+        {
+          "run": "joint_pointnet_fold2_seed2020",
+          "fold": 2,
+          "seed": 2020,
+          "pair_key": "fold2_seed2020",
+          "test_accuracy": 0.1875,
+          "test_macro_f1_present": 0.1736694677871148,
+          "test_balanced_accuracy_present": 0.38095238095238093,
+          "test_ece": 0.2687883172184229,
+          "test_seg_mean_iou": 0.7793018723004042
+        },
+        {
+          "run": "joint_pointnet_fold2_seed2021",
+          "fold": 2,
+          "seed": 2021,
+          "pair_key": "fold2_seed2021",
+          "test_accuracy": 0.3125,
+          "test_macro_f1_present": 0.5250544662309369,
+          "test_balanced_accuracy_present": 0.7380952380952381,
+          "test_ece": 0.4205993264913559,
+          "test_seg_mean_iou": 0.85982655500162
+        },
+        {
+          "run": "joint_pointnet_fold3_seed1337",
+          "fold": 3,
+          "seed": 1337,
+          "pair_key": "fold3_seed1337",
+          "test_accuracy": 0.375,
+          "test_macro_f1_present": 0.3392857142857143,
+          "test_balanced_accuracy_present": 0.3125,
+          "test_ece": 0.3004505541175604,
+          "test_seg_mean_iou": 0.8152390528556411
+        },
+        {
+          "run": "joint_pointnet_fold3_seed2020",
+          "fold": 3,
+          "seed": 2020,
+          "pair_key": "fold3_seed2020",
+          "test_accuracy": 0.375,
+          "test_macro_f1_present": 0.2833333333333333,
+          "test_balanced_accuracy_present": 0.29166666666666663,
+          "test_ece": 0.2948973998427391,
+          "test_seg_mean_iou": 0.7079752667024222
+        },
+        {
+          "run": "joint_pointnet_fold3_seed2021",
+          "fold": 3,
+          "seed": 2021,
+          "pair_key": "fold3_seed2021",
+          "test_accuracy": 0.1875,
+          "test_macro_f1_present": 0.18333333333333335,
+          "test_balanced_accuracy_present": 0.14583333333333331,
+          "test_ece": 0.35929572209715843,
+          "test_seg_mean_iou": 0.8340014148897528
+        },
+        {
+          "run": "joint_pointnet_fold4_seed1337",
+          "fold": 4,
+          "seed": 1337,
+          "pair_key": "fold4_seed1337",
+          "test_accuracy": 0.2,
+          "test_macro_f1_present": 0.175,
+          "test_balanced_accuracy_present": 0.375,
+          "test_ece": 0.24758323033650717,
+          "test_seg_mean_iou": 0.7677616826984175
+        },
+        {
+          "run": "joint_pointnet_fold4_seed2020",
+          "fold": 4,
+          "seed": 2020,
+          "pair_key": "fold4_seed2020",
+          "test_accuracy": 0.2,
+          "test_macro_f1_present": 0.14646464646464646,
+          "test_balanced_accuracy_present": 0.1607142857142857,
+          "test_ece": 0.41774552663167314,
+          "test_seg_mean_iou": 0.830858410146893
+        },
+        {
+          "run": "joint_pointnet_fold4_seed2021",
+          "fold": 4,
+          "seed": 2021,
+          "pair_key": "fold4_seed2021",
+          "test_accuracy": 0.4666666666666667,
+          "test_macro_f1_present": 0.1590909090909091,
+          "test_balanced_accuracy_present": 0.25,
+          "test_ece": 0.03706932266553242,
+          "test_seg_mean_iou": 0.5202105730062963
+        }
+      ],
+      "test_accuracy": [
+        0.1875,
+        0.25,
+        0.1875,
+        0.25,
+        0.125,
+        0.3125,
+        0.0,
+        0.1875,
+        0.3125,
+        0.375,
+        0.375,
+        0.1875,
+        0.2,
+        0.2,
+        0.4666666666666667
+      ],
+      "test_macro_f1_present": [
+        0.15651709401709402,
+        0.1388888888888889,
+        0.12179487179487178,
+        0.1596638655462185,
+        0.09545454545454546,
+        0.19090909090909092,
+        0.0,
+        0.1736694677871148,
+        0.5250544662309369,
+        0.3392857142857143,
+        0.2833333333333333,
+        0.18333333333333335,
+        0.175,
+        0.14646464646464646,
+        0.1590909090909091
+      ],
+      "test_balanced_accuracy_present": [
+        0.2152777777777778,
+        0.14583333333333331,
+        0.1527777777777778,
+        0.2125,
+        0.1125,
+        0.25,
+        0.0,
+        0.38095238095238093,
+        0.7380952380952381,
+        0.3125,
+        0.29166666666666663,
+        0.14583333333333331,
+        0.375,
+        0.1607142857142857,
+        0.25
+      ],
+      "test_ece": [
+        0.31180502846837044,
+        0.3045708183199167,
+        0.5441411286592484,
+        0.5715494956821203,
+        0.36505765467882156,
+        0.5402567274868488,
+        0.5011172089725733,
+        0.2687883172184229,
+        0.4205993264913559,
+        0.3004505541175604,
+        0.2948973998427391,
+        0.35929572209715843,
+        0.24758323033650717,
+        0.41774552663167314,
+        0.03706932266553242
+      ],
+      "test_seg_mean_iou": [
+        0.6934632643561757,
+        0.8160115270154036,
+        0.7964085630311759,
+        0.7758763151065647,
+        0.5891394083270604,
+        0.7605065472836521,
+        0.8576246376882428,
+        0.7793018723004042,
+        0.85982655500162,
+        0.8152390528556411,
+        0.7079752667024222,
+        0.8340014148897528,
+        0.7677616826984175,
+        0.830858410146893,
+        0.5202105730062963
+      ],
+      "seg_only_test_accuracy": [],
+      "seg_only_test_mean_iou": []
+    },
+    "seg_pointnet": {
+      "n": 15,
+      "runs": [
+        {
+          "run": "seg_pointnet_fold0_seed1337",
+          "fold": 0,
+          "seed": 1337,
+          "pair_key": "fold0_seed1337",
+          "test_accuracy": 0.9291152954101562,
+          "test_mean_iou": 0.8675955132540732
+        },
+        {
+          "run": "seg_pointnet_fold0_seed2020",
+          "fold": 0,
+          "seed": 2020,
+          "pair_key": "fold0_seed2020",
+          "test_accuracy": 0.91888427734375,
+          "test_mean_iou": 0.8499370176430442
+        },
+        {
+          "run": "seg_pointnet_fold0_seed2021",
+          "fold": 0,
+          "seed": 2021,
+          "pair_key": "fold0_seed2021",
+          "test_accuracy": 0.9300308227539062,
+          "test_mean_iou": 0.8692049525690071
+        },
+        {
+          "run": "seg_pointnet_fold1_seed1337",
+          "fold": 1,
+          "seed": 1337,
+          "pair_key": "fold1_seed1337",
+          "test_accuracy": 0.6984786987304688,
+          "test_mean_iou": 0.5310652563932765
+        },
+        {
+          "run": "seg_pointnet_fold1_seed2020",
+          "fold": 1,
+          "seed": 2020,
+          "pair_key": "fold1_seed2020",
+          "test_accuracy": 0.8745040893554688,
+          "test_mean_iou": 0.7769895688239034
+        },
+        {
+          "run": "seg_pointnet_fold1_seed2021",
+          "fold": 1,
+          "seed": 2021,
+          "pair_key": "fold1_seed2021",
+          "test_accuracy": 0.8741683959960938,
+          "test_mean_iou": 0.776365211957587
+        },
+        {
+          "run": "seg_pointnet_fold2_seed1337",
+          "fold": 2,
+          "seed": 1337,
+          "pair_key": "fold2_seed1337",
+          "test_accuracy": 0.9473876953125,
+          "test_mean_iou": 0.899931435481282
+        },
+        {
+          "run": "seg_pointnet_fold2_seed2020",
+          "fold": 2,
+          "seed": 2020,
+          "pair_key": "fold2_seed2020",
+          "test_accuracy": 0.9316940307617188,
+          "test_mean_iou": 0.8719877299316685
+        },
+        {
+          "run": "seg_pointnet_fold2_seed2021",
+          "fold": 2,
+          "seed": 2021,
+          "pair_key": "fold2_seed2021",
+          "test_accuracy": 0.9439468383789062,
+          "test_mean_iou": 0.8936745316882588
+        },
+        {
+          "run": "seg_pointnet_fold3_seed1337",
+          "fold": 3,
+          "seed": 1337,
+          "pair_key": "fold3_seed1337",
+          "test_accuracy": 0.9307403564453125,
+          "test_mean_iou": 0.8703427715547354
+        },
+        {
+          "run": "seg_pointnet_fold3_seed2020",
+          "fold": 3,
+          "seed": 2020,
+          "pair_key": "fold3_seed2020",
+          "test_accuracy": 0.9279251098632812,
+          "test_mean_iou": 0.8655395917967699
+        },
+        {
+          "run": "seg_pointnet_fold3_seed2021",
+          "fold": 3,
+          "seed": 2021,
+          "pair_key": "fold3_seed2021",
+          "test_accuracy": 0.9163360595703125,
+          "test_mean_iou": 0.8455898426311168
+        },
+        {
+          "run": "seg_pointnet_fold4_seed1337",
+          "fold": 4,
+          "seed": 1337,
+          "pair_key": "fold4_seed1337",
+          "test_accuracy": 0.9054606119791667,
+          "test_mean_iou": 0.826137607180658
+        },
+        {
+          "run": "seg_pointnet_fold4_seed2020",
+          "fold": 4,
+          "seed": 2020,
+          "pair_key": "fold4_seed2020",
+          "test_accuracy": 0.9258544921875,
+          "test_mean_iou": 0.8619311770124978
+        },
+        {
+          "run": "seg_pointnet_fold4_seed2021",
+          "fold": 4,
+          "seed": 2021,
+          "pair_key": "fold4_seed2021",
+          "test_accuracy": 0.9350179036458334,
+          "test_mean_iou": 0.8777368921945188
+        }
+      ],
+      "test_accuracy": [],
+      "test_macro_f1_present": [],
+      "test_balanced_accuracy_present": [],
+      "test_ece": [],
+      "test_seg_mean_iou": [],
+      "seg_only_test_accuracy": [
+        0.9291152954101562,
+        0.91888427734375,
+        0.9300308227539062,
+        0.6984786987304688,
+        0.8745040893554688,
+        0.8741683959960938,
+        0.9473876953125,
+        0.9316940307617188,
+        0.9439468383789062,
+        0.9307403564453125,
+        0.9279251098632812,
+        0.9163360595703125,
+        0.9054606119791667,
+        0.9258544921875,
+        0.9350179036458334
+      ],
+      "seg_only_test_mean_iou": [
+        0.8675955132540732,
+        0.8499370176430442,
+        0.8692049525690071,
+        0.5310652563932765,
+        0.7769895688239034,
+        0.776365211957587,
+        0.899931435481282,
+        0.8719877299316685,
+        0.8936745316882588,
+        0.8703427715547354,
+        0.8655395917967699,
+        0.8455898426311168,
+        0.826137607180658,
+        0.8619311770124978,
+        0.8777368921945188
+      ]
+    }
+  },
+  "pairwise": {
+    "gtseg_pointnet__minus__all_pointnet": {
+      "acc": {
+        "n_pairs": 15,
+        "keys": [
+          "fold0_seed1337",
+          "fold0_seed2020",
+          "fold0_seed2021",
+          "fold1_seed1337",
+          "fold1_seed2020",
+          "fold1_seed2021",
+          "fold2_seed1337",
+          "fold2_seed2020",
+          "fold2_seed2021",
+          "fold3_seed1337",
+          "fold3_seed2020",
+          "fold3_seed2021",
+          "fold4_seed1337",
+          "fold4_seed2020",
+          "fold4_seed2021"
+        ],
+        "mean_delta": 0.08527777777777777,
+        "ci95": [
+          0.010000000000000002,
+          0.15055555555555555
+        ],
+        "wins": 11,
+        "ties": 1,
+        "losses": 3,
+        "deltas": [
+          0.125,
+          -0.125,
+          0.25,
+          0.0625,
+          0.0,
+          0.1875,
+          0.0625,
+          -0.25,
+          -0.0625,
+          0.125,
+          0.25,
+          0.1875,
+          0.2,
+          0.1333333333333333,
+          0.13333333333333336
+        ]
+      },
+      "macro_f1": {
+        "n_pairs": 15,
+        "keys": [
+          "fold0_seed1337",
+          "fold0_seed2020",
+          "fold0_seed2021",
+          "fold1_seed1337",
+          "fold1_seed2020",
+          "fold1_seed2021",
+          "fold2_seed1337",
+          "fold2_seed2020",
+          "fold2_seed2021",
+          "fold3_seed1337",
+          "fold3_seed2020",
+          "fold3_seed2021",
+          "fold4_seed1337",
+          "fold4_seed2020",
+          "fold4_seed2021"
+        ],
+        "mean_delta": 0.13902821121087375,
+        "ci95": [
+          0.08262796285242106,
+          0.19327334430275608
+        ],
+        "wins": 14,
+        "ties": 0,
+        "losses": 1,
+        "deltas": [
+          0.004166666666666652,
+          -0.09311740890688255,
+          0.3032634032634033,
+          0.16127450980392158,
+          0.08319327731092437,
+          0.2875,
+          0.25,
+          0.05000000000000002,
+          0.06788897377132672,
+          0.14523809523809517,
+          0.2696428571428572,
+          0.19702380952380952,
+          0.14532967032967037,
+          0.0649350649350649,
+          0.14908424908424905
+        ]
+      },
+      "bal_acc": {
+        "n_pairs": 15,
+        "keys": [
+          "fold0_seed1337",
+          "fold0_seed2020",
+          "fold0_seed2021",
+          "fold1_seed1337",
+          "fold1_seed2020",
+          "fold1_seed2021",
+          "fold2_seed1337",
+          "fold2_seed2020",
+          "fold2_seed2021",
+          "fold3_seed1337",
+          "fold3_seed2020",
+          "fold3_seed2021",
+          "fold4_seed1337",
+          "fold4_seed2020",
+          "fold4_seed2021"
+        ],
+        "mean_delta": 0.20056878306878306,
+        "ci95": [
+          0.09309523809523809,
+          0.306547619047619
+        ],
+        "wins": 13,
+        "ties": 0,
+        "losses": 2,
+        "deltas": [
+          -0.16666666666666666,
+          -0.1736111111111111,
+          0.3125,
+          0.1375,
+          0.07500000000000001,
+          0.2375,
+          0.642857142857143,
+          0.5238095238095237,
+          0.2857142857142857,
+          0.10416666666666666,
+          0.3125,
+          0.20833333333333331,
+          0.2232142857142857,
+          0.06249999999999997,
+          0.2232142857142857
+        ]
+      }
+    },
+    "joint_pointnet__minus__all_pointnet": {
+      "acc": {
+        "n_pairs": 15,
+        "keys": [
+          "fold0_seed1337",
+          "fold0_seed2020",
+          "fold0_seed2021",
+          "fold1_seed1337",
+          "fold1_seed2020",
+          "fold1_seed2021",
+          "fold2_seed1337",
+          "fold2_seed2020",
+          "fold2_seed2021",
+          "fold3_seed1337",
+          "fold3_seed2020",
+          "fold3_seed2021",
+          "fold4_seed1337",
+          "fold4_seed2020",
+          "fold4_seed2021"
+        ],
+        "mean_delta": 0.017222222222222226,
+        "ci95": [
+          -0.05333333333333333,
+          0.09222222222222222
+        ],
+        "wins": 6,
+        "ties": 1,
+        "losses": 8,
+        "deltas": [
+          -0.0625,
+          -0.125,
+          0.0625,
+          -0.0625,
+          -0.0625,
+          0.0625,
+          -0.125,
+          -0.1875,
+          0.125,
+          0.25,
+          0.3125,
+          -0.0625,
+          -0.06666666666666665,
+          0.0,
+          0.2
+        ]
+      },
+      "macro_f1": {
+        "n_pairs": 15,
+        "keys": [
+          "fold0_seed1337",
+          "fold0_seed2020",
+          "fold0_seed2021",
+          "fold1_seed1337",
+          "fold1_seed2020",
+          "fold1_seed2021",
+          "fold2_seed1337",
+          "fold2_seed2020",
+          "fold2_seed2021",
+          "fold3_seed1337",
+          "fold3_seed2020",
+          "fold3_seed2021",
+          "fold4_seed1337",
+          "fold4_seed2020",
+          "fold4_seed2021"
+        ],
+        "mean_delta": 0.04861475937585329,
+        "ci95": [
+          -0.015061892585112398,
+          0.12687108280245538
+        ],
+        "wins": 8,
+        "ties": 0,
+        "losses": 7,
+        "deltas": [
+          -0.005982905982905989,
+          -0.11769005847953212,
+          0.03467365967365965,
+          0.012605042016806733,
+          0.007219251336898394,
+          0.045075757575757575,
+          -0.08333333333333333,
+          -0.02633053221288517,
+          0.39900404606286966,
+          0.26785714285714285,
+          0.2476190476190476,
+          0.03452380952380954,
+          -0.06538461538461537,
+          -0.008297258297258303,
+          -0.012337662337662342
+        ]
+      },
+      "bal_acc": {
+        "n_pairs": 15,
+        "keys": [
+          "fold0_seed1337",
+          "fold0_seed2020",
+          "fold0_seed2021",
+          "fold1_seed1337",
+          "fold1_seed2020",
+          "fold1_seed2021",
+          "fold2_seed1337",
+          "fold2_seed2020",
+          "fold2_seed2021",
+          "fold3_seed1337",
+          "fold3_seed2020",
+          "fold3_seed2021",
+          "fold4_seed1337",
+          "fold4_seed2020",
+          "fold4_seed2021"
+        ],
+        "mean_delta": 0.03993386243386243,
+        "ci95": [
+          -0.03838624338624339,
+          0.11974867724867724
+        ],
+        "wins": 7,
+        "ties": 0,
+        "losses": 8,
+        "deltas": [
+          -0.11805555555555552,
+          -0.24305555555555558,
+          -0.125,
+          -0.037500000000000006,
+          -0.03749999999999999,
+          0.04999999999999999,
+          -0.047619047619047616,
+          0.23809523809523808,
+          0.3571428571428572,
+          0.1875,
+          0.22916666666666663,
+          -0.041666666666666685,
+          0.14285714285714285,
+          -0.035714285714285726,
+          0.08035714285714285
+        ]
+      }
+    },
+    "joint_pointnet__minus__gtseg_pointnet": {
+      "acc": {
+        "n_pairs": 15,
+        "keys": [
+          "fold0_seed1337",
+          "fold0_seed2020",
+          "fold0_seed2021",
+          "fold1_seed1337",
+          "fold1_seed2020",
+          "fold1_seed2021",
+          "fold2_seed1337",
+          "fold2_seed2020",
+          "fold2_seed2021",
+          "fold3_seed1337",
+          "fold3_seed2020",
+          "fold3_seed2021",
+          "fold4_seed1337",
+          "fold4_seed2020",
+          "fold4_seed2021"
+        ],
+        "mean_delta": -0.06805555555555555,
+        "ci95": [
+          -0.13555555555555557,
+          0.0030555555555555557
+        ],
+        "wins": 5,
+        "ties": 1,
+        "losses": 9,
+        "deltas": [
+          -0.1875,
+          0.0,
+          -0.1875,
+          -0.125,
+          -0.0625,
+          -0.125,
+          -0.1875,
+          0.0625,
+          0.1875,
+          0.125,
+          0.0625,
+          -0.25,
+          -0.26666666666666666,
+          -0.1333333333333333,
+          0.06666666666666665
+        ]
+      },
+      "macro_f1": {
+        "n_pairs": 15,
+        "keys": [
+          "fold0_seed1337",
+          "fold0_seed2020",
+          "fold0_seed2021",
+          "fold1_seed1337",
+          "fold1_seed2020",
+          "fold1_seed2021",
+          "fold2_seed1337",
+          "fold2_seed2020",
+          "fold2_seed2021",
+          "fold3_seed1337",
+          "fold3_seed2020",
+          "fold3_seed2021",
+          "fold4_seed1337",
+          "fold4_seed2020",
+          "fold4_seed2021"
+        ],
+        "mean_delta": -0.09041345183502046,
+        "ci95": [
+          -0.16612620494973437,
+          -0.001868697751050689
+        ],
+        "wins": 2,
+        "ties": 0,
+        "losses": 13,
+        "deltas": [
+          -0.010149572649572641,
+          -0.02457264957264957,
+          -0.26858974358974363,
+          -0.14866946778711485,
+          -0.07597402597402597,
+          -0.24242424242424243,
+          -0.3333333333333333,
+          -0.07633053221288519,
+          0.3311150722915429,
+          0.12261904761904768,
+          -0.022023809523809557,
+          -0.16249999999999998,
+          -0.21071428571428574,
+          -0.0732323232323232,
+          -0.1614219114219114
+        ]
+      },
+      "bal_acc": {
+        "n_pairs": 15,
+        "keys": [
+          "fold0_seed1337",
+          "fold0_seed2020",
+          "fold0_seed2021",
+          "fold1_seed1337",
+          "fold1_seed2020",
+          "fold1_seed2021",
+          "fold2_seed1337",
+          "fold2_seed2020",
+          "fold2_seed2021",
+          "fold3_seed1337",
+          "fold3_seed2020",
+          "fold3_seed2021",
+          "fold4_seed1337",
+          "fold4_seed2020",
+          "fold4_seed2021"
+        ],
+        "mean_delta": -0.16063492063492063,
+        "ci95": [
+          -0.26642857142857146,
+          -0.07002645502645502
+        ],
+        "wins": 3,
+        "ties": 0,
+        "losses": 12,
+        "deltas": [
+          0.04861111111111113,
+          -0.06944444444444448,
+          -0.4375,
+          -0.17500000000000002,
+          -0.1125,
+          -0.1875,
+          -0.6904761904761906,
+          -0.2857142857142857,
+          0.07142857142857151,
+          0.08333333333333334,
+          -0.08333333333333337,
+          -0.25,
+          -0.08035714285714285,
+          -0.0982142857142857,
+          -0.14285714285714285
+        ]
+      }
+    }
+  },
+  "per_fold": {
+    "all_pointnet": {
+      "macro_f1": {
+        "0": 0.16873338649654437,
+        "1": 0.1270424836601307,
+        "2": 0.1364612511671335,
+        "3": 0.08531746031746032,
+        "4": 0.18885836385836385
+      },
+      "accuracy": {
+        "0": 0.25,
+        "1": 0.25,
+        "2": 0.22916666666666666,
+        "3": 0.14583333333333334,
+        "4": 0.24444444444444444
+      }
+    },
+    "gtseg_pointnet": {
+      "macro_f1": {
+        "0": 0.24017094017094018,
+        "1": 0.3043650793650794,
+        "2": 0.2590909090909091,
+        "3": 0.28928571428571426,
+        "4": 0.3086413586413586
+      },
+      "accuracy": {
+        "0": 0.3333333333333333,
+        "1": 0.3333333333333333,
+        "2": 0.14583333333333334,
+        "3": 0.3333333333333333,
+        "4": 0.4
+      }
+    },
+    "joint_pointnet": {
+      "macro_f1": {
+        "0": 0.13906695156695156,
+        "1": 0.14867583396995163,
+        "2": 0.23290797800601723,
+        "3": 0.26865079365079364,
+        "4": 0.16018518518518518
+      },
+      "accuracy": {
+        "0": 0.20833333333333334,
+        "1": 0.22916666666666666,
+        "2": 0.16666666666666666,
+        "3": 0.3125,
+        "4": 0.2888888888888889
+      }
+    }
+  },
+  "best_runs": {
+    "all_pointnet": [
+      {
+        "run": "all_pointnet_fold0_seed2020",
+        "fold": 0,
+        "seed": 2020,
+        "test_macro_f1_present": 0.256578947368421,
+        "test_accuracy": 0.375
+      },
+      {
+        "run": "all_pointnet_fold4_seed1337",
+        "fold": 4,
+        "seed": 1337,
+        "test_macro_f1_present": 0.24038461538461536,
+        "test_accuracy": 0.26666666666666666
+      },
+      {
+        "run": "all_pointnet_fold2_seed2020",
+        "fold": 2,
+        "seed": 2020,
+        "test_macro_f1_present": 0.19999999999999998,
+        "test_accuracy": 0.375
+      }
+    ],
+    "gtseg_pointnet": [
+      {
+        "run": "gtseg_pointnet_fold1_seed2021",
+        "fold": 1,
+        "seed": 2021,
+        "test_macro_f1_present": 0.43333333333333335,
+        "test_accuracy": 0.4375
+      },
+      {
+        "run": "gtseg_pointnet_fold0_seed2021",
+        "fold": 0,
+        "seed": 2021,
+        "test_macro_f1_present": 0.3903846153846154,
+        "test_accuracy": 0.375
+      },
+      {
+        "run": "gtseg_pointnet_fold4_seed1337",
+        "fold": 4,
+        "seed": 1337,
+        "test_macro_f1_present": 0.38571428571428573,
+        "test_accuracy": 0.4666666666666667
+      }
+    ],
+    "joint_pointnet": [
+      {
+        "run": "joint_pointnet_fold2_seed2021",
+        "fold": 2,
+        "seed": 2021,
+        "test_macro_f1_present": 0.5250544662309369,
+        "test_accuracy": 0.3125,
+        "test_seg_mean_iou": 0.85982655500162
+      },
+      {
+        "run": "joint_pointnet_fold3_seed1337",
+        "fold": 3,
+        "seed": 1337,
+        "test_macro_f1_present": 0.3392857142857143,
+        "test_accuracy": 0.375,
+        "test_seg_mean_iou": 0.8152390528556411
+      },
+      {
+        "run": "joint_pointnet_fold3_seed2020",
+        "fold": 3,
+        "seed": 2020,
+        "test_macro_f1_present": 0.2833333333333333,
+        "test_accuracy": 0.375,
+        "test_seg_mean_iou": 0.7079752667024222
+      }
+    ],
+    "seg_pointnet": [
+      {
+        "run": "seg_pointnet_fold2_seed1337",
+        "fold": 2,
+        "seed": 1337,
+        "test_mean_iou": 0.899931435481282,
+        "test_accuracy": 0.9473876953125
+      },
+      {
+        "run": "seg_pointnet_fold2_seed2021",
+        "fold": 2,
+        "seed": 2021,
+        "test_mean_iou": 0.8936745316882588,
+        "test_accuracy": 0.9439468383789062
+      },
+      {
+        "run": "seg_pointnet_fold4_seed2021",
+        "fold": 4,
+        "seed": 2021,
+        "test_mean_iou": 0.8777368921945188,
+        "test_accuracy": 0.9350179036458334
+      }
+    ]
+  }
+}

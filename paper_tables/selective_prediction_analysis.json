@@ -1,0 +1,640 @@
+{
+  "cases_by_confidence": [
+    {
+      "case_key": "05付饶/Group-furao1.bin",
+      "miou": 0.923465765473087,
+      "rest_iou": 0.8778040141676505,
+      "confidence": 0.965308666229248,
+      "rtype": "充填",
+      "rest_ratio": 0.2047119140625
+    },
+    {
+      "case_key": "16刘珍珠/Group-liuzhenzhu.bin",
+      "miou": 0.9023164326072834,
+      "rest_iou": 0.841577958672511,
+      "confidence": 0.9563665390014648,
+      "rtype": "全冠",
+      "rest_ratio": 0.165771484375
+    },
+    {
+      "case_key": "32胡丽芬/Group-hulifen.bin",
+      "miou": 0.9171929007722415,
+      "rest_iou": 0.8787477954144621,
+      "confidence": 0.9544543623924255,
+      "rtype": "高嵌体",
+      "rest_ratio": 0.24658203125
+    },
+    {
+      "case_key": "38蒋宇鹏/Group-jiangyupeng.bin",
+      "miou": 0.8016009969795254,
+      "rest_iou": 0.7223257547521431,
+      "confidence": 0.9497537612915039,
+      "rtype": "全冠",
+      "rest_ratio": 0.2557373046875
+    },
+    {
+      "case_key": "31纪静/Group-jijing.bin",
+      "miou": 0.8056994716318902,
+      "rest_iou": 0.7111404667547336,
+      "confidence": 0.9475189447402954,
+      "rtype": "桩核冠",
+      "rest_ratio": 0.2138671875
+    },
+    {
+      "case_key": "72黎荃/Group-liquan.bin",
+      "miou": 0.9277966542222461,
+      "rest_iou": 0.8753292361720808,
+      "confidence": 0.941537618637085,
+      "rtype": "桩核冠",
+      "rest_ratio": 0.122802734375
+    },
+    {
+      "case_key": "70黄郁辉/Group-huangyuhui.bin",
+      "miou": 0.9491521295010779,
+      "rest_iou": 0.9201563372417644,
+      "confidence": 0.9389209747314453,
+      "rtype": "全冠",
+      "rest_ratio": 0.20849609375
+    },
+    {
+      "case_key": "37菅晓燕/Group-jianxiaoyan.bin",
+      "miou": 0.6617239829028643,
+      "rest_iou": 0.4621091679915209,
+      "confidence": 0.9387059211730957,
+      "rtype": "桩核冠",
+      "rest_ratio": 0.1348876953125
+    },
+    {
+      "case_key": "68黄翠美/Group-huangcuimei.bin",
+      "miou": 0.8770007492218577,
+      "rest_iou": 0.8122227698373583,
+      "confidence": 0.9381921291351318,
+      "rtype": "桩核冠",
+      "rest_ratio": 0.2177734375
+    },
+    {
+      "case_key": "28洪银妆/Group-hongyinzhuang.bin",
+      "miou": 0.9110346584623961,
+      "rest_iou": 0.8618316569613552,
+      "confidence": 0.9378634691238403,
+      "rtype": "充填",
+      "rest_ratio": 0.2099609375
+    },
+    {
+      "case_key": "69黄菊莉/Group-huangjuli.bin",
+      "miou": 0.8558922775745711,
+      "rest_iou": 0.7806295399515738,
+      "confidence": 0.9375126361846924,
+      "rtype": "高嵌体",
+      "rest_ratio": 0.2178955078125
+    },
+    {
+      "case_key": "55高笑芳/Group-gaoxiaofang.bin",
+      "miou": 0.6361192167572395,
+      "rest_iou": 0.38084632516703787,
+      "confidence": 0.9370611906051636,
+      "rtype": "高嵌体",
+      "rest_ratio": 0.0655517578125
+    },
+    {
+      "case_key": "35胡泓宇/Group-huhongyu.bin",
+      "miou": 0.8457171652498383,
+      "rest_iou": 0.7860066989207294,
+      "confidence": 0.9369690418243408,
+      "rtype": "桩核冠",
+      "rest_ratio": 0.2652587890625
+    },
+    {
+      "case_key": "41蓝春雨/Group-lanchunyu1.bin",
+      "miou": 0.8709994090450864,
+      "rest_iou": 0.7748837209302326,
+      "confidence": 0.9368805885314941,
+      "rtype": "高嵌体",
+      "rest_ratio": 0.1029052734375
+    },
+    {
+      "case_key": "07何文飞/Group-hwf.bin",
+      "miou": 0.7309053961637952,
+      "rest_iou": 0.5404984423676013,
+      "confidence": 0.9350991249084473,
+      "rtype": "桩核冠",
+      "rest_ratio": 0.084716796875
+    },
+    {
+      "case_key": "61黄勇/Group-huangyong.bin",
+      "miou": 0.7896359644512707,
+      "rest_iou": 0.6691449814126395,
+      "confidence": 0.9340848922729492,
+      "rtype": "全冠",
+      "rest_ratio": 0.1798095703125
+    },
+    {
+      "case_key": "24李彩霞/Group-licaixia.bin",
+      "miou": 0.7792321668820514,
+      "rest_iou": 0.6643258426966292,
+      "confidence": 0.9313220977783203,
+      "rtype": "高嵌体",
+      "rest_ratio": 0.174560546875
+    },
+    {
+      "case_key": "17刘素妍/Group-liusuyan.bin",
+      "miou": 0.7871044828560907,
+      "rest_iou": 0.6671850699844479,
+      "confidence": 0.9286785125732422,
+      "rtype": "充填",
+      "rest_ratio": 0.205078125
+    },
+    {
+      "case_key": "29符巧敏/Group-fuqiaomin.bin",
+      "miou": 0.7122357448850308,
+      "rest_iou": 0.5369318181818182,
+      "confidence": 0.9280489087104797,
+      "rtype": "高嵌体",
+      "rest_ratio": 0.12353515625
+    },
+    {
+      "case_key": "42蓝颂庭/Group-lansongtiing.bin",
+      "miou": 0.8087979303824799,
+      "rest_iou": 0.6964483906770256,
+      "confidence": 0.9276654720306396,
+      "rtype": "充填",
+      "rest_ratio": 0.2198486328125
+    },
+    {
+      "case_key": "44邓冠虹/Group-dengguanhong1.bin",
+      "miou": 0.7582338310013614,
+      "rest_iou": 0.6204379562043796,
+      "confidence": 0.9271223545074463,
+      "rtype": "高嵌体",
+      "rest_ratio": 0.2325439453125
+    },
+    {
+      "case_key": "63黄嵩/Group-hs.bin",
+      "miou": 0.845464318394363,
+      "rest_iou": 0.7528935185185185,
+      "confidence": 0.9256260991096497,
+      "rtype": "全冠",
+      "rest_ratio": 0.1658935546875
+    },
+    {
+      "case_key": "56高芳/Group-gaofang.bin",
+      "miou": 0.8794796612612947,
+      "rest_iou": 0.8028442146089205,
+      "confidence": 0.9252666234970093,
+      "rtype": "高嵌体",
+      "rest_ratio": 0.1541748046875
+    },
+    {
+      "case_key": "60黄佳妮/Group-huangjiani.bin",
+      "miou": 0.6594447048678211,
+      "rest_iou": 0.49379652605459057,
+      "confidence": 0.9249216318130493,
+      "rtype": "高嵌体",
+      "rest_ratio": 0.203369140625
+    },
+    {
+      "case_key": "59黄伟宸/Group-huangweichen.bin",
+      "miou": 0.8607697527296532,
+      "rest_iou": 0.7949167397020158,
+      "confidence": 0.9230003356933594,
+      "rtype": "高嵌体",
+      "rest_ratio": 0.239501953125
+    },
+    {
+      "case_key": "34胡春红/Group-huchunhong.bin",
+      "miou": 0.8878989379458655,
+      "rest_iou": 0.8293281020107895,
+      "confidence": 0.9209491610527039,
+      "rtype": "高嵌体",
+      "rest_ratio": 0.236083984375
+    },
+    {
+      "case_key": "09何诗琪/Group-heshiqi.bin",
+      "miou": 0.8298886552203764,
+      "rest_iou": 0.7375815353738083,
+      "confidence": 0.920337438583374,
+      "rtype": "高嵌体",
+      "rest_ratio": 0.18505859375
+    },
+    {
+      "case_key": "40蒋燕翠/Group-jiangyancui.bin",
+      "miou": 0.8684429665949522,
+      "rest_iou": 0.8013276434329066,
+      "confidence": 0.9194000959396362,
+      "rtype": "全冠",
+      "rest_ratio": 0.226318359375
+    },
+    {
+      "case_key": "41.1蓝春雨/Group-lanchunyu2.bin",
+      "miou": 0.39760429999023916,
+      "rest_iou": 0.010674157303370787,
+      "confidence": 0.9192606210708618,
+      "rtype": "桩核冠",
+      "rest_ratio": 0.0775146484375
+    },
+    {
+      "case_key": "30纪敏芳/Group-jiminfang.bin",
+      "miou": 0.8579751623399605,
+      "rest_iou": 0.8069360028602074,
+      "confidence": 0.9192318916320801,
+      "rtype": "全冠",
+      "rest_ratio": 0.304443359375
+    },
+    {
+      "case_key": "53韩梦楚/Group-hanmengchu.bin",
+      "miou": 0.828125476374856,
+      "rest_iou": 0.725769669327252,
+      "confidence": 0.9190638661384583,
+      "rtype": "高嵌体",
+      "rest_ratio": 0.19775390625
+    },
+    {
+      "case_key": "71黎建文/Group-lijianwen.bin",
+      "miou": 0.8026661170744928,
+      "rest_iou": 0.6946258161727775,
+      "confidence": 0.9178802967071533,
+      "rtype": "充填",
+      "rest_ratio": 0.171142578125
+    },
+    {
+      "case_key": "65黄征艳/Group-huangzhengyan.bin",
+      "miou": 0.834170474705661,
+      "rest_iou": 0.7418181818181818,
+      "confidence": 0.9161361455917358,
+      "rtype": "全冠",
+      "rest_ratio": 0.17724609375
+    },
+    {
+      "case_key": "49郭昱成/Group-guoyucheng.bin",
+      "miou": 0.9194268236058931,
+      "rest_iou": 0.8749337572866984,
+      "confidence": 0.9152839779853821,
+      "rtype": "高嵌体",
+      "rest_ratio": 0.226318359375
+    },
+    {
+      "case_key": "13冯稚殷/Group-fengzhiyin.bin",
+      "miou": 0.8789723126378611,
+      "rest_iou": 0.825653798256538,
+      "confidence": 0.9147558212280273,
+      "rtype": "全冠",
+      "rest_ratio": 0.2740478515625
+    },
+    {
+      "case_key": "04丁敏/Group-dingmin.bin",
+      "miou": 0.8584364954780299,
+      "rest_iou": 0.7914110429447853,
+      "confidence": 0.9146621227264404,
+      "rtype": "桩核冠",
+      "rest_ratio": 0.228515625
+    },
+    {
+      "case_key": "62黄岩/Group-huangyan.bin",
+      "miou": 0.8167427124145079,
+      "rest_iou": 0.7381329113924051,
+      "confidence": 0.9134514331817627,
+      "rtype": "高嵌体",
+      "rest_ratio": 0.2542724609375
+    },
+    {
+      "case_key": "19单玉薇/Group-syw.bin",
+      "miou": 0.8426722467678023,
+      "rest_iou": 0.7433795712484237,
+      "confidence": 0.9133427143096924,
+      "rtype": "全冠",
+      "rest_ratio": 0.1514892578125
+    },
+    {
+      "case_key": "58黄丽芳/Group-huanglifang.bin",
+      "miou": 0.7784946157095896,
+      "rest_iou": 0.6802557953637091,
+      "confidence": 0.9132660031318665,
+      "rtype": "高嵌体",
+      "rest_ratio": 0.221923828125
+    },
+    {
+      "case_key": "23戴晓敏/Group-dxm.bin",
+      "miou": 0.7626995565182998,
+      "rest_iou": 0.6966867469879519,
+      "confidence": 0.9106088280677795,
+      "rtype": "充填",
+      "rest_ratio": 0.3641357421875
+    },
+    {
+      "case_key": "45邓华坤/Group-dhs.bin",
+      "miou": 0.7487228804902962,
+      "rest_iou": 0.6165730337078652,
+      "confidence": 0.9100165963172913,
+      "rtype": "高嵌体",
+      "rest_ratio": 0.2279052734375
+    },
+    {
+      "case_key": "12冯永材/Group-fengyongcai.bin",
+      "miou": 0.655430416415055,
+      "rest_iou": 0.5125178826895566,
+      "confidence": 0.9069502353668213,
+      "rtype": "高嵌体",
+      "rest_ratio": 0.320556640625
+    },
+    {
+      "case_key": "43贡晓光/Group-gongxiaoguang2.bin",
+      "miou": 0.31498579616019784,
+      "rest_iou": 0.03242117787031529,
+      "confidence": 0.9055142402648926,
+      "rtype": "高嵌体",
+      "rest_ratio": 0.220458984375
+    },
+    {
+      "case_key": "64黄建华/Group-huangjianhua.bin",
+      "miou": 0.8677738618507188,
+      "rest_iou": 0.7926565874730022,
+      "confidence": 0.9032750725746155,
+      "rtype": "高嵌体",
+      "rest_ratio": 0.2030029296875
+    },
+    {
+      "case_key": "57高颖/Group-gaoying.bin",
+      "miou": 0.835391318244823,
+      "rest_iou": 0.754179846362404,
+      "confidence": 0.9019893407821655,
+      "rtype": "高嵌体",
+      "rest_ratio": 0.20458984375
+    },
+    {
+      "case_key": "50郭英东/Group-guoyingdong.bin",
+      "miou": 0.8420708461568025,
+      "rest_iou": 0.7405475880052151,
+      "confidence": 0.901857316493988,
+      "rtype": "充填",
+      "rest_ratio": 0.140869140625
+    },
+    {
+      "case_key": "66黄柏锋/Group-hbf上颌患牙.bin",
+      "miou": 0.8505914353700144,
+      "rest_iou": 0.7648339684267828,
+      "confidence": 0.9004328846931458,
+      "rtype": "高嵌体",
+      "rest_ratio": 0.200927734375
+    },
+    {
+      "case_key": "54韩锡明/Group-hanximing.bin",
+      "miou": 0.8444217353258268,
+      "rest_iou": 0.7543956043956044,
+      "confidence": 0.9003949165344238,
+      "rtype": "充填",
+      "rest_ratio": 0.2017822265625
+    },
+    {
+      "case_key": "27洪跃尹26/Group-hongyueyin上颌26.bin",
+      "miou": 0.6518575672964607,
+      "rest_iou": 0.4678442028985507,
+      "confidence": 0.8997995853424072,
+      "rtype": "高嵌体",
+      "rest_ratio": 0.190673828125
+    },
+    {
+      "case_key": "18劳延生/Group-laoyansheng.bin",
+      "miou": 0.7242181358787199,
+      "rest_iou": 0.5865384615384616,
+      "confidence": 0.8997528553009033,
+      "rtype": "高嵌体",
+      "rest_ratio": 0.2633056640625
+    },
+    {
+      "case_key": "21姜智慧/Group-jiangzhihui.bin",
+      "miou": 0.8779067070557028,
+      "rest_iou": 0.8259289176090469,
+      "confidence": 0.8989567160606384,
+      "rtype": "充填",
+      "rest_ratio": 0.29736328125
+    },
+    {
+      "case_key": "08何江波68M/Group-hejiangbo.bin",
+      "miou": 0.4508431081931553,
+      "rest_iou": 0.04131534569983136,
+      "confidence": 0.8973122835159302,
+      "rtype": "桩核冠",
+      "rest_ratio": 0.0733642578125
+    },
+    {
+      "case_key": "14刘中海/Group-liuzhonghai.bin",
+      "miou": 0.7403048478620485,
+      "rest_iou": 0.6134995700773861,
+      "confidence": 0.8965235352516174,
+      "rtype": "高嵌体",
+      "rest_ratio": 0.1943359375
+    },
+    {
+      "case_key": "15刘思雯/Group-liusiwen.bin",
+      "miou": 0.6924624566249893,
+      "rest_iou": 0.5383282806409702,
+      "confidence": 0.8962082862854004,
+      "rtype": "高嵌体",
+      "rest_ratio": 0.2301025390625
+    },
+    {
+      "case_key": "02SHAFIEI/Group-SHAFIEI.bin",
+      "miou": 0.29095458984375,
+      "rest_iou": 0.0,
+      "confidence": 0.8956626653671265,
+      "rtype": "高嵌体",
+      "rest_ratio": 0.266845703125
+    },
+    {
+      "case_key": "39蒋淑晶/Group-jiangshujin.bin",
+      "miou": 0.8541962823576179,
+      "rest_iou": 0.7625628140703518,
+      "confidence": 0.891815721988678,
+      "rtype": "充填",
+      "rest_ratio": 0.183837890625
+    },
+    {
+      "case_key": "22康维峰/Group-kangweifeng.bin",
+      "miou": 0.8966033298189741,
+      "rest_iou": 0.8505067567567568,
+      "confidence": 0.8915144801139832,
+      "rtype": "充填",
+      "rest_ratio": 0.2642822265625
+    },
+    {
+      "case_key": "11冯卓斌/Group-fengzhuobin.bin",
+      "miou": 0.7643553793094879,
+      "rest_iou": 0.6357811729916215,
+      "confidence": 0.888203501701355,
+      "rtype": "高嵌体",
+      "rest_ratio": 0.1600341796875
+    },
+    {
+      "case_key": "66黄柏锋/Group-hbf下颌患牙.bin",
+      "miou": 0.8011018043983644,
+      "rest_iou": 0.701180744777475,
+      "confidence": 0.8843345642089844,
+      "rtype": "高嵌体",
+      "rest_ratio": 0.2100830078125
+    },
+    {
+      "case_key": "03丁健雄/Group-dingjianxiong.bin",
+      "miou": 0.40545654296875,
+      "rest_iou": 0.0,
+      "confidence": 0.8827011585235596,
+      "rtype": "桩核冠",
+      "rest_ratio": 0.09326171875
+    },
+    {
+      "case_key": "36胡逸璇/Group-huyixuan.bin",
+      "miou": 0.7556542685669323,
+      "rest_iou": 0.6231106777181863,
+      "confidence": 0.874200701713562,
+      "rtype": "全冠",
+      "rest_ratio": 0.202880859375
+    },
+    {
+      "case_key": "67黄梅兰/Group-hml.bin",
+      "miou": 0.6001818509723766,
+      "rest_iou": 0.3058823529411765,
+      "confidence": 0.8734657764434814,
+      "rtype": "高嵌体",
+      "rest_ratio": 0.1307373046875
+    },
+    {
+      "case_key": "48郭勇军/Group-guoyongjun.bin",
+      "miou": 0.6928833880329557,
+      "rest_iou": 0.5529736116581331,
+      "confidence": 0.8706105947494507,
+      "rtype": "全冠",
+      "rest_ratio": 0.21240234375
+    },
+    {
+      "case_key": "26洪跃尹/Group-hongyueyin下颌.bin",
+      "miou": 0.5019991522104451,
+      "rest_iou": 0.2248062015503876,
+      "confidence": 0.8654818534851074,
+      "rtype": "高嵌体",
+      "rest_ratio": 0.1690673828125
+    },
+    {
+      "case_key": "25江燕/Group-jiangyan.bin",
+      "miou": 0.7774621172008407,
+      "rest_iou": 0.6330513988288874,
+      "confidence": 0.8589029908180237,
+      "rtype": "高嵌体",
+      "rest_ratio": 0.1507568359375
+    },
+    {
+      "case_key": "06何一/Group-heyi.bin",
+      "miou": 0.44423660739055976,
+      "rest_iou": 0.07156308851224105,
+      "confidence": 0.85541832447052,
+      "rtype": "高嵌体",
+      "rest_ratio": 0.07666015625
+    },
+    {
+      "case_key": "20可博文/Group-kebowen.bin",
+      "miou": 0.6101288324934734,
+      "rest_iou": 0.4316190476190476,
+      "confidence": 0.8550757169723511,
+      "rtype": "高嵌体",
+      "rest_ratio": 0.2783203125
+    },
+    {
+      "case_key": "46邓萱/Group-dengxuan.bin",
+      "miou": 0.42303466796875,
+      "rest_iou": 0.0,
+      "confidence": 0.8469149470329285,
+      "rtype": "高嵌体",
+      "rest_ratio": 0.1539306640625
+    },
+    {
+      "case_key": "47郭丽娟/Group-guolijuan.bin",
+      "miou": 0.482664693209707,
+      "rest_iou": 0.1486249268578116,
+      "confidence": 0.8373042345046997,
+      "rtype": "高嵌体",
+      "rest_ratio": 0.14111328125
+    },
+    {
+      "case_key": "73龚颖怡/Group-gongyignyi.bin",
+      "miou": 0.5331761080667168,
+      "rest_iou": 0.23691776883266244,
+      "confidence": 0.8126820921897888,
+      "rtype": "高嵌体",
+      "rest_ratio": 0.1778564453125
+    },
+    {
+      "case_key": "01王美琴/3维模型/Group-wangmeiqin.bin",
+      "miou": 0.378173828125,
+      "rest_iou": 0.0,
+      "confidence": 0.8122444152832031,
+      "rtype": "全冠",
+      "rest_ratio": 0.1649169921875
+    },
+    {
+      "case_key": "43贡晓光/Group-gongxiaoguang1.bin",
+      "miou": 0.4149741754360764,
+      "rest_iou": 0.05822267620020429,
+      "confidence": 0.7870579957962036,
+      "rtype": "高嵌体",
+      "rest_ratio": 0.1749267578125
+    },
+    {
+      "case_key": "52韩会叶/Group-hanhuiye.bin",
+      "miou": 0.45457698501176763,
+      "rest_iou": 0.07959866220735785,
+      "confidence": 0.778932511806488,
+      "rtype": "高嵌体",
+      "rest_ratio": 0.1776123046875
+    },
+    {
+      "case_key": "33胡勇亮/Group-hyl.bin",
+      "miou": 0.6134238834891967,
+      "rest_iou": 0.4012172284644195,
+      "confidence": 0.7752933502197266,
+      "rtype": "高嵌体",
+      "rest_ratio": 0.176025390625
+    },
+    {
+      "case_key": "51郭黎/Group-guoli.bin",
+      "miou": 0.46664788461837664,
+      "rest_iou": 0.29487530830364483,
+      "confidence": 0.6438961029052734,
+      "rtype": "高嵌体",
+      "rest_ratio": 0.211669921875
+    }
+  ],
+  "catastrophic_cases": [
+    {
+      "case_key": "02SHAFIEI/Group-SHAFIEI.bin",
+      "miou": 0.29095458984375,
+      "rest_iou": 0.0,
+      "confidence": 0.8956626653671265,
+      "rtype": "高嵌体",
+      "rest_ratio": 0.266845703125
+    },
+    {
+      "case_key": "43贡晓光/Group-gongxiaoguang2.bin",
+      "miou": 0.31498579616019784,
+      "rest_iou": 0.03242117787031529,
+      "confidence": 0.9055142402648926,
+      "rtype": "高嵌体",
+      "rest_ratio": 0.220458984375
+    },
+    {
+      "case_key": "01王美琴/3维模型/Group-wangmeiqin.bin",
+      "miou": 0.378173828125,
+      "rest_iou": 0.0,
+      "confidence": 0.8122444152832031,
+      "rtype": "全冠",
+      "rest_ratio": 0.1649169921875
+    },
+    {
+      "case_key": "41.1蓝春雨/Group-lanchunyu2.bin",
+      "miou": 0.39760429999023916,
+      "rest_iou": 0.010674157303370787,
+      "confidence": 0.9192606210708618,
+      "rtype": "桩核冠",
+      "rest_ratio": 0.0775146484375
+    }
+  ],
+  "worst_case_confidence_rank": 55,
+  "worst_case_excluded_at_pct": 72
+}

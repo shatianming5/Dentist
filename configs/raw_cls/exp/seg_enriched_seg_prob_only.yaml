@@ -1,0 +1,10 @@
+defaults:
+  - teeth3ds_fdi_pretrain_supcon_norot_tta0_posfeat_ls0_dropout0p1.yaml
+  - ../data_v13_main4.yaml
+
+exp:
+  name: seg_enriched_seg_prob_only
+
+features:
+  point_features: [xyz, seg_prob]
+  seg_overlay_dir: processed/raw_cls/v13_main4/seg_overlay

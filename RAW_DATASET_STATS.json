@@ -1,0 +1,68 @@
+{
+  "generated_at_utc": "2026-03-16T20:16:58Z",
+  "paths": {
+    "raw_dir": "raw"
+  },
+  "counts": {
+    "total_files": 3622,
+    "bin_files": 79,
+    "xlsx_files": 1
+  },
+  "sizes_bytes": {
+    "raw_total": 3561963252
+  },
+  "ext_counts": {
+    ".xlsx": 1,
+    "(noext)": 1342,
+    ".py": 1,
+    ".txt": 1,
+    ".png": 587,
+    ".enc": 65,
+    ".jpg": 76,
+    ".stl": 232,
+    ".zip": 68,
+    ".3ox": 65,
+    ".dcm": 195,
+    ".bin": 79,
+    ".xml": 130,
+    ".hdphotos_metadata": 60,
+    ".modelproperties_metadata": 195,
+    ".both_metadata": 65,
+    ".upper_metadata": 65,
+    ".models_metadata": 65,
+    ".shademeasurements_metadata": 59,
+    ".lower_metadata": 65,
+    ".irphotos_metadata": 65,
+    ".html": 65,
+    ".css": 65,
+    ".ply": 3,
+    ".3oxz": 8
+  },
+  "ccb2_header_version_counts": {},
+  "by_source": {
+    "普通标注": {
+      "counts": {
+        "bin_files": 0,
+        "xlsx_files": 0
+      },
+      "sizes_bytes": {
+        "bin_total": 0,
+        "bin_size_summary": {
+          "count": 0
+        }
+      }
+    },
+    "专家标注": {
+      "counts": {
+        "bin_files": 0,
+        "xlsx_files": 0
+      },
+      "sizes_bytes": {
+        "bin_total": 0,
+        "bin_size_summary": {
+          "count": 0
+        }
+      }
+    }
+  }
+}

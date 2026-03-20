@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import datetime
 import math
 import os
 import time
@@ -1129,6 +1130,7 @@ def build_loaders(
     label_to_id: dict[str, int],
     *,
     split_override: dict[str, str] | None = None,
+    seg_overlay_dir: Path | None = None,
 ) -> tuple[DataLoader, DataLoader, DataLoader, Counter[int]]:
     index_path = data_root / "index.jsonl"
     rows = read_jsonl(index_path)
@@ -1241,6 +1243,7 @@ def build_loaders(
         input_normalize=str(cfg.input_normalize or "none"),
         input_pca_align=bool(cfg.input_pca_align),
         input_pca_align_globalz=bool(cfg.input_pca_align_globalz),
+        seg_overlay_dir=seg_overlay_dir,
     )
     ds_val = RawClsDataset(
         rows=val_rows,
@@ -1292,6 +1295,7 @@ def build_loaders(
         input_normalize=str(cfg.input_normalize or "none"),
         input_pca_align=bool(cfg.input_pca_align),
         input_pca_align_globalz=bool(cfg.input_pca_align_globalz),
+        seg_overlay_dir=seg_overlay_dir,
     )
     ds_test = RawClsDataset(
         rows=test_rows,
@@ -1343,6 +1347,7 @@ def build_loaders(
         input_normalize=str(cfg.input_normalize or "none"),
         input_pca_align=bool(cfg.input_pca_align),
         input_pca_align_globalz=bool(cfg.input_pca_align_globalz),
+        seg_overlay_dir=seg_overlay_dir,
     )
 
     def collate(
@@ -1563,6 +1568,7 @@ def main() -> int:
         help="Optional: cache directory for derived point features (npz).",
     )
     ap.add_argument("--feature-k", type=int, default=30, help="kNN size for normals/curvature/radius (default: 30).")
+    ap.add_argument("--seg-overlay-dir", type=Path, default=None, help="Optional: dir with per-sample seg_prob/seg_gt NPZ overlays.")
     ap.add_argument("--precompute-features", action="store_true", help="Precompute feature cache before training.")
     args = ap.parse_args()
     t0 = time.time()
@@ -1604,6 +1610,14 @@ def main() -> int:
     feature_cache_dir = ""
     if args.feature_cache_dir is not None:
         feature_cache_dir = str(args.feature_cache_dir.expanduser().resolve())
+    seg_overlay_dir: Path | None = None
+    if args.seg_overlay_dir is not None:
+        seg_overlay_dir = args.seg_overlay_dir.expanduser().resolve()
+        if not seg_overlay_dir.is_dir():
+            print(f"[warn] seg_overlay_dir does not exist: {seg_overlay_dir}", flush=True)
+            seg_overlay_dir = None
+        else:
+            print(f"[seg_overlay] dir={seg_overlay_dir}", flush=True)
 
     data_root = args.data_root.resolve()
     if not data_root.exists():
@@ -1763,7 +1777,7 @@ def main() -> int:
         raise SystemExit("--n-points must be >0 for pointnet/dgcnn/geom_mlp variants.")
     if model_name == "meta_mlp" and not extra_features:
         raise SystemExit("--extra-features is required for --model meta_mlp.")
-    default_name = f"{model_name}_n{args.n_points}_seed{args.seed}_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
+    default_name = f"{model_name}_n{args.n_points}_seed{args.seed}_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}"
     if split_override is not None:
         default_name = f"{default_name}_k{kfold_k}_fold{kfold_test_fold}"
     exp_name = args.exp_name.strip() or default_name
@@ -2053,6 +2067,7 @@ def main() -> int:
         cfg,
         label_to_id,
         split_override=split_override,
+        seg_overlay_dir=seg_overlay_dir,
     )
 
     # Update config with feature normalization stats inferred from train split.

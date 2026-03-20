@@ -1,12 +1,12 @@
 {
   "status": "completed",
-  "stage": "ready_for_writing",
-  "round": 3,
-  "active_direction": "5-model segmentation benchmark with DINOv3 + protocol gap analysis",
+  "stage": "submission_ready",
+  "round": 5,
+  "active_direction": "Protocol-induced domain shift benchmark with systematic DA failure analysis for CMPB/CIBM",
   "last_score": 8.5,
   "last_verdict": "READY",
-  "target_venue": "DMFR (Dentomaxillofacial Radiology)",
-  "score_trajectory": "4.0 \u2192 8.0 \u2192 8.5",
-  "next_step": "Paper writing (no more experiments needed)",
-  "timestamp": "2026-03-20T04:00:00+08:00"
+  "pending_runs": [],
+  "total_runs": 511,
+  "timestamp": "2026-03-20T16:30:00+08:00",
+  "notes": "Score trajectory: 7.0→8.0→7.5→8.5→8.5 READY. All fixes applied. Paper submission-ready."
 }

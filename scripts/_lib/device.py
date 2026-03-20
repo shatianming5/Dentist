@@ -11,5 +11,10 @@ def normalize_device(device: str) -> str:
         if d == "cuda" and not torch.cuda.is_available():
             return "cpu"
         return d
+    # Support cuda:N format
+    if d.startswith("cuda:"):
+        if not torch.cuda.is_available():
+            return "cpu"
+        return d
     raise ValueError(f"Unsupported device: {device}")
 

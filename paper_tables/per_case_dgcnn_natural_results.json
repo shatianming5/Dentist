@@ -1,0 +1,752 @@
+{
+  "02SHAFIEI/Group-SHAFIEI.bin": {
+    "miou": 0.29095458984375,
+    "per_class_iou": [
+      0.5819091796875,
+      0.0
+    ],
+    "rest_ratio": 0.266845703125,
+    "n_points": 8192,
+    "fold": 0
+  },
+  "05\u4ed8\u9976/Group-furao1.bin": {
+    "miou": 0.923465765473087,
+    "per_class_iou": [
+      0.9691275167785235,
+      0.8778040141676505
+    ],
+    "rest_ratio": 0.2047119140625,
+    "n_points": 8192,
+    "fold": 0
+  },
+  "16\u5218\u73cd\u73e0/Group-liuzhenzhu.bin": {
+    "miou": 0.9023164326072834,
+    "per_class_iou": [
+      0.963054906542056,
+      0.841577958672511
+    ],
+    "rest_ratio": 0.165771484375,
+    "n_points": 8192,
+    "fold": 0
+  },
+  "32\u80e1\u4e3d\u82ac/Group-hulifen.bin": {
+    "miou": 0.9171929007722415,
+    "per_class_iou": [
+      0.9556380061300209,
+      0.8787477954144621
+    ],
+    "rest_ratio": 0.24658203125,
+    "n_points": 8192,
+    "fold": 0
+  },
+  "34\u80e1\u6625\u7ea2/Group-huchunhong.bin": {
+    "miou": 0.8878989379458655,
+    "per_class_iou": [
+      0.9464697738809414,
+      0.8293281020107895
+    ],
+    "rest_ratio": 0.236083984375,
+    "n_points": 8192,
+    "fold": 0
+  },
+  "38\u848b\u5b87\u9e4f/Group-jiangyupeng.bin": {
+    "miou": 0.8016009969795254,
+    "per_class_iou": [
+      0.8808762392069076,
+      0.7223257547521431
+    ],
+    "rest_ratio": 0.2557373046875,
+    "n_points": 8192,
+    "fold": 0
+  },
+  "40\u848b\u71d5\u7fe0/Group-jiangyancui.bin": {
+    "miou": 0.8684429665949522,
+    "per_class_iou": [
+      0.9355582897569978,
+      0.8013276434329066
+    ],
+    "rest_ratio": 0.226318359375,
+    "n_points": 8192,
+    "fold": 0
+  },
+  "51\u90ed\u9ece/Group-guoli.bin": {
+    "miou": 0.46664788461837664,
+    "per_class_iou": [
+      0.6384204609331084,
+      0.29487530830364483
+    ],
+    "rest_ratio": 0.211669921875,
+    "n_points": 8192,
+    "fold": 0
+  },
+  "52\u97e9\u4f1a\u53f6/Group-hanhuiye.bin": {
+    "miou": 0.45457698501176763,
+    "per_class_iou": [
+      0.8295553078161774,
+      0.07959866220735785
+    ],
+    "rest_ratio": 0.1776123046875,
+    "n_points": 8192,
+    "fold": 0
+  },
+  "59\u9ec4\u4f1f\u5bb8/Group-huangweichen.bin": {
+    "miou": 0.8607697527296532,
+    "per_class_iou": [
+      0.9266227657572906,
+      0.7949167397020158
+    ],
+    "rest_ratio": 0.239501953125,
+    "n_points": 8192,
+    "fold": 0
+  },
+  "62\u9ec4\u5ca9/Group-huangyan.bin": {
+    "miou": 0.8167427124145079,
+    "per_class_iou": [
+      0.8953525134366108,
+      0.7381329113924051
+    ],
+    "rest_ratio": 0.2542724609375,
+    "n_points": 8192,
+    "fold": 0
+  },
+  "67\u9ec4\u6885\u5170/Group-hml.bin": {
+    "miou": 0.6001818509723766,
+    "per_class_iou": [
+      0.8944813490035769,
+      0.3058823529411765
+    ],
+    "rest_ratio": 0.1307373046875,
+    "n_points": 8192,
+    "fold": 0
+  },
+  "69\u9ec4\u83ca\u8389/Group-huangjuli.bin": {
+    "miou": 0.8558922775745711,
+    "per_class_iou": [
+      0.9311550151975684,
+      0.7806295399515738
+    ],
+    "rest_ratio": 0.2178955078125,
+    "n_points": 8192,
+    "fold": 0
+  },
+  "70\u9ec4\u90c1\u8f89/Group-huangyuhui.bin": {
+    "miou": 0.9491521295010779,
+    "per_class_iou": [
+      0.9781479217603912,
+      0.9201563372417644
+    ],
+    "rest_ratio": 0.20849609375,
+    "n_points": 8192,
+    "fold": 0
+  },
+  "71\u9ece\u5efa\u6587/Group-lijianwen.bin": {
+    "miou": 0.8026661170744928,
+    "per_class_iou": [
+      0.910706417976208,
+      0.6946258161727775
+    ],
+    "rest_ratio": 0.171142578125,
+    "n_points": 8192,
+    "fold": 0
+  },
+  "04\u4e01\u654f/Group-dingmin.bin": {
+    "miou": 0.8584364954780299,
+    "per_class_iou": [
+      0.9254619480112747,
+      0.7914110429447853
+    ],
+    "rest_ratio": 0.228515625,
+    "n_points": 8192,
+    "fold": 1
+  },
+  "14\u5218\u4e2d\u6d77/Group-liuzhonghai.bin": {
+    "miou": 0.7403048478620485,
+    "per_class_iou": [
+      0.867110125646711,
+      0.6134995700773861
+    ],
+    "rest_ratio": 0.1943359375,
+    "n_points": 8192,
+    "fold": 1
+  },
+  "19\u5355\u7389\u8587/Group-syw.bin": {
+    "miou": 0.8426722467678023,
+    "per_class_iou": [
+      0.941964922287181,
+      0.7433795712484237
+    ],
+    "rest_ratio": 0.1514892578125,
+    "n_points": 8192,
+    "fold": 1
+  },
+  "24\u674e\u5f69\u971e/Group-licaixia.bin": {
+    "miou": 0.7792321668820514,
+    "per_class_iou": [
+      0.8941384910674738,
+      0.6643258426966292
+    ],
+    "rest_ratio": 0.174560546875,
+    "n_points": 8192,
+    "fold": 1
+  },
+  "28\u6d2a\u94f6\u5986/Group-hongyinzhuang.bin": {
+    "miou": 0.9110346584623961,
+    "per_class_iou": [
+      0.9602376599634369,
+      0.8618316569613552
+    ],
+    "rest_ratio": 0.2099609375,
+    "n_points": 8192,
+    "fold": 1
+  },
+  "30\u7eaa\u654f\u82b3/Group-jiminfang.bin": {
+    "miou": 0.8579751623399605,
+    "per_class_iou": [
+      0.9090143218197135,
+      0.8069360028602074
+    ],
+    "rest_ratio": 0.304443359375,
+    "n_points": 8192,
+    "fold": 1
+  },
+  "31\u7eaa\u9759/Group-jijing.bin": {
+    "miou": 0.8056994716318902,
+    "per_class_iou": [
+      0.9002584765090467,
+      0.7111404667547336
+    ],
+    "rest_ratio": 0.2138671875,
+    "n_points": 8192,
+    "fold": 1
+  },
+  "43\u8d21\u6653\u5149/Group-gongxiaoguang2.bin": {
+    "miou": 0.31498579616019784,
+    "per_class_iou": [
+      0.5975504144500804,
+      0.03242117787031529
+    ],
+    "rest_ratio": 0.220458984375,
+    "n_points": 8192,
+    "fold": 1
+  },
+  "55\u9ad8\u7b11\u82b3/Group-gaoxiaofang.bin": {
+    "miou": 0.6361192167572395,
+    "per_class_iou": [
+      0.8913921083474411,
+      0.38084632516703787
+    ],
+    "rest_ratio": 0.0655517578125,
+    "n_points": 8192,
+    "fold": 1
+  },
+  "58\u9ec4\u4e3d\u82b3/Group-huanglifang.bin": {
+    "miou": 0.7784946157095896,
+    "per_class_iou": [
+      0.8767334360554699,
+      0.6802557953637091
+    ],
+    "rest_ratio": 0.221923828125,
+    "n_points": 8192,
+    "fold": 1
+  },
+  "63\u9ec4\u5d69/Group-hs.bin": {
+    "miou": 0.845464318394363,
+    "per_class_iou": [
+      0.9380351182702075,
+      0.7528935185185185
+    ],
+    "rest_ratio": 0.1658935546875,
+    "n_points": 8192,
+    "fold": 1
+  },
+  "65\u9ec4\u5f81\u8273/Group-huangzhengyan.bin": {
+    "miou": 0.834170474705661,
+    "per_class_iou": [
+      0.9265227675931401,
+      0.7418181818181818
+    ],
+    "rest_ratio": 0.17724609375,
+    "n_points": 8192,
+    "fold": 1
+  },
+  "68\u9ec4\u7fe0\u7f8e/Group-huangcuimei.bin": {
+    "miou": 0.8770007492218577,
+    "per_class_iou": [
+      0.9417787286063569,
+      0.8122227698373583
+    ],
+    "rest_ratio": 0.2177734375,
+    "n_points": 8192,
+    "fold": 1
+  },
+  "72\u9ece\u8343/Group-liquan.bin": {
+    "miou": 0.9277966542222461,
+    "per_class_iou": [
+      0.9802640722724114,
+      0.8753292361720808
+    ],
+    "rest_ratio": 0.122802734375,
+    "n_points": 8192,
+    "fold": 1
+  },
+  "06\u4f55\u4e00/Group-heyi.bin": {
+    "miou": 0.44423660739055976,
+    "per_class_iou": [
+      0.8169101262688785,
+      0.07156308851224105
+    ],
+    "rest_ratio": 0.07666015625,
+    "n_points": 8192,
+    "fold": 2
+  },
+  "07\u4f55\u6587\u98de/Group-hwf.bin": {
+    "miou": 0.7309053961637952,
+    "per_class_iou": [
+      0.9213123499599893,
+      0.5404984423676013
+    ],
+    "rest_ratio": 0.084716796875,
+    "n_points": 8192,
+    "fold": 2
+  },
+  "12\u51af\u6c38\u6750/Group-fengyongcai.bin": {
+    "miou": 0.655430416415055,
+    "per_class_iou": [
+      0.7983429501405533,
+      0.5125178826895566
+    ],
+    "rest_ratio": 0.320556640625,
+    "n_points": 8192,
+    "fold": 2
+  },
+  "15\u5218\u601d\u96ef/Group-liusiwen.bin": {
+    "miou": 0.6924624566249893,
+    "per_class_iou": [
+      0.8465966326090085,
+      0.5383282806409702
+    ],
+    "rest_ratio": 0.2301025390625,
+    "n_points": 8192,
+    "fold": 2
+  },
+  "18\u52b3\u5ef6\u751f/Group-laoyansheng.bin": {
+    "miou": 0.7242181358787199,
+    "per_class_iou": [
+      0.8618978102189782,
+      0.5865384615384616
+    ],
+    "rest_ratio": 0.2633056640625,
+    "n_points": 8192,
+    "fold": 2
+  },
+  "20\u53ef\u535a\u6587/Group-kebowen.bin": {
+    "miou": 0.6101288324934734,
+    "per_class_iou": [
+      0.7886386173678991,
+      0.4316190476190476
+    ],
+    "rest_ratio": 0.2783203125,
+    "n_points": 8192,
+    "fold": 2
+  },
+  "26\u6d2a\u8dc3\u5c39/Group-hongyueyin\u4e0b\u988c.bin": {
+    "miou": 0.5019991522104451,
+    "per_class_iou": [
+      0.7791921028705027,
+      0.2248062015503876
+    ],
+    "rest_ratio": 0.1690673828125,
+    "n_points": 8192,
+    "fold": 2
+  },
+  "33\u80e1\u52c7\u4eae/Group-hyl.bin": {
+    "miou": 0.6134238834891967,
+    "per_class_iou": [
+      0.825630538513974,
+      0.4012172284644195
+    ],
+    "rest_ratio": 0.176025390625,
+    "n_points": 8192,
+    "fold": 2
+  },
+  "36\u80e1\u9038\u7487/Group-huyixuan.bin": {
+    "miou": 0.7556542685669323,
+    "per_class_iou": [
+      0.8881978594156783,
+      0.6231106777181863
+    ],
+    "rest_ratio": 0.202880859375,
+    "n_points": 8192,
+    "fold": 2
+  },
+  "44\u9093\u51a0\u8679/Group-dengguanhong1.bin": {
+    "miou": 0.7582338310013614,
+    "per_class_iou": [
+      0.8960297057983433,
+      0.6204379562043796
+    ],
+    "rest_ratio": 0.2325439453125,
+    "n_points": 8192,
+    "fold": 2
+  },
+  "46\u9093\u8431/Group-dengxuan.bin": {
+    "miou": 0.42303466796875,
+    "per_class_iou": [
+      0.8460693359375,
+      0.0
+    ],
+    "rest_ratio": 0.1539306640625,
+    "n_points": 8192,
+    "fold": 2
+  },
+  "47\u90ed\u4e3d\u5a1f/Group-guolijuan.bin": {
+    "miou": 0.482664693209707,
+    "per_class_iou": [
+      0.8167044595616024,
+      0.1486249268578116
+    ],
+    "rest_ratio": 0.14111328125,
+    "n_points": 8192,
+    "fold": 2
+  },
+  "64\u9ec4\u5efa\u534e/Group-huangjianhua.bin": {
+    "miou": 0.8677738618507188,
+    "per_class_iou": [
+      0.9428911362284355,
+      0.7926565874730022
+    ],
+    "rest_ratio": 0.2030029296875,
+    "n_points": 8192,
+    "fold": 2
+  },
+  "66\u9ec4\u67cf\u950b/Group-hbf\u4e0a\u988c\u60a3\u7259.bin": {
+    "miou": 0.8505914353700144,
+    "per_class_iou": [
+      0.9363489023132459,
+      0.7648339684267828
+    ],
+    "rest_ratio": 0.200927734375,
+    "n_points": 8192,
+    "fold": 2
+  },
+  "66\u9ec4\u67cf\u950b/Group-hbf\u4e0b\u988c\u60a3\u7259.bin": {
+    "miou": 0.8011018043983644,
+    "per_class_iou": [
+      0.9010228640192539,
+      0.701180744777475
+    ],
+    "rest_ratio": 0.2100830078125,
+    "n_points": 8192,
+    "fold": 2
+  },
+  "73\u9f9a\u9896\u6021/Group-gongyignyi.bin": {
+    "miou": 0.5331761080667168,
+    "per_class_iou": [
+      0.8294344473007712,
+      0.23691776883266244
+    ],
+    "rest_ratio": 0.1778564453125,
+    "n_points": 8192,
+    "fold": 2
+  },
+  "08\u4f55\u6c5f\u6ce268M/Group-hejiangbo.bin": {
+    "miou": 0.4508431081931553,
+    "per_class_iou": [
+      0.8603708706864792,
+      0.04131534569983136
+    ],
+    "rest_ratio": 0.0733642578125,
+    "n_points": 8192,
+    "fold": 3
+  },
+  "13\u51af\u7a1a\u6bb7/Group-fengzhiyin.bin": {
+    "miou": 0.8789723126378611,
+    "per_class_iou": [
+      0.9322908270191843,
+      0.825653798256538
+    ],
+    "rest_ratio": 0.2740478515625,
+    "n_points": 8192,
+    "fold": 3
+  },
+  "21\u59dc\u667a\u6167/Group-jiangzhihui.bin": {
+    "miou": 0.8779067070557028,
+    "per_class_iou": [
+      0.9298844965023588,
+      0.8259289176090469
+    ],
+    "rest_ratio": 0.29736328125,
+    "n_points": 8192,
+    "fold": 3
+  },
+  "25\u6c5f\u71d5/Group-jiangyan.bin": {
+    "miou": 0.7774621172008407,
+    "per_class_iou": [
+      0.921872835572794,
+      0.6330513988288874
+    ],
+    "rest_ratio": 0.1507568359375,
+    "n_points": 8192,
+    "fold": 3
+  },
+  "27\u6d2a\u8dc3\u5c3926/Group-hongyueyin\u4e0a\u988c26.bin": {
+    "miou": 0.6518575672964607,
+    "per_class_iou": [
+      0.8358709316943708,
+      0.4678442028985507
+    ],
+    "rest_ratio": 0.190673828125,
+    "n_points": 8192,
+    "fold": 3
+  },
+  "29\u7b26\u5de7\u654f/Group-fuqiaomin.bin": {
+    "miou": 0.7122357448850308,
+    "per_class_iou": [
+      0.8875396715882434,
+      0.5369318181818182
+    ],
+    "rest_ratio": 0.12353515625,
+    "n_points": 8192,
+    "fold": 3
+  },
+  "35\u80e1\u6cd3\u5b87/Group-huhongyu.bin": {
+    "miou": 0.8457171652498383,
+    "per_class_iou": [
+      0.9054276315789473,
+      0.7860066989207294
+    ],
+    "rest_ratio": 0.2652587890625,
+    "n_points": 8192,
+    "fold": 3
+  },
+  "37\u83c5\u6653\u71d5/Group-jianxiaoyan.bin": {
+    "miou": 0.6617239829028643,
+    "per_class_iou": [
+      0.8613387978142076,
+      0.4621091679915209
+    ],
+    "rest_ratio": 0.1348876953125,
+    "n_points": 8192,
+    "fold": 3
+  },
+  "39\u848b\u6dd1\u6676/Group-jiangshujin.bin": {
+    "miou": 0.8541962823576179,
+    "per_class_iou": [
+      0.945829750644884,
+      0.7625628140703518
+    ],
+    "rest_ratio": 0.183837890625,
+    "n_points": 8192,
+    "fold": 3
+  },
+  "42\u84dd\u9882\u5ead/Group-lansongtiing.bin": {
+    "miou": 0.8087979303824799,
+    "per_class_iou": [
+      0.9211474700879343,
+      0.6964483906770256
+    ],
+    "rest_ratio": 0.2198486328125,
+    "n_points": 8192,
+    "fold": 3
+  },
+  "43\u8d21\u6653\u5149/Group-gongxiaoguang1.bin": {
+    "miou": 0.4149741754360764,
+    "per_class_iou": [
+      0.7717256746719485,
+      0.05822267620020429
+    ],
+    "rest_ratio": 0.1749267578125,
+    "n_points": 8192,
+    "fold": 3
+  },
+  "53\u97e9\u68a6\u695a/Group-hanmengchu.bin": {
+    "miou": 0.828125476374856,
+    "per_class_iou": [
+      0.93048128342246,
+      0.725769669327252
+    ],
+    "rest_ratio": 0.19775390625,
+    "n_points": 8192,
+    "fold": 3
+  },
+  "54\u97e9\u9521\u660e/Group-hanximing.bin": {
+    "miou": 0.8444217353258268,
+    "per_class_iou": [
+      0.9344478662560493,
+      0.7543956043956044
+    ],
+    "rest_ratio": 0.2017822265625,
+    "n_points": 8192,
+    "fold": 3
+  },
+  "60\u9ec4\u4f73\u59ae/Group-huangjiani.bin": {
+    "miou": 0.6594447048678211,
+    "per_class_iou": [
+      0.8250928836810517,
+      0.49379652605459057
+    ],
+    "rest_ratio": 0.203369140625,
+    "n_points": 8192,
+    "fold": 3
+  },
+  "61\u9ec4\u52c7/Group-huangyong.bin": {
+    "miou": 0.7896359644512707,
+    "per_class_iou": [
+      0.9101269474899019,
+      0.6691449814126395
+    ],
+    "rest_ratio": 0.1798095703125,
+    "n_points": 8192,
+    "fold": 3
+  },
+  "01\u738b\u7f8e\u7434/3\u7ef4\u6a21\u578b/Group-wangmeiqin.bin": {
+    "miou": 0.378173828125,
+    "per_class_iou": [
+      0.75634765625,
+      0.0
+    ],
+    "rest_ratio": 0.1649169921875,
+    "n_points": 8192,
+    "fold": 4
+  },
+  "03\u4e01\u5065\u96c4/Group-dingjianxiong.bin": {
+    "miou": 0.40545654296875,
+    "per_class_iou": [
+      0.8109130859375,
+      0.0
+    ],
+    "rest_ratio": 0.09326171875,
+    "n_points": 8192,
+    "fold": 4
+  },
+  "09\u4f55\u8bd7\u742a/Group-heshiqi.bin": {
+    "miou": 0.8298886552203764,
+    "per_class_iou": [
+      0.9221957750669444,
+      0.7375815353738083
+    ],
+    "rest_ratio": 0.18505859375,
+    "n_points": 8192,
+    "fold": 4
+  },
+  "11\u51af\u5353\u658c/Group-fengzhuobin.bin": {
+    "miou": 0.7643553793094879,
+    "per_class_iou": [
+      0.8929295856273544,
+      0.6357811729916215
+    ],
+    "rest_ratio": 0.1600341796875,
+    "n_points": 8192,
+    "fold": 4
+  },
+  "17\u5218\u7d20\u598d/Group-liusuyan.bin": {
+    "miou": 0.7871044828560907,
+    "per_class_iou": [
+      0.9070238957277336,
+      0.6671850699844479
+    ],
+    "rest_ratio": 0.205078125,
+    "n_points": 8192,
+    "fold": 4
+  },
+  "22\u5eb7\u7ef4\u5cf0/Group-kangweifeng.bin": {
+    "miou": 0.8966033298189741,
+    "per_class_iou": [
+      0.9426999028811913,
+      0.8505067567567568
+    ],
+    "rest_ratio": 0.2642822265625,
+    "n_points": 8192,
+    "fold": 4
+  },
+  "23\u6234\u6653\u654f/Group-dxm.bin": {
+    "miou": 0.7626995565182998,
+    "per_class_iou": [
+      0.8287123660486477,
+      0.6966867469879519
+    ],
+    "rest_ratio": 0.3641357421875,
+    "n_points": 8192,
+    "fold": 4
+  },
+  "41.1\u84dd\u6625\u96e8/Group-lanchunyu2.bin": {
+    "miou": 0.39760429999023916,
+    "per_class_iou": [
+      0.7845344426771076,
+      0.010674157303370787
+    ],
+    "rest_ratio": 0.0775146484375,
+    "n_points": 8192,
+    "fold": 4
+  },
+  "41\u84dd\u6625\u96e8/Group-lanchunyu1.bin": {
+    "miou": 0.8709994090450864,
+    "per_class_iou": [
+      0.9671150971599403,
+      0.7748837209302326
+    ],
+    "rest_ratio": 0.1029052734375,
+    "n_points": 8192,
+    "fold": 4
+  },
+  "45\u9093\u534e\u5764/Group-dhs.bin": {
+    "miou": 0.7487228804902962,
+    "per_class_iou": [
+      0.8808727272727273,
+      0.6165730337078652
+    ],
+    "rest_ratio": 0.2279052734375,
+    "n_points": 8192,
+    "fold": 4
+  },
+  "48\u90ed\u52c7\u519b/Group-guoyongjun.bin": {
+    "miou": 0.6928833880329557,
+    "per_class_iou": [
+      0.8327931644077784,
+      0.5529736116581331
+    ],
+    "rest_ratio": 0.21240234375,
+    "n_points": 8192,
+    "fold": 4
+  },
+  "49\u90ed\u6631\u6210/Group-guoyucheng.bin": {
+    "miou": 0.9194268236058931,
+    "per_class_iou": [
+      0.9639198899250879,
+      0.8749337572866984
+    ],
+    "rest_ratio": 0.226318359375,
+    "n_points": 8192,
+    "fold": 4
+  },
+  "50\u90ed\u82f1\u4e1c/Group-guoyingdong.bin": {
+    "miou": 0.8420708461568025,
+    "per_class_iou": [
+      0.94359410430839,
+      0.7405475880052151
+    ],
+    "rest_ratio": 0.140869140625,
+    "n_points": 8192,
+    "fold": 4
+  },
+  "56\u9ad8\u82b3/Group-gaofang.bin": {
+    "miou": 0.8794796612612947,
+    "per_class_iou": [
+      0.956115107913669,
+      0.8028442146089205
+    ],
+    "rest_ratio": 0.1541748046875,
+    "n_points": 8192,
+    "fold": 4
+  },
+  "57\u9ad8\u9896/Group-gaoying.bin": {
+    "miou": 0.835391318244823,
+    "per_class_iou": [
+      0.9166027901272421,
+      0.754179846362404
+    ],
+    "rest_ratio": 0.20458984375,
+    "n_points": 8192,
+    "fold": 4
+  }
+}

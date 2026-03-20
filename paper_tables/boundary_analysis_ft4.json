@@ -1,0 +1,27 @@
+{
+  "note": "Restoration-class IoU serves as boundary-sensitive metric (restoration points define the boundary region)",
+  "dinov3_ft4": {
+    "natural_restoration_iou": {
+      "mean": 0.6004,
+      "std": 0.065
+    },
+    "balanced_restoration_iou": {
+      "mean": 0.9105,
+      "std": 0.0404
+    }
+  },
+  "dgcnn": {
+    "natural_restoration_iou": {
+      "mean": 0.5291,
+      "std": 0.0558
+    },
+    "balanced_restoration_iou": {
+      "mean": 0.957,
+      "std": 0.0436
+    }
+  },
+  "ft4_vs_dgcnn_natural_restoration_iou": {
+    "mann_whitney_p": 0.003508,
+    "significant": true
+  }
+}

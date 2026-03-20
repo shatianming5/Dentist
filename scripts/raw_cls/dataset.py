@@ -54,6 +54,7 @@ class RawClsDataset(Dataset[tuple[torch.Tensor, int, dict[str, Any]]]):
         input_normalize: str = "none",
         input_pca_align: bool = False,
         input_pca_align_globalz: bool = False,
+        seg_overlay_dir: Path | None = None,
     ) -> None:
         self.rows = rows
         self.data_root = data_root
@@ -78,6 +79,8 @@ class RawClsDataset(Dataset[tuple[torch.Tensor, int, dict[str, Any]]]):
         self.input_normalize = str(input_normalize or "").strip().lower() or "none"
         self.input_pca_align = bool(input_pca_align)
         self.input_pca_align_globalz = bool(input_pca_align_globalz)
+        self.seg_overlay_dir = Path(seg_overlay_dir) if seg_overlay_dir is not None else None
+        self._needs_seg = any(pf in ("seg_prob", "seg_gt") for pf in self.point_features)
 
         # Feature slices for augmentation transforms.
         self._slice_xyz: slice | None = None
@@ -104,6 +107,8 @@ class RawClsDataset(Dataset[tuple[torch.Tensor, int, dict[str, Any]]]):
                 off += 1
             elif name == "cloud_id_onehot":
                 off += 10
+            elif name in ("seg_prob", "seg_gt"):
+                off += 1
             else:
                 raise ValueError(f"Unknown point feature: {name}")
 
@@ -272,6 +277,23 @@ class RawClsDataset(Dataset[tuple[torch.Tensor, int, dict[str, Any]]]):
                     if cid.shape[0] != pts_xyz.shape[0]:
                         raise ValueError(f"Invalid cloud_id shape {tuple(cid.shape)} in {npz_path} for points {pts_xyz.shape}")
                     cloud_id = cid
+                # Load seg overlay features if needed
+                seg_prob_np: np.ndarray | None = None
+                seg_gt_np: np.ndarray | None = None
+                if self._needs_seg and self.seg_overlay_dir is not None:
+                    overlay_path = self.seg_overlay_dir / str(rel)
+                    if overlay_path.exists():
+                        with np.load(overlay_path) as ov:
+                            if "seg_prob" in self.point_features and "seg_prob" in ov.files:
+                                seg_prob_np = np.asarray(ov["seg_prob"], dtype=np.float32)
+                            if "seg_gt" in self.point_features and "seg_gt" in ov.files:
+                                seg_gt_np = np.asarray(ov["seg_gt"], dtype=np.float32)
+                    else:
+                        n = pts_xyz.shape[0]
+                        if "seg_prob" in self.point_features:
+                            seg_prob_np = np.full(n, 0.5, dtype=np.float32)
+                        if "seg_gt" in self.point_features:
+                            seg_gt_np = np.zeros(n, dtype=np.float32)
                 if in_norm not in {"none", "off"} or pca0:
                     pts_xyz = apply_input_preprocess_np(
                         pts_xyz,
@@ -291,6 +313,10 @@ class RawClsDataset(Dataset[tuple[torch.Tensor, int, dict[str, Any]]]):
                         rgb_u8 = rgb_u8[sel]
                     if cloud_id is not None:
                         cloud_id = cloud_id[sel]
+                    if seg_prob_np is not None:
+                        seg_prob_np = seg_prob_np[sel]
+                    if seg_gt_np is not None:
+                        seg_gt_np = seg_gt_np[sel]
                 feat = build_point_features_from_xyz(
                     pts_xyz,
                     point_features=self.point_features,
@@ -298,6 +324,8 @@ class RawClsDataset(Dataset[tuple[torch.Tensor, int, dict[str, Any]]]):
                     device=torch.device("cpu"),
                     rgb_u8_np=rgb_u8,
                     cloud_id_np=cloud_id,
+                    seg_prob_np=seg_prob_np,
+                    seg_gt_np=seg_gt_np,
                 )
                 if cache_path is not None and can_use_cache:
                     atomic_write_npz(

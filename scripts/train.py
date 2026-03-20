@@ -500,6 +500,12 @@ def run_raw_cls(cfg: dict[str, Any], *, repo_root: Path) -> int:
         if tp_drop > 0:
             cmd += ["--tooth-position-dropout", str(tp_drop)]
 
+        seg_overlay = str(features.get("seg_overlay_dir") or data.get("seg_overlay_dir") or "").strip()
+        if seg_overlay:
+            seg_path = (repo_root / seg_overlay).resolve() if not Path(seg_overlay).is_absolute() else Path(seg_overlay).resolve()
+            if seg_path.is_dir():
+                cmd += ["--seg-overlay-dir", str(seg_path)]
+
         method = str(domain.get("method") or "").strip().lower()
         if method:
             cmd += ["--domain-method", method]

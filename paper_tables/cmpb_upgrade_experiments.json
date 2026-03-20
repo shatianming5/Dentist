@@ -1,0 +1,39 @@
+{
+  "mixing_results": {
+    "DGCNN": {
+      "single_bal": 0.955,
+      "single_nat": 0.69,
+      "mixed_bal": 0.9572666666666666,
+      "mixed_nat": 0.7483333333333333
+    },
+    "MV-ViT-ft": {
+      "single_bal": 0.908,
+      "single_nat": 0.743,
+      "mixed_bal": 0.9172666666666668,
+      "mixed_nat": 0.7595999999999999
+    },
+    "DINOv2-MV": {
+      "single_bal": 0.88,
+      "single_nat": 0.563,
+      "mixed_bal": 0.8743824417045394,
+      "mixed_nat": 0.6800132245215398
+    }
+  },
+  "feature_gap": {
+    "mmd_squared": 0.17346945193843188,
+    "mmd_pvalue": 0.0,
+    "mmd_perm_mean": 0.01586134264053359,
+    "mmd_perm_std": 0.0031073081180110532,
+    "proxy_a_distance_scan": 0.9870967741935484,
+    "svm_accuracy_scan": 0.9935483870967742,
+    "proxy_a_distance_point": 0.9956,
+    "svm_accuracy_point": 0.9978,
+    "bal_restoration_ratio": "0.500 \u00b1 0.000",
+    "nat_restoration_ratio": "0.193 \u00b1 0.061"
+  },
+  "bn_adaptation": {
+    "no_adapt": 0.5610874355815968,
+    "bn_adapt": 0.40444231267113506,
+    "effect": "NEGATIVE"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "train_balanced": {
+    "within": {
+      "mean": 0.91,
+      "std": 0.0412
+    },
+    "cross_to_natural": {
+      "mean": 0.3383,
+      "std": 0.0549
+    },
+    "deployment_gap": 0.5716
+  },
+  "train_natural": {
+    "within": {
+      "mean": 0.6163,
+      "std": 0.0317
+    },
+    "cross_to_balanced": {
+      "mean": 0.4288,
+      "std": 0.0565
+    },
+    "deployment_gap": 0.1875
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "main_table": {
+    "RF": {
+      "description": "Hand-crafted geometric features",
+      "balanced": {
+        "mean": 0.9064930790993627,
+        "std": 0.029620027544226053,
+        "n": 15
+      },
+      "natural": {
+        "mean": 0.545717687050764,
+        "std": 0.020562545744635712,
+        "n": 15
+      },
+      "gap": 0.36077539204859876,
+      "relative_drop": 0.39799023331434985
+    },
+    "PointNet": {
+      "description": "Per-point MLP, no local context",
+      "balanced": {
+        "mean": 0.8322686066741599,
+        "std": 0.08773988424992175,
+        "n": 15
+      },
+      "natural": {
+        "mean": 0.6620428731977005,
+        "std": 0.02980779475872903,
+        "n": 15
+      },
+      "gap": 0.17022573347645942,
+      "relative_drop": 0.20453220524164767
+    },
+    "PointNet++": {
+      "description": "Hierarchical set abstraction",
+      "balanced": {
+        "mean": 0.9503492774586609,
+        "std": 0.045337182439322034,
+        "n": 15
+      },
+      "natural": {
+        "mean": 0.5933731428109347,
+        "std": 0.10165990869738147,
+        "n": 15
+      },
+      "gap": 0.35697613464772626,
+      "relative_drop": 0.37562624933258215
+    },
+    "DGCNN": {
+      "description": "Dynamic graph CNN, k-NN edges",
+      "balanced": {
+        "mean": 0.9568913965168261,
+        "std": 0.04376003357827405,
+        "n": 15
+      },
+      "natural": {
+        "mean": 0.6900840971703031,
+        "std": 0.037639268536558745,
+        "n": 15
+      },
+      "gap": 0.26680729934652303,
+      "relative_drop": 0.27882714832396494
+    },
+    "DINOv3": {
+      "description": "Frozen ViT-S/16, multi-view rendering",
+      "balanced": {
+        "mean": 0.875608628457891,
+        "std": 0.04845759360297435,
+        "n": 15
+      },
+      "natural": {
+        "mean": 0.655419571556026,
+        "std": 0.04251265246015086,
+        "n": 15
+      },
+      "gap": 0.22018905690186497,
+      "relative_drop": 0.2514697203128967
+    },
+    "DINOv3-ft4": {
+      "description": "DINOv3 ViT-S/16 fine-tuned (last 4 blocks)",
+      "balanced": {
+        "mean": 0.9099,
+        "std": 0.0408,
+        "n": 15
+      },
+      "natural": {
+        "mean": 0.7408,
+        "std": 0.0439,
+        "n": 15
+      },
+      "gap": 0.1692,
+      "relative_drop": 0.1859
+    }
+  },
+  "statistical_tests": {
+    "ft4_vs_dgcnn_natural": {
+      "mann_whitney_p": 0.004486,
+      "cohens_d": 1.24,
+      "significant": true
+    },
+    "dgcnn_vs_ft4_balanced": {
+      "mann_whitney_p": 0.00081,
+      "cohens_d": 1.11,
+      "significant": true
+    }
+  },
+  "rankings": {
+    "balanced": [
+      "DGCNN",
+      "PointNet++",
+      "DINOv3-ft4",
+      "RF",
+      "DINOv3",
+      "PointNet"
+    ],
+    "natural": [
+      "DINOv3-ft4",
+      "DGCNN",
+      "PointNet",
+      "DINOv3",
+      "PointNet++",
+      "RF"
+    ],
+    "robustness": [
+      "DINOv3-ft4",
+      "PointNet",
+      "DINOv3",
+      "DGCNN",
+      "PointNet++",
+      "RF"
+    ]
+  },
+  "key_findings": [
+    "DINOv3-ft4 #1 natural (0.741 vs DGCNN 0.690, p=0.0045, d=1.24)",
+    "DINOv3-ft4 smallest gap (0.169), most robust to protocol shift",
+    "DGCNN still #1 balanced (0.957 vs ft4 0.910, p=0.0008)",
+    "Ranking reversal: balanced top (DGCNN>PN2) vs natural top (ft4>DGCNN)"
+  ]
+}

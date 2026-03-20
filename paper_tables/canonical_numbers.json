@@ -1,0 +1,31 @@
+{
+  "aggregation": "per_case_n75_best_per_fold",
+  "vulnerability_ranking": {
+    "RF": {
+      "gap": 0.36,
+      "bal": 0.906,
+      "nat": 0.546
+    },
+    "PN2": {
+      "gap": 0.317,
+      "bal": 0.979,
+      "nat": 0.662
+    },
+    "DGCNN": {
+      "gap": 0.25,
+      "bal": 0.983,
+      "nat": 0.732
+    },
+    "PointNet": {
+      "gap": 0.188,
+      "bal": 0.879,
+      "nat": 0.691
+    }
+  },
+  "eta_squared": {
+    "value": 0.136,
+    "F": 3.735,
+    "p": 0.0149
+  },
+  "note": "All mIoU values use per-case evaluation (n=75) from best-per-fold checkpoints. Vulnerability gaps computed from same aggregation for internal consistency."
+}

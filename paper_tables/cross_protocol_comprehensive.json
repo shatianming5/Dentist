@@ -1,0 +1,52 @@
+{
+  "description": "Cross-protocol transfer: trained on balanced, deployed on natural",
+  "clinically_relevant": "Tests whether models trained on standardized scans work on natural clinical scans",
+  "models": {
+    "PointNet": {
+      "within_balanced": 0.832,
+      "cross_bal_to_nat": 0.6080123006047173,
+      "cross_bal_to_nat_std": 0.19509206918126926,
+      "within_natural": 0.662,
+      "deployment_gap": 0.22398769939528262,
+      "training_fix": 0.053987699395282696
+    },
+    "PointNet++": {
+      "within_balanced": 0.95,
+      "cross_bal_to_nat": 0.2662932430412842,
+      "cross_bal_to_nat_std": 0.0702148552803669,
+      "within_natural": 0.593,
+      "deployment_gap": 0.6837067569587157,
+      "training_fix": 0.32670675695871576
+    },
+    "DGCNN": {
+      "within_balanced": 0.957,
+      "cross_bal_to_nat": 0.4329356734648917,
+      "cross_bal_to_nat_std": 0.08311967173432189,
+      "within_natural": 0.69,
+      "deployment_gap": 0.5240643265351083,
+      "training_fix": 0.25706432653510825
+    },
+    "DINOv3-ft": {
+      "within_balanced": 0.91,
+      "cross_bal_to_nat": 0.3383,
+      "cross_bal_to_nat_std": 0.0549,
+      "within_natural": 0.741,
+      "deployment_gap": 0.5716,
+      "training_fix": 0.4027
+    }
+  },
+  "key_findings": [
+    "ALL methods degrade severely: 27-72% drop when deployed cross-protocol",
+    "PointNet shows best cross-transfer (0.608), likely due to point-independent processing",
+    "PointNet++ shows catastrophic cross-transfer failure (0.266, 72% drop)",
+    "DINOv3-ft and DGCNN degrade similarly (0.338 vs 0.433)",
+    "Training fix (retraining on target protocol) is LARGEST for DINOv3-ft (+0.403)",
+    "This confirms: protocol-matched training is essential for all methods",
+    "DINOv3-ft benefits most from target-protocol data due to backbone adaptability"
+  ],
+  "ft4_natural_to_balanced": {
+    "note": "Natural\u2192Balanced direction available but within-protocol consistency needs verification",
+    "cross_nat_to_bal_mean": 0.4288,
+    "cross_nat_to_bal_std": 0.0565
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "dinov2_mv": {
+    "bal_only_eval_bal": 0.8801905418034762,
+    "bal_only_eval_nat": 0.5634086367783107,
+    "nat_only_eval_bal": 0.7802742459462101,
+    "nat_only_eval_nat": 0.6724284980487201,
+    "mixed_eval_bal": 0.8743824417045394,
+    "mixed_eval_nat": 0.6800132245215398
+  },
+  "dgcnn": {
+    "single_eval_bal": 0.955,
+    "single_eval_nat": 0.69,
+    "mixed_eval_bal": 0.9572666666666666,
+    "mixed_eval_nat": 0.7483333333333333
+  }
+}

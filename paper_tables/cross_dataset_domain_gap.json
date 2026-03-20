@@ -1,0 +1,26 @@
+{
+  "within_protocol_gap": {
+    "comparison": "balanced vs natural (within our dataset)",
+    "svm_accuracy": 1.0,
+    "proxy_a_distance": 2.0,
+    "mmd2": 0.6147804260253906
+  },
+  "cross_dataset_gap": {
+    "comparison": "our data vs Teeth3DS",
+    "svm_accuracy": 0.9972222222222221,
+    "proxy_a_distance": 1.9888888888888885,
+    "mmd2": 0.6776902079582214
+  },
+  "balanced_vs_teeth3ds": {
+    "svm_accuracy": 0.9964285714285716,
+    "proxy_a_distance": 1.9857142857142862,
+    "mmd2": 0.6776902079582214
+  },
+  "natural_vs_teeth3ds": {
+    "svm_accuracy": 0.9964285714285716,
+    "proxy_a_distance": 1.9857142857142862
+  },
+  "gap_ratio": 1.0055865921787712,
+  "teeth3ds_n": 200,
+  "feature_type": "geometric_25dim"
+}

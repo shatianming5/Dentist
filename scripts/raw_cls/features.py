@@ -14,7 +14,7 @@ def parse_point_features(text: str) -> list[str]:
     if s.lower() in {"x,y,z", "x,y,z,"}:
         return ["xyz"]
     items = [t.strip().lower() for t in raw.split(",") if t.strip()]
-    allowed = {"xyz", "normals", "curvature", "radius", "rgb", "cloud_id", "cloud_id_onehot"}
+    allowed = {"xyz", "normals", "curvature", "radius", "rgb", "cloud_id", "cloud_id_onehot", "seg_prob", "seg_gt"}
     out: list[str] = []
     for t in items:
         if t not in allowed:
@@ -43,6 +43,8 @@ def point_feature_dim(point_features: list[str]) -> int:
             dim += 1
         elif name == "cloud_id_onehot":
             dim += 10
+        elif name in ("seg_prob", "seg_gt"):
+            dim += 1
     return int(dim)
 
 
@@ -94,6 +96,8 @@ def build_point_features_from_xyz(
     device: torch.device,
     rgb_u8_np: np.ndarray | None = None,
     cloud_id_np: np.ndarray | None = None,
+    seg_prob_np: np.ndarray | None = None,
+    seg_gt_np: np.ndarray | None = None,
 ) -> np.ndarray:
     xyz = torch.from_numpy(np.asarray(xyz_np, dtype=np.float32)).to(device)
     rgb: torch.Tensor | None = None
@@ -154,6 +158,20 @@ def build_point_features_from_xyz(
         elif name == "cloud_id_onehot":
             assert cloud_id is not None
             outs.append(cloud_id)
+        elif name == "seg_prob":
+            if seg_prob_np is None:
+                raise ValueError("point_features includes seg_prob but seg_prob_np is missing")
+            sp = np.asarray(seg_prob_np, dtype=np.float32).reshape(-1)
+            if sp.shape[0] != xyz.shape[0]:
+                raise ValueError(f"seg_prob shape {sp.shape} != xyz {xyz.shape[0]}")
+            outs.append(torch.from_numpy(sp[:, None]).to(device))
+        elif name == "seg_gt":
+            if seg_gt_np is None:
+                raise ValueError("point_features includes seg_gt but seg_gt_np is missing")
+            sg = np.asarray(seg_gt_np, dtype=np.float32).reshape(-1)
+            if sg.shape[0] != xyz.shape[0]:
+                raise ValueError(f"seg_gt shape {sg.shape} != xyz {xyz.shape[0]}")
+            outs.append(torch.from_numpy(sg[:, None]).to(device))
         else:
             raise ValueError(f"Unknown point feature: {name}")
     feat = torch.cat(outs, dim=1)

@@ -1,0 +1,67 @@
+{
+  "DGCNN": {
+    "training_fix": {
+      "delta": 0.29933232789603814,
+      "p": 8.90898742966684e-14,
+      "n": 75
+    },
+    "reverse_degradation": {
+      "delta": 0.1734903677147619,
+      "p": 5.2803729173201584e-14,
+      "n": 75
+    }
+  },
+  "PointNet": {
+    "training_fix": {
+      "delta": 0.08276994789911607,
+      "p": 0.0011009019936821338,
+      "n": 75
+    },
+    "reverse_degradation": {
+      "delta": 0.13595577207548804,
+      "p": 2.514234085849534e-10,
+      "n": 75
+    }
+  },
+  "PN2": {
+    "training_fix": {
+      "delta": 0.3957124469543961,
+      "p": 5.2803729173201584e-14,
+      "n": 75
+    },
+    "reverse_degradation": {
+      "delta": 0.6667490389580955,
+      "p": 5.2803729173201584e-14,
+      "n": 75
+    }
+  },
+  "rf_vulnerability": {
+    "note": "DEPRECATED \u2014 use canonical_numbers.json for consistent values",
+    "canonical_vulnerability_ranking": {
+      "RF": {
+        "gap": 0.36,
+        "bal": 0.906,
+        "nat": 0.546,
+        "source": "fold-averaged"
+      },
+      "PN2": {
+        "gap": 0.317,
+        "bal": 0.979,
+        "nat": 0.662,
+        "source": "per-case n=75"
+      },
+      "DGCNN": {
+        "gap": 0.25,
+        "bal": 0.983,
+        "nat": 0.732,
+        "source": "per-case n=75"
+      },
+      "PointNet": {
+        "gap": 0.188,
+        "bal": 0.879,
+        "nat": 0.691,
+        "source": "per-case n=75"
+      }
+    }
+  }
+}

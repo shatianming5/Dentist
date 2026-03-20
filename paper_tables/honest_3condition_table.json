@@ -1,0 +1,47 @@
+{
+  "DGCNN": {
+    "bal_only_nat": 0.433,
+    "nat_only_nat": 0.69,
+    "mixed_nat": 0.748,
+    "bal_only_bal": 0.955,
+    "mixed_bal": 0.957
+  },
+  "MV-ViT-ft": {
+    "bal_only_nat": 0.338,
+    "nat_only_nat": 0.743,
+    "mixed_nat": 0.76,
+    "bal_only_bal": 0.908,
+    "mixed_bal": 0.917
+  },
+  "DINOv2-MV": {
+    "bal_only_nat": 0.563,
+    "nat_only_nat": 0.672,
+    "mixed_nat": 0.68,
+    "bal_only_bal": 0.88,
+    "nat_only_bal": 0.78,
+    "mixed_bal": 0.874
+  },
+  "statistical_tests": {
+    "DGCNN": {
+      "U": 320,
+      "p": 0.0001,
+      "d": 1.473,
+      "significant": true,
+      "delta": 0.058
+    },
+    "MV-ViT-ft": {
+      "U": 222,
+      "p": 0.1711,
+      "d": 0.401,
+      "significant": false,
+      "delta": 0.017
+    },
+    "DINOv2-MV": {
+      "U": 29066,
+      "p": 0.2553,
+      "d": 0.054,
+      "significant": false,
+      "delta": 0.008
+    }
+  }
+}

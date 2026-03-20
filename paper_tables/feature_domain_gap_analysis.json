@@ -1,0 +1,12 @@
+{
+  "mmd_squared": 0.17346945193843188,
+  "mmd_pvalue": 0.0,
+  "mmd_perm_mean": 0.01586134264053359,
+  "mmd_perm_std": 0.0031073081180110532,
+  "proxy_a_distance_scan": 0.9870967741935484,
+  "svm_accuracy_scan": 0.9935483870967742,
+  "proxy_a_distance_point": 0.9956,
+  "svm_accuracy_point": 0.9978,
+  "bal_restoration_ratio": "0.500 \u00b1 0.000",
+  "nat_restoration_ratio": "0.193 \u00b1 0.061"
+}

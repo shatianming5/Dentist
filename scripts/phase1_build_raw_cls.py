@@ -16,7 +16,12 @@ import numpy as np
 
 
 def utc_now_iso() -> str:
-    return datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+    return (
+        datetime.now(timezone.utc)
+        .replace(microsecond=0)
+        .isoformat()
+        .replace("+00:00", "Z")
+    )
 
 
 def canonicalize_label(label: str | None) -> str:
@@ -57,7 +62,9 @@ class BuildConfig:
     drop_labels: list[str]
 
 
-def load_cloud_npz(path: Path, *, with_rgb: bool) -> tuple[np.ndarray, np.ndarray | None]:
+def load_cloud_npz(
+    path: Path, *, with_rgb: bool
+) -> tuple[np.ndarray, np.ndarray | None]:
     with np.load(path) as data:
         pts = data["points"]
         rgb = data["rgb"] if with_rgb and "rgb" in data.files else None
@@ -74,7 +81,9 @@ def load_cloud_npz(path: Path, *, with_rgb: bool) -> tuple[np.ndarray, np.ndarra
         raise ValueError(f"Missing `rgb` in {path}")
     rgb_arr = np.asarray(rgb)
     if rgb_arr.ndim != 2 or rgb_arr.shape[1] != 3 or rgb_arr.shape[0] != pts.shape[0]:
-        raise ValueError(f"Invalid rgb shape {rgb_arr.shape} in {path} for points {pts.shape}")
+        raise ValueError(
+            f"Invalid rgb shape {rgb_arr.shape} in {path} for points {pts.shape}"
+        )
     if rgb_arr.dtype == np.uint8:
         rgb_u8 = rgb_arr
     else:
@@ -134,7 +143,9 @@ def downsample_aligned3(
     return out_pts, out_rgb, out_cid
 
 
-def normalize_points(points: np.ndarray, mode: str) -> tuple[np.ndarray, np.ndarray, float]:
+def normalize_points(
+    points: np.ndarray, mode: str
+) -> tuple[np.ndarray, np.ndarray, float]:
     if points.size == 0:
         raise ValueError("empty points")
     centroid = points.mean(axis=0, dtype=np.float64).astype(np.float32)
@@ -155,18 +166,32 @@ def normalize_points(points: np.ndarray, mode: str) -> tuple[np.ndarray, np.ndar
 
 
 def main() -> int:
-    ap = argparse.ArgumentParser(description="Phase 1: build raw classification dataset (case-level).")
-    ap.add_argument("--root", type=Path, default=Path("."), help="Repo root (default: .)")
-    ap.add_argument("--manifest", type=Path, default=Path("converted/raw/manifest_with_labels.json"))
-    ap.add_argument("--splits", type=Path, default=Path("metadata/splits_raw_case.json"))
+    ap = argparse.ArgumentParser(
+        description="Phase 1: build raw classification dataset (case-level)."
+    )
+    ap.add_argument(
+        "--root", type=Path, default=Path("."), help="Repo root (default: .)"
+    )
+    ap.add_argument(
+        "--manifest", type=Path, default=Path("converted/raw/manifest_with_labels.json")
+    )
+    ap.add_argument(
+        "--splits", type=Path, default=Path("metadata/splits_raw_case.json")
+    )
     ap.add_argument("--converted-root", type=Path, default=Path("converted/raw"))
     ap.add_argument("--out", type=Path, default=Path("processed/raw_cls/v1"))
     ap.add_argument("--seed", type=int, default=1337)
     ap.add_argument("--min-points", type=int, default=500)
     ap.add_argument("--max-points-per-cloud", type=int, default=50_000)
     ap.add_argument("--target-points", type=int, default=4096)
-    ap.add_argument("--normalize", choices=["max_norm", "bbox_diag"], default="max_norm")
-    ap.add_argument("--with-rgb", action="store_true", help="Include per-point RGB from converted clouds (requires 'rgb' in NPZ).")
+    ap.add_argument(
+        "--normalize", choices=["max_norm", "bbox_diag"], default="max_norm"
+    )
+    ap.add_argument(
+        "--with-rgb",
+        action="store_true",
+        help="Include per-point RGB from converted clouds (requires 'rgb' in NPZ).",
+    )
     ap.add_argument(
         "--with-cloud-id",
         action="store_true",
@@ -221,6 +246,13 @@ def main() -> int:
         default="",
         help="Comma-separated canonical labels to drop (e.g. '拔除,未知'). Applied after canonicalization/merge.",
     )
+    ap.add_argument(
+        "--per-cloud",
+        action="store_true",
+        help="Per-cloud expansion mode: each exported cloud that passes filters becomes a separate sample "
+        "(instead of concatenating all clouds per case). The case label is inherited. "
+        "Useful for data augmentation via cloud-level splitting (e.g. v18 dataset).",
+    )
     args = ap.parse_args()
 
     root = args.root.resolve()
@@ -244,13 +276,17 @@ def main() -> int:
         prefer_name_regex=str(args.prefer_name_regex or ""),
         select_topk=int(args.select_topk or 0),
         select_smallk=int(args.select_smallk or 0),
-        drop_labels=[s.strip() for s in str(args.drop_labels or "").split(",") if s.strip()],
+        drop_labels=[
+            s.strip() for s in str(args.drop_labels or "").split(",") if s.strip()
+        ],
     )
 
     if not manifest_path.exists():
         raise SystemExit(f"Missing manifest: {manifest_path}")
     if not splits_path.exists():
-        raise SystemExit(f"Missing splits: {splits_path} (run scripts/phase0_freeze.py first)")
+        raise SystemExit(
+            f"Missing splits: {splits_path} (run scripts/phase0_freeze.py first)"
+        )
     if not converted_root.exists():
         raise SystemExit(f"Missing converted root: {converted_root}")
 
@@ -297,10 +333,17 @@ def main() -> int:
     report_path = out_root / "report.md"
     label_map_path = out_root / "label_map.json"
 
-    label_counter: dict[str, Counter[str]] = {"train": Counter(), "val": Counter(), "test": Counter(), "unknown": Counter()}
+    label_counter: dict[str, Counter[str]] = {
+        "train": Counter(),
+        "val": Counter(),
+        "test": Counter(),
+        "unknown": Counter(),
+    }
     failures: list[dict[str, Any]] = []
     rows: list[dict[str, Any]] = []
     dropped: Counter[str] = Counter()
+
+    per_cloud_mode = bool(args.per_cloud)
 
     for entry in manifest:
         case_key = str(entry.get("input", "")).strip()
@@ -324,7 +367,7 @@ def main() -> int:
         n_points_after_cap_total = 0
 
         try:
-            for cloud in exported_clouds:
+            for cloud_idx, cloud in enumerate(exported_clouds):
                 try:
                     n_points = int(cloud.get("points") or 0)
                 except Exception:
@@ -349,7 +392,9 @@ def main() -> int:
                 if m < cfg.min_points:
                     continue
                 if cfg.max_points_per_cloud > 0 and m > cfg.max_points_per_cloud:
-                    pts, rgb_u8 = downsample_aligned(rng, pts, rgb_u8, cfg.max_points_per_cloud)
+                    pts, rgb_u8 = downsample_aligned(
+                        rng, pts, rgb_u8, cfg.max_points_per_cloud
+                    )
                 n_points_after_cap_total += int(pts.shape[0])
                 candidates.append(
                     (
@@ -357,6 +402,7 @@ def main() -> int:
                         rgb_u8,
                         {
                             "name": name,
+                            "cloud_idx": cloud_idx,
                             "points_reported": n_points,
                             "points_used": int(pts.shape[0]),
                             "npz": str(rel_npz),
@@ -368,35 +414,131 @@ def main() -> int:
                 raise RuntimeError("no usable clouds after filtering")
 
             if prefer_re:
-                preferred = [item for item in candidates if prefer_re.search(str(item[2].get("name") or ""))]
+                preferred = [
+                    item
+                    for item in candidates
+                    if prefer_re.search(str(item[2].get("name") or ""))
+                ]
                 if preferred:
                     candidates = preferred
 
             if cfg.select_smallk > 0 and cfg.select_topk > 0:
                 raise ValueError("select_smallk and select_topk are mutually exclusive")
             if cfg.select_topk > 0 and len(candidates) > cfg.select_topk:
-                candidates.sort(key=lambda item: int(item[2].get("points_used") or 0), reverse=True)
+                candidates.sort(
+                    key=lambda item: int(item[2].get("points_used") or 0), reverse=True
+                )
                 candidates = candidates[: cfg.select_topk]
             if cfg.select_smallk > 0 and len(candidates) > cfg.select_smallk:
                 candidates.sort(key=lambda item: int(item[2].get("points_used") or 0))
                 candidates = candidates[: cfg.select_smallk]
 
+            # ── Per-cloud expansion mode ──────────────────────────────────
+            if per_cloud_mode:
+                case_stem = (
+                    case_key[:-4] if case_key.lower().endswith(".bin") else case_key
+                )
+                for ci, (c_pts, c_rgb, c_meta) in enumerate(candidates):
+                    c_name = str(c_meta.get("name") or f"cloud{ci}")
+                    safe_name = re.sub(r'[<>:"/\\|?*\x00-\x1f]', "_", c_name)
+                    c_points_used = int(c_pts.shape[0])
+
+                    # Downsample or upsample to target_points
+                    c_pts_ds, c_rgb_ds = downsample_aligned(
+                        rng, c_pts, c_rgb, cfg.target_points
+                    )
+                    c_pts_ds = c_pts_ds.astype(np.float32, copy=False)
+
+                    # cloud_id is constant 0 for single-cloud samples
+                    c_cid = (
+                        np.zeros((cfg.target_points,), dtype=np.int16)
+                        if cfg.with_cloud_id
+                        else None
+                    )
+
+                    # Normalize
+                    c_pts_norm, c_centroid, c_scale = normalize_points(
+                        c_pts_ds, cfg.normalize
+                    )
+
+                    # Shuffle
+                    perm = rng.permutation(int(c_pts_norm.shape[0]))
+                    c_pts_out = c_pts_norm[perm]
+                    c_rgb_out = c_rgb_ds[perm] if c_rgb_ds is not None else None
+                    c_cid_out = c_cid[perm] if c_cid is not None else None
+
+                    sample_path = (
+                        out_samples
+                        / case_stem
+                        / f"{c_meta.get('cloud_idx', ci):02d}__{safe_name}.npz"
+                    )
+                    sample_path.parent.mkdir(parents=True, exist_ok=True)
+                    arrays: dict[str, Any] = {"points": c_pts_out}
+                    if c_rgb_out is not None:
+                        arrays["rgb"] = c_rgb_out
+                    if c_cid_out is not None:
+                        arrays["cloud_id"] = c_cid_out
+                    np.savez_compressed(sample_path, **arrays)
+
+                    row = {
+                        "case_key": case_key,
+                        "cloud_name": c_name,
+                        "cloud_idx": c_meta.get("cloud_idx", ci),
+                        "split": split,
+                        "source": label_info.get("source"),
+                        "label_raw": label_raw,
+                        "label": label,
+                        "tooth_position": label_info.get("tooth_position"),
+                        "input_bytes": entry.get("input_bytes"),
+                        "n_objects_total": n_objects_total,
+                        "n_objects_used": 1,
+                        "n_points_total_reported": n_points_total_reported,
+                        "n_points_after_cap": c_points_used,
+                        "n_points_after_cap_total": n_points_after_cap_total,
+                        "target_points": cfg.target_points,
+                        "normalize": cfg.normalize,
+                        "with_rgb": bool(cfg.with_rgb),
+                        "with_cloud_id": bool(cfg.with_cloud_id),
+                        "cloud_sampling": "per_cloud",
+                        "include_name_regex": cfg.include_name_regex,
+                        "exclude_name_regex": cfg.exclude_name_regex,
+                        "prefer_name_regex": cfg.prefer_name_regex,
+                        "select_topk": cfg.select_topk,
+                        "select_smallk": cfg.select_smallk,
+                        "drop_labels": cfg.drop_labels,
+                        "centroid": [float(x) for x in c_centroid.tolist()],
+                        "scale": float(c_scale),
+                        "sample_npz": str(sample_path.relative_to(out_root)),
+                        "used_clouds": [c_meta],
+                    }
+                    rows.append(row)
+                    label_counter.setdefault(split, Counter())[label] += 1
+                continue  # skip the normal (concatenated) path below
+            # ── End per-cloud mode ────────────────────────────────────────
+
             used_clouds = [meta for _pts, _rgb, meta in candidates]
             points_list = [pts for pts, _rgb, _meta in candidates]
             rgb_list = [rgb for _pts, rgb, _meta in candidates] if cfg.with_rgb else []
             cloud_id_list = (
-                [np.full((int(pts.shape[0]),), i, dtype=np.int16) for i, (pts, _rgb, _meta) in enumerate(candidates)]
+                [
+                    np.full((int(pts.shape[0]),), i, dtype=np.int16)
+                    for i, (pts, _rgb, _meta) in enumerate(candidates)
+                ]
                 if cfg.with_cloud_id
                 else []
             )
-            n_points_after_cap = int(sum(int(m.get("points_used") or 0) for m in used_clouds))
+            n_points_after_cap = int(
+                sum(int(m.get("points_used") or 0) for m in used_clouds)
+            )
 
             if cfg.cloud_sampling == "equal" and len(candidates) > 1:
                 k = int(len(candidates))
                 base = int(cfg.target_points) // k
                 rem = int(cfg.target_points) - (base * k)
                 # assign remainder to larger clouds (more stable)
-                order = sorted(range(k), key=lambda i: int(candidates[i][0].shape[0]), reverse=True)
+                order = sorted(
+                    range(k), key=lambda i: int(candidates[i][0].shape[0]), reverse=True
+                )
                 quotas = [base for _ in range(k)]
                 for j in range(rem):
                     quotas[order[j]] += 1
@@ -414,24 +556,56 @@ def main() -> int:
                     if cfg.with_cloud_id:
                         sampled_cid.append(np.full((n_i,), i, dtype=np.int16))
 
-                points_all = np.concatenate(sampled_pts, axis=0).astype(np.float32, copy=False)
-                rgb_all = np.concatenate(sampled_rgb, axis=0).astype(np.uint8, copy=False) if cfg.with_rgb else None
-                cloud_id_all = np.concatenate(sampled_cid, axis=0).astype(np.int16, copy=False) if cfg.with_cloud_id else None
+                points_all = np.concatenate(sampled_pts, axis=0).astype(
+                    np.float32, copy=False
+                )
+                rgb_all = (
+                    np.concatenate(sampled_rgb, axis=0).astype(np.uint8, copy=False)
+                    if cfg.with_rgb
+                    else None
+                )
+                cloud_id_all = (
+                    np.concatenate(sampled_cid, axis=0).astype(np.int16, copy=False)
+                    if cfg.with_cloud_id
+                    else None
+                )
                 if int(points_all.shape[0]) != int(cfg.target_points):
-                    raise RuntimeError(f"Internal error: expected {cfg.target_points} points after equal sampling, got {points_all.shape[0]}")
-                points_all, centroid, scale = normalize_points(points_all, cfg.normalize)
+                    raise RuntimeError(
+                        f"Internal error: expected {cfg.target_points} points after equal sampling, got {points_all.shape[0]}"
+                    )
+                points_all, centroid, scale = normalize_points(
+                    points_all, cfg.normalize
+                )
                 perm = rng.permutation(int(points_all.shape[0]))
                 points_out = points_all[perm]
                 rgb_out = rgb_all[perm] if rgb_all is not None else None
                 cloud_id_out = cloud_id_all[perm] if cloud_id_all is not None else None
             else:
-                points_all = np.concatenate(points_list, axis=0).astype(np.float32, copy=False)
-                rgb_all = np.concatenate(rgb_list, axis=0).astype(np.uint8, copy=False) if cfg.with_rgb else None
-                cloud_id_all = np.concatenate(cloud_id_list, axis=0).astype(np.int16, copy=False) if cfg.with_cloud_id else None
-                points_all, centroid, scale = normalize_points(points_all, cfg.normalize)
-                points_out, rgb_out, cloud_id_out = downsample_aligned3(rng, points_all, rgb_all, cloud_id_all, cfg.target_points)
+                points_all = np.concatenate(points_list, axis=0).astype(
+                    np.float32, copy=False
+                )
+                rgb_all = (
+                    np.concatenate(rgb_list, axis=0).astype(np.uint8, copy=False)
+                    if cfg.with_rgb
+                    else None
+                )
+                cloud_id_all = (
+                    np.concatenate(cloud_id_list, axis=0).astype(np.int16, copy=False)
+                    if cfg.with_cloud_id
+                    else None
+                )
+                points_all, centroid, scale = normalize_points(
+                    points_all, cfg.normalize
+                )
+                points_out, rgb_out, cloud_id_out = downsample_aligned3(
+                    rng, points_all, rgb_all, cloud_id_all, cfg.target_points
+                )
 
-            sample_path = out_samples / (case_key[:-4] + ".npz" if case_key.lower().endswith(".bin") else case_key + ".npz")
+            sample_path = out_samples / (
+                case_key[:-4] + ".npz"
+                if case_key.lower().endswith(".bin")
+                else case_key + ".npz"
+            )
             sample_path.parent.mkdir(parents=True, exist_ok=True)
             arrays: dict[str, Any] = {"points": points_out}
             if rgb_out is not None:
@@ -472,17 +646,27 @@ def main() -> int:
             rows.append(row)
             label_counter.setdefault(split, Counter())[label] += 1
         except Exception as e:
-            failures.append({"case_key": case_key, "split": split, "label_raw": label_raw, "label": label, "error": str(e)})
+            failures.append(
+                {
+                    "case_key": case_key,
+                    "split": split,
+                    "label_raw": label_raw,
+                    "label": label,
+                    "error": str(e),
+                }
+            )
             label_counter.setdefault(split, Counter())[label] += 1
 
-    rows.sort(key=lambda r: r["case_key"])
+    rows.sort(key=lambda r: (r["case_key"], str(r.get("cloud_name", ""))))
     with index_path.open("w", encoding="utf-8") as f:
         for r in rows:
             f.write(json.dumps(r, ensure_ascii=False) + "\n")
 
     all_labels = sorted({r["label"] for r in rows})
     label_to_id = {lab: i for i, lab in enumerate(all_labels)}
-    label_map_path.write_text(json.dumps(label_to_id, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    label_map_path.write_text(
+        json.dumps(label_to_id, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+    )
 
     total_cases = len([e for e in manifest if str(e.get("input", "")).strip()])
     success_cases = len(rows)
@@ -510,7 +694,9 @@ def main() -> int:
     md_lines.append(f"- prefer_name_regex：{cfg.prefer_name_regex or '(none)'}")
     md_lines.append(f"- select_topk：{cfg.select_topk}")
     md_lines.append(f"- select_smallk：{cfg.select_smallk}")
-    md_lines.append(f"- drop_labels：{', '.join(cfg.drop_labels) if cfg.drop_labels else '(none)'}")
+    md_lines.append(
+        f"- drop_labels：{', '.join(cfg.drop_labels) if cfg.drop_labels else '(none)'}"
+    )
     if auto_drop:
         md_lines.append(f"- auto_drop_labels_by_min_train_count：{sorted(auto_drop)}")
     md_lines.append("")
@@ -533,7 +719,9 @@ def main() -> int:
         c = label_counter.get(split_name) or Counter()
         if not c:
             continue
-        md_lines.append(f"- {split_name}: " + ", ".join(f"{k}={v}" for k, v in c.most_common()))
+        md_lines.append(
+            f"- {split_name}: " + ", ".join(f"{k}={v}" for k, v in c.most_common())
+        )
     md_lines.append("")
     if failures:
         md_lines.append("## 失败样本（前 50）")

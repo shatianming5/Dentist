@@ -1,0 +1,23 @@
+{
+  "metric_correlations": {
+    "maxprob": 0.5976301319182968,
+    "entropy": 0.5995393368707005,
+    "margin": 0.5976301389193902,
+    "uncertain_frac": 0.5910438105556002
+  },
+  "best_metric": "entropy (r=0.600, highest correlation)",
+  "shafiei_analysis": {
+    "case_key": "02SHAFIEI/Group-SHAFIEI.bin",
+    "fold": 0,
+    "miou": 0.29095458984375,
+    "rest_iou": 0.0,
+    "conf_maxprob": 0.8956626653671265,
+    "conf_entropy": 0.21488769352436066,
+    "conf_margin": 0.7913254499435425,
+    "uncertain_frac": 0.185791015625,
+    "pred_rest_frac": 0.1512451171875,
+    "true_rest_frac": 0.266845703125,
+    "rtype": "高嵌体"
+  },
+  "clinical_workflow_metric": "uncertain_frac (selected for SHAFIEI screening at 80% despite r=0.591)"
+}

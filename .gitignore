@@ -9,12 +9,16 @@ __pycache__/
 # OS / editor
 .DS_Store
 .vscode/
+__MACOSX/
+.opencode/
 
 # Large local datasets / artifacts (kept locally, not committed)
-/data/teeth3ds/
+/data/
 /raw/
 /converted/
 /processed/
+/dentist_data/
+/dentist_data.zip
 
 # Large run outputs (keep the short guide only)
 /runs/*

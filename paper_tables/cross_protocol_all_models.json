@@ -1,0 +1,29 @@
+{
+  "DGCNN": {
+    "balanced_on_balanced": 0.957,
+    "balanced_on_natural": 0.4329356734648917,
+    "balanced_on_natural_std": 0.08311967173432189,
+    "natural_on_natural": 0.7322680013609297,
+    "natural_on_natural_std": 0.16909625474838558,
+    "deployment_gap": 0.5240643265351083,
+    "training_fix": 0.29933232789603803
+  },
+  "PointNet": {
+    "balanced_on_balanced": 0.832,
+    "balanced_on_natural": 0.6080123006047173,
+    "balanced_on_natural_std": 0.19509206918126926,
+    "natural_on_natural": 0.6907822485038334,
+    "natural_on_natural_std": 0.16646914429926762,
+    "deployment_gap": 0.22398769939528262,
+    "training_fix": 0.08276994789911607
+  },
+  "PN2": {
+    "balanced_on_balanced": 0.95,
+    "balanced_on_natural": 0.2662932430412842,
+    "balanced_on_natural_std": 0.0702148552803669,
+    "natural_on_natural": 0.6620056899956802,
+    "natural_on_natural_std": 0.1038587079167606,
+    "deployment_gap": 0.6837067569587157,
+    "training_fix": 0.395712446954396
+  }
+}

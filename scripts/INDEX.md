@@ -7,6 +7,7 @@
 - 统一训练/评估入口：`scripts/train.py`
 - raw/ 转点云：`scripts/convert_ccb2_bin.py`
 - raw_cls 构建数据集：`scripts/phase1_build_raw_cls.py`
+- 从 raw_seg 构建分类数据：`scripts/phase3_build_raw_cls_from_raw_seg.py`
 - raw_cls 训练主逻辑：`scripts/phase3_train_raw_cls_baseline.py`
 - 体内库（STL）索引：`scripts/internal_db/index_internal_db.py`
 - 体内库（STL）整牙可视化（HTML）：`scripts/vis_internal_db_case.py`

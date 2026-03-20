@@ -1,0 +1,24 @@
+{
+  "generated_at": "2026-03-17T07:29:59.731881Z",
+  "root": "/mnt/SSD_4TB/zechuan/Dentist/runs/research_segcls_smoke_v2",
+  "variants": {
+    "joint_pointnet": {
+      "n": 1,
+      "test_accuracy": [
+        0.375
+      ],
+      "test_macro_f1_present": [
+        0.21875000000000003
+      ],
+      "test_balanced_accuracy_present": [
+        0.3888888888888889
+      ],
+      "test_ece": [
+        0.2766901757568121
+      ],
+      "test_seg_mean_iou": [
+        0.8440914875802583
+      ]
+    }
+  }
+}
