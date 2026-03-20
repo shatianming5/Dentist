@@ -1854,3 +1854,26 @@ Round 1: 7.0 → Round 2: 8.0 → Round 3: 7.5 → Round 4: 8.5 → Round 5: 8.5
 
 ### Notable Finding
 PointNet++ vs CurveNet is non-significant (p=0.393), consistent with their similar natural-protocol performance (0.566 vs 0.624) and overlapping confidence intervals. This strengthens the "cluster of mid-tier methods" narrative.
+
+---
+
+## Round 12 — Push for 9.0
+
+**Score: 9.0/10 | Verdict: READY ✅**
+
+### Weaknesses Found
+1. **W1 (Minor)**: Table 2 caption said "nine methods" but only has 8 DL methods (RF excluded)
+2. **W2 (Minor)**: Cohen's d = 1.33 stale from old 21-pair computation; new 36-pair gives |d| = 1.30
+3. **W3 (Minor)**: ViT params 22.1M/32.7% from paper, actual measured 21.7M/33.2%
+
+### Fixes Applied
+1. ✅ Table 2 caption: "nine" → "eight deep learning"
+2. ✅ d = 1.33 → 1.30 (abstract + §3.1)
+3. ✅ 22.1M → 21.7M, 32.7% → 33.2% (§2.3 + Table S3)
+
+### New Additions This Round
+- Table S5: Computational cost comparison (params + inference time, all 9 methods)
+- Figure 2 regenerated with all 8 DL methods including CurveNet
+
+### Reviewer Notes
+"This is the cleanest state the paper has been in across 12 rounds. No conceptual, methodological, or statistical issue remains."

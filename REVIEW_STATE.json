@@ -1,17 +1,18 @@
 {
   "status": "completed",
   "stage": "finalization",
-  "round": 11,
+  "round": 12,
   "active_direction": "9-method benchmark + ablation + CurveNet, CMPB-ready",
-  "last_score": 8.5,
+  "last_score": 9.0,
   "last_verdict": "READY",
   "pending_runs": [],
   "total_runs": 715,
-  "timestamp": "2026-03-21T05:48:51.084968+08:00",
+  "timestamp": "2026-03-21T06:04:47.043175+08:00",
   "changes_since_last": [
-    "Expanded Table S2 from 21 to 36 pairwise comparisons (all 9 methods)",
-    "Added Figure 7 (3D segmentation visualization) reference in text",
-    "Updated RESEARCH_PIPELINE_REPORT.md to 9 methods/715 configs",
-    "Fixed Cohen d values for updated BH-FDR correction across 36 tests"
+    "Fixed Table 2 caption: nine \u2192 eight deep learning methods",
+    "Fixed Cohen d: 1.33 \u2192 1.30 (2 locations)",
+    "Fixed ViT params: 22.1M \u2192 21.7M, 32.7% \u2192 33.2% (2 locations)",
+    "Added Table S5 (computational costs)",
+    "Regenerated Figure 2 boxplot with CurveNet"
   ]
 }

@@ -26,6 +26,7 @@ from _lib.io import read_json, read_jsonl, write_json
 from _lib.point_ops import get_graph_feature
 from _lib.seed import set_seed
 from _lib.time import utc_now_iso
+from pointmlp import PointMLPBlock, knn_indices
 
 # ---------------------------------------------------------------------------
 # Models
@@ -278,6 +279,166 @@ class _PTBlock(nn.Module):
         return x
 
 
+class PointMLPSeg(nn.Module):
+    """PointMLP segmentation: residual MLP blocks with geometric kNN message passing."""
+    def __init__(self, num_classes: int = 2, dropout: float = 0.3,
+                 dim: int = 64, depth: int = 4, k: int = 16, ffn_mult: float = 2.0) -> None:
+        super().__init__()
+        self.num_classes = int(num_classes)
+        self.k = int(k)
+        self.dim = int(dim)
+        self.depth = int(depth)
+        # Stem: project xyz to feature dim
+        self.stem = nn.Sequential(
+            nn.Linear(3, int(dim), bias=False),
+            nn.LayerNorm(int(dim)),
+            nn.ReLU(inplace=True),
+            nn.Linear(int(dim), int(dim), bias=False),
+            nn.LayerNorm(int(dim)),
+            nn.ReLU(inplace=True),
+        )
+        # Encoder blocks
+        self.blocks = nn.ModuleList([
+            PointMLPBlock(dim=int(dim), k=int(k), ffn_mult=float(ffn_mult), dropout=float(dropout))
+            for _ in range(int(depth))
+        ])
+        self.norm = nn.LayerNorm(int(dim))
+        # Segmentation head: early features (dim) + late features (dim) + global (dim)
+        seg_in = int(dim) * 3
+        self.seg_head = nn.Sequential(
+            nn.Conv1d(seg_in, 128, 1, bias=False), nn.BatchNorm1d(128), nn.ReLU(True),
+            nn.Dropout(float(dropout)),
+            nn.Conv1d(128, 64, 1, bias=False), nn.BatchNorm1d(64), nn.ReLU(True),
+            nn.Dropout(float(dropout)),
+            nn.Conv1d(64, int(num_classes), 1),
+        )
+
+    def forward(self, points: torch.Tensor) -> torch.Tensor:
+        # points: (B, N, 3)
+        B, N, _ = points.shape
+        xyz = points.contiguous()
+        idx = knn_indices(xyz, self.k)
+        x = self.stem(points)  # (B, N, dim)
+        # Save early features after first block
+        mid = self.depth // 2
+        early_feat = x
+        for i, blk in enumerate(self.blocks):
+            x = blk(xyz, x, idx=idx)
+            if i == mid - 1:
+                early_feat = x
+        x = self.norm(x)  # (B, N, dim)
+        # Global feature tiled to each point
+        g = torch.max(x, dim=1, keepdim=True).values.expand(-1, N, -1)  # (B, N, dim)
+        # Concat: early + late + global
+        feat = torch.cat([early_feat, x, g], dim=-1)  # (B, N, dim*3)
+        feat = feat.transpose(1, 2).contiguous()  # (B, dim*3, N)
+        return self.seg_head(feat)  # (B, C, N)
+
+
+class CurveGrouping(nn.Module):
+    """Walk-based curve grouping: greedily extend curves through kNN graph."""
+    def __init__(self, k: int = 16, curve_len: int = 4):
+        super().__init__()
+        self.k = k
+        self.curve_len = curve_len
+
+    def forward(self, xyz: torch.Tensor) -> torch.Tensor:
+        """Return curve indices (B, N, curve_len) via greedy random walk."""
+        B, N, _ = xyz.shape
+        with torch.no_grad():
+            dist = torch.cdist(xyz, xyz)
+            _, knn_idx = dist.topk(self.k, dim=-1, largest=False)  # (B, N, k)
+        curves = [torch.arange(N, device=xyz.device).unsqueeze(0).expand(B, -1)]  # start: self
+        current = curves[0]  # (B, N)
+        for _ in range(self.curve_len - 1):
+            # For each point, pick a random neighbor from kNN
+            rand_k = torch.randint(1, self.k, (B, N), device=xyz.device)  # skip self (index 0)
+            batch_idx = torch.arange(B, device=xyz.device).unsqueeze(1).expand(-1, N)
+            point_idx = current
+            next_pt = knn_idx[batch_idx, point_idx, rand_k]  # (B, N)
+            curves.append(next_pt)
+            current = next_pt
+        return torch.stack(curves, dim=-1)  # (B, N, curve_len)
+
+
+class CurveAggBlock(nn.Module):
+    """Curve-based feature aggregation block."""
+    def __init__(self, dim: int, curve_len: int = 4, k: int = 16, dropout: float = 0.3):
+        super().__init__()
+        self.grouping = CurveGrouping(k=k, curve_len=curve_len)
+        self.curve_mlp = nn.Sequential(
+            nn.Conv2d(dim + 3, dim, 1, bias=False), nn.BatchNorm2d(dim), nn.ReLU(True),
+            nn.Conv2d(dim, dim, 1, bias=False), nn.BatchNorm2d(dim), nn.ReLU(True),
+        )
+        self.norm = nn.BatchNorm1d(dim)
+        hid = dim * 2
+        self.ffn = nn.Sequential(
+            nn.Conv1d(dim, hid, 1, bias=False), nn.BatchNorm1d(hid), nn.ReLU(True),
+            nn.Dropout(dropout),
+            nn.Conv1d(hid, dim, 1, bias=False),
+        )
+        self.norm2 = nn.BatchNorm1d(dim)
+
+    def forward(self, xyz: torch.Tensor, feat: torch.Tensor) -> torch.Tensor:
+        """xyz: (B,N,3), feat: (B,D,N) -> (B,D,N)"""
+        B, D, N = feat.shape
+        curves = self.grouping(xyz)  # (B, N, L)
+        L = curves.shape[-1]
+        # Gather curve features
+        curves_flat = curves.reshape(B, -1)  # (B, N*L)
+        idx_e = curves_flat.unsqueeze(1).expand(-1, D, -1)
+        curve_feat = feat.gather(2, idx_e).reshape(B, D, N, L)  # (B, D, N, L)
+        # Gather curve xyz for positional info
+        xyz_t = xyz.transpose(1, 2)  # (B, 3, N)
+        idx_xyz = curves_flat.unsqueeze(1).expand(-1, 3, -1)
+        curve_xyz = xyz_t.gather(2, idx_xyz).reshape(B, 3, N, L)
+        rel_xyz = curve_xyz - xyz_t.unsqueeze(3)  # (B, 3, N, L)
+        # Combine
+        combined = torch.cat([curve_feat, rel_xyz], dim=1)  # (B, D+3, N, L)
+        agg = self.curve_mlp(combined).max(dim=-1).values  # (B, D, N)
+        feat = self.norm(feat + agg)
+        feat = self.norm2(feat + self.ffn(feat))
+        return feat
+
+
+class CurveNetSeg(nn.Module):
+    """CurveNet-inspired segmentation: curve-based point cloud learning."""
+    def __init__(self, num_classes: int = 2, dropout: float = 0.3,
+                 dim: int = 64, depth: int = 4, k: int = 16, curve_len: int = 4):
+        super().__init__()
+        self.stem = nn.Sequential(
+            nn.Conv1d(3, dim, 1, bias=False), nn.BatchNorm1d(dim), nn.ReLU(True),
+            nn.Conv1d(dim, dim, 1, bias=False), nn.BatchNorm1d(dim), nn.ReLU(True),
+        )
+        self.blocks = nn.ModuleList([
+            CurveAggBlock(dim=dim, curve_len=curve_len, k=k, dropout=dropout)
+            for _ in range(depth)
+        ])
+        seg_in = dim * 3  # early + late + global
+        self.seg_head = nn.Sequential(
+            nn.Conv1d(seg_in, 128, 1, bias=False), nn.BatchNorm1d(128), nn.ReLU(True),
+            nn.Dropout(dropout),
+            nn.Conv1d(128, 64, 1, bias=False), nn.BatchNorm1d(64), nn.ReLU(True),
+            nn.Dropout(dropout),
+            nn.Conv1d(64, num_classes, 1),
+        )
+        self.depth = depth
+
+    def forward(self, points: torch.Tensor) -> torch.Tensor:
+        B, N, _ = points.shape
+        xyz = points.contiguous()
+        x = self.stem(points.transpose(1, 2))  # (B, D, N)
+        mid = self.depth // 2
+        early = x
+        for i, blk in enumerate(self.blocks):
+            x = blk(xyz, x)
+            if i == mid - 1:
+                early = x
+        g = torch.max(x, dim=2, keepdim=True).values.expand_as(x)
+        feat = torch.cat([early, x, g], dim=1)  # (B, 3D, N)
+        return self.seg_head(feat)  # (B, C, N)
+
+
 # ---------------------------------------------------------------------------
 # Dataset
 # ---------------------------------------------------------------------------
@@ -432,7 +593,7 @@ def main() -> int:
     ap.add_argument("--run-root", type=Path, default=Path("runs/raw_seg"))
     ap.add_argument("--seed", type=int, default=1337)
     ap.add_argument("--device", type=str, default="auto")
-    ap.add_argument("--model", choices=["pointnet_seg", "dgcnn", "dgcnn_v2", "point_transformer", "pointnet2"], default="pointnet_seg")
+    ap.add_argument("--model", choices=["pointnet_seg", "dgcnn", "dgcnn_v2", "point_transformer", "pointnet2", "pointmlp_seg", "curvenet_seg"], default="pointnet_seg")
     ap.add_argument("--epochs", type=int, default=100)
     ap.add_argument("--patience", type=int, default=20)
     ap.add_argument("--batch-size", type=int, default=16)
@@ -447,6 +608,10 @@ def main() -> int:
     ap.add_argument("--pt-depth", type=int, default=4)
     ap.add_argument("--pt-k", type=int, default=16)
     ap.add_argument("--pt-ffn-mult", type=float, default=2.0)
+    ap.add_argument("--pmlp-dim", type=int, default=64)
+    ap.add_argument("--pmlp-depth", type=int, default=4)
+    ap.add_argument("--pmlp-k", type=int, default=16)
+    ap.add_argument("--pmlp-ffn-mult", type=float, default=2.0)
     ap.add_argument("--kfold", type=Path, default=None)
     ap.add_argument("--fold", type=int, default=-1)
     ap.add_argument("--val-fold", type=int, default=-1)
@@ -497,6 +662,14 @@ def main() -> int:
                                     k=args.pt_k, ffn_mult=args.pt_ffn_mult)
     elif args.model == "pointnet2":
         model = PointNet2Seg(num_classes=num_classes, dropout=args.dropout)
+    elif args.model == "pointmlp_seg":
+        model = PointMLPSeg(num_classes=num_classes, dropout=args.dropout,
+                            dim=args.pmlp_dim, depth=args.pmlp_depth,
+                            k=args.pmlp_k, ffn_mult=args.pmlp_ffn_mult)
+    elif args.model == "curvenet_seg":
+        model = CurveNetSeg(num_classes=num_classes, dropout=args.dropout,
+                            dim=args.pmlp_dim, depth=args.pmlp_depth,
+                            k=args.pmlp_k, curve_len=4)
     else:
         raise ValueError(f"Unknown model: {args.model}")
     model = model.to(device)

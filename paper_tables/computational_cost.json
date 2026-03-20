@@ -1,0 +1,83 @@
+{
+  "description": "Computational cost comparison for 9 segmentation methods",
+  "n_points": 8192,
+  "num_classes": 2,
+  "device": "cuda",
+  "gpu_name": "NVIDIA GeForce RTX 4090 D",
+  "timing_config": {
+    "warmup": 20,
+    "n_trials": 100,
+    "batch_size": 1
+  },
+  "methods": [
+    {
+      "name": "RF (Random Forest)",
+      "params_total": null,
+      "params_trainable": null,
+      "inference_ms": null,
+      "train_epoch_s": null,
+      "n_estimators": 100,
+      "max_depth": 20,
+      "feature_dims": 11,
+      "note": "sklearn RandomForestClassifier; per-point features (11 dims)"
+    },
+    {
+      "name": "PointNet",
+      "params_total": 371778,
+      "params_trainable": 371778,
+      "inference_ms": 0.595,
+      "train_epoch_s": 0.30283768444948916
+    },
+    {
+      "name": "PointNet++",
+      "params_total": 1398082,
+      "params_trainable": 1398082,
+      "inference_ms": 212.281,
+      "train_epoch_s": null
+    },
+    {
+      "name": "DGCNN",
+      "params_total": 650626,
+      "params_trainable": 650626,
+      "inference_ms": 13.217,
+      "train_epoch_s": 1.5478036175710594
+    },
+    {
+      "name": "CurveNet",
+      "params_total": 139970,
+      "params_trainable": 139970,
+      "inference_ms": 13.584,
+      "train_epoch_s": null
+    },
+    {
+      "name": "PointMLP",
+      "params_total": 187202,
+      "params_trainable": 187202,
+      "inference_ms": 4.951,
+      "train_epoch_s": 1.15
+    },
+    {
+      "name": "PT (Point Transformer)",
+      "params_total": 387682,
+      "params_trainable": 387682,
+      "inference_ms": 19.673,
+      "train_epoch_s": null
+    },
+    {
+      "name": "DINOv2-MV",
+      "params_total": 21719426,
+      "params_trainable": 132482,
+      "inference_ms": 19.361,
+      "train_epoch_s": null,
+      "note": "Frozen ViT-S/16 backbone; only MLP head trainable"
+    },
+    {
+      "name": "MV-ViT-ft",
+      "params_total": 21719426,
+      "params_trainable": 7229570,
+      "inference_ms": 19.81,
+      "train_epoch_s": null,
+      "note": "ViT-S/16 last 4 blocks unfrozen + MLP head"
+    }
+  ]
+}
