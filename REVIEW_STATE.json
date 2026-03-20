@@ -1,12 +1,17 @@
 {
   "status": "completed",
-  "stage": "submission_ready",
-  "round": 5,
-  "active_direction": "Protocol-induced domain shift benchmark with systematic DA failure analysis for CMPB/CIBM",
+  "stage": "finalization",
+  "round": 11,
+  "active_direction": "9-method benchmark + ablation + CurveNet, CMPB-ready",
   "last_score": 8.5,
   "last_verdict": "READY",
   "pending_runs": [],
-  "total_runs": 511,
-  "timestamp": "2026-03-20T16:30:00+08:00",
-  "notes": "Score trajectory: 7.0→8.0→7.5→8.5→8.5 READY. All fixes applied. Paper submission-ready."
+  "total_runs": 715,
+  "timestamp": "2026-03-21T05:48:51.084968+08:00",
+  "changes_since_last": [
+    "Expanded Table S2 from 21 to 36 pairwise comparisons (all 9 methods)",
+    "Added Figure 7 (3D segmentation visualization) reference in text",
+    "Updated RESEARCH_PIPELINE_REPORT.md to 9 methods/715 configs",
+    "Fixed Cohen d values for updated BH-FDR correction across 36 tests"
+  ]
 }

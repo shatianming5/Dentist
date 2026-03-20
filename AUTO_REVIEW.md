@@ -1710,3 +1710,147 @@ PAFA addition strengthens "model-centric failure" narrative. Completes mechanist
 ### Score Trajectory
 7.0 ALMOST → 8.0 READY → 7.5 ALMOST → 8.5 READY → **8.5 READY**
 
+
+---
+
+## Round 6 (2026-03-21T01:40:00+08:00)
+
+### Score: 8.0/10 — ALMOST
+
+### Changes Since Round 5
+- PAFA seeds aligned to {1337, 2020, 2021} matching Table 4
+- Removed seed mismatch footnote from Table 8
+- Updated Table 8 numbers: mixing nat=0.709, PAFA nat=0.663, Δ=−0.046
+- Generated 3 new figures: barplot, PAFA scatter, bump chart
+- Updated total from 511 to 540 experimental configurations
+
+### Weaknesses Found
+- **W1 HIGH**: Table 4 mixing nat=0.748 vs Table 8 mixing nat=0.709 — same seeds but different training scripts (CE vs focal loss)
+- **W2 HIGH**: PAFA scatter used stale pre-alignment data (fixed)
+- **W3 MODERATE**: New figures not referenced in paper text (fixed)
+- **W4 MINOR**: Barplot lacked error bars (fixed)
+
+### Fixes Applied
+- F1: Added focal loss explanation in §2.11 and Table 8 footnote
+- F2: Regenerated PAFA scatter from aligned data
+- F3: Added Figure 4 (bump chart) and Figure 5 (PAFA scatter) references
+- F4: Added SD error bars to barplot
+
+---
+
+## Round 7 (2026-03-21T02:00:00+08:00)
+
+### Score: 8.5/10 — READY ✅
+
+### Verification
+- W1 (Table 4/8 discrepancy): FULLY RESOLVED — CE vs focal loss documented
+- W2 (Stale scatter): FULLY RESOLVED — regenerated from aligned data
+- W3 (Figure refs): FULLY RESOLVED — Fig 4 + Fig 5 added
+- W4 (Error bars): RESOLVED
+
+### Remaining (cosmetic only)
+- W1: Bump chart "DINOv2-probe" → "DINOv2-MV" (fixed)
+- W2: Table 4 DINOv2-MV provenance parenthetical (fixed)
+
+### Final Status
+- 8,800 words, 8 tables, 5 figures, 28 references, 540 experimental configurations
+- Score trajectory: 7.0 → 8.0 → 7.5 → 8.5 → 8.5 → 8.0 → 8.5 READY
+- No claims at risk. Submit.
+
+---
+
+## Round 8 — Score: 8.0/10 ALMOST
+
+**Changes since Round 7**: Added PointMLP as 8th method (50 experiments), mixing ratio ablation (75 experiments), updated all counts and references.
+
+**Weaknesses identified**:
+- W1 CRITICAL: Abstract falsely claimed PointMLP has "smallest" protocol gap (PT has 7.9% < 13.6%)
+- W2 CRITICAL: Broken ref [16,24] after renumbering — [24] became PointMLP, should be [25] (Ben-David)
+- W3 HIGH: Table 2 missing PointMLP (already fixed before review)
+- W4 HIGH: Table S2 says "21 pairwise (7 methods)" — needs PointMLP exclusion note
+- W5 HIGH: Table S3 missing PointMLP row
+- W6 MODERATE: Table S1 (Dice) only had 5 methods — needed all 8
+- W7 MODERATE: Figure 2 caption method count
+- W8 MINOR: Table 1 bold formatting on gap/drop misleading
+- W9 MINOR: Table 9 vs Table 3 baseline discrepancy unexplained
+- W10 MINOR: Institutional placeholders
+
+**Actions taken**:
+- F1: Fixed abstract — "a small relative protocol gap (13.6%), second only to PT (7.9%)"
+- F2: Fixed [16,24] → [16,25]
+- F3: Table 2 already included PointMLP (7 DL methods)
+- F4: Table S2 + §2.4: Added "(7 competitive methods; PointMLP excluded)" qualifier
+- F5: Added PointMLP row to Table S3
+- F6: Expanded Table S1 from 5 to all 8 methods with computed Dice
+- F7: Figure 2 caption already updated to "six deep learning methods"
+- F8: Unbolded Gap/Drop% columns, added qualifier footnote
+- F9: Added Table 9 footnote cross-referencing Table 3 baseline
+- F10: Placeholders remain (require author info)
+
+
+---
+
+## Round 9 — Score: 8.0/10 ALMOST
+
+**Changes since Round 8**: Fixed all 10 Round 8 weaknesses (abstract overclaim, broken ref, Tables S1/S2/S3 updated, Figure 2 caption, Table 1 footnote, Table 9 cross-ref).
+
+**Weaknesses identified**:
+- W1 HIGH: Figure 2 caption says "six" but should be "seven" DL methods
+- W2 HIGH: Table 9 100% (0.641) vs Table 4 mixed (0.748) — 0.107 gap unexplained
+- W3 MINOR: Ref [29] page range inverted (2096-2030)
+- W4 MINOR: DINOv2-MV 0.880 in §3.6 vs 0.876 in Table 1
+- W5 MINOR: Contribution #4 "smallest protocol gap" without qualifier
+
+**Actions taken**:
+- F1: Figure 2 caption → "seven deep learning methods"
+- F2: Added Table 9 footnote explaining different pipeline/seeds from Table 4, not directly comparable
+- F3: Ref [29] page range → "17(59):1–35"
+- F4: 0.880 → 0.876 in §3.6
+- F5: Contribution #4 + Conclusions → "smallest protocol gap among competitive methods"
+
+
+---
+
+## Round 10 — Score: 8.5/10 READY ✅
+
+**Changes since Round 9**: Applied all 5 Round 9 fixes (Figure 2 caption, Table 9 footnote, Ref [29], DINOv2-MV 0.876, "among competitive methods").
+
+**Weaknesses identified**:
+- W1 MINOR: "Spread 0.177" should be 0.195 for named 4-method set
+- W2 MINOR: Filtered PointNet++ "4th" should be "5th"
+- W3 COSMETIC: PointNet balanced 0.832 vs Table 1's 0.843 (3-seed vs 5-seed)
+- W4 KNOWN: Institutional placeholders
+
+**Actions taken**: All 3 numerical micro-fixes applied immediately.
+
+**Final verdict**: "The manuscript is ready for submission." — aris-reviewer
+
+### Score Progression
+Round 1: 7.0 → Round 2: 8.0 → Round 3: 7.5 → Round 4: 8.5 → Round 5: 8.5 → Round 6: 8.0 → Round 7: 8.5 → Round 8: 8.0 → Round 9: 8.0 → Round 10: 8.5 READY
+
+### Final Statistics
+- 8 segmentation methods, 6 paradigms
+- 665 total experimental configurations
+- 10 tables (Tables 1-9 + S1-S4)
+- 6 figures
+- 29 references
+- 10 review rounds
+
+---
+
+## Round 11 — CurveNet Integration Verification
+
+**Score: 8.5/10 | Verdict: READY**
+
+### Weaknesses Found
+1. **W1 (Medium)**: CurveNet excluded from pairwise tests (Table S2) without scientific justification
+2. **W2 (Minor)**: Figure 7 (3D visualization) unreferenced in paper text
+3. **W3 (Minor)**: RESEARCH_PIPELINE_REPORT.md stale (8→9 methods)
+
+### Fixes Applied
+1. ✅ **Expanded Table S2 to all 36 pairwise comparisons** (C(9,2)=36). Recomputed with BH-FDR across 36 tests. Result: 33/36 significant (was 19/21). Three NS pairs: PointNet++ vs PT, PointNet++ vs CurveNet, DINOv2-MV vs PointNet. Updated all "21 pairwise" → "36 pairwise" references (3 locations).
+2. ✅ **Added Figure 7 reference** in §3.1 ranking reversal paragraph + Figure 7 caption before Discussion.
+3. ✅ **Updated RESEARCH_PIPELINE_REPORT.md** to 9 methods, 715 configs, Round 11.
+
+### Notable Finding
+PointNet++ vs CurveNet is non-significant (p=0.393), consistent with their similar natural-protocol performance (0.566 vs 0.624) and overlapping confidence intervals. This strengthens the "cluster of mid-tier methods" narrative.
